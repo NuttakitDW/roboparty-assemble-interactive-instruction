@@ -1,0 +1,37 @@
+     2.2 Installation Steps                                        Leg Installation Instructions
+
+                                                                         1 Place the components and motors according
+      STEP 1                                                             to the robot's standing orientation. Ensure that
+                                                                         the motor interface faces the vertical direction
+                                                                         (to avoid misalignment), and that the end
+                                                                         bearing the label "DM-J10010L-2EC" is oriented
+                                                                         downward.
+
+                                                                           STEP 2-3
+
+                                           Inner Thigh
+
+                                                DM J10010L
+
+      STEP 2-1                                       STEP 2-2
+                                                                                                  Installation
+                                                                                                Completed Effect
+                                                  M4×8 Socket Head                                  Diagram
+                                                  Cap Screws
+                                                                                            2 First, use M4×12 socket head
+                                                                                           screws for hole positioning.
+                                                                                           Insert M4×8 socket head
+                                                                                           screws into the remaining
+                                                                                           holes and tighten them
+                                                                                           using the diagonal method.
+  M4×12 Socket Head Cap Screws – used for                                                  Then remove the two M4×12
+  positioning. Subsequently, the positioning                                               positioning screws and replace
+  screw must be unscrewed (backed out).                                                    them with M4×8 socket head
+                                                                                           screws. Apply threadlocker
+ Note: Screws marked in red are for positioning purposes only and are not load-            when installing the screws. For
+ bearing fasteners. When tightening, only a slight contact feel is needed. Do not          precautions, refer to section 3.3
+ use power tools to over-tighten. The same applies below.                                  of the Assembly Precautions.
+
+17   Roboto Origin | PRODUCT MANUAL
+                                                                                  Note: Pictures are for reference only;
+                                                                                  please refer to the actual product.

@@ -1,0 +1,36 @@
+         Isolation of code and brand: The GPL license only authorizes the use of source
+   code. RoboParty, "RoboParty Roboto", and their related logos and graphic marks are
+   all registered trademarks or commercial marks of Shanghai Luobo Party Technology
+   Co., Ltd.
+         Restricted Use: Without written authorization from RoboParty, users shall not
+   use the above trademarks for endorsement, naming, or implying official cooperation in
+   derivative software, hardware products, or promotional materials developed through
+   secondary development, so as to avoid misleading the public.
+   4. Secondary Development Risk Notice and Exemption from Liability for
+   "Hardware-Software Decoupling" (Core Engineering Provisions)
+        Humanoid robots are complex mechatronic software-hardware strongly coupled
+   systems. RoboParty is only responsible for the quality of hardware components in the
+   factory state, and the operational consequences of open source code and physical
+   hardware are strictly decoupled.
+        Self-responsibility for secondary development risks: Any user-initiated
+   modification of control algorithms, inference models, joint limit strategies, or
+   underlying driver firmware (including but not limited to adjusting PID gains, modifying
+   gait planning, changing communication frequency, etc.) is considered a secondary
+   development activity. RoboParty shall not assume any warranty liability or economic
+   compensation for any physical world damage (such as motor overloading and
+   burning, link interference and breakage, reducer tooth sweeping, secondary injuries
+   caused by robot instability and falling) resulting from such activities.
+        Prerequisite for Forced Simulation: We strongly recommend and require that
+   before deploying any modified code to a physical prototype, it must be fully verified in
+   the simulation environment (Simulation), and ensure that the emergency stop (E-Stop)
+   logic at the software layer and the current-limiting and position-limiting protection
+   mechanisms at the hardware layer remain effective at all times.
+        Deployment Operation Specification: The actual machine deployment of
+   secondary development code must strictly follow the <RoboParty Roboto Origin Product
+   Installation Manual>, with zeroing in suspension and equipped with a safety hanger.
+   5. "AS-IS" Provision and Disclaimer of Warranty
+        No Warranty Statement: The code, models, scripts, and documentation within
+   this open-source repository are provided "as is". RoboParty makes no express or
+   implied warranties, including but not limited to warranties of merchantability, fitness
+
+13 Roboto Origin | PRODUCT MANUAL

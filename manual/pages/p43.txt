@@ -1,0 +1,19 @@
+2.3 Cylindrical Pin Calibration Plan for RoboParty Roboto Origin
+
+inserted to the theoretical limit position. The BOM provides two lengths of positioning
+pins, 18 and 22. Due to interference at some positions, users can choose cylindrical
+pins of different lengths by themselves.
+If the plug is found difficult to pull out manually, tools such as needle-nose pliers can
+be used.
+
+III. Installation Location Instructions
+
+The insertion positions of the locating pins for the arm and leg are as shown in the
+figure (taking the right hand and right leg as an example). It should be noted that the
+illustrated scheme imposes a certain degree of over-constraint on the rotational
+degrees of freedom of the leg. From a theoretical analysis perspective, only one locating
+pin needs to be inserted into the leg joint to achieve posture positioning. However, in
+actual engineering implementation, a multi-point constraint design scheme is adopted
+to improve the stability and reliability of the calibration process.
+
+                                                        PRODUCT MANUAL I Roboto Origin   40

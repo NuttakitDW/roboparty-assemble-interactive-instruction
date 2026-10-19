@@ -1,0 +1,30 @@
+   2.3 Cylindrical Pin Calibration Plan for RoboParty Roboto Origin
+
+   I. Purpose of Calibration Using Cylindrical Pins
+
+   We realized that the calibration methods for 3D printing in the past had many
+   deficiencies, such as factors like the accuracy and stiffness of 3D printed parts, as
+   well as the time required to print calibration parts. Therefore, we proposed using
+   cylindrical pins (GB119) to constrain the rotational degrees of freedom of each joint.
+   The standard part calibration scheme aims to provide users with an alternative
+   mechanical calibration method with high repeatability to achieve attitude constraint
+   and zero alignment of each joint of the robot during the calibration process.
+
+   II. Potential issues in cylindrical pin calibration
+
+   It should be noted that this type of calibration method has relatively high requirements for
+   the manufacturing tolerances of components, including but not limited to dimensional
+   errors, positional errors, and shape errors. Due to the process differences between
+   different machining suppliers and different machining batches, even when the nominal
+   dimensions are consistent, the actual fitting effects of parts may vary. Therefore,
+   during actual use, it may occur that the cylindrical locating pin cannot be smoothly
+   inserted, or although it can be inserted, it cannot be fully inserted to the designed depth,
+   thus affecting its effect on restricting the rotational degrees of freedom of the joint.
+   If the locating pin cannot be inserted manually, you may choose to use a rubber hammer
+   or other tools to insert it.
+   In some cases, inserting the cylindrical pin to a certain depth can effectively constrain
+   the rotation of the joint. After inserting the positioning pin, if the rotation degree of
+   freedom of the relevant joint is found to be restricted when rotating it, the calibration
+   and positioning can be considered completed, and there is no need to force it to be
+
+39 Roboto Origin | PRODUCT MANUAL

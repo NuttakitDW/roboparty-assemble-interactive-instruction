@@ -1,0 +1,15 @@
+10. You must comply with applicable export control laws and regulations in your
+jurisdiction.
+11. You undertake to use this product for legitimate purposes and agree to accept all
+terms of this document.
+12. To the extent permitted by local laws, RoboParty reserves the right of final
+interpretation of this agreement, which may be updated or adjusted as necessary.
+
+Note: This manual is compiled based on the current RoboParty Roboto Origin version.
+Due to continuous product improvement (or rapid iteration of the open-source
+community), subsequent batch kits and documentation may be subject to minor
+changes. The latest version of the document can be found on the official website under
+"Service & Support". The right of final interpretation belongs to Shanghai RoboParty
+Technology Co., Ltd.
+
+                                                     PRODUCT MANUAL I Roboto Origin      2

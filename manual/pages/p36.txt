@@ -1,0 +1,27 @@
+                                                                          Arm Connection
+   2.2 Installation Steps                                             Installation Instructions
+
+     STEP 49
+                                         M3×8 Socket Head
+                                         Cap Screws
+
+         Arm 3
+
+      DM 4340p
+                                                                                            M3×10 Socket
+                                                                                            Head Cap Screws
+                                                                                                Arm 4
+
+    49      Place the D4340p motor according to the         STEP 50
+    robot's standing orientation, ensuring that the motor
+    interface faces the same direction as the robot's
+    facing direction (to avoid misalignment).                             M3×16 Socket
+                                                                          Head Cap Screws
+
+                                                                           Arm 1
+
+            DM 4340p
+
+                                      Arm 3
+
+33 Roboto Origin | PRODUCT MANUAL

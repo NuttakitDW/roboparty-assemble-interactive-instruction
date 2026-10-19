@@ -1,0 +1,6 @@
+    Note: The current manual is compiled based on the existing RoboParty Roboto Origin version. Due to continuous
+    product improvement (or rapid iteration of the open-source community), subsequent batch kits and documentation
+    may be subject to minor adjustments. The latest version of the document can be found on the official website under
+    "Service & Support." The right of final interpretation belongs to Shanghai RoboParty Technology Co., Ltd.
+
+7      Roboto Origin | PRODUCT MANUAL

@@ -1,0 +1,30 @@
+      Hip Joint Installation Instructions                                  2.2 Installation Steps
+
+ STEP 17                                                      STEP 18
+
+                            M4×8 Socket Head
+                            Cap Screws
+
+      Hip Clamp
+        Plate
+
+                            M4×12 Socket Head Cap
+                            Screws used for positioning
+17    Place the DM-J10010L and hip clamp plate, align       18 After tightening screws diagonally, adjust the electric
+holes, ensure motor interfaces face the same direction,     screwdriver to the highest torque setting and tighten the
+and install m4*8 socket head screws using the positioning   screws clockwise in turn again (at least two cycles).
+method.
+
+ STEP 19                                                      STEP 20                   M4×8 Socket Head
+                                                                                        Cap Screws
+
+     Hip Plate
+
+                                                                                      M4×12 Socket Head Cap
+                                                                                      Screws used for positioning
+
+19 Install the other hip clamp plate. Tap the hip clamp 20 Use the positioning method and diagonal method to
+plate with a hammer on the reverse side until the sound     install socket head cup screws.
+becomes solid / deep everywhere.
+
+                                                                        PRODUCT MANUAL I Roboto Origin               22

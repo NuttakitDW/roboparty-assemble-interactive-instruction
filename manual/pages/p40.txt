@@ -1,0 +1,26 @@
+                                                                    Installation Instructions for
+   2.2 Installation Steps                                            Switches, Interfaces, etc.
+
+    STEP 64                                               STEP 65
+
+                                     Metal button          Emergency
+                                       switch              stop button
+
+                                                                                                  Emergency
+                                                                                                  stop button
+
+   64&66 Simply tighten the switch onto the back of      65 The emergency stop button needs to be tightened,
+   the robot.                                            and the internal circuit board needs to be secured using
+                                                         clips on the back of the robot.
+
+    STEP 66                                               STEP 67
+
+                                                                                                      Metal handle
+
+                                                                                                     M6×10 Socket
+                                                                                                     Head Cap
+                                        Power charging
+                                                                                                     Screws
+                                            port
+
+37 Roboto Origin | PRODUCT MANUAL

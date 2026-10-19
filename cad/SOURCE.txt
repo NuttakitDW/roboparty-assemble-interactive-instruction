@@ -1,0 +1,1 @@
+Source: https://github.com/Roboparty/roboto_origin @ c71fd9287d28104dca111d7c25b908fa3f45f8e4, modules/rpo_hardware (V2.0 mechanic only). License CC-BY-SA-4.0 (see cad/rpo_hardware/LICENSE); trademark terms in TRADEMARKS.md.

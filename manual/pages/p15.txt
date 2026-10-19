@@ -1,0 +1,35 @@
+Appendix 3: RoboParty Roboto Origin Open Source
+ License and Secondary Development Agreement
+                    V1.0.2
+ Version Number: V1.0.2
+ Effective Date: March 17, 2026
+ Official open-source repository: https://github.com/Roboparty/roboto_origin
+ Official Documentation Support: https://roboparty.com/roboto_origin/doc
+ Applicable to: All individuals or organizations that download, clone, modify, compile,
+ run the code in this repository, or conduct secondary development.
+ 1. Core Principles and General Statement
+      RoboParty adheres to the open and sharing geek spirit, and has open-sourced
+ the underlying control framework, motion control algorithms, and related toolchains
+ of the RoboParty Roboto Origin prototype. This agreement aims to objectively define
+ the intellectual property boundaries of the open-source code, the open-source
+ obligations of users, and the risk responsibilities for software-hardware decoupling
+ during the secondary development process. Downloading or using the code in this
+ repository signifies that you understand and accept all the terms of this agreement.
+ 2. Open Source Licensing and Compliance Obligations (Based on GPL
+ License)
+      The core source code of this project is open source under the GPL V3 (GNU General
+ Public License Version 3) license. When users exercise the freedoms granted by open
+ source, they must strictly fulfill the following legal obligations:
+      Free Use and Modification: You have the right to freely download, read, compile,
+ and modify the source code of this repository for scientific research, education,
+ commercial, or personal purposes.
+      Contagious Open Source Obligation (Copyleft): If you modify, derive from the
+ code in this repository, and distribute or sell to a third party a program or physical
+ robot that includes the modified code, you must make the modified source code
+ publicly available under the same GPL license.
+      Attribution Statement Requirements: In any version of secondary development or
+ distribution, the copyright notice, license statement, and RoboParty author information
+ in the original code must be retained and shall not be concealed or deleted.
+ 3. Intellectual Property and Trademark Boundaries
+
+                                                       PRODUCT MANUAL I Roboto Origin     12

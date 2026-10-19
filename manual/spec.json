@@ -1,0 +1,1 @@
+{"height_m":1.25,"dof":23,"weight_kg":34,"thigh_mm":250,"lower_leg_mm":300,"single_arm_mm":440,"mobility_m_s":3,"peak_joint_torque_Nm":120,"battery":"48 V, 15 Ah","battery_life":"over 2 hours","perception":["Intel D435i depth camera (optional)","3D LiDAR (optional)"],"arm_dof":"3 shoulder, 1 elbow, 1 wrist","source_pdf_page":18}

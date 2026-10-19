@@ -1,0 +1,6 @@
+[Image: Robot overview diagram — Slave ID / Master ID / component ID labels for all joints]
+
+The IDs given below are Slave IDs.
+
+Connection order:
+    ●​ right arm: 0x13-0x14-0x15-0x16-0x17;

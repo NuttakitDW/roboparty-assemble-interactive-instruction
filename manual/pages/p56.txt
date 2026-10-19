@@ -1,0 +1,2 @@
+Motor 0x0d – Motor 0x07: use harness RBW_Origin_10 Body01, spec XT30U-F-XT30U-F, length
+20 cm.

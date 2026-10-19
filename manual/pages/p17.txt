@@ -1,0 +1,15 @@
+for a particular purpose, non-infringement, or the absence of bugs in the code.
+     Continuous Maintenance Disclaimer: RoboParty will iterate on the open-source
+repository based on R&D progress, but does not commit to providing free technical
+support, bug fixes, or updates tailored to specific user hardware within a specific
+period.
+    6. Effectiveness and Termination of the Agreement
+     If a user seriously violates this Agreement (such as refusing to fulfill the open
+source obligations under the GPL, or abusing trademarks), RoboParty has the right to
+terminate the open source license granted to the user and reserve the right to pursue
+legal liability.
+     Even if the authorization terminates, the relevant provisions of this Agreement
+regarding "Risk Notice and Disclaimer" and "Warranty Disclaimer" shall still have legal
+effect.
+
+                                                      PRODUCT MANUAL I Roboto Origin   14

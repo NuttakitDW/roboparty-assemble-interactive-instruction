@@ -1,0 +1,19 @@
+ 2 Installation Instructions
+
+2.1 Pre-installation Requirements
+     Motor Installation Precautions:                      Damiao Motor Debugging Documentation
+     1.Before starting assembly, assign IDs to all motors and perform encoder
+calibration according to the motor ID layout shown in the figure below.
+     2.Do not strike the motor with excessive force to prevent damage to internal
+components.
+     3.If the rotor becomes stuck after tightening, first check whether the set screw
+has not been fully backed out. If the issue is due to manufacturing tolerances, replace
+the screw at the corresponding position with a screw of the same specification that
+is 2 mm shorter.
+     For detailed calibration procedures, please refer to the accompanying document
+Damiao Motor Debugging Documentation.
+
+ Note: Pictures are for reference only;
+ please refer to the actual product.
+
+                                                          PRODUCT MANUAL I Roboto Origin     16

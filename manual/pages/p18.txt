@@ -1,0 +1,22 @@
+    1 Product Overview
+   1.1 Product Introduction
+        RoboParty Roboto Origin (hereinafter referred to as Roboto Origin) is a humanoid
+   robot platform designed for research, education, and certain exhibition scenarios.
+   Its most notable features are full open-source availability and a modular design. The
+   entire hardware system follows a highly modular structural philosophy, making joint
+   assembly simple and keeping maintenance and upgrade costs extremely low. This
+   makes it ideal for frequent teaching experiments and engineering validation. The robot
+   stands 1.25 meters tall with a compact structure, facilitating debugging and operation
+   within laboratory environments. While maintaining functional integrity, Roboto Origin
+   continuously undergoes topological optimization of mass and weight to enhance
+   overall performance. The main structural components are machined using 3‑axis CNC,
+   while the exterior parts are rapidly prototyped via 3D printing, significantly improving
+   assembly efficiency and manufacturing accessibility. The outer material is made of
+   rubber, which not only enhances the friendly feel during human‑robot interaction but
+   also improves impact resistance and operational safety. As a fully open‑source robot
+   platform, Roboto Origin aims to lower the barrier to R&D and promote the widespread
+   application of robotics in teaching, research, and creative practice.
+
+   1.2 Basic Product Parameters
+
+15 Roboto Origin | PRODUCT MANUAL

@@ -1,0 +1,36 @@
+  3.2 Joystick Dead Zone Elimination
+       Instruction Clearance: Before pressing "B" for inference, be sure to manually
+  move the left and right joysticks through their full range of motion and press the "LT"
+  and "RT" buttons several times. This operation is used to eliminate the dead zone or
+  drift of the hardware joysticks, preventing residual instructions from causing the
+  robot to unexpectedly drift or sprint at the moment inference starts.
+  3.3 Node Status Monitoring and Inference Initiation
+        Background Status Confirmation: The operator must use the screen -r inference_
+  node command on the host computer terminal to check the running status of the
+  inference node. Only after confirming that there are no Error reports can the next step
+  be taken.
+        Start inference: Press the "B" button on the remote control to officially enter the
+  model inference state. At this time, the supervisor needs to closely monitor the robot's
+  gait, hold the hanger control rope, or be ready to press the "X" button at any time.
+  4. Anomaly troubleshooting and emergency response
+       During the full lifecycle of operation, in case of emergencies, please handle them
+  according to the following logic:
+       One-key Disable (Emergency Stop): If any abnormal behavior (such as high-
+  frequency oscillation, joint overspeed, instability and toppling) occurs during the
+  robot's reasoning process, please immediately press the "X" key to cut off the motor
+  enable.
+       Abnormal disconnection troubleshooting: If the robot experiences a non-human-
+  triggered "sudden incapacitation" (collapsing to the ground) during inference, please
+  maintain the scene as it is and immediately use screen -r inference_node to enter the
+  terminal and check the error message. Common causes include:The algorithm layer
+  has triggered the set safety limits (such as joint overrun, speed overrun). The hardware
+  layer has triggered overload, overheat, or under-voltage protection.
+       Log Retention: Before disconnecting the main power supply, it is recommended
+  to export the Error log from the terminal first, so that the R&D team can locate the root
+  cause of the problem.
+
+  5. Supplementary Instructions for Operation
+  For details on the functions and operations of each button, please refer to:atom01_
+  deploy_README.
+
+11 Roboto Origin | PRODUCT MANUAL

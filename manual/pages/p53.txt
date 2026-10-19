@@ -1,0 +1,5 @@
+Motor 0x08 – Motor 0x09: use harness RBW_Origin_06 Leg02, spec XT30U-F-XT30U-F, length 25
+cm.
+
+Motor 0x09 – Motor 0x0a: use harness RBW_Origin_07 Leg03, spec XT30U-F-XT30U-F, length 40
+cm.

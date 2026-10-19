@@ -1,0 +1,28 @@
+   2.2 Installation Steps
+
+     STEP 38                                                    38 Install the front m4×12 socket head cap screws
+                                                                following Step 37.
+
+   M4×12 Socket
+   Head Cap Screws
+
+     STEP 39                                                   STEP 40
+
+                                   Deep Groove Ball
+                                      Bearing
+                                                                                                     M4×8 Flat Head
+                                                                                                     Screws
+
+                                      Waist Support              BACK
+                                                                                                                FRONT
+   40&41 When installing the waist support and the
+   battery bottom cover, pay attention to the orientation
+   of the limit slots. The orientation of the limit slot for
+                                                                         Battery
+   the bearing fixing should align with the front direction
+                                                                    Bottom Cover
+   of the robot, and the orientation of the limit slot for                                            Waist Support
+   the battery bottom cover should align with the back                          Limit Block Schematic Diagram
+   direction of the robot.
+
+29 Roboto Origin | PRODUCT MANUAL

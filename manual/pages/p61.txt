@@ -1,0 +1,5 @@
+      This stage involves high-current circuits — always double-check wire gauge and
+      polarity.
+
+Step 1 — Seat the battery: Install the battery pack in its designated position on the base,
+ensuring the centre of gravity is stable.

@@ -1,0 +1,33 @@
+   Appendix 2: RoboParty Roboto Origin Safety
+             Operation Guide V1.1.1
+Document Version: V1.1.1
+Effective Date:March 16, 2026
+Target Audience: Personnel involved in the assembly, commissioning, and algorithm
+deployment of the roboto_origin
+Pre-reading: Before operation, please ensure that you have read and signed the
+<RoboParty Roboto Origin Prototype Product Disclaimer and Safety Notice>.
+Reference Resources: For detailed key mappings and code explanations, please
+refer to the official documentation website and the official GitHub repository.
+Official Documentation Website: https://roboparty.com/roboto_origin/doc
+Official Github Repository: https://github.com/Roboparty/roboto_origin
+
+Core Warnings
+      High Dynamic Risk: The robot has an extremely high risk of instability and
+toppling during gait debugging. Any suspension zeroing or gait inference test, must
+be conducted in a controlled area equipped with a load-bearing safety hanger (fall
+protection).
+      Physical Emergency Stop Takes Precedence: In case of any uncontrollable
+joint jitter, gait deviation, or structural interference, please immediately press the "X"
+button on the remote control handle to trigger software disablement; if the software
+malfunctions, please immediately press the physical emergency stop switchw to cut
+off the main power supply.
+1. Pre-power-on physical environment and hardware pre-check
+(must be done before power-on)
+    Before powering the main control and drive system, the operator must complete
+the following verifications:
+1.1 Power Supply and Battery Verification
+     Voltage Threshold Check: Check the current voltage of the battery pack. When
+the battery voltage is below 50V, please charge it immediately. It is strictly prohibi-
+ted to operate in an undervoltage state; otherwise, undervoltage protection will be
+triggered, causing abnormal behavior or sudden power failure and falling during the
+                                                       PRODUCT MANUAL I Roboto Origin        8

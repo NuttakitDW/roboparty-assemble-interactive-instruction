@@ -1,0 +1,34 @@
+                                                               2.2 Installation Steps
+                                    3 Place the DM 4340p into the lower          M3×12 socket head
+                                    leg mounting holes, and install the          screws - used for
+STEP 3                              two serial ports one on top and one             positioning
+                                    on the bottom.
+
+                                         STEP 4
+
+Lower Leg
+
+  DM 4340p
+
+                                                                                 M3×8 Socket Head
+                                                                                 Cup Screws
+
+                                                                          4     After turning over,
+                                                                          drive in M3×8 socket head
+                                                                          cap screws (using the
+                                                                          same method as in the
+                                                                          first part of assembly:
+                                                                          first positioning, then
+                                         Installation Completed Effect    diagonal tightening).
+                                                    Diagram
+
+STEP 5
+             Radial Spherical
+              Plain Bearing
+
+                                                                                   M4×8 Flat Head
+                                                                                   Screws
+
+                                Hand Press Schematic Diagram
+
+                                                            PRODUCT MANUAL I Roboto Origin            18

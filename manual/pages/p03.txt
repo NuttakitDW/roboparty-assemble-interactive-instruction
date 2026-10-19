@@ -1,0 +1,19 @@
+                                       Video Installation Tutorial
+
+01        Product Overview
+                             02        Installation Instructions
+
+15   Product                 16   Body Components and Interfaces
+     Introduction            17   Installation Steps
+                             17        Leg Installation Instructions
+                             22        Hip Joint Installation Instructions
+                             26        Leg and Hip Connection Installation
+15   Basic Product                Instructions
+     Parameters              27        Waist Installation Instructions
+                             33        Arm Connection Installation
+                                  Instructions
+                             36        Cable Fastener Installation
+                                  Instructions
+                             37        Installation Instructions for
+                                  Switches, Interfaces, etc.
+                             41   Limit Pin Calibration

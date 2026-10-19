@@ -1,0 +1,309 @@
+{
+  "doc": "manual/INDEX.md maps pdf pages; stage pdf_pages are PDF indices (img/pNN.jpg)",
+  "stages": [
+    {
+      "id": "prep",
+      "title": "Pre-assembly",
+      "gate": "safety",
+      "steps": [
+        {
+          "n": "P1",
+          "text": "Set up workbench: left=parts for current process, middle=work area with anti-static mat, right=finished storage. No phones, cups or keys on bench."
+        },
+        {
+          "n": "P2",
+          "text": "PPE: anti-static gloves for electronics; nitrile gloves for grease/threadlocker; hair tied, no jewelry, cuffs tight."
+        },
+        {
+          "n": "P3",
+          "text": "Assign IDs to ALL motors and encoder-calibrate (Damiao Motor Debugging Documentation) per the motor ID layout BEFORE assembly."
+        },
+        {
+          "n": "P4",
+          "text": "Battery check: any pack dropped >30 cm or hit must NOT be installed; label red, isolate 24 h."
+        }
+      ]
+    },
+    {
+      "id": "legs",
+      "title": "Leg (build left and right, mirror-symmetric)",
+      "steps": [
+        {
+          "n": "1",
+          "text": "Orient parts to standing pose; motor interface vertical; DM-J10010L label end faces down.",
+          "parts": [
+            "Inner Thigh",
+            "DM-J10010L"
+          ]
+        },
+        {
+          "n": "2",
+          "text": "Position with 2x M4x12, fill remaining holes M4x8 diagonally, swap positioning screws for M4x8. Threadlocker.",
+          "fasteners": [
+            "M4x12 (positioning)",
+            "M4x8"
+          ],
+          "threadlocker": true
+        },
+        {
+          "n": "3",
+          "text": "Seat DM4340p in lower-leg holes; two serial ports, one top one bottom.",
+          "parts": [
+            "Lower Leg",
+            "DM4340p"
+          ]
+        },
+        {
+          "n": "4",
+          "text": "Flip; M3x8 socket head, position with M3x12 first then diagonal.",
+          "fasteners": [
+            "M3x12 (positioning)",
+            "M3x8"
+          ]
+        },
+        {
+          "n": "5",
+          "text": "Radial spherical plain bearing; hand press; M4x8 flat head.",
+          "fasteners": [
+            "M4x8 flat"
+          ]
+        },
+        {
+          "n": "6-7",
+          "text": "Ankle roll connector must fit tight in universal joint cross bearing; hand-press if loose.",
+          "fasteners": [
+            "M3x12"
+          ]
+        },
+        {
+          "n": "8",
+          "text": "Calf bearing lock.",
+          "fasteners": [
+            "M5x10",
+            "M4x8"
+          ]
+        },
+        {
+          "n": "9-11",
+          "text": "Foot (20 cm), rubber foot pad.",
+          "fasteners": [
+            "M5x12",
+            "M4x8"
+          ]
+        },
+        {
+          "n": "12-13",
+          "text": "Thrust needle roller + cage: install ONLY the middle bearing, NOT the two outer washers."
+        },
+        {
+          "n": "14-15",
+          "text": "Secure.",
+          "fasteners": [
+            "M5x12",
+            "M5x14"
+          ]
+        },
+        {
+          "n": "16",
+          "text": "Per left/right: remove matching M4x8, insert limit pin, drive M4x14.",
+          "fasteners": [
+            "M4x14"
+          ]
+        }
+      ],
+      "pdf_pages": "20-24"
+    },
+    {
+      "id": "hip",
+      "title": "Hip joint",
+      "steps": [
+        {
+          "n": "17-18",
+          "text": "DM-J10010L + hip clamp plate, motor interfaces same direction; M4x8 with M4x12 positioning; diagonal, then max torque, at least 2 cycles."
+        },
+        {
+          "n": "19-20",
+          "text": "Second hip clamp plate: tap reverse side with hammer until sound is solid everywhere; M4x8 + M4x12 positioning."
+        },
+        {
+          "n": "21",
+          "text": "Thrust needle roller: middle bearing only."
+        },
+        {
+          "n": "22-28",
+          "text": "Universal connectors, DM-J10010L (align power hole with threaded hole), universal counter-reamed flange.",
+          "fasteners": [
+            "M5x10",
+            "M4x8"
+          ]
+        },
+        {
+          "n": "29",
+          "text": "M3x8 to finish hip joint."
+        }
+      ],
+      "pdf_pages": "25-28"
+    },
+    {
+      "id": "leg-hip",
+      "title": "Leg and hip connection",
+      "steps": [
+        {
+          "n": "30-32",
+          "text": "Thrust needle roller (middle only); M5x10. Result: lower body.",
+          "fasteners": [
+            "M5x10"
+          ]
+        }
+      ],
+      "pdf_pages": "29"
+    },
+    {
+      "id": "waist",
+      "title": "Waist",
+      "steps": [
+        {
+          "n": "33-35",
+          "text": "Hip joint mount + DM-J10010L, IMU on carrier board. Use manual wrench in deep recesses.",
+          "fasteners": [
+            "M3x8",
+            "M4x12",
+            "M4x12 flat"
+          ]
+        },
+        {
+          "n": "36-38",
+          "text": "Place hip joint into hip section; M4x12, outermost first.",
+          "fasteners": [
+            "M4x12"
+          ]
+        },
+        {
+          "n": "39-41",
+          "text": "Deep groove ball bearing, waist support, battery bottom cover. ORIENTATION: bearing limit slot faces FRONT; battery-cover limit slot faces BACK.",
+          "check": "limit-slot-orientation",
+          "fasteners": [
+            "M4x8 flat",
+            "M5x10"
+          ]
+        },
+        {
+          "n": "42-43",
+          "text": "Clamp plate, shoulder, side cross plate (M4x10). Leave ONE side cross plate off for battery install.",
+          "fasteners": [
+            "M4x10"
+          ]
+        },
+        {
+          "n": "44-48",
+          "text": "DM4340p interface vertically UP; arm 5; mirror other side.",
+          "fasteners": [
+            "M4x10",
+            "M3x6",
+            "M3x16",
+            "M3x8"
+          ]
+        }
+      ],
+      "pdf_pages": "30-35"
+    },
+    {
+      "id": "arms",
+      "title": "Arms (mirror for opposite side)",
+      "steps": [
+        {
+          "n": "49-51",
+          "text": "DM4340p interface faces robot facing direction; arms 1-4.",
+          "fasteners": [
+            "M3x8",
+            "M3x10",
+            "M3x16"
+          ]
+        },
+        {
+          "n": "52-53",
+          "text": "Elbow motor interface DOWN, shoulder motor interface UP; diagonal M3x16."
+        },
+        {
+          "n": "54-55",
+          "text": "Forearm upper/lower: M3x10 and M3x16."
+        },
+        {
+          "n": "56-57",
+          "text": "Install battery, then the side cross plate from step 43 (M4x10).",
+          "gate": "battery"
+        }
+      ],
+      "pdf_pages": "36-38"
+    },
+    {
+      "id": "cable-hw",
+      "title": "Cable fasteners and switches",
+      "steps": [
+        {
+          "n": "58-63",
+          "text": "Cable management plates, all M4x8 flat head; arm / hip joint / hip / groin / thigh / knee positions per figure."
+        },
+        {
+          "n": "64-67",
+          "text": "Metal button switch, emergency stop (tighten; circuit board clipped on back), power charging port, metal handle (M6x10)."
+        }
+      ],
+      "pdf_pages": "39-41"
+    },
+    {
+      "id": "wiring",
+      "title": "Wiring (separate Feishu doc, pages 45+)",
+      "gate": "battery",
+      "steps": [
+        {
+          "n": "W1",
+          "text": "Slave IDs chain: R arm 0x13-0x17; L arm 0x0E-0x12; R leg 0x07-0x0C; L leg 0x01-0x06; waist 0x0D (to 0x07)."
+        },
+        {
+          "n": "W2",
+          "text": "Harnesses: Leg01/02 25cm, Leg03 40cm, Leg04 30cm, Leg05 10cm (CAN lead orientation consistent), Body01 waist 0x0D-0x07, Arm01-04 20cm."
+        },
+        {
+          "n": "W3",
+          "text": "Battery: anti-vibration foam on bottom and four sides. High current: check gauge and polarity."
+        },
+        {
+          "n": "W4",
+          "text": "Solder main switch + e-stop; DO NOT get wire order wrong; follow PCB silkscreen; colour order varies per batch."
+        },
+        {
+          "n": "W5",
+          "text": "CAN0=0x01 (Body03 60cm), CAN1=0x0D (Body04 50cm), CAN2=0x0E and CAN3=0x13 (Body02 20cm). Manual 2026.06.16 fix: 0x0d, not 0x07."
+        },
+        {
+          "n": "W6",
+          "text": "RDKx5: usb-to-typec to USB-to-CAN port; typec-to-typec 5 V from power board. IMU and gamepad receiver USB direct to RDKx5."
+        },
+        {
+          "n": "W7",
+          "text": "Secure with harness clips; UV adhesive on CAN connectors."
+        }
+      ]
+    },
+    {
+      "id": "calibration",
+      "title": "Limit pin calibration",
+      "steps": [
+        {
+          "n": "C1-2",
+          "text": "Arm pins: M4x18 (cylindrical pin GB119)."
+        },
+        {
+          "n": "C3-4",
+          "text": "Leg pins: M4x22. Not fully inserting is fine if joint rotation is constrained; rubber hammer to insert, needle-nose pliers to remove."
+        },
+        {
+          "n": "C5-6",
+          "text": "Waist: limit blocks on waist support + battery bottom cover; contact at about +/-120 degrees. Upper body rotates counterclockwise to the block, lower body stationary."
+        }
+      ],
+      "pdf_pages": "42-46"
+    }
+  ]
+}

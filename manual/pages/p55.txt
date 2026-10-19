@@ -1,0 +1,6 @@
+Motor 0x0b – Motor 0x0c: use harness RBW_Origin_09 Leg05, spec
+XT30(+2)-F.G.B-XT30(+2)-F.G.B, length 10 cm.
+
+2.2 Waist Wiring
+
+The waist has a single motor (ID: 0x0d), which connects to right-leg motor 0x07.

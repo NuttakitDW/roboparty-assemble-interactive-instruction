@@ -1,0 +1,31 @@
+         Assembly Precautions
+
+     1.Workbench Management
+    1.1 Zoned Placement:
+        Left side: Area for materials to be assembled (only materials required for the
+    current process).
+        Middle: Work area (lay anti-static mat, keep clean).
+        Right side: Finished product / semi-finished product storage area.
+    1.2 Foreign Object Prevention:
+          It is strictly forbidden to place items unrelated to production on the workbench
+    (e.g., mobile phones, water cups, keys) to prevent metal foreign objects from falling
+    into the product and causing short circuits.
+
+     2. Personal Protective Equipment (PPE) Standards
+        Anti-static gloves: When touching all electronic components, circuit boards, and
+    camera modules.
+        Nitrile gloves: When using chemicals such as lubricating grease, thermal grease,
+    threadlocker, etc.
+        Hair/attire enforcement: Long hair must be tied up and tucked into a work cap;
+    dangling jewelry (necklaces, bracelets) is strictly prohibited; cuffs must be tightened.
+     3. Core Safety Operating Procedures
+    3.1 Lithium Battery Safety Operation
+         This product uses a high-energy-density lithium battery pack. Improper
+    operation can easily cause a fire.
+    Drop Disposal:
+          If any battery pack is dropped (height > 30 cm) or subjected to a severe impact,
+    it is strictly prohibited to install or use it again. Immediately affix a red label reading
+    "Awaiting Scrap/Observation" and move it to a designated explosion-proof safety
+    cabinet or sandbox for isolated observation for 24 hours.
+
+3     Roboto Origin | PRODUCT MANUAL

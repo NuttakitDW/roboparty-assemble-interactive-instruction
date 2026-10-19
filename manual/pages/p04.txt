@@ -1,0 +1,36 @@
+       Safety and Compliance Information
+
+    To avoid illegal acts, possible injury, and loss, the following regulations must be
+    observed:
+    1. Before using this product, please carefully read this document to understand your
+    rights, responsibilities, and safety precautions. Failure to comply may result in property
+    damage or safety hazards. By using this product, you acknowledge that you have fully
+    read and accepted all terms of this document, and you agree to operate strictly in
+    accordance with the specifications, taking full responsibility for your own actions and
+    any resulting consequences.
+    2. This product is not a toy and is not recommended for use by individuals under the
+    age of 18. Keep the product out of the reach of children, and exercise extra caution
+    when operating in areas where children are present.
+    3. This product should not be used in crowded areas. During operation, ensure that
+    a safe distance of at least 1 meter radius is maintained between the product and any
+    persons. RoboParty shall not be held liable for any injury or loss caused to relevant
+    personnel due to improper operation.
+    4. This product is designed for operation on the ground. Do not lift the device while it is
+    in motion such that both legs are off the ground.
+    5. Do not use this product in extreme environments (e.g., high temperature, low
+    temperature, corrosive chemicals, etc.). RoboParty shall not be held responsible for
+    any device issues arising from such conditions.
+    6. Under normal use conditions, issues resulting from natural wear of components or
+    battery aging shall not be considered product quality defects, and RoboParty assumes
+    no liability for such issues.
+    7. This product is prohibited from being used in any activity that endangers national
+    security, including but not limited to supporting terrorism, use near nuclear facilities,
+    development of chemical or biological weapons, or design and use of weapons of mass
+    destruction.
+    8. You confirm that you are not subject to any trade restrictions or sanctions; otherwise,
+    you may not be able to use RoboParty's products and services normally.
+    9. RoboParty is committed to ensuring global compliance of its products. Please
+    comply with all applicable laws and regulations in your region and pay attention to
+    relevant compliance requirements.
+
+1     Roboto Origin | PRODUCT MANUAL

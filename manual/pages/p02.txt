@@ -1,0 +1,12 @@
+ CONTENT
+
+00         Product Precautions
+
+01   Safety and Compliance Information   08   Appendix 2: RoboParty Roboto
+                                              Origin Prototype Safety Operation
+03   Assembly Precautions                     Guide V1.1.1
+
+05   Appendix 1: RoboParty Roboto        12   Appendix 3: RoboParty Roboto
+     Origin Parts List V1.1.3                 Origin Prototype Open Source
+                                              License and Secondary
+                                              Development Agreement V1.0.2

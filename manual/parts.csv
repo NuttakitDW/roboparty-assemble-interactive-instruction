@@ -1,0 +1,88 @@
+item,part_no,category,description,qty,material_spec
+1,,Bearings,Deep Groove Ball Bearing 130x165x18,1,GB/T 276-2013
+2,,Bearings,Radial Spherical Plain Bearing (G Series) 8,8,GB/T 9161-2001
+3,,Bearings,Thrust Needle Roller and Cage Assembly AXK6085,9,GB/T 4605-2003
+4,,Bearings,Universal Joint Cross Bearing 16x40,2,JIS G 4805
+5,RB000152_02,Structural,Arm 1,2,6061 AL
+6,RB000153_02,Structural,Arm 2,4,6061 AL
+7,RB000154_02,Structural,Arm 3,4,6061 AL
+8,RB000155_01,Structural,Arm 4,4,6061 AL
+9,RB000156_01,Structural,IMU Carrier Board,1,6061 AL
+10,RB000157_01,Structural,Side Cross Plate,2,6061 AL
+11,RB000158_02,Structural,Inner Thigh,2,6061 AL
+12,RB000159_02,Structural,Battery Bottom Cover,1,7075 AL
+13,RB000160_02,Structural,Shoulder,2,6061 AL
+14,RB000161_01,Structural,20cm Foot,2,6061 AL
+15,RB000162_01,Structural,Foot Bottom Linkage,2,45 Steel
+16,RB000163_01,Structural,Ankle Roll Connector,4,6061 AL
+17,RB000164_01,Structural,Hip Joint Mount,1,6061 AL
+18,RB000166_02,Structural,Output Flange Linkage,4,45 Steel
+19,RB000167_03,Structural,Universal Connector,4,6061 AL
+20,RB000168_02,Structural,Universal Connector Reamed Flange,4,6061 AL
+21,RB000169_02,Structural,Calf / Lower Leg,2,6061 AL
+22,RB000170_02,Structural,Rear Chest Plate,1,6061 AL
+23,RB000171_01,Structural,Front & Rear Chest Plates,1,6061 AL
+24,RB000172_01,Structural,Limit Pin,4,6061 AL
+25,RB000173_01,Structural,Calf Bearing Lock,4,6061 AL
+26,RB000174_03,Structural,Waist Support,1,7075 AL
+27,RB000175_02,Structural,Long Linkage,2,45 Steel
+28,RB000176_02,Structural,Short Linkage,2,45 Steel
+29,RB000177_02,Structural,Hip Plate,2,6061 Aluminum Alloy
+30,RB000179_01,Structural,Arm 5,2,6061 Aluminum Alloy
+31,,Structural,Rubber Foot Pad,2,Rubber
+32,RBW_Origin_01,Cables,RBW_Origin_01 Arm01,2,XT30(+2)-F.G.B-XT30(+2)-F.G.B
+33,RBW_Origin_02,Cables,RBW_Origin_02 Arm02,2,XT30(+2)-F.G.B-XT30(+2)-F.G.B
+34,RBW_Origin_03,Cables,RBW_Origin_03 Arm03,2,XT30(+2)-F.G.B-XT30(+2)-F.G.B
+35,RBW_Origin_04,Cables,RBW_Origin_04 Arm04,2,XT30(+2)-F.G.B-XT30(+2)-F.G.B
+36,RBW_Origin_05,Cables,RBW_Origin_05 Leg01,2,XT30U-F to XT30U-F (GH1.25 2pin Reversed Pinout 35cm)
+37,RBW_Origin_06,Cables,RBW_Origin_06 Leg02,2,XT30U-F to XT30U-F (GH1.25 2pin Reversed Pinout 35cm)
+38,RBW_Origin_07,Cables,RBW_Origin_07 Leg03,2,XT30U-F to XT30U-F (GH1.25 2pin Reversed Pinout 30cm)
+39,RBW_Origin_08,Cables,RBW_Origin_08 Leg04,2,XT30U-F to XT30(+2)-F.G.B (GH1.25 2pin Reversed Pinout 35cm)
+40,RBW_Origin_09,Cables,RBW_Origin_09 Leg05,2,XT30(+2)-F.G.B-XT30(+2)-F.G.B 10cm
+41,RBW_Origin_10,Cables,RBW_Origin_10 Body01,1,XT30U-F to XT30U-F (GH1.25 2pin Reversed Pinout 30cm)
+42,RBW_Origin_11,Cables,RBW_Origin_11 Body02,2,XT30(+2)-F.G.B-XT30(+2)-F.G.B
+43,RBW_Origin_12,Cables,RBW_Origin_12 Body03,1,XT30(+2)-F.G.B to XT30U-F (GH1.25 2pin Reversed Pinout 65cm)
+44,RBW_Origin_13,Cables,RBW_Origin_13 Body04,1,XT30(+2)-F.G.B to XT30U-F (GH1.25 2pin Reversed Pinout 55cm)
+45,RBW_Origin_14,Cables,usb to typec 3.0 30cm,1,30cm
+46,RBW_Origin_15,Cables,"Type-C to Type-C, Flexible, Fast Charge, Right-Angle",1,30cm
+47,,Cables,RDK Debugging Cable,1,1m
+48,RBE_Origin_09,IMU,CHAOHE HI14M0-USB IMU/VRU USB-232 w/ Cable,1,HIPNUC
+49,ROBOTO-34,Electronics,RDK X5 8G,1,8G / Single Board
+50,ROBOTO-35,Electronics,RTC,1,
+51,ROBOTO-36,Electronics,SD Card,1,SanDisk 32GB High-Speed
+52,,Electronics,Antenna,1,"15cm Cable, IPEX Gen 1"
+53,,Electronics,Heatsink Kit,1,
+54,RBE_Origin_04,Electronics,RBE_Board_v2.0,1,Custom 3-in-1 PCB
+55,RBE_Origin_06,Electronics,Emergency Stop Button (E-Stop),1,LANBO M3 Oxidized Head - Unilluminated 22mm
+56,RBE_Origin_07,Electronics,Metal Push Button Switch,1,"5V Green Ring LED, Wired Plug-in, Latching 16mm"
+57,RBE_Origin_08,Electronics,Digital Voltmeter,1,
+58,RBE_Origin_12,Electronics,Gamepad / Controller,1,Gamepad
+59,RBE_Origin_13,Electronics,Cable Tie Mount,1,
+60,RBE_Origin_14,Electronics,Metal Handle,1,
+61,,Fasteners,Hexagon Socket Head Cap Screw M2.5x8,20,Grade 12.9 Alloy Steel
+62,,Fasteners,Hexagon Socket Head Cap Screw M3x6,20,Grade 12.9 Alloy Steel
+63,,Fasteners,Hexagon Socket Head Cap Screw M3x8,80,Grade 12.9 Alloy Steel
+64,,Fasteners,Hexagon Socket Head Cap Screw M3x10,80,Grade 12.9 Alloy Steel
+65,,Fasteners,Hexagon Socket Head Cap Screw M3x12,50,Grade 12.9 Alloy Steel
+66,,Fasteners,Hexagon Socket Head Cap Screw M3x16,80,Grade 12.9 Alloy Steel
+67,,Fasteners,Hexagon Socket Head Cap Screw M4x8,200,Grade 12.9 Alloy Steel
+68,,Fasteners,Hexagon Socket Head Cap Screw M4x10,100,Grade 12.9 Alloy Steel
+69,,Fasteners,Hexagon Socket Head Cap Screw M4x12,100,Grade 12.9 Alloy Steel
+70,,Fasteners,Hexagon Socket Head Cap Screw M4x14,20,Grade 12.9 Alloy Steel
+71,,Fasteners,Hexagon Socket Head Cap Screw M5x10,80,Grade 12.9 Alloy Steel
+72,,Fasteners,Hexagon Socket Head Cap Screw M5x12,100,Grade 12.9 Alloy Steel
+73,,Fasteners,Hexagon Socket Head Cap Screw M5x14,100,Grade 12.9 Alloy Steel
+74,,Fasteners,Hexagon Socket Head Cap Screw M6x16,2,Grade 12.9 Alloy Steel
+75,,Fasteners,Cylindrical Pin 4x18,30,304 Stainless Steel
+76,,Fasteners,Cylindrical Pin 4x22,30,304 Stainless Steel
+77,,Fasteners,Hexagon Socket Head Cap Screw M6x12,2,Grade 12.9 Alloy Steel
+78,,Fasteners,Flat Head Screw M4x12,20,304 Stainless Steel
+79,,Fasteners,Flat Head Screw M5x16,20,304 Stainless Steel
+80,,Fasteners,Flat Head Screw M4x8,20,304 Stainless Steel
+81,,Fasteners,Brass Standoff M3x15+3,10,Brass
+82,,Fasteners,Eyebolt M4,4,304 Stainless Steel
+83,RBE_Origin_10,Battery,48V 15Ah Li-ion Battery,1,140x140x115mm
+84,RBE_Origin_11,Battery,Li-ion Battery Charger,1,3-pin Aviation Connector
+85,RBM_Origin_01,Actuators,DM 4340P (48V),14,
+86,RBM_Origin_02,Actuators,DM 10010L (48V),9,
+87,RBM_Origin_03,Actuators,DMFDCAN Analyzer,1,

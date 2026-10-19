@@ -1,0 +1,28 @@
+   2.2 Installation Steps
+
+     STEP 14                                    STEP 15                                  STEP 16
+
+                                                                        M5×14
+                                                                        Socket
+                              M5×12
+                                                                        Head Cap
+                              Socket
+                                                                        Screws
+                              Head Cap
+                                                                                                             limit pin
+                              Screws
+
+                                                                                                                 M4×14
+                                                                                                                 Socket
+                                                                                                                 Head Cap
+                                                                                                                 Screws
+
+                                                                                       16     Depending on the left or right
+                                                                                       leg, remove the corresponding M4×8
+                                                                                       socket head screws, insert the limit
+                                                                                       pin, and drive in M4×14 socket head
+                                                                                       screws.
+   * Install the other leg using the same method. Once the installation of the other leg is completed, place it properly
+   and set aside for later use. (The left and right leg assemblies should be mirror‑symmetric).
+
+21 Roboto Origin | PRODUCT MANUAL

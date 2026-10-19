@@ -1,0 +1,17 @@
+2.3 Cylindrical Pin Calibration Plan for RoboParty Roboto Origin
+
+ STEP 5                                      STEP 6
+
+                                             Roboto Origin
+                                            calibration tool
+
+                          Roboto Origin
+                         calibration tool
+
+    The limit and positioning of the lumbar joint are achieved jointly by the limit
+blocks on the "lumbar support structure" and the "battery bottom cover" . If the
+assembly position is correct, the upper body will come into contact with the limit
+structure when rotating approximately ±120° in the clockwise or counterclockwise
+direction, thereby achieving the angular positioning of the lumbar joint.
+
+                                                        PRODUCT MANUAL I Roboto Origin   42

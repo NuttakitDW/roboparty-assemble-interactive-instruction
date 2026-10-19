@@ -1,0 +1,34 @@
+                                          Assembly Precautions
+
+Short Circuit Prevention:
+     Before connecting the battery plug to the main board, the original factory
+protective cover or insulating tape must remain in place. Exposing the positive and
+negative terminals is strictly prohibited.
+     Do not use metal tweezers or screwdrivers to touch the battery connector while
+the system is powered on.
+3.2 Mechanical Pinch Prevention and Operation
+    Power-off operation: Installation, adjustment, and replacement of joints must be
+performed with the emergency stop pressed and the power disconnected.
+     Manual rotation: Do not insert fingers into the gaps of moving joints or into limit
+slots, to prevent finger crushing or fracture caused by gravity-induced joint movement
+or inertia closure.
+     Screw fixing: When tightening flat head screws, avoid using excessive force to
+prevent stripping the threads.
+3.3 Chemical Use Safety
+     Threadlocker: Apply only to the last 3–4 threads at the end of the screw. Do not
+allow excess to spill and contaminate plastic parts (some plastics may become brittle
+or crack when in contact with threadlocker).
+     Waste disposal: Cleaning wipes or cotton swabs contaminated with chemicals
+are hazardous waste and must be disposed of in designated yellow hazardous waste
+bins. Mixing with ordinary waste is strictly prohibited.
+3.4 Emergency Response Procedure
+     When an abnormal situation occurs (smoke, fire, unusual noise, personal injury),
+strictly follow the "Stop – Isolate – Report" procedure.
+     Battery/Circuit Fire Response
+     Step 1: Immediately press the main power emergency stop button.
+     Step 2: Quickly evacuate to a safe distance (>3 meters) and loudly warn others.
+     Step 3: Small flames: Use a dry powder fire extinguisher. Do NOT use water.
+     		       Large fire: Immediately call the fire emergency number and evacuate
+		            the workshop.
+
+                                                       PRODUCT MANUAL I Roboto Origin      4

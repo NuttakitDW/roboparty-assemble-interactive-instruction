@@ -1,0 +1,35 @@
+pose topic:
+
+Then enter the following in another terminal:
+
+Calibration Judgment: Wait a moment. The first terminal will print out the deviation
+between the current joint angle and the zero point. If the deviations are all around
+joint_default_angle, the reset operation can be performed. If the deviations are large,
+please check whether the motor has been zeroed or whether the zeroing operation
+is correct. Pay special attention to the calibration direction when using the limit
+block to calibrate the waist yaw joint, which should be that the upper body rotates
+counterclockwise to the limit block while the lower body remains stationary.
+2.3 Specification for Floating Reset Operation
+     Precondition for zero calibration: Before performing the Reset action, it must be
+confirmed that all motors have completed absolute zero calibration. Do not perform
+the reset operation before the motors are zero calibrated! It is recommended to
+perform the reset operation using the hanger in the air.
+     Pose Matching: When pressing the "A" button on the controller to perform Reset
+(return the motor to the preset zero position), the operator needs to manually intervene
+with the robot's limbs, ensuring that the robot's current physical pose is as close as
+possible to the set Reset zero position pose.
+     Position mutation warning: If the physical attitude deviates too much from the
+zero position, a large step response (motion mutation) will occur instantaneously
+during Reset, which can easily damage the motor reducer and structural components.
+
+3. Model Inference and Dynamic Operation (Physical Machine
+Deployment Phase)
+     After confirming that the Reset is completed, the joint state is stable, and there
+is no abnormal current noise, enter the inference state according to the following
+specifications:
+3.1 Landing and Pose Preparation
+     Smooth Landing: After Reset is completed, lower the robot smoothly from the
+safety hanger. The operator shall observe and confirm that both feet are fully on the
+ground and the center of gravity is evenly distributed.
+
+                                                       PRODUCT MANUAL I Roboto Origin     10

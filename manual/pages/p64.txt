@@ -1,0 +1,9 @@
+PCB backplane silkscreen and physical wiring:
+
+Once tested and correct, trim off any excess wire.
+
+Note: colour order follows wire position, and may differ from batch to batch.
+
+   -​   Install the mounting bracket
+
+Fix from the underside using m3*16 screws.

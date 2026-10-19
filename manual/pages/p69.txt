@@ -1,0 +1,4 @@
+The voltage display connector is a gh1.25 connector.
+
+The port layout and pin definitions of the 3-in-1 power board are shown below. Follow the
+silkscreen markings exactly when connecting, to avoid reverse polarity.

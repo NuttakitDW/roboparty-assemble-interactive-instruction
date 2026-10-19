@@ -1,0 +1,31 @@
+   2.2 Installation Steps                                            Waist Installation Instructions
+
+     STEP 33                                                       STEP 34
+
+                                                                                                Hip Joint Mount
+
+                                                                                                   DM J10010L
+
+                     Motor placed in the direction
+                              as shown
+
+     STEP 35
+
+                                            M3×8 Socket Head
+                                            Cap Screws
+
+   M4×12 Flat Head
+   Screws
+
+                                                IMU
+
+   M4×12 Socket
+   Head Cap Screws
+                                               IMU Carrier Board
+
+                                                                             M3×8 Socket Head
+                                                                             Cap Screws
+
+           *Use a manual wrench for socket head screws in deep recesses.
+
+27 Roboto Origin | PRODUCT MANUAL

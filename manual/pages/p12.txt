@@ -1,0 +1,36 @@
+    robot's operation.
+    1.2 Mechanical Structure Verification
+          Key fastener inspection: Focus on checking the fastening status of the ankle
+    link. If the ankle link is loose or fails to reach the specified torque, it will directly lead
+    to abnormal ankle force exertion, and the robot will be unable to stand normally during
+    the inference phase and may damage structural components.
+    1.3 Communication Link Verification
+          Handle Status Check: Check the remote control handle, press the home button
+    to pair and connect the handle with the receiver, and ensure that the handle mode
+    is in "Xinput" mode at this time, so as to ensure normal communication between the
+    handle and the robot.
+
+    2. Status Enable and Zero Position Initialization (High-Risk
+    Operation Phase)
+         This stage involves the instantaneous output of motor torque and position closed-
+    loop control, and must be carried out with the robot suspended using a safety hanger.
+    2.1 Status Enable
+         Initial state confirmation: After the robot's main power is turned on, the status
+    indicator lights of all motors on the body should default to be red (disabled state).
+         Motor Enable: Press the "X" button on the remote control, and the system will
+    issue an enable command. At this time, visually check whether the indicator lights of
+    all motors on the body have turned green.
+         Disable Test: Before the formal operation, it is recommended to press the "X"
+    key again to test whether the disable function is normal (the indicator light switches
+    back to red), and re-enable it after confirmation.
+    2.2 Zero Deviation Verificatio
+         Pre-adjustment of posture: After the motor is enabled, the motor can be manually
+    adjusted to make the robot's posture similar to that at joint_default_angle, preventing
+    sudden movements and damage to the motor and structural components.
+         Terminal Verification: After the adjustment is completed, you can use the
+    following commands to check the deviation between the current joint angle and the
+    zero point. Connect to the main controller using a network cable and create two new
+    terminals on the main controller.
+         First, enter the following command in the first terminal to subscribe to the joint
+
+9     Roboto Origin | PRODUCT MANUAL

@@ -1,0 +1,4 @@
+The RDKx5 uses the typec to typec harness, taking 5 V from the 3-in-1 power board's 5 V supply
+port into the RDKx5 power input.
+
+The IMU and the gamepad receiver connect directly to the RDKx5 via USB.

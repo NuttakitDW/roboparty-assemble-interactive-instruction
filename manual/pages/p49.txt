@@ -1,0 +1,36 @@
+ RoboParty Roboto Origin Wiring
+  Instructions
+ RoboParty Roboto Origin Prototype — Wiring Instructions
+
+ Translated from the original Chinese source: roboparty.feishu.cn — last modified 6 August 2026.
+
+        2026.05.21 update: Updated the RDK connection and switch soldering instructions.
+
+        2026.06.16 update: Corrected a typo in §2.5 Main Controller Wiring — 0x07 changed to 0x0d.
+
+        2026.08.06 update: Fixed naming issues in the BOM table and added instructions for RDKx5 power
+        wiring.
+
+ 1. Cable BOM
+
+No.                      Harness type                          Length      Qty     Notes
+
+RBW_Origin_01 Arm01      XT30(+2)-F.G.B-XT30(+2)-F.G.B         20 cm       2       90° at both ends, CAN leads
+                                                                                   up/down
+
+RBW_Origin_02 Arm02      XT30(+2)-F.G.B-XT30(+2)-F.G.B         20 cm       2       90°, CAN leads up/down ×2
+
+RBW_Origin_03 Arm03      XT30(+2)-F.G.B-XT30(+2)-F.G.B         20 cm       2       90° at both ends, CAN leads same
+                                                                                   direction ×2
+
+RBW_Origin_04 Arm04      XT30(+2)-F.G.B-XT30(+2)-F.G.B         20 cm       2       90° at both ends, CAN leads
+                                                                                   up/down ×2
+
+RBW_Origin_05 Leg01      XT30U-F-XT30U-F (gh1.25 2-pin         25 cm       2       —
+                         reversed, 30 cm)
+
+RBW_Origin_06 Leg02      XT30U-F-XT30U-F (gh1.25 2-pin         25 cm       2       —
+                         reversed, 30 cm)
+
+RBW_Origin_07 Leg03      XT30U-F-XT30U-F (gh1.25 2-pin         40 cm       2       —
+                         reversed, 50 cm)

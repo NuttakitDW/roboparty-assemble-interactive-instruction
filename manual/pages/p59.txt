@@ -1,0 +1,2 @@
+Motor 0x10 – Motor 0x11: use harness RBW_Origin_03 Arm03, spec
+XT30(+2)-F.G.B-XT30(+2)-F.G.B, length 20 cm.

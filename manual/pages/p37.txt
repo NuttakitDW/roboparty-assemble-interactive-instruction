@@ -1,0 +1,26 @@
+                                                                      2.2 Installation Steps
+
+  STEP 51
+                                            M3×16 Socket
+                                            Head Cap Screws
+
+                                            Arm 2
+
+52 Place the DM4340p motor as shown. Ensure the elbow joint
+motor interface faces vertically downward, and the shoulder joint   STEP 53
+motor interface faces vertically upward (for easy wiring).
+
+  STEP 52                                                           M3×16 Socket
+                                                                    Head Cap Screws
+
+                           DM 4340p
+
+M3×8 Socket Head
+Cap Screws
+
+                                                                      53 Using the diagonal positioning
+                                                                      method, drive M3×16 socket head screws
+                                                                      into the shoulder in sequence to secure
+                                                                      the DM 4340p.
+
+                                                                    PRODUCT MANUAL I Roboto Origin              34

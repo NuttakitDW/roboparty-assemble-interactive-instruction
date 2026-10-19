@@ -1,0 +1,12 @@
+   -​   Secure the RDKx5
+
+Use m3*8 screws to fix the RDKx5 to the main control carrier board, then fix that assembly to
+the 3-in-1 board.
+
+2.5 Main Controller Wiring
+
+The remaining connector on motors 0x0e, 0x13, 0x01 and 0x0d all connect to the 3-in-1 power
+distribution board.
+
+   -​   CAN0 channel — motor 0x01 (left hip) to power board: use harness RBW_Origin_12
+        Body03, spec XT30(+2)-F.G.B-XT30U-F, length 60 cm.

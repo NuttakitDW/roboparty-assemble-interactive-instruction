@@ -1,0 +1,32 @@
+No.                    Harness type                     Length    Qty    Notes
+
+RBW_Origin_08 Leg04    XT30U-F-XT30(+2)-F.G.B           30 cm     2      90° on the (2+2) end
+                       (gh1.25 2-pin reversed, 35 cm)
+
+RBW_Origin_09 Leg05    XT30(+2)-F.G.B-XT30(+2)-F.G.B    10 cm     2      1: side 90° (left); 2: side 90° (right).
+                                                                         CAN lead orientation must be
+                                                                         consistent at assembly (up/down
+                                                                         when soldered)
+
+RBW_Origin_10          XT30U-F-XT30U-F (gh1.25 2-pin    20 cm     1      —
+Body01                 reversed, 30 cm)
+
+RBW_Origin_11          XT30(+2)-F.G.B-XT30(+2)-F.G.B    20 cm     2      90° on one end ×2
+Body02
+
+RBW_Origin_12          XT30(+2)-F.G.B - XT30U-F         60 cm     1      —
+Body03                 (gh1.25 2-pin reversed, 65 cm)
+
+RBW_Origin_13          XT30(+2)-F.G.B - XT30U-F         50 cm     1      —
+Body04                 (gh1.25 2-pin reversed, 55 cm)
+
+usb to typec           usb to typec                     —         1      USB 3.0 support
+
+typec to typec         typec to typec                   —         1      —
+
+  2. Wiring
+
+  The robot uses a symmetrical structure, so the wiring rules are identical on the left and right
+  sides. The instructions below cover only the right leg and left arm; wire the right arm and left leg
+  by following the same method. The waist is a separate routing area and must be wired
+  according to its own instructions.

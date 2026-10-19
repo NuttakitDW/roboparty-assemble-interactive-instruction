@@ -1,0 +1,7 @@
+2.4.2 Main Control Board Installation
+
+Solder the main control switch connector and the emergency stop switch.
+
+Do not get the wire order wrong!
+
+Switch specification and physical reference:

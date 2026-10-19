@@ -1,0 +1,21 @@
+   2.2 Installation Steps
+
+    STEP 44                               45 Place the DM 4340p motor as shown, ensuring the
+                                          motor interface faces vertically upward (for easy wiring).
+
+                        M4×10 Socket
+                        Head Cap Screws   STEP 45
+                                                                DM 4340p
+
+                                                                                      M3×6 Socket Head
+                                                                                      Cap Screws
+
+    STEP 46                               STEP 47
+
+                       Arm 5
+
+                      M3×16 Socket        47 Follow the steps above to install the opposite arm
+                                          joint.
+                      Head Cap Screws
+
+31 Roboto Origin | PRODUCT MANUAL

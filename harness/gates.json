@@ -1,0 +1,10 @@
+{
+  "gates": {
+    "safety": ["workbench zoned", "PPE on", "no loose metal on bench", "motor IDs assigned and encoders calibrated"],
+    "battery": ["terminals insulated until connect", "pack not dropped >30cm", "emergency stop pressed and power off", "polarity verified against silkscreen", "no metal tools on connector while powered"],
+    "power_on": ["battery >= 50 V", "ankle links fastened to torque", "gamepad paired in Xinput mode", "robot on load-bearing safety hanger", "motors start red (disabled)", "joint zero deviation checked", "all motors absolute-zero calibrated before Reset"],
+    "inference": ["feet fully on ground, CoM even", "joysticks swept full range, LT/RT pressed", "screen -r inference_node shows no Error", "supervisor holds hanger rope, ready to press X"]
+  },
+  "estop": {"software": "X button on gamepad (disable)", "hardware": "physical emergency stop switch", "fire": "stop, isolate, report; dry powder extinguisher, never water; evacuate >3 m"},
+  "rules": ["Joint work only with e-stop pressed and power disconnected", "Never put fingers in joint gaps or limit slots", "Threadlocker on last 3-4 threads only", "Chemical wipes go in yellow hazardous waste", "Reset only after zero calibration, pose matched by hand", "Simulate any modified code before hardware"]
+}

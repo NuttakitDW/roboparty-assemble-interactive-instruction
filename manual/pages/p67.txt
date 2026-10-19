@@ -1,0 +1,15 @@
+   -​   CAN1 channel — motor 0x0d (trunk yaw) to power board: use harness RBW_Origin_13
+        Body04, spec XT30(+2)-F.G.B-XT30U-F, length 50 cm.
+   -​   CAN2 channel — motor 0x0e (left shoulder) to power board: use harness RBW_Origin_11
+        Body02, spec XT30(+2)-F.G.B-XT30(+2)-F.G.B, length 20 cm.
+   -​   CAN3 channel — motor 0x13 (right shoulder) to power board: use harness
+        RBW_Origin_11 Body02, spec XT30(+2)-F.G.B-XT30(+2)-F.G.B, length 20 cm.
+
+Motors connect to the power board following the principle left before right, legs before arms.
+Motor 0x01 goes to CAN0, motor 0x0d to CAN1, motor 0x0e to CAN2, and motor 0x13 to CAN3.
+The PCB is silkscreened accordingly — install according to the silkscreen.
+
+2.6 Board-to-Board Connections
+
+The RDKx5 uses the usb to typec harness, connecting via USB to the USB-to-CAN port on the
+3-in-1 power board.

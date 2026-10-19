@@ -1,0 +1,11 @@
+3. Securing
+
+3.1 Harness Securing
+
+Harness securing method: use harness clips to secure the harness at the connectors,
+preventing unstable signal transmission caused by connectors working loose.
+
+3.2 Port Securing
+
+To stop CAN connectors from detaching or being pulled apart during motion, UV adhesive can
+be used to reinforce the connectors.

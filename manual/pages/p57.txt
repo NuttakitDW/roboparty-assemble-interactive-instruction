@@ -1,0 +1,4 @@
+2.3 Arm Wiring
+
+Motor 0x0e – Motor 0x0f: use harness RBW_Origin_01 Arm01, spec
+XT30(+2)-F.G.B-XT30(+2)-F.G.B, length 20 cm.

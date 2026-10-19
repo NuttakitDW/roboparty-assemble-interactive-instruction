@@ -1,0 +1,17 @@
+Motor 0x11 – Motor 0x12: use harness RBW_Origin_04 Arm04, spec
+XT30(+2)-F.G.B-XT30(+2)-F.G.B, length 20 cm.
+
+2.4 Battery Wiring
+
+Screws and standoffs required:
+
+   -​   Screws: m316 ×2, m412 ×2, m5*12 ×2
+   -​   Standoffs: m317 ×4, m38+3 ×8
+
+2.4.1 Battery Installation
+
+   -​   Battery protection: Apply anti-vibration foam padding to the bottom and all four sides of
+        the battery.
+            -​ Purpose: to damp high-frequency vibration during motion and prevent the
+                battery's outer sheath from being abraded, which would create a short-circuit
+                risk.

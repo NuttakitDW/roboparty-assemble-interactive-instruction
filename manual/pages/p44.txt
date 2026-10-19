@@ -1,0 +1,16 @@
+                                                                                   Limit Pin Installation
+                                                                                 Calibration Instruction Document
+
+   2.3 Cylindrical Pin Calibration Plan for RoboParty Roboto Origin
+
+    STEP 1                                                              STEP 2
+
+   1&2 The limit pins used for the two-step installation are both size M4×18. The insertion position of the arm's locating
+   pin is as shown in the figure (using the right arm as an example).
+
+    STEP 3                                                              STEP 4
+
+   3&4 The limit pins used for the two-step installation are both size M4×22. The insertion position of the leg's locating
+   pin is as shown in the figure (using the right leg as an example).
+
+41 Roboto Origin | PRODUCT MANUAL
