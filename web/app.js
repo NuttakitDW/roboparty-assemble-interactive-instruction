@@ -171,6 +171,18 @@ function resize() {
 }
 new ResizeObserver(resize).observe(viewer);
 
+// The part of the viewer that is actually visible: not under the header or, on phones, the build panel that slides over the bottom.
+// Labels and close-up cameras in build mode stay inside it and clear of the legend.
+let frameBand = null;
+function visibleBand() {
+  const vr = viewer.getBoundingClientRect(), top = ($('.top')?.offsetHeight || 0) + 4;
+  let bottom = vr.height - 4;
+  if (innerWidth <= 820 && !$('#bpanel').hidden) bottom = Math.min(bottom, $('#bpanel').getBoundingClientRect().top - vr.top - 4);
+  const lg = $('#legend'), obstacles = [];
+  if (!lg.hidden && getComputedStyle(lg).display !== 'none') { const r = lg.getBoundingClientRect(); obstacles.push({ x: r.left - vr.left - 6, y: r.top - vr.top - 6, w: r.width + 12, h: r.height + 12 }); }
+  return { top, bottom: Math.max(bottom, top + 80), obstacles };
+}
+
 const PIN = { th: { imu: 'IMU', board: 'บอร์ด 3-in-1 (โดยประมาณ)' }, en: { imu: 'IMU', board: '3-in-1 board (approx.)' } };
 const pinText = (id, lang) => PIN[lang][id] ?? id;
 
@@ -237,6 +249,7 @@ function frame(now) {
   const dt = Math.min((now - last) / 1000, 0.1); last = now;
   const s = intro.active ? stages[0] : cur();
   if (s && state.ready) {
+    frameBand = state.mode === 'build' ? visibleBand() : null;
     if (state.mode === 'build') build.update(dt);
     const focusAll = s.focus.includes('all');
     explode = damp(explode, s.explode, 2.2, dt);
@@ -252,14 +265,14 @@ function frame(now) {
       if (n.joint) { n.q = damp(n.q, n.qT, 22, dt); n.group.quaternion.setFromAxisAngle(n.joint.axis, n.q); }
       if (n.marker) n.marker.material.opacity = n.mk * (n.op > 0.5 ? 1 : 0.15);
     }
-    overlays?.update(dt, intro.active ? null : s.overlay, camera, viewer.clientWidth, viewer.clientHeight, state.lang);
+    overlays?.update(dt, intro.active ? null : s.overlay, camera, viewer.clientWidth, viewer.clientHeight, state.lang, frameBand);
     const sway = REDUCED ? 0 : Math.sin(now / 2600) * 0.12;
     if (intro.active) stepIntro(dt);
     else yaw = damp(yaw, s.yaw, 1.6, dt);
     pivot.rotation.y = intro.active ? yaw : yaw + sway;
     if (!state.userMoved && !intro.active) {
       camTarget.set(...s.cam); lookTarget.set(...s.target);
-      if (camera.aspect < 1 && innerWidth <= 820) { camTarget.multiplyScalar(1.3); lookTarget.y -= 0.32; } // phone: back off, keep the robot above the caption / sheet
+      if (camera.aspect < 1 && innerWidth <= 820 && !s.fit) { camTarget.multiplyScalar(1.3); lookTarget.y -= 0.32; } // phone: back off, keep the robot above the caption / sheet
       const k = 1 - Math.exp(-2.2 * dt);
       camera.position.lerp(camTarget, k); controls.target.lerp(lookTarget, k);
     }
@@ -486,7 +499,7 @@ async function boot() {
     applyLang();
     requestAnimationFrame(frame);
     await loadRobot();
-    build = createBuild({ $, esc, state, nodes, views: { ...Object.fromEntries(stages.map((x) => [x.id, x])), ...views }, data: assembly, narration: nar, getOverlays: () => overlays, getLang: () => state.lang, renderLegend, onExit: () => goStage(0), closeDrawer });
+    build = createBuild({ $, esc, state, nodes, views: { ...Object.fromEntries(stages.map((x) => [x.id, x])), ...views }, data: assembly, channels, narration: nar, getOverlays: () => overlays, getFrame: () => ({ fov: camera.fov, aspect: camera.aspect, h: viewer.clientHeight, band: frameBand }), getLang: () => state.lang, renderLegend, onExit: () => goStage(0), closeDrawer });
     if (new URLSearchParams(location.search).has('debug')) window.__app = { camera, controls, nodes, pivot, state };
     state.ready = true; loading.failed = false; $('#loading').classList.add('done');
     startIntro();

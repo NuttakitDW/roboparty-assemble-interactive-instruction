@@ -1784,6 +1784,12 @@
        "th": "สายชุด RBW_Origin_05 Leg01 (XT30U-F-XT30U-F ยาว 25 ซม.)"
       }
      ],
+     "harness": {
+      "code": "RBW_Origin_05",
+      "name": "Leg01",
+      "spec": "XT30U-F-XT30U-F",
+      "len_cm": 25
+     },
      "fasteners": [],
      "motors": [
       "0x07",
@@ -1805,6 +1811,12 @@
        "th": "สายชุด RBW_Origin_06 Leg02 (XT30U-F-XT30U-F ยาว 25 ซม.)"
       }
      ],
+     "harness": {
+      "code": "RBW_Origin_06",
+      "name": "Leg02",
+      "spec": "XT30U-F-XT30U-F",
+      "len_cm": 25
+     },
      "fasteners": [],
      "motors": [
       "0x08",
@@ -1826,6 +1838,12 @@
        "th": "สายชุด RBW_Origin_07 Leg03 (XT30U-F-XT30U-F ยาว 40 ซม.)"
       }
      ],
+     "harness": {
+      "code": "RBW_Origin_07",
+      "name": "Leg03",
+      "spec": "XT30U-F-XT30U-F",
+      "len_cm": 40
+     },
      "fasteners": [],
      "motors": [
       "0x09",
@@ -1847,6 +1865,12 @@
        "th": "สายชุด RBW_Origin_08 Leg04 (XT30U-F-XT30(+2)-F.G.B ยาว 30 ซม.)"
       }
      ],
+     "harness": {
+      "code": "RBW_Origin_08",
+      "name": "Leg04",
+      "spec": "XT30U-F-XT30(+2)-F.G.B",
+      "len_cm": 30
+     },
      "fasteners": [],
      "motors": [
       "0x0a",
@@ -1868,6 +1892,12 @@
        "th": "สายชุด RBW_Origin_09 Leg05 (XT30(+2)-F.G.B-XT30(+2)-F.G.B ยาว 10 ซม.)"
       }
      ],
+     "harness": {
+      "code": "RBW_Origin_09",
+      "name": "Leg05",
+      "spec": "XT30(+2)-F.G.B-XT30(+2)-F.G.B",
+      "len_cm": 10
+     },
      "fasteners": [],
      "motors": [
       "0x0b",
@@ -1889,6 +1919,12 @@
        "th": "สายชุด RBW_Origin_10 Body01 (XT30U-F-XT30U-F ยาว 20 ซม.)"
       }
      ],
+     "harness": {
+      "code": "RBW_Origin_10",
+      "name": "Body01",
+      "spec": "XT30U-F-XT30U-F",
+      "len_cm": 20
+     },
      "fasteners": [],
      "motors": [
       "0x0d",
@@ -1915,6 +1951,12 @@
        "th": "สายชุด RBW_Origin_01 Arm01 (XT30(+2)-F.G.B-XT30(+2)-F.G.B ยาว 20 ซม.)"
       }
      ],
+     "harness": {
+      "code": "RBW_Origin_01",
+      "name": "Arm01",
+      "spec": "XT30(+2)-F.G.B-XT30(+2)-F.G.B",
+      "len_cm": 20
+     },
      "fasteners": [],
      "motors": [
       "0x0e",
@@ -1936,6 +1978,12 @@
        "th": "สายชุด RBW_Origin_02 Arm02 (XT30(+2)-F.G.B-XT30(+2)-F.G.B ยาว 20 ซม.)"
       }
      ],
+     "harness": {
+      "code": "RBW_Origin_02",
+      "name": "Arm02",
+      "spec": "XT30(+2)-F.G.B-XT30(+2)-F.G.B",
+      "len_cm": 20
+     },
      "fasteners": [],
      "motors": [
       "0x0f",
@@ -1957,6 +2005,12 @@
        "th": "สายชุด RBW_Origin_03 Arm03 (XT30(+2)-F.G.B-XT30(+2)-F.G.B ยาว 20 ซม.)"
       }
      ],
+     "harness": {
+      "code": "RBW_Origin_03",
+      "name": "Arm03",
+      "spec": "XT30(+2)-F.G.B-XT30(+2)-F.G.B",
+      "len_cm": 20
+     },
      "fasteners": [],
      "motors": [
       "0x10",
@@ -1978,6 +2032,12 @@
        "th": "สายชุด RBW_Origin_04 Arm04 (XT30(+2)-F.G.B-XT30(+2)-F.G.B ยาว 20 ซม.)"
       }
      ],
+     "harness": {
+      "code": "RBW_Origin_04",
+      "name": "Arm04",
+      "spec": "XT30(+2)-F.G.B-XT30(+2)-F.G.B",
+      "len_cm": 20
+     },
      "fasteners": [],
      "motors": [
       "0x11",
@@ -2243,6 +2303,12 @@
        "th": "บอร์ดจ่ายไฟ 3-in-1"
       }
      ],
+     "harness": {
+      "code": "RBW_Origin_12",
+      "name": "Body03",
+      "spec": "XT30(+2)-F.G.B-XT30U-F",
+      "len_cm": 60
+     },
      "fasteners": [],
      "motors": [
       "0x01"
@@ -2272,6 +2338,12 @@
        "th": "บอร์ดจ่ายไฟ 3-in-1"
       }
      ],
+     "harness": {
+      "code": "RBW_Origin_13",
+      "name": "Body04",
+      "spec": "XT30(+2)-F.G.B-XT30U-F",
+      "len_cm": 50
+     },
      "fasteners": [],
      "motors": [
       "0x0d"
@@ -2296,6 +2368,12 @@
        "th": "บอร์ดจ่ายไฟ 3-in-1"
       }
      ],
+     "harness": {
+      "code": "RBW_Origin_11",
+      "name": "Body02",
+      "spec": "XT30(+2)-F.G.B-XT30(+2)-F.G.B",
+      "len_cm": 20
+     },
      "fasteners": [],
      "motors": [
       "0x0e"
@@ -2320,6 +2398,12 @@
        "th": "บอร์ดจ่ายไฟ 3-in-1"
       }
      ],
+     "harness": {
+      "code": "RBW_Origin_11",
+      "name": "Body02",
+      "spec": "XT30(+2)-F.G.B-XT30(+2)-F.G.B",
+      "len_cm": 20
+     },
      "fasteners": [],
      "motors": [
       "0x13"

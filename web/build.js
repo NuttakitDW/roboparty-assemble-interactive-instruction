@@ -23,6 +23,10 @@ const ID_LINK = (() => {
 const hexLink = (h) => ID_LINK[parseInt(h, 16)];
 const mirror = (n) => (n.startsWith('left_') ? n.replace('left_', 'right_') : n.startsWith('right_') ? n.replace('right_', 'left_') : n);
 
+// Wiring steps close in on the hops they add, seen from the robot's front-right; the distance is fitted to the visible part of the viewer.
+const CAM_DIR = new THREE.Vector3(0.78, 0.22, 0.58).normalize();
+const CAM_NEAR = 0.95, CAM_FAR = 4.5, CAM_FILL = 0.75;
+
 // Legs are built apart from the hip, then slide in at the connection step.
 const DETACH = { left_thigh_pitch_link: new THREE.Vector3(0.05, 0.3, -0.05), right_thigh_pitch_link: new THREE.Vector3(0.05, -0.3, -0.05) };
 
@@ -41,7 +45,7 @@ const T = {
     wiringMotors: 'Motors', channel: 'Channel', voiceOn: 'Narration: on', voiceOff: 'Narration: off', replay: 'Play again', stopVoice: 'Stop audio' },
 };
 
-export function createBuild({ $, esc, state, nodes, views, data, narration = {}, getOverlays, getLang, renderLegend, onExit, closeDrawer }) {
+export function createBuild({ $, esc, state, nodes, views, data, channels = [], narration = {}, getOverlays, getFrame, getLang, renderLegend, onExit, closeDrawer }) {
   const app = $('#app');
   const steps = data.phases.flatMap((p) => p.steps.map((s) => ({ ...s, phase: p, id: `${p.id}:${s.label}` })));
   const t = (k) => T[getLang()][k];
@@ -107,6 +111,21 @@ export function createBuild({ $, esc, state, nodes, views, data, narration = {},
       overlay: s.overlay || p.overlay || null, tag: p.id, tagColor: '', note: null, th: { title: '', body: '' }, en: { title: '', body: '' } };
   }
 
+  // What the manual says on this wiring step, drawn on the hops: the harness name, its spec and length, and the CAN channel for the trunk to the board.
+  const harnessLine = (h) => `${h.spec} · ${h.len_cm} cm`;
+  const trunkSteps = steps.filter((x) => x.phase.id === 'wiring' && x.channel && x.harness && x.motors?.length === 1);
+  function calloutsFor(s) {
+    if (s.phase.id !== 'wiring') return [];
+    const color = (id) => channels.find((c) => c.id === id)?.color;
+    const toBoard = (x) => ['board', hexLink(x.motors[0])]; // the trunk harness runs from the board to the first motor of its chain
+    if (s.label === '2.5-e') return trunkSteps.map((x) => ({ pairs: [toBoard(x)], title: `${x.motors[0]} → ${x.channel}`, sub: `${x.harness.code} ${x.harness.name} · ${x.harness.len_cm} cm`, color: color(x.channel), at: 0.7, side: x.channel === 'CAN3' ? 'left' : 'right' }));
+    const h = s.harness, ids = (s.motors || []).map(hexLink).filter(Boolean);
+    if (!h) return [];
+    if (ids.length === 2) return [{ pairs: [[ids[0], ids[1]], [mirror(ids[0]), mirror(ids[1])]], title: `${h.code} ${h.name}`, sub: harnessLine(h) }];
+    if (ids.length === 1 && s.channel) return [{ pairs: [toBoard(s)], title: `${s.channel} · ${h.code} ${h.name}`, sub: harnessLine(h), color: color(s.channel), at: 0.7 }];
+    return [];
+  }
+
   function apply() {
     derived = derive(idx);
     for (const n of derived.shown) { if (!prevShown.has(n)) { const nd = nodes.get(n); if (nd) { nd.fly = 1; nd.flash = 1; } } }
@@ -115,7 +134,11 @@ export function createBuild({ $, esc, state, nodes, views, data, narration = {},
     state.userMoved = false;
     renderLegend(viewObj);
     const ov = getOverlays();
-    if (ov) ov.setProgress(steps[idx].phase.id === 'wiring' ? derived.keys : null, derived.board || steps[idx].phase.id !== 'wiring');
+    if (ov) {
+      const wiring = steps[idx].phase.id === 'wiring';
+      ov.setProgress(wiring ? derived.keys : null, derived.board || !wiring);
+      ov.setCallouts(calloutsFor(steps[idx]));
+    }
   }
 
   // ---- per-frame ----
@@ -130,11 +153,26 @@ export function createBuild({ $, esc, state, nodes, views, data, narration = {},
       const target = DETACH[name] && !derived.attached ? DETACH[name] : null;
       if (target) n.detach.lerp(target, 1 - Math.exp(-dt * 3)); else n.detach.multiplyScalar(Math.exp(-dt * 3));
     }
+    follow();
+  }
+
+  // viewObj is this step's own copy, so its camera goal may follow the hops (they move with the robot's sway).
+  // The distance makes the hops fill CAM_FILL of the visible band (the viewer minus the header and, on phones, the bottom sheet), and the view is
+  // shifted so they sit in the middle of that band.
+  function follow() {
+    const f = viewObj && getOverlays()?.focus, fr = f && getFrame();
+    if (!fr?.band) return;
+    const { fov, aspect, h, band } = fr, bandH = band.bottom - band.top, tan = Math.tan(THREE.MathUtils.degToRad(fov / 2));
+    const d = Math.min(Math.max(f.radius / (CAM_FILL * tan * Math.min(aspect, bandH / h)), CAM_NEAR), CAM_FAR);
+    const lift = ((band.top + band.bottom) / 2 - h / 2) / h * 2 * d * tan, c = f.center; // world units to look below (or above) the hops
+    viewObj.target = [c.x, c.y + lift, c.z];
+    viewObj.cam = [c.x + CAM_DIR.x * d, c.y + lift + CAM_DIR.y * d, c.z + CAM_DIR.z * d];
+    viewObj.fit = true; // already framed for this layout: skip the phone offset
   }
 
   function restoreNodes() {
     for (const n of nodes.values()) { n.arrive = 1; n.fly = 0; n.flash = 0; n.detach.set(0, 0, 0); n.mesh.position.set(0, 0, 0); }
-    getOverlays()?.setProgress(null, true);
+    getOverlays()?.setProgress(null, true); getOverlays()?.setCallouts([]);
   }
 
   // ---- panel + outline ----
