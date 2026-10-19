@@ -4,7 +4,7 @@
 import * as THREE from 'three';
 
 const STORE_KEY = 'build.v1';
-const IMG_BASE = '../manual/img/';
+const IMG_BASE = 'manual/img/';
 const AUDIO_BASE = 'assets/tts/';
 const VOICE_KEY = 'build.voice';
 

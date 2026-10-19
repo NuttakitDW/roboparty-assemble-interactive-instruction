@@ -4,7 +4,7 @@ import { STLLoader } from 'three/addons/loaders/STLLoader.js';
 import { createOverlays } from './overlays.js';
 import { createBuild } from './build.js';
 
-const URDF_DIR = '../cad/rpo_hardware/V2.0/roboto_origin_mechanic/03_URDF/urdf/';
+const URDF_DIR = 'cad/rpo_hardware/V2.0/roboto_origin_mechanic/03_URDF/urdf/'; // web/cad is a symlink to ../cad locally; the deploy copies the real files
 const URDF = URDF_DIR + 'roboto_origin.urdf';
 const EXPLODE_SCALE = 1.4;
 const BASE_COLOR = new THREE.Color('#d4d4d8');
@@ -192,7 +192,7 @@ async function loadRobot() {
     const name = el.getAttribute('name');
     const group = new THREE.Group(); group.name = name;
     const file = el.querySelector('visual mesh').getAttribute('filename');
-    const geom = await loader.loadAsync(new URL(file, new URL(URDF, location.href)).href);
+    const geom = await loader.loadAsync(new URL(file, new URL(URDF, document.baseURI)).href);
     geom.computeVertexNormals();
     const mat = new THREE.MeshStandardMaterial({ color: BASE_COLOR, metalness: 0.15, roughness: 0.65, transparent: true });
     const mesh = new THREE.Mesh(geom, mat);

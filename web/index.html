@@ -3,12 +3,17 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<script>
+/* The page can be served at /, /roboparty (no trailing slash, behind a proxy) or /web/index.html: always resolve relative URLs against its own directory. */
+(function () { var p = location.pathname, last = p.split('/').pop();
+  var dir = p.slice(-1) === '/' ? p : (/\.[a-z0-9]+$/i.test(last) ? p.slice(0, p.lastIndexOf('/') + 1) : p + '/');
+  document.write('<base href="' + dir + '"><link rel="stylesheet" href="style.css">'); })();
+</script>
 <title>Roboto Origin | สอนประกอบ</title>
 <meta name="description" content="Interactive assembly guide for RoboParty Roboto Origin: component overview in 3D.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300..700&family=JetBrains+Mono:wght@400..700&family=Noto+Sans+Thai:wght@300..700&display=swap">
-<link rel="stylesheet" href="style.css">
 <script type="importmap">
 {"imports":{
  "three":"https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js",
@@ -103,6 +108,6 @@
     <div class="foot mono"><span>↑↓ <span data-i18n="k_nav">เลือก</span></span><span>↵ <span data-i18n="k_open">เปิด</span></span><span>esc <span data-i18n="k_close">ปิด</span></span></div>
   </div>
 </div>
-<script type="module" src="app.js"></script>
+<script>document.write('<script type="module" src="app.js"><\/script>');</script>
 </body>
 </html>

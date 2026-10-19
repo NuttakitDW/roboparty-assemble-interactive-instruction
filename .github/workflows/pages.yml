@@ -20,18 +20,18 @@ jobs:
     timeout-minutes: 10
     steps:
       - uses: actions/checkout@v4
-      - name: Assemble site (web app, URDF meshes, manual page images used as figures, licence files)
+      - name: Assemble site (web app at the root, URDF meshes, manual page images used as figures, licence files)
         run: |
           set -euo pipefail
           HW=cad/rpo_hardware
           URDF=$HW/V2.0/roboto_origin_mechanic/03_URDF
-          mkdir -p _site/web "_site/$URDF" "_site/$HW"
-          cp -R web/. _site/web/
-          mkdir -p _site/manual && cp -R manual/img _site/manual/img
+          mkdir -p "_site/$URDF" "_site/$HW" _site/manual
+          # web/cad and web/manual are symlinks for local development; ship real files instead
+          rsync -a --exclude cad --exclude manual web/ _site/
           cp -R "$URDF/urdf" "$URDF/meshes" "_site/$URDF/"
           cp "$HW"/LICENSE "$HW"/LICENSES.md "$HW"/TRADEMARKS.md "$HW"/THIRD_PARTY_NOTICES.md "_site/$HW/"
           cp cad/SOURCE.txt _site/cad/
-          printf '<!doctype html><meta charset="utf-8"><meta http-equiv="refresh" content="0; url=web/"><a href="web/">Roboto Origin assembly guide</a>' > _site/index.html
+          cp -R manual/img _site/manual/img
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
