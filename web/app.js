@@ -459,7 +459,7 @@ document.querySelectorAll('.lang').forEach((b) => b.addEventListener('click', ()
 
 async function boot() {
   try {
-    const [st, lk, pt, sy, asm] = await Promise.all(['stages', 'links', 'parts', 'systems', 'assembly'].map((n) =>
+    const [st, lk, pt, sy, asm, nar] = await Promise.all(['stages', 'links', 'parts', 'systems', 'assembly', 'narration'].map((n) =>
       fetch(`data/${n}.json`).then((r) => { if (!r.ok) throw new Error(`${n}.json ${r.status}`); return r.json(); })));
     stages = st.stages; views = st.views; channels = st.channels; linksMeta = lk.links; groupsMeta = lk.groups; motorsMeta = lk.motors; partsData = pt; systems = sy.systems; extras = sy.extras; assembly = asm;
     $('#dots').innerHTML = stages.map((s, i) => `<button type="button" role="tab" aria-label="${UI.th.stage} ${i + 1}" data-i="${i}"></button>`).join('');
@@ -467,7 +467,7 @@ async function boot() {
     applyLang();
     requestAnimationFrame(frame);
     await loadRobot();
-    build = createBuild({ $, esc, state, nodes, views: { ...Object.fromEntries(stages.map((x) => [x.id, x])), ...views }, data: assembly, getOverlays: () => overlays, getLang: () => state.lang, renderLegend, onExit: () => goStage(0), closeDrawer });
+    build = createBuild({ $, esc, state, nodes, views: { ...Object.fromEntries(stages.map((x) => [x.id, x])), ...views }, data: assembly, narration: nar, getOverlays: () => overlays, getLang: () => state.lang, renderLegend, onExit: () => goStage(0), closeDrawer });
     if (new URLSearchParams(location.search).has('debug')) window.__app = { camera, controls, nodes, pivot, state };
     state.ready = true; loading.failed = false; $('#loading').classList.add('done');
     startIntro();

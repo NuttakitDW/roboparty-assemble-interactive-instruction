@@ -209,3 +209,6 @@ kbd{font:400 11px var(--font-mono);color:var(--ash-2);border:1px solid var(--edg
   .bp-fig img{max-height:150px}
 }
 .bp-done{margin:0 0 .75rem;padding:.5rem .75rem;border:1px solid var(--signal);border-radius:8px;color:var(--ink-hi);font-size:.875rem}
+.bp-headbtns{display:flex;gap:.4rem}
+.bp-voice{margin:0 0 .6rem;font-size:.75rem}
+.bp-voice .link{background:none;border:0;padding:0;color:var(--ash-2);text-decoration:underline;font-size:.75rem;margin-right:.75rem}

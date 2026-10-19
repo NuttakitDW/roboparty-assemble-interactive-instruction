@@ -5,6 +5,8 @@ import * as THREE from 'three';
 
 const STORE_KEY = 'build.v1';
 const IMG_BASE = '../manual/img/';
+const AUDIO_BASE = 'assets/tts/';
+const VOICE_KEY = 'build.voice';
 
 // Motor Slave ID (hex) -> the URDF link whose joint it drives (leg: yaw, roll, pitch, knee, ankle pitch, ankle roll).
 const ID_LINK = (() => {
@@ -30,16 +32,16 @@ const T = {
     prev: 'ย้อนกลับ', next: 'ติดตั้งแล้ว ถัดไป', done: 'เสร็จสิ้นทั้งหมด', skip: 'ข้ามเช็กลิสต์ขั้นนี้', reset: 'เริ่มใหม่', positioning: 'สำหรับกำหนดตำแหน่ง',
     figure: 'ดูภาพประกอบในคู่มือ', expand: 'แตะเพื่อขยาย/ย่อ', noText: 'ขั้นตอนนี้มีแต่ภาพประกอบ ดูรูปด้านบน', unsure: 'ข้อมูลขั้นตอนนี้ยังไม่ชัดเจน ให้ยึดภาพในคู่มือ',
     model: 'โมเดล 3 มิติเป็นระดับข้อต่อ ลำดับที่ชิ้นปรากฏเป็นการประมาณ ให้ยึดภาพและข้อความของคู่มือเป็นหลัก', tick: 'ติ๊กเมื่อเตรียมครบ', allDone: 'ครบทุกขั้นตอนแล้ว ซ้อมต่อครบตามคู่มือ', resetConfirm: 'เริ่มใหม่ จะล้างความคืบหน้าและเช็กลิสต์ทั้งหมด ยืนยันหรือไม่?',
-    wiringMotors: 'มอเตอร์', channel: 'ช่อง' },
+    wiringMotors: 'มอเตอร์', channel: 'ช่อง', voiceOn: 'เสียงบรรยาย: เปิด', voiceOff: 'เสียงบรรยาย: ปิด', replay: 'ฟังอีกครั้ง', stopVoice: 'หยุดเสียง' },
   en: { open: 'Practice build mode', openSub: 'Rehearse each step before the real build', resume: 'Resume at step', exit: 'Exit practice mode', progress: 'Progress',
     step: 'Step', page: 'Manual page', pdf: 'PDF', parts: 'Parts', fasteners: 'Screws and fasteners', notes: 'Notes', warn: 'Warning', gate: 'Safety checklist',
     prev: 'Back', next: 'Installed, next', done: 'All steps done', skip: 'Skip this checklist', reset: 'Start over', positioning: 'positioning',
     figure: 'View the manual figure', expand: 'tap to expand / collapse', noText: 'This step is a figure only; see the image above', unsure: 'This step is unclear; follow the manual figure',
     model: 'The 3D model is joint-level and the order pieces appear is approximate. Follow the manual figure and text.', tick: 'Tick when you have it ready', allDone: 'All steps complete: you have rehearsed the whole manual', resetConfirm: 'Start over? This clears all progress and checklists.',
-    wiringMotors: 'Motors', channel: 'Channel' },
+    wiringMotors: 'Motors', channel: 'Channel', voiceOn: 'Narration: on', voiceOff: 'Narration: off', replay: 'Play again', stopVoice: 'Stop audio' },
 };
 
-export function createBuild({ $, esc, state, nodes, views, data, getOverlays, getLang, renderLegend, onExit, closeDrawer }) {
+export function createBuild({ $, esc, state, nodes, views, data, narration = {}, getOverlays, getLang, renderLegend, onExit, closeDrawer }) {
   const app = $('#app');
   const steps = data.phases.flatMap((p) => p.steps.map((s) => ({ ...s, phase: p, id: `${p.id}:${s.label}` })));
   const t = (k) => T[getLang()][k];
@@ -60,6 +62,19 @@ export function createBuild({ $, esc, state, nodes, views, data, getOverlays, ge
     } catch { /* ignore bad data */ }
   };
   load();
+
+  // ---- narration (Paxa TTS, one clip per step and language; failures are silent) ----
+  let voiceOn = true, playingLang = null;
+  try { voiceOn = localStorage.getItem(VOICE_KEY) !== 'off'; } catch { /* default on */ }
+  const audio = new Audio(); audio.preload = 'none';
+  const clipFor = (s) => (narration[s.id]?.file ? `${AUDIO_BASE}${getLang()}/${narration[s.id].file}.mp3` : null);
+  function stopVoice() { audio.pause(); playingLang = null; }
+  function playVoice() {
+    const src = clipFor(steps[idx]);
+    if (!active || !voiceOn || !src) { stopVoice(); return; }
+    audio.src = src; playingLang = getLang();
+    audio.play().catch(() => { /* blocked or missing clip: stay silent */ });
+  }
 
   // ---- what the 3D scene shows at step i (cumulative over all earlier steps) ----
   function derive(i) {
@@ -152,13 +167,14 @@ export function createBuild({ $, esc, state, nodes, views, data, getOverlays, ge
     const fig = s.pdf ? `<a class="bp-fig" id="bp-fig" href="${IMG_BASE}p${esc(String(s.pdf).padStart(2, '0'))}.jpg" target="_blank" rel="noopener"><img src="${IMG_BASE}p${esc(String(s.pdf).padStart(2, '0'))}.jpg" alt="${esc(t('figure'))}" loading="lazy"><span class="mono">${s.printed != null ? `${esc(t('page'))} ${esc(String(s.printed))} (${esc(t('pdf'))} ${esc(String(s.pdf))})` : `${esc(t('pdf'))} ${esc(String(s.pdf))}`} · ${esc(t('expand'))}</span></a>` : '';
     const ok = tickedAll(s), last = idx === steps.length - 1;
     $('#bpanel').innerHTML = `
-      <div class="bp-head"><span class="mono">${esc(L(p))} · ${idx + 1} / ${steps.length}</span><button type="button" id="bp-exit" class="bp-exitbtn">${esc(t('exit'))}</button></div>
+      <div class="bp-head"><span class="mono">${esc(L(p))} · ${idx + 1} / ${steps.length}</span><span class="bp-headbtns"><button type="button" id="bp-voice" class="bp-exitbtn" aria-pressed="${voiceOn}">${esc(t(voiceOn ? 'voiceOn' : 'voiceOff'))}</button><button type="button" id="bp-exit" class="bp-exitbtn">${esc(t('exit'))}</button></span></div>
       <div class="bp-bar"><i style="width:${((idx + 1) / steps.length) * 100}%"></i></div>
       <div class="bp-scroll">
         ${finished ? `<p class="bp-done">${esc(t('allDone'))}</p>` : ''}
         <h2>${esc(stepTitle(s))}</h2>
         ${s.phase.id === 'wiring' || s.gate ? '' : `<p class="bp-model mono">${esc(t('model'))}</p>`}
         ${fig}
+        ${narration[s.id]?.file && voiceOn ? `<p class="bp-voice"><button type="button" id="bp-replay" class="link">${esc(t('replay'))}</button> <button type="button" id="bp-stopv" class="link">${esc(t('stopVoice'))}</button></p>` : ''}
         ${body ? `<p class="bp-body">${esc(body)}</p>` : (s.gate ? '' : `<p class="bp-body muted">${esc(t('noText'))}</p>`)}
         ${motors}
         ${group('gate', t('gate'))}${group('parts', t('parts'))}${group('fasteners', t('fasteners'))}
@@ -203,6 +219,7 @@ export function createBuild({ $, esc, state, nodes, views, data, getOverlays, ge
 
   function render() {
     if (!active) { renderEntry(); return; }
+    if (playingLang && playingLang !== getLang()) playVoice(); // language switched while narrating
     renderPanel(); renderOutline();
     if (viewObj) renderLegend(viewObj);
     const box = $('#side-build'), row = box.querySelector('.brow[aria-current="true"]');
@@ -220,7 +237,7 @@ export function createBuild({ $, esc, state, nodes, views, data, getOverlays, ge
 
   function go(i) {
     idx = Math.max(0, Math.min(i, steps.length - 1)); maxIdx = Math.max(maxIdx, idx); finished = false;
-    apply(); render(); save();
+    apply(); render(); save(); playVoice();
   }
 
   function enter() {
@@ -233,7 +250,7 @@ export function createBuild({ $, esc, state, nodes, views, data, getOverlays, ge
   function exit(silent = false) {
     if (!active) return;
     active = false; app.classList.remove('building'); $('#bpanel').hidden = true; $('#side-build').hidden = true;
-    restoreNodes(); renderEntry();
+    stopVoice(); restoreNodes(); renderEntry();
     if (!silent) onExit();
   }
 
@@ -259,6 +276,9 @@ export function createBuild({ $, esc, state, nodes, views, data, getOverlays, ge
     else if (b.id === 'bp-prev') prev();
     else if (b.id === 'bp-skip') next();
     else if (b.id === 'bp-exit') exit();
+    else if (b.id === 'bp-voice') { voiceOn = !voiceOn; try { localStorage.setItem(VOICE_KEY, voiceOn ? 'on' : 'off'); } catch { /* ignore */ } if (voiceOn) playVoice(); else stopVoice(); renderPanel(); }
+    else if (b.id === 'bp-replay') playVoice();
+    else if (b.id === 'bp-stopv') stopVoice();
   });
   $('#side-build').addEventListener('click', (e) => {
     const r = e.target.closest('[data-bi]'); if (r) { go(+r.dataset.bi); closeDrawer(); return; }
