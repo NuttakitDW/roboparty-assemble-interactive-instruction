@@ -1,1 +1,11 @@
-Source: https://github.com/Roboparty/roboto_origin @ c71fd9287d28104dca111d7c25b908fa3f45f8e4, modules/rpo_hardware (V2.0 mechanic only). License CC-BY-SA-4.0 (see cad/rpo_hardware/LICENSE); trademark terms in TRADEMARKS.md.
+Source: https://github.com/Roboparty/roboto_origin @ c71fd9287d28104dca111d7c25b908fa3f45f8e4, modules/rpo_hardware (V2.0 mechanic only).
+
+Licences (from rpo_hardware/LICENSES.md, kept in this folder):
+- RoboParty-owned hardware design (CAD, URDF, meshes, BOM): CERN-OHL-W-2.0, see rpo_hardware/LICENSE.
+- RoboParty-owned documentation: CC-BY-SA-4.0.
+- Third-party / vendor files are NOT relicensed (see rpo_hardware/THIRD_PARTY_NOTICES.md).
+  The 32 vendor and standard-part model files that were in 01_SW_Project (DM motors, LB22/LB16A switches,
+  OPI-5PLUS, GX16, IMU, GB/T fasteners and bearings, battery) were removed from this copy.
+  Get them from the upstream repository above if you need them, and check their terms first.
+
+Trademarks: see rpo_hardware/TRADEMARKS.md. This project is an unofficial guide and is not affiliated with RoboParty.

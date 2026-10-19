@@ -1,0 +1,48 @@
+name: Deploy site
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - name: Assemble site (web app + the URDF meshes it loads + licence files)
+        run: |
+          set -euo pipefail
+          HW=cad/rpo_hardware
+          URDF=$HW/V2.0/roboto_origin_mechanic/03_URDF
+          mkdir -p _site/web "_site/$URDF" "_site/$HW"
+          cp -R web/. _site/web/
+          cp -R "$URDF/urdf" "$URDF/meshes" "_site/$URDF/"
+          cp "$HW"/LICENSE "$HW"/LICENSES.md "$HW"/TRADEMARKS.md "$HW"/THIRD_PARTY_NOTICES.md "_site/$HW/"
+          cp cad/SOURCE.txt _site/cad/
+          printf '<!doctype html><meta charset="utf-8"><meta http-equiv="refresh" content="0; url=web/"><a href="web/">Roboto Origin assembly guide</a>' > _site/index.html
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
