@@ -153,7 +153,8 @@ const nodes = new Map(); // link name -> { group, base, meshMat, marker, hl, op 
 const pickables = [];
 
 // ---------- welcome intro: parts fly in from below, feet first, camera rises then pulls back ----------
-const INTRO_MS = 10500, WORDMARK_MS = 6300;
+const INTRO_MS = 12500, WORDMARK_MS = 6300;
+const GESTURE_START = 7400, GESTURE_MS = 4300; // the "6-7" celebration starts once the last part has landed
 const intro = { active: false, t: 0, rate: 1, grid: null };
 const V3 = (x, y, z) => new THREE.Vector3(x, y, z);
 const introPos = new THREE.CatmullRomCurve3([V3(1.5, -1.25, 1.2), V3(1.7, -0.3, 1.6), V3(2.5, 0.35, 1.9), V3(1.9, 0.55, 1.5)]);
@@ -165,6 +166,7 @@ const SIGNAL_COLOR = new THREE.Color('#5D9BFF');
 function resize() {
   const w = viewer.clientWidth, h = viewer.clientHeight;
   renderer.setSize(w, h, false); camera.aspect = w / h; camera.updateProjectionMatrix();
+  renderer.render(scene, camera); // resizing clears the canvas: redraw at once so layout changes do not flash black
 }
 new ResizeObserver(resize).observe(viewer);
 
@@ -197,7 +199,7 @@ async function loadRobot() {
     const mat = new THREE.MeshStandardMaterial({ color: BASE_COLOR, metalness: 0.15, roughness: 0.65, transparent: true });
     const mesh = new THREE.Mesh(geom, mat);
     mesh.userData.link = name; group.add(mesh); pickables.push(mesh);
-    nodes.set(name, { group, mesh, base: new THREE.Vector3(), mat, marker: null, hl: 0, op: 1, mk: 0, arrive: 1, flash: 0, fly: 0, detach: new THREE.Vector3(), delay: 0, dir: new THREE.Vector3(), spin: 0 });
+    nodes.set(name, { group, mesh, base: new THREE.Vector3(), mat, marker: null, hl: 0, op: 1, mk: 0, arrive: 1, flash: 0, fly: 0, joint: null, q: 0, qT: 0, detach: new THREE.Vector3(), delay: 0, dir: new THREE.Vector3(), spin: 0 });
     done += 1; setProgress();
   }));
   for (const j of doc.querySelectorAll('robot > joint')) {
@@ -207,6 +209,7 @@ async function loadRobot() {
     child.base.copy(origin); child.group.position.copy(origin);
     parent.group.add(child.group);
     const axis = vec(j.querySelector('axis').getAttribute('xyz')).normalize();
+    child.joint = { axis };
     const motor = linksMeta[child.group.name]?.motor;
     if (motor) {
       const r = motor === '10010L' ? 0.05 : 0.038;
@@ -245,6 +248,7 @@ function frame(now) {
       n.mat.opacity = n.op * n.arrive; n.mat.depthWrite = n.op * n.arrive > 0.5;
       n.mat.color.copy(BASE_COLOR).lerp(HILITE_COLOR, n.hl * 0.55).lerp(SIGNAL_COLOR, n.flash);
       n.group.position.copy(n.base).multiplyScalar(1 + explode * EXP_K()).add(n.detach);
+      if (n.joint) { n.q = damp(n.q, n.qT, 22, dt); n.group.quaternion.setFromAxisAngle(n.joint.axis, n.q); }
       if (n.marker) n.marker.material.opacity = n.mk * (n.op > 0.5 ? 1 : 0.15);
     }
     overlays?.update(dt, intro.active ? null : s.overlay, camera, viewer.clientWidth, viewer.clientHeight, state.lang);
@@ -269,6 +273,19 @@ function frame(now) {
 }
 const EXP_K = () => EXPLODE_SCALE;
 
+// "6-7": forearms out front, hands alternately up and down, with a little torso sway. Angles are joint offsets in radians
+// (elbow: negative = forearm up, positive = down; limits -0.6..1.57 in the URDF).
+function pose67(ms) {
+  const g = ms - GESTURE_START, on = g >= 0 && g <= GESTURE_MS;
+  const env = on ? clamp01(g / 500) * clamp01((GESTURE_MS - g) / 600) : 0;
+  const s = Math.sin((g / 1000) * Math.PI * 2 * 2.4);
+  const set = (name, v) => { const n = nodes.get(name); if (n) n.qT = v * env; };
+  set('left_elbow_pitch_link', 0.3 + 0.6 * s); set('right_elbow_pitch_link', 0.3 - 0.6 * s);
+  set('left_arm_pitch_link', -0.3); set('right_arm_pitch_link', -0.3);
+  set('torso_link', 0.12 * s);
+}
+const relaxPose = () => { for (const n of nodes.values()) n.qT = 0; };
+
 function planIntro() {
   pivot.updateMatrixWorld(true);
   const list = [...nodes.values()].map((n) => ({ n, p: n.group.getWorldPosition(new THREE.Vector3()) })).sort((a, b) => a.p.y - b.p.y);
@@ -287,7 +304,7 @@ function startIntro() {
   if (REDUCED || new URLSearchParams(location.search).get('intro') === '0') { app.classList.remove('intro'); goStage(0); return; }
   planIntro();
   for (const n of nodes.values()) { n.arrive = 0; n.mesh.position.copy(n.dir); }
-  Object.assign(intro, { active: true, t: 0, rate: 1 });
+  Object.assign(intro, { active: true, t: 0, rate: 1 }); relaxPose();
 
   controls.enabled = false; yaw = -1.1;
   app.classList.add('intro'); $('#welcome').classList.remove('show');
@@ -304,6 +321,7 @@ function stepIntro(dt) {
     n.mesh.position.copy(n.dir).multiplyScalar(1 - q);
     n.mesh.rotation.z = n.spin * (1 - q);
   }
+  pose67(intro.t);
   const u = easeIO(intro.t / INTRO_MS);
   introPos.getPoint(u, camera.position); introLook.getPoint(u, controls.target);
   yaw = -1.1 + (stages[0].yaw + 1.1) * easeIO(intro.t / INTRO_MS);
@@ -316,7 +334,7 @@ function stepIntro(dt) {
 }
 
 function endIntro() {
-  intro.active = false; controls.enabled = true;
+  intro.active = false; controls.enabled = true; relaxPose();
   for (const n of nodes.values()) { n.arrive = 1; n.flash = 0; n.mesh.position.set(0, 0, 0); n.mesh.rotation.z = 0; }
   if (intro.grid) intro.grid.material.opacity = 1;
   $('#intro-bar').style.width = '0';
