@@ -155,6 +155,7 @@ const pickables = [];
 // ---------- welcome intro: parts fly in from below, feet first, camera rises then pulls back ----------
 const INTRO_MS = 12500, WORDMARK_MS = 6300;
 const GESTURE_START = 7400, GESTURE_MS = 4300; // the "6-7" celebration starts once the last part has landed
+const G67 = (() => { const q = new URLSearchParams(location.search); return { hz: +q.get('g67hz') || 2.4, ph: +q.get('g67ph') || 0 }; })(); // ?g67hz= and ?g67ph= let a video edit lock the gesture to a beat
 const intro = { active: false, t: 0, rate: 1, grid: null };
 const V3 = (x, y, z) => new THREE.Vector3(x, y, z);
 const introPos = new THREE.CatmullRomCurve3([V3(1.5, -1.25, 1.2), V3(1.7, -0.3, 1.6), V3(2.5, 0.35, 1.9), V3(1.9, 0.55, 1.5)]);
@@ -278,7 +279,7 @@ const EXP_K = () => EXPLODE_SCALE;
 function pose67(ms) {
   const g = ms - GESTURE_START, on = g >= 0 && g <= GESTURE_MS;
   const env = on ? clamp01(g / 500) * clamp01((GESTURE_MS - g) / 600) : 0;
-  const s = Math.sin((g / 1000) * Math.PI * 2 * 2.4);
+  const s = Math.sin((g / 1000) * Math.PI * 2 * G67.hz + G67.ph);
   const set = (name, v) => { const n = nodes.get(name); if (n) n.qT = v * env; };
   set('left_elbow_pitch_link', 0.3 + 0.6 * s); set('right_elbow_pitch_link', 0.3 - 0.6 * s);
   set('left_arm_pitch_link', -0.3); set('right_arm_pitch_link', -0.3);
