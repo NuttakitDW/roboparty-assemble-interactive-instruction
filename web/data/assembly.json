@@ -1,0 +1,2502 @@
+{
+ "gates": {
+  "prep": {
+   "th": "ก่อนเริ่มประกอบ",
+   "en": "Before you start",
+   "items": [
+    {
+     "th": "จัดโต๊ะเป็นโซน: ซ้าย = ชิ้นส่วนที่จะประกอบ, กลาง = พื้นที่ทำงาน (ปูแผ่นกันไฟฟ้าสถิต), ขวา = ชิ้นงานที่เสร็จแล้ว",
+     "en": "Bench zoned: left = parts for the current process, middle = work area with anti-static mat, right = finished and semi-finished storage",
+     "page": 6
+    },
+    {
+     "th": "ไม่มีของที่ไม่เกี่ยวข้องบนโต๊ะ (โทรศัพท์ แก้วน้ำ กุญแจ) กันโลหะตกลงไปลัดวงจร",
+     "en": "No unrelated items on the bench (phone, cup, keys) so metal objects cannot fall in and short-circuit",
+     "page": 6
+    },
+    {
+     "th": "สวมถุงมือกันไฟฟ้าสถิตเมื่อจับบอร์ดและอุปกรณ์อิเล็กทรอนิกส์ และถุงมือไนไตรล์เมื่อใช้สารเคมี ผูกผม ไม่สวมเครื่องประดับห้อยต่าง ๆ รัดข้อมือเสื้อให้แน่น",
+     "en": "Anti-static gloves for electronics, nitrile gloves for chemicals, hair tied up, no dangling jewelry, cuffs tightened",
+     "page": 6
+    },
+    {
+     "th": "ตั้ง ID มอเตอร์ทุกตัวและคาลิเบรตเอนโคเดอร์แล้ว ตามผัง ID มอเตอร์",
+     "en": "All motor IDs assigned and encoders calibrated per the motor ID layout",
+     "page": 19
+    },
+    {
+     "th": "แบตเตอรี่ไม่เคยตกสูงเกิน 30 ซม. หรือถูกกระแทกแรง (ถ้าเคย ห้ามติดตั้งหรือใช้อีก)",
+     "en": "The battery has never been dropped from over 30 cm or hit hard (if it has, do not install or use it)",
+     "page": 6
+    }
+   ]
+  },
+  "battery": {
+   "th": "ก่อนงานแบตเตอรี่และไฟ",
+   "en": "Before battery and power work",
+   "items": [
+    {
+     "th": "ฝาครอบหรือเทปฉนวนที่ขั้วแบตเตอรี่ยังอยู่ จนกว่าจะเสียบเข้ากับบอร์ด ห้ามเปิดขั้วบวกลบ",
+     "en": "The factory protective cover or insulating tape stays on the battery terminals until the plug goes to the board; never expose the terminals",
+     "page": 7
+    },
+    {
+     "th": "ไม่ใช้คีมหรือไขควงโลหะแตะขั้วต่อแบตเตอรี่ขณะระบบมีไฟ",
+     "en": "No metal tweezers or screwdrivers touch the battery connector while the system is powered",
+     "page": 7
+    },
+    {
+     "th": "กดปุ่มหยุดฉุกเฉินและตัดไฟก่อนทำงานกับข้อต่อ",
+     "en": "Emergency stop pressed and power disconnected before joint work",
+     "page": 7
+    },
+    {
+     "th": "ตรวจขนาดสายและขั้วบวก/ลบซ้ำสองรอบ (วงจรกระแสสูง)",
+     "en": "Double-check wire gauge and polarity (high-current circuit)",
+     "page": 61
+    }
+   ]
+  }
+ },
+ "phases": [
+  {
+   "id": "prep",
+   "th": "เตรียมงาน",
+   "en": "Preparation",
+   "view": "overview",
+   "steps": [
+    {
+     "label": "prep",
+     "gate": "prep",
+     "pdf": 6,
+     "en": null,
+     "th": null,
+     "parts": [],
+     "fasteners": [],
+     "notes": []
+    }
+   ]
+  },
+  {
+   "id": "legs",
+   "th": "ขา",
+   "en": "Legs",
+   "view": "legs",
+   "steps": [
+    {
+     "label": "1",
+     "pdf": 20,
+     "printed": 17,
+     "en": "Place the components and motors according to the robot's standing orientation. Ensure that the motor interface faces the vertical direction (to avoid misalignment), and that the end bearing the label \"DM-J10010L-2EC\" is oriented downward.",
+     "th": "วางชิ้นส่วนและมอเตอร์ตามทิศทางการยืนของหุ่นยนต์ ต้องให้ช่องต่อของมอเตอร์หันไปในแนวตั้ง (เพื่อหลีกเลี่ยงการวางเยื้องตำแหน่ง) และให้ด้านที่มีฉลาก \"DM-J10010L-2EC\" หันลงด้านล่าง",
+     "parts": [
+      {
+       "en": "Inner Thigh",
+       "th": "ต้นขาด้านใน"
+      },
+      {
+       "en": "DM J10010L",
+       "th": "DM J10010L"
+      }
+     ],
+     "fasteners": [],
+     "notes": [],
+     "reveal": {
+      "show": [
+       "left_thigh_pitch_link"
+      ]
+     }
+    },
+    {
+     "label": "2",
+     "pdf": 20,
+     "printed": 17,
+     "en": "First, use M4×12 socket head screws for hole positioning. Insert M4×8 socket head screws into the remaining holes and tighten them using the diagonal method. Then remove the two M4×12 positioning screws and replace them with M4×8 socket head screws. Apply threadlocker when installing the screws. For precautions, refer to section 3.3 of the Assembly Precautions.",
+     "th": "ก่อนอื่นให้ใช้สกรูหัวหกเหลี่ยมจม M4×12 เพื่อกำหนดตำแหน่งรู จากนั้นใส่สกรูหัวหกเหลี่ยมจม M4×8 ลงในรูที่เหลือและขันให้แน่นด้วยวิธีขันแบบทแยง แล้วจึงถอดสกรูกำหนดตำแหน่ง M4×12 ทั้งสองตัวออก และเปลี่ยนเป็นสกรูหัวหกเหลี่ยมจม M4×8 ให้ใช้กาวล็อกเกลียวเมื่อติดตั้งสกรู สำหรับข้อควรระวัง ให้ดูหัวข้อ 3.3 ข้อควรระวังในการประกอบ",
+     "parts": [],
+     "fasteners": [
+      {
+       "en": "M4×12 Socket Head Cap Screws",
+       "th": "สกรูหัวหกเหลี่ยมจม M4×12",
+       "role": "positioning"
+      },
+      {
+       "en": "M4×8 Socket Head Cap Screws",
+       "th": "สกรูหัวหกเหลี่ยมจม M4×8",
+       "role": null
+      }
+     ],
+     "notes": [
+      {
+       "en": "M4×12 Socket Head Cap Screws – used for positioning. Subsequently, the positioning screw must be unscrewed (backed out).",
+       "th": "สกรูหัวหกเหลี่ยมจม M4×12 – ใช้สำหรับกำหนดตำแหน่ง หลังจากนั้นต้องคลายสกรูกำหนดตำแหน่งออก (คลายออกจนสุด)"
+      },
+      {
+       "en": "Screws marked in red are for positioning purposes only and are not load-bearing fasteners. When tightening, only a slight contact feel is needed. Do not use power tools to over-tighten. The same applies below.",
+       "th": "สกรูที่ทำเครื่องหมายสีแดงใช้เพื่อกำหนดตำแหน่งเท่านั้น และไม่ใช่ตัวยึดรับน้ำหนัก เมื่อขันให้รู้สึกเพียงว่าสัมผัสเบาๆ ก็พอ ห้ามใช้เครื่องมือไฟฟ้าขันจนแน่นเกินไป ข้อนี้ใช้กับส่วนต่อๆ ไปเช่นเดียวกัน"
+      }
+     ]
+    },
+    {
+     "label": "3",
+     "pdf": 21,
+     "printed": 18,
+     "en": "Place the DM 4340p into the lower leg mounting holes, and install the two serial ports one on top and one on the bottom.",
+     "th": "วาง DM 4340p เข้าไปในรูยึดของขาท่อนล่าง และติดตั้งพอร์ตอนุกรมทั้งสองพอร์ต โดยพอร์ตหนึ่งอยู่ด้านบนและอีกพอร์ตหนึ่งอยู่ด้านล่าง",
+     "parts": [
+      {
+       "en": "Lower Leg",
+       "th": "ขาท่อนล่าง"
+      },
+      {
+       "en": "DM 4340p",
+       "th": "DM 4340p"
+      }
+     ],
+     "fasteners": [],
+     "notes": [],
+     "reveal": {
+      "show": [
+       "left_knee_link"
+      ]
+     }
+    },
+    {
+     "label": "4",
+     "pdf": 21,
+     "printed": 18,
+     "en": "After turning over, drive in M3×8 socket head cap screws (using the same method as in the first part of assembly: first positioning, then diagonal tightening).",
+     "th": "หลังจากพลิกกลับด้านแล้ว ให้ขันสกรูหัวหกเหลี่ยมจม M3×8 (ใช้วิธีเดียวกับช่วงแรกของการประกอบ: กำหนดตำแหน่งก่อน แล้วจึงขันแบบทแยง)",
+     "parts": [],
+     "fasteners": [
+      {
+       "en": "M3×12 Socket Head Screws",
+       "th": "สกรูหัวหกเหลี่ยมจม M3×12",
+       "role": "positioning"
+      },
+      {
+       "en": "M3×8 Socket Head Cup Screws",
+       "th": "สกรูหัวหกเหลี่ยมจม (สกรูหัวกระบอก) M3×8",
+       "role": null
+      }
+     ],
+     "notes": [
+      {
+       "en": "Screws marked in red are for positioning purposes only and are not load-bearing fasteners. When tightening, only a slight contact feel is needed. Do not use power tools to over-tighten. The same applies below.",
+       "th": "สกรูที่ทำเครื่องหมายสีแดงใช้เพื่อกำหนดตำแหน่งเท่านั้น และไม่ใช่ตัวยึดรับน้ำหนัก เมื่อขันให้รู้สึกเพียงว่าสัมผัสเบาๆ ก็พอ ห้ามใช้เครื่องมือไฟฟ้าขันจนแน่นเกินไป ข้อนี้ใช้กับส่วนต่อๆ ไปเช่นเดียวกัน"
+      }
+     ]
+    },
+    {
+     "label": "5",
+     "pdf": 21,
+     "printed": 18,
+     "en": null,
+     "th": null,
+     "parts": [
+      {
+       "en": "Radial Spherical Plain Bearing",
+       "th": "แบริ่งทรงกลมแบบเรเดียล (ซีรีส์ G)"
+      },
+      {
+       "en": "Hand Press Schematic Diagram",
+       "th": "ภาพแสดงเครื่องกดมือ (Hand Press)"
+      }
+     ],
+     "fasteners": [
+      {
+       "en": "M4×8 Flat Head Screws",
+       "th": "สกรูหัวเรียบ M4×8",
+       "role": null
+      }
+     ],
+     "notes": []
+    },
+    {
+     "label": "6",
+     "pdf": 22,
+     "printed": 19,
+     "en": null,
+     "th": null,
+     "parts": [],
+     "fasteners": [
+      {
+       "en": "M3×12 Socket Head Cap Screws",
+       "th": "สกรูหัวหกเหลี่ยมจม M3×12",
+       "role": null
+      }
+     ],
+     "notes": [],
+     "reveal": {
+      "show": [
+       "left_ankle_pitch_link"
+      ]
+     }
+    },
+    {
+     "label": "7",
+     "pdf": 22,
+     "printed": 19,
+     "en": "The ankle roll connector must be tightly fitted with the universal joint cross bearing. If the ankle roll connector is not tightly fitted with the universal joint cross bearing, use a hand press to press it into place.",
+     "th": "ตัวเชื่อมข้อเท้า (โรล) ต้องสวมแน่นกับแบริ่งกากบาทข้อต่ออเนกประสงค์ หากตัวเชื่อมข้อเท้า (โรล) สวมไม่แน่นกับแบริ่งกากบาทข้อต่ออเนกประสงค์ ให้ใช้เครื่องกดมือกดให้เข้าที่",
+     "parts": [
+      {
+       "en": "Ankle Roll Connector",
+       "th": "ตัวเชื่อมข้อเท้า (โรล)"
+      },
+      {
+       "en": "universal joint cross bearing",
+       "th": "แบริ่งกากบาทข้อต่ออเนกประสงค์"
+      }
+     ],
+     "fasteners": [],
+     "notes": []
+    },
+    {
+     "label": "8",
+     "pdf": 22,
+     "printed": 19,
+     "en": null,
+     "th": null,
+     "parts": [
+      {
+       "en": "Calf Bearing Lock",
+       "th": "ตัวล็อกแบริ่งหน้าแข้ง"
+      }
+     ],
+     "fasteners": [
+      {
+       "en": "M5×10 Socket Head Cap Screws",
+       "th": "สกรูหัวหกเหลี่ยมจม M5×10",
+       "role": null
+      },
+      {
+       "en": "M4×8 Socket Head Cap Screws",
+       "th": "สกรูหัวหกเหลี่ยมจม M4×8",
+       "role": null
+      }
+     ],
+     "notes": []
+    },
+    {
+     "label": "9",
+     "pdf": 23,
+     "printed": 20,
+     "en": null,
+     "th": null,
+     "parts": [
+      {
+       "en": "20cm Foot",
+       "th": "เท้า 20 ซม."
+      }
+     ],
+     "fasteners": [],
+     "notes": [],
+     "reveal": {
+      "show": [
+       "left_ankle_roll_link"
+      ]
+     }
+    },
+    {
+     "label": "10",
+     "pdf": 23,
+     "printed": 20,
+     "en": null,
+     "th": null,
+     "parts": [],
+     "fasteners": [
+      {
+       "en": "M5×12 Socket Head Cap Screws",
+       "th": "สกรูหัวหกเหลี่ยมจม M5×12",
+       "role": null
+      }
+     ],
+     "notes": []
+    },
+    {
+     "label": "11",
+     "pdf": 23,
+     "printed": 20,
+     "en": null,
+     "th": null,
+     "parts": [
+      {
+       "en": "Rubber Foot Pad",
+       "th": "แผ่นยางรองเท้า"
+      }
+     ],
+     "fasteners": [
+      {
+       "en": "M4×8 Socket Head Cap Screws",
+       "th": "สกรูหัวหกเหลี่ยมจม M4×8",
+       "role": null
+      }
+     ],
+     "notes": []
+    },
+    {
+     "label": "12",
+     "pdf": 23,
+     "printed": 20,
+     "en": null,
+     "th": null,
+     "parts": [
+      {
+       "en": "Thrust Needle Roller and Cage Assembly",
+       "th": "แบริ่งเข็มกันรุนพร้อมกรง"
+      }
+     ],
+     "fasteners": [],
+     "notes": [
+      {
+       "en": "Do not install the two outer washers, only install the middle bearing.",
+       "th": "ห้ามติดตั้งแหวนรองด้านนอกทั้งสองชิ้น ให้ติดตั้งเฉพาะแบริ่งตรงกลางเท่านั้น"
+      }
+     ]
+    },
+    {
+     "label": "13",
+     "pdf": 23,
+     "printed": 20,
+     "en": null,
+     "th": null,
+     "parts": [],
+     "fasteners": [],
+     "notes": []
+    },
+    {
+     "label": "14",
+     "pdf": 24,
+     "printed": 21,
+     "en": null,
+     "th": null,
+     "parts": [],
+     "fasteners": [
+      {
+       "en": "M5×12 Socket Head Cap Screws",
+       "th": "สกรูหัวหกเหลี่ยมจม M5×12",
+       "role": null
+      }
+     ],
+     "notes": []
+    },
+    {
+     "label": "15",
+     "pdf": 24,
+     "printed": 21,
+     "en": null,
+     "th": null,
+     "parts": [],
+     "fasteners": [
+      {
+       "en": "M5×14 Socket Head Cap Screws",
+       "th": "สกรูหัวหกเหลี่ยมจม M5×14",
+       "role": null
+      }
+     ],
+     "notes": []
+    },
+    {
+     "label": "16",
+     "pdf": 24,
+     "printed": 21,
+     "en": "Depending on the left or right leg, remove the corresponding M4×8 socket head screws, insert the limit pin, and drive in M4×14 socket head cap screws.",
+     "th": "ตามขาซ้ายหรือขาขวา ให้ถอดสกรูหัวหกเหลี่ยมจม M4×8 ที่ตรงกันออก ใส่พินลิมิต แล้วขันสกรูหัวหกเหลี่ยมจม M4×14",
+     "parts": [
+      {
+       "en": "limit pin",
+       "th": "พินลิมิต"
+      }
+     ],
+     "fasteners": [
+      {
+       "en": "M4×14 Socket Head Cap Screws",
+       "th": "สกรูหัวหกเหลี่ยมจม M4×14",
+       "role": null
+      }
+     ],
+     "notes": []
+    },
+    {
+     "label": "16+",
+     "pdf": 24,
+     "printed": 21,
+     "en": "Install the other leg using the same method. Once the installation of the other leg is completed, place it properly and set aside for later use. (The left and right leg assemblies should be mirror-symmetric).",
+     "th": "ให้ติดตั้งขาอีกข้างด้วยวิธีเดียวกัน เมื่อติดตั้งขาอีกข้างเสร็จแล้ว ให้วางเก็บไว้อย่างเหมาะสมเพื่อใช้งานภายหลัง (ชุดขาซ้ายและขวาต้องสมมาตรเป็นภาพสะท้อนกัน)",
+     "parts": [],
+     "fasteners": [],
+     "notes": [],
+     "reveal": {
+      "show": [
+       "right_thigh_pitch_link",
+       "right_knee_link",
+       "right_ankle_pitch_link",
+       "right_ankle_roll_link"
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "hip",
+   "th": "ข้อต่อสะโพก",
+   "en": "Hip joint",
+   "view": "torso",
+   "steps": [
+    {
+     "label": "17",
+     "pdf": 25,
+     "printed": 22,
+     "en": "Place the DM-J10010L and hip clamp plate, align holes, ensure motor interfaces face the same direction, and install m4*8 socket head screws using the positioning method.",
+     "th": "วาง DM-J10010L และแผ่นประกบสะโพก (hip clamp plate) จัดรูให้ตรงกัน ตรวจสอบให้แน่ใจว่าช่องต่อของมอเตอร์หันไปในทิศทางเดียวกัน และติดตั้งสกรูหัวหกเหลี่ยมจม m4*8 โดยใช้วิธีกำหนดตำแหน่ง",
+     "parts": [
+      {
+       "en": "Hip Clamp Plate",
+       "th": "แผ่นประกบสะโพก"
+      }
+     ],
+     "fasteners": [
+      {
+       "en": "M4×8 Socket Head Cap Screws",
+       "th": "สกรูหัวหกเหลี่ยมจม M4×8",
+       "role": null
+      },
+      {
+       "en": "M4×12 Socket Head Cap Screws used for positioning",
+       "th": "สกรูหัวหกเหลี่ยมจม M4×12 ใช้สำหรับกำหนดตำแหน่ง",
+       "role": "positioning"
+      }
+     ],
+     "notes": [
+      {
+       "en": "Screws marked in red are for positioning purposes only and are not load-bearing fasteners. When tightening, only a slight contact feel is needed. Do not use power tools to over-tighten. The same applies below.",
+       "th": "สกรูที่ทำเครื่องหมายสีแดงใช้เพื่อกำหนดตำแหน่งเท่านั้น และไม่ใช่ตัวยึดรับน้ำหนัก เมื่อขันให้รู้สึกเพียงว่าสัมผัสเบาๆ ก็พอ ห้ามใช้เครื่องมือไฟฟ้าขันจนแน่นเกินไป ข้อนี้ใช้กับส่วนต่อๆ ไปเช่นเดียวกัน"
+      }
+     ],
+     "reveal": {
+      "show": [
+       "base_link"
+      ]
+     }
+    },
+    {
+     "label": "18",
+     "pdf": 25,
+     "printed": 22,
+     "en": "After tightening screws diagonally, adjust the electric screwdriver to the highest torque setting and tighten the screws clockwise in turn again (at least two cycles).",
+     "th": "หลังจากขันสกรูแบบทแยงแล้ว ให้ปรับไขควงไฟฟ้าไปที่แรงบิดสูงสุด และขันสกรูตามเข็มนาฬิกาไล่ไปตามลำดับอีกครั้ง (อย่างน้อยสองรอบ)",
+     "parts": [],
+     "fasteners": [],
+     "notes": []
+    },
+    {
+     "label": "19",
+     "pdf": 25,
+     "printed": 22,
+     "en": "Install the other hip clamp plate. Tap the hip clamp plate with a hammer on the reverse side until the sound becomes solid / deep everywhere.",
+     "th": "ติดตั้งแผ่นประกบสะโพกอีกแผ่น เคาะแผ่นประกบสะโพกด้วยค้อนที่ด้านหลังจนเสียงทึบ / ก้องลึกทั่วทั้งแผ่น",
+     "parts": [
+      {
+       "en": "Hip Plate",
+       "th": "แผ่นสะโพก"
+      }
+     ],
+     "fasteners": [],
+     "notes": []
+    },
+    {
+     "label": "20",
+     "pdf": 25,
+     "printed": 22,
+     "en": "Use the positioning method and diagonal method to install socket head cup screws.",
+     "th": "ใช้วิธีกำหนดตำแหน่งและวิธีขันแบบทแยงในการติดตั้งสกรูหัวหกเหลี่ยมจม (สกรูหัวกระบอก)",
+     "parts": [],
+     "fasteners": [
+      {
+       "en": "M4×8 Socket Head Cap Screws",
+       "th": "สกรูหัวหกเหลี่ยมจม M4×8",
+       "role": null
+      },
+      {
+       "en": "M4×12 Socket Head Cap Screws used for positioning",
+       "th": "สกรูหัวหกเหลี่ยมจม M4×12 ใช้สำหรับกำหนดตำแหน่ง",
+       "role": "positioning"
+      }
+     ],
+     "notes": [
+      {
+       "en": "Screws marked in red are for positioning purposes only and are not load-bearing fasteners. When tightening, only a slight contact feel is needed. Do not use power tools to over-tighten. The same applies below.",
+       "th": "สกรูที่ทำเครื่องหมายสีแดงใช้เพื่อกำหนดตำแหน่งเท่านั้น และไม่ใช่ตัวยึดรับน้ำหนัก เมื่อขันให้รู้สึกเพียงว่าสัมผัสเบาๆ ก็พอ ห้ามใช้เครื่องมือไฟฟ้าขันจนแน่นเกินไป ข้อนี้ใช้กับส่วนต่อๆ ไปเช่นเดียวกัน"
+      }
+     ]
+    },
+    {
+     "label": "21",
+     "pdf": 26,
+     "printed": 23,
+     "en": null,
+     "th": null,
+     "parts": [
+      {
+       "en": "Thrust Needle Roller and Cage Assembly",
+       "th": "แบริ่งเข็มกันรุนพร้อมกรง"
+      }
+     ],
+     "fasteners": [],
+     "notes": [
+      {
+       "en": "Do not install the two outer washers, only install the middle bearing.",
+       "th": "ห้ามติดตั้งแหวนรองด้านนอกทั้งสองชิ้น ให้ติดตั้งเฉพาะแบริ่งตรงกลางเท่านั้น"
+      }
+     ],
+     "reveal": {
+      "show": [
+       "left_thigh_yaw_link",
+       "right_thigh_yaw_link"
+      ]
+     }
+    },
+    {
+     "label": "22",
+     "pdf": 26,
+     "printed": 23,
+     "en": null,
+     "th": null,
+     "parts": [
+      {
+       "en": "Universal Connector",
+       "th": "ตัวเชื่อมข้อต่ออเนกประสงค์"
+      }
+     ],
+     "fasteners": [],
+     "notes": []
+    },
+    {
+     "label": "23",
+     "pdf": 26,
+     "printed": 23,
+     "en": null,
+     "th": null,
+     "parts": [],
+     "fasteners": [
+      {
+       "en": "M5×10 Socket Head Cap Screws",
+       "th": "สกรูหัวหกเหลี่ยมจม M5×10",
+       "role": null
+      }
+     ],
+     "notes": []
+    },
+    {
+     "label": "24",
+     "pdf": 26,
+     "printed": 23,
+     "en": null,
+     "th": null,
+     "parts": [
+      {
+       "en": "DM J10010L",
+       "th": "DM J10010L"
+      },
+      {
+       "en": "Universal Connector",
+       "th": "ตัวเชื่อมข้อต่ออเนกประสงค์"
+      }
+     ],
+     "fasteners": [],
+     "notes": [
+      {
+       "en": "Motor placed in the direction as shown. Align the power hole with the threaded hole.",
+       "th": "วางมอเตอร์ในทิศทางตามที่แสดง จัดรูสายไฟให้ตรงกับรูเกลียว"
+      }
+     ],
+     "unsure": true
+    },
+    {
+     "label": "25",
+     "pdf": 27,
+     "printed": 24,
+     "en": null,
+     "th": null,
+     "parts": [
+      {
+       "en": "Universal Counter Reamed Flange",
+       "th": "หน้าแปลนคว้านของตัวเชื่อมข้อต่อ"
+      }
+     ],
+     "fasteners": [
+      {
+       "en": "M4×8 Socket Head Cap Screws",
+       "th": "สกรูหัวหกเหลี่ยมจม M4×8",
+       "role": null
+      }
+     ],
+     "notes": [],
+     "reveal": {
+      "show": [
+       "left_thigh_roll_link",
+       "right_thigh_roll_link"
+      ]
+     }
+    },
+    {
+     "label": "26",
+     "pdf": 27,
+     "printed": 24,
+     "en": null,
+     "th": null,
+     "parts": [
+      {
+       "en": "Universal Connector",
+       "th": "ตัวเชื่อมข้อต่ออเนกประสงค์"
+      },
+      {
+       "en": "Thrust Needle Roller and Cage Assembly",
+       "th": "แบริ่งเข็มกันรุนพร้อมกรง"
+      }
+     ],
+     "fasteners": [
+      {
+       "en": "M5×10 Socket Head Cap Screws",
+       "th": "สกรูหัวหกเหลี่ยมจม M5×10",
+       "role": null
+      }
+     ],
+     "notes": [
+      {
+       "en": "Do not install the two outer washers, only install the middle bearing.",
+       "th": "ห้ามติดตั้งแหวนรองด้านนอกทั้งสองชิ้น ให้ติดตั้งเฉพาะแบริ่งตรงกลางเท่านั้น"
+      }
+     ]
+    },
+    {
+     "label": "27",
+     "pdf": 27,
+     "printed": 24,
+     "en": null,
+     "th": null,
+     "parts": [
+      {
+       "en": "DM J10010L",
+       "th": "DM J10010L"
+      }
+     ],
+     "fasteners": [
+      {
+       "en": "M4×8 Socket Head Cap Screws",
+       "th": "สกรูหัวหกเหลี่ยมจม M4×8",
+       "role": null
+      }
+     ],
+     "notes": [
+      {
+       "en": "Motor placed in the direction as shown. Align the power hole with the threaded hole.",
+       "th": "วางมอเตอร์ในทิศทางตามที่แสดง จัดรูสายไฟให้ตรงกับรูเกลียว"
+      }
+     ]
+    },
+    {
+     "label": "28",
+     "pdf": 28,
+     "printed": 25,
+     "en": null,
+     "th": null,
+     "parts": [
+      {
+       "en": "Universal Counter Reamed Flange",
+       "th": "หน้าแปลนคว้านของตัวเชื่อมข้อต่อ"
+      }
+     ],
+     "fasteners": [
+      {
+       "en": "M4×8 Socket Head Cap Screws",
+       "th": "สกรูหัวหกเหลี่ยมจม M4×8",
+       "role": null
+      }
+     ],
+     "notes": []
+    },
+    {
+     "label": "29",
+     "pdf": 28,
+     "printed": 25,
+     "en": null,
+     "th": null,
+     "parts": [],
+     "fasteners": [
+      {
+       "en": "M3×8 Socket Head Cap Screws",
+       "th": "สกรูหัวหกเหลี่ยมจม M3×8",
+       "role": null
+      }
+     ],
+     "notes": []
+    }
+   ]
+  },
+  {
+   "id": "leghip",
+   "th": "ต่อขากับสะโพก",
+   "en": "Leg-to-hip connection",
+   "view": "legs",
+   "steps": [
+    {
+     "label": "30",
+     "pdf": 29,
+     "printed": 26,
+     "en": null,
+     "th": null,
+     "parts": [
+      {
+       "en": "Thrust Needle Roller and Cage Assembly",
+       "th": "แบริ่งเข็มกันรุนพร้อมกรง"
+      }
+     ],
+     "fasteners": [],
+     "notes": [
+      {
+       "en": "Do not install the two outer washers, only install the middle bearing.",
+       "th": "ห้ามติดตั้งแหวนรองด้านนอกทั้งสองชิ้น ให้ติดตั้งเฉพาะแบริ่งตรงกลางเท่านั้น"
+      }
+     ]
+    },
+    {
+     "label": "31",
+     "pdf": 29,
+     "printed": 26,
+     "en": null,
+     "th": null,
+     "parts": [],
+     "fasteners": [],
+     "notes": [],
+     "reveal": {
+      "attach": true
+     }
+    },
+    {
+     "label": "32",
+     "pdf": 29,
+     "printed": 26,
+     "en": null,
+     "th": null,
+     "parts": [],
+     "fasteners": [
+      {
+       "en": "M5×10 Socket Head Cap Screws",
+       "th": "สกรูหัวหกเหลี่ยมจม M5×10",
+       "role": null
+      }
+     ],
+     "notes": []
+    }
+   ]
+  },
+  {
+   "id": "waist",
+   "th": "เอว",
+   "en": "Waist",
+   "view": "torso",
+   "steps": [
+    {
+     "label": "33",
+     "pdf": 30,
+     "printed": 27,
+     "en": "Motor placed in the direction as shown",
+     "th": "ให้วางมอเตอร์ในทิศทางตามที่แสดง",
+     "parts": [],
+     "fasteners": [],
+     "notes": [],
+     "reveal": {
+      "show": [
+       "torso_link"
+      ]
+     }
+    },
+    {
+     "label": "34",
+     "pdf": 30,
+     "printed": 27,
+     "en": null,
+     "th": null,
+     "parts": [
+      {
+       "en": "Hip Joint Mount",
+       "th": "ฐานยึดข้อต่อสะโพก"
+      },
+      {
+       "en": "DM J10010L",
+       "th": "DM J10010L"
+      }
+     ],
+     "fasteners": [],
+     "notes": []
+    },
+    {
+     "label": "35",
+     "pdf": 30,
+     "printed": 27,
+     "en": null,
+     "th": null,
+     "parts": [
+      {
+       "en": "IMU",
+       "th": "IMU"
+      },
+      {
+       "en": "IMU Carrier Board",
+       "th": "แผ่นยึด IMU"
+      }
+     ],
+     "fasteners": [
+      {
+       "en": "M3×8 Socket Head Cap Screws",
+       "th": "สกรูหัวหกเหลี่ยมจม M3×8",
+       "role": null
+      },
+      {
+       "en": "M4×12 Flat Head Screws",
+       "th": "สกรูหัวเรียบ M4×12",
+       "role": null
+      },
+      {
+       "en": "M4×12 Socket Head Cap Screws",
+       "th": "สกรูหัวหกเหลี่ยมจม M4×12",
+       "role": null
+      }
+     ],
+     "notes": [
+      {
+       "en": "Use a manual wrench for socket head screws in deep recesses.",
+       "th": "ให้ใช้ประแจมือสำหรับขันสกรูหัวหกเหลี่ยมจมในตำแหน่งที่อยู่ในร่องลึก"
+      }
+     ],
+     "view": "imu",
+     "overlay": "imu"
+    },
+    {
+     "label": "36",
+     "pdf": 31,
+     "printed": 28,
+     "en": "Place the assembled hip joint into the hip section.",
+     "th": "ให้วางข้อต่อสะโพกที่ประกอบแล้วลงในส่วนสะโพก",
+     "parts": [],
+     "fasteners": [],
+     "notes": []
+    },
+    {
+     "label": "37",
+     "pdf": 31,
+     "printed": 28,
+     "en": "Secure the outermost side using m4×12 socket head cap screws. Then drive in the remaining m4*12 socket head cap screws.",
+     "th": "ให้ยึดด้านนอกสุดด้วยสกรูหัวหกเหลี่ยมจม M4×12 จากนั้นให้ขันสกรูหัวหกเหลี่ยมจม M4×12 ที่เหลือเข้าไป",
+     "parts": [],
+     "fasteners": [
+      {
+       "en": "M4×12 Socket Head Cap Screws",
+       "th": "สกรูหัวหกเหลี่ยมจม M4×12",
+       "role": null
+      }
+     ],
+     "notes": []
+    },
+    {
+     "label": "38",
+     "pdf": 32,
+     "printed": 29,
+     "en": "Install the front m4×12 socket head cap screws following Step 37.",
+     "th": "ให้ติดตั้งสกรูหัวหกเหลี่ยมจม M4×12 ด้านหน้า ตามขั้นตอนที่ 37",
+     "parts": [],
+     "fasteners": [
+      {
+       "en": "M4×12 Socket Head Cap Screws",
+       "th": "สกรูหัวหกเหลี่ยมจม M4×12",
+       "role": null
+      }
+     ],
+     "notes": []
+    },
+    {
+     "label": "39",
+     "pdf": 32,
+     "printed": 29,
+     "en": null,
+     "th": null,
+     "parts": [
+      {
+       "en": "Deep Groove Ball Bearing",
+       "th": "แบริ่งลูกปืนร่องลึก"
+      },
+      {
+       "en": "Waist Support",
+       "th": "ฐานรองเอว"
+      }
+     ],
+     "fasteners": [],
+     "notes": []
+    },
+    {
+     "label": "40-41",
+     "pdf": 32,
+     "printed": 29,
+     "en": "When installing the waist support and the battery bottom cover, pay attention to the orientation of the limit slots. The orientation of the limit slot for the bearing fixing should align with the front direction of the robot, and the orientation of the limit slot for the battery bottom cover should align with the back direction of the robot.",
+     "th": "ในการติดตั้งฐานรองเอวและฝาครอบแบตเตอรี่ด้านล่าง ให้ใส่ใจกับทิศทางของช่องลิมิต ทิศทางของช่องลิมิตสำหรับยึดแบริ่งต้องจัดให้ตรงกับทิศทางด้านหน้าของหุ่นยนต์ และทิศทางของช่องลิมิตของฝาครอบแบตเตอรี่ด้านล่างต้องจัดให้ตรงกับทิศทางด้านหลังของหุ่นยนต์",
+     "parts": [
+      {
+       "en": "Waist Support",
+       "th": "ฐานรองเอว"
+      },
+      {
+       "en": "Battery Bottom Cover",
+       "th": "ฝาครอบแบตเตอรี่ด้านล่าง"
+      },
+      {
+       "en": "Limit Block Schematic Diagram",
+       "th": "แผนภาพแสดงตัวลิมิต"
+      }
+     ],
+     "fasteners": [
+      {
+       "en": "M4×8 Flat Head Screws",
+       "th": "สกรูหัวเรียบ M4×8",
+       "role": null
+      },
+      {
+       "en": "M5×10 Socket Head Cap Screws",
+       "th": "สกรูหัวหกเหลี่ยมจม M5×10",
+       "role": null
+      }
+     ],
+     "notes": [
+      {
+       "en": "When installing the waist support and the battery bottom cover, pay attention to the orientation of the limit slots. The orientation of the limit slot for the bearing fixing should align with the front direction of the robot, and the orientation of the limit slot for the battery bottom cover should align with the back direction of the robot.",
+       "th": "ในการติดตั้งฐานรองเอวและฝาครอบแบตเตอรี่ด้านล่าง ให้ใส่ใจกับทิศทางของช่องลิมิต ทิศทางของช่องลิมิตสำหรับยึดแบริ่งต้องจัดให้ตรงกับทิศทางด้านหน้าของหุ่นยนต์ และทิศทางของช่องลิมิตของฝาครอบแบตเตอรี่ด้านล่างต้องจัดให้ตรงกับทิศทางด้านหลังของหุ่นยนต์"
+      }
+     ]
+    },
+    {
+     "label": "42",
+     "pdf": 33,
+     "printed": 30,
+     "en": null,
+     "th": null,
+     "parts": [
+      {
+       "en": "Clamp Plate",
+       "th": "แผ่นหนีบ"
+      }
+     ],
+     "fasteners": [
+      {
+       "en": "M4×10 Socket Head Cap Screws",
+       "th": "สกรูหัวหกเหลี่ยมจม M4×10",
+       "role": null
+      }
+     ],
+     "notes": []
+    },
+    {
+     "label": "43",
+     "pdf": 33,
+     "printed": 30,
+     "en": "Do not install the side cross plate on one side yet, to facilitate battery installation later.",
+     "th": "ห้ามติดตั้งแผ่นขวางด้านข้างด้านใดด้านหนึ่งในขณะนี้ เพื่ออำนวยความสะดวกในการติดตั้งแบตเตอรี่ในภายหลัง",
+     "parts": [
+      {
+       "en": "Shoulder",
+       "th": "ไหล่"
+      },
+      {
+       "en": "Side Cross Plate",
+       "th": "แผ่นขวางด้านข้าง"
+      }
+     ],
+     "fasteners": [
+      {
+       "en": "M4×10 Socket Head Cap Screws",
+       "th": "สกรูหัวหกเหลี่ยมจม M4×10",
+       "role": null
+      }
+     ],
+     "notes": [
+      {
+       "en": "Do not install the side cross plate on one side yet, to facilitate battery installation later.",
+       "th": "ห้ามติดตั้งแผ่นขวางด้านข้างด้านใดด้านหนึ่งในขณะนี้ เพื่ออำนวยความสะดวกในการติดตั้งแบตเตอรี่ในภายหลัง"
+      }
+     ]
+    },
+    {
+     "label": "44",
+     "pdf": 34,
+     "printed": 31,
+     "en": null,
+     "th": null,
+     "parts": [],
+     "fasteners": [
+      {
+       "en": "M4×10 Socket Head Cap Screws",
+       "th": "สกรูหัวหกเหลี่ยมจม M4×10",
+       "role": null
+      }
+     ],
+     "notes": [],
+     "reveal": {
+      "show": [
+       "left_arm_pitch_link"
+      ]
+     }
+    },
+    {
+     "label": "45",
+     "pdf": 34,
+     "printed": 31,
+     "en": "Place the DM 4340p motor as shown, ensuring the motor interface faces vertically upward (for easy wiring).",
+     "th": "ให้วางมอเตอร์ DM 4340p ตามที่แสดง โดยต้องให้ช่องต่อของมอเตอร์หันขึ้นในแนวตั้ง (เพื่อความสะดวกในการเดินสาย)",
+     "parts": [
+      {
+       "en": "DM 4340p",
+       "th": "DM 4340p"
+      }
+     ],
+     "fasteners": [
+      {
+       "en": "M3×6 Socket Head Cap Screws",
+       "th": "สกรูหัวหกเหลี่ยมจม M3×6",
+       "role": null
+      }
+     ],
+     "notes": []
+    },
+    {
+     "label": "46",
+     "pdf": 34,
+     "printed": 31,
+     "en": null,
+     "th": null,
+     "parts": [
+      {
+       "en": "Arm 5",
+       "th": "แขน 5"
+      }
+     ],
+     "fasteners": [
+      {
+       "en": "M3×16 Socket Head Cap Screws",
+       "th": "สกรูหัวหกเหลี่ยมจม M3×16",
+       "role": null
+      }
+     ],
+     "notes": []
+    },
+    {
+     "label": "47",
+     "pdf": 34,
+     "printed": 31,
+     "en": "Follow the steps above to install the opposite arm joint.",
+     "th": "ให้ทำตามขั้นตอนข้างต้นเพื่อติดตั้งข้อต่อแขนอีกด้านหนึ่ง",
+     "parts": [],
+     "fasteners": [],
+     "notes": [],
+     "reveal": {
+      "show": [
+       "right_arm_pitch_link"
+      ]
+     }
+    },
+    {
+     "label": "48",
+     "pdf": 35,
+     "printed": 32,
+     "en": "Follow the steps above to install the opposite part.",
+     "th": "ให้ทำตามขั้นตอนข้างต้นเพื่อติดตั้งชิ้นส่วนอีกด้านหนึ่ง",
+     "parts": [
+      {
+       "en": "DM 4340p",
+       "th": "DM 4340p"
+      }
+     ],
+     "fasteners": [
+      {
+       "en": "M3×8 Socket Head Cap Screws",
+       "th": "สกรูหัวหกเหลี่ยมจม M3×8",
+       "role": null
+      }
+     ],
+     "notes": []
+    }
+   ]
+  },
+  {
+   "id": "arms",
+   "th": "แขน",
+   "en": "Arms",
+   "view": "arms",
+   "steps": [
+    {
+     "label": "49",
+     "pdf": 36,
+     "printed": 33,
+     "en": "Place the D4340p motor according to the robot's standing orientation, ensuring that the motor interface faces the same direction as the robot's facing direction (to avoid misalignment).",
+     "th": "ให้วางมอเตอร์ D4340p ตามทิศทางการยืนของหุ่นยนต์ โดยต้องให้ช่องต่อของมอเตอร์หันไปในทิศทางเดียวกับทิศทางที่หุ่นยนต์หันหน้า (เพื่อหลีกเลี่ยงการจัดแนวคลาดเคลื่อน)",
+     "parts": [
+      {
+       "en": "Arm 3",
+       "th": "แขน 3"
+      },
+      {
+       "en": "DM 4340p",
+       "th": "DM 4340p"
+      },
+      {
+       "en": "Arm 4",
+       "th": "แขน 4"
+      }
+     ],
+     "fasteners": [
+      {
+       "en": "M3×8 Socket Head Cap Screws",
+       "th": "สกรูหัวหกเหลี่ยมจม M3×8",
+       "role": null
+      },
+      {
+       "en": "M3×10 Socket Head Cap Screws",
+       "th": "สกรูหัวหกเหลี่ยมจม M3×10",
+       "role": null
+      }
+     ],
+     "notes": [],
+     "reveal": {
+      "show": [
+       "left_arm_roll_link",
+       "right_arm_roll_link"
+      ]
+     }
+    },
+    {
+     "label": "50",
+     "pdf": 36,
+     "printed": 33,
+     "en": null,
+     "th": null,
+     "parts": [
+      {
+       "en": "Arm 1",
+       "th": "แขน 1"
+      }
+     ],
+     "fasteners": [
+      {
+       "en": "M3×16 Socket Head Cap Screws",
+       "th": "สกรูหัวหกเหลี่ยมจม M3×16",
+       "role": null
+      }
+     ],
+     "notes": []
+    },
+    {
+     "label": "51",
+     "pdf": 37,
+     "printed": 34,
+     "en": null,
+     "th": null,
+     "parts": [
+      {
+       "en": "Arm 2",
+       "th": "แขน 2"
+      }
+     ],
+     "fasteners": [
+      {
+       "en": "M3×16 Socket Head Cap Screws",
+       "th": "สกรูหัวหกเหลี่ยมจม M3×16",
+       "role": null
+      }
+     ],
+     "notes": [],
+     "reveal": {
+      "show": [
+       "left_arm_yaw_link",
+       "right_arm_yaw_link"
+      ]
+     }
+    },
+    {
+     "label": "52",
+     "pdf": 37,
+     "printed": 34,
+     "en": "Place the DM4340p motor as shown. Ensure the elbow joint motor interface faces vertically downward, and the shoulder joint motor interface faces vertically upward (for easy wiring).",
+     "th": "ให้วางมอเตอร์ DM4340p ตามที่แสดง ต้องให้ช่องต่อของมอเตอร์ข้อต่อศอกหันลงในแนวตั้ง และช่องต่อของมอเตอร์ข้อต่อไหล่หันขึ้นในแนวตั้ง (เพื่อความสะดวกในการเดินสาย)",
+     "parts": [
+      {
+       "en": "DM 4340p",
+       "th": "DM 4340p"
+      }
+     ],
+     "fasteners": [
+      {
+       "en": "M3×8 Socket Head Cap Screws",
+       "th": "สกรูหัวหกเหลี่ยมจม M3×8",
+       "role": null
+      }
+     ],
+     "notes": [],
+     "reveal": {
+      "show": [
+       "left_elbow_pitch_link",
+       "right_elbow_pitch_link"
+      ]
+     }
+    },
+    {
+     "label": "53",
+     "pdf": 37,
+     "printed": 34,
+     "en": "Using the diagonal positioning method, drive M3×16 socket head screws into the shoulder in sequence to secure the DM 4340p.",
+     "th": "ให้ใช้วิธีกำหนดตำแหน่งแบบทแยง (diagonal positioning method) ขันสกรูหัวหกเหลี่ยมจม M3×16 เข้ากับไหล่ตามลำดับ เพื่อยึดมอเตอร์ DM 4340p",
+     "parts": [],
+     "fasteners": [
+      {
+       "en": "M3×16 Socket Head Cap Screws",
+       "th": "สกรูหัวหกเหลี่ยมจม M3×16",
+       "role": "positioning"
+      }
+     ],
+     "notes": []
+    },
+    {
+     "label": "54",
+     "pdf": 38,
+     "printed": 35,
+     "en": "Use M3×10 socket head screws to secure the upper and lower parts of the forearm.",
+     "th": "ให้ใช้สกรูหัวหกเหลี่ยมจม M3×10 ยึดส่วนบนและส่วนล่างของแขนท่อนล่างเข้าด้วยกัน",
+     "parts": [],
+     "fasteners": [
+      {
+       "en": "M3×10 Socket Head Cap Screws",
+       "th": "สกรูหัวหกเหลี่ยมจม M3×10",
+       "role": null
+      }
+     ],
+     "notes": [],
+     "reveal": {
+      "show": [
+       "left_elbow_yaw_link",
+       "right_elbow_yaw_link"
+      ]
+     }
+    },
+    {
+     "label": "55",
+     "pdf": 38,
+     "printed": 35,
+     "en": "Use M3×16 socket head screws to secure the upper and lower parts of the forearm. Install the opposite side arm as a mirror image.",
+     "th": "ให้ใช้สกรูหัวหกเหลี่ยมจม M3×16 ยึดส่วนบนและส่วนล่างของแขนท่อนล่างเข้าด้วยกัน ให้ติดตั้งแขนด้านตรงข้ามในลักษณะภาพสะท้อนกระจก (mirror image)",
+     "parts": [],
+     "fasteners": [
+      {
+       "en": "M3×16 Socket Head Cap Screws",
+       "th": "สกรูหัวหกเหลี่ยมจม M3×16",
+       "role": null
+      }
+     ],
+     "notes": []
+    },
+    {
+     "label": "56",
+     "pdf": 38,
+     "printed": 35,
+     "en": "Install the battery, and then install the side cross plate from step 43.",
+     "th": "ให้ติดตั้งแบตเตอรี่ จากนั้นจึงติดตั้งแผ่นขวางด้านข้างจากขั้นตอนที่ 43",
+     "parts": [
+      {
+       "en": "Battery",
+       "th": "แบตเตอรี่"
+      }
+     ],
+     "fasteners": [],
+     "notes": [],
+     "gate": "battery"
+    },
+    {
+     "label": "57",
+     "pdf": 38,
+     "printed": 35,
+     "en": null,
+     "th": null,
+     "parts": [],
+     "fasteners": [
+      {
+       "en": "M4×10 Socket Head Cap Screws",
+       "th": "สกรูหัวหกเหลี่ยมจม M4×10",
+       "role": null
+      }
+     ],
+     "notes": []
+    }
+   ]
+  },
+  {
+   "id": "cables",
+   "th": "ตัวยึดสาย",
+   "en": "Cable fasteners",
+   "view": "overview",
+   "steps": [
+    {
+     "label": "58-63",
+     "pdf": 39,
+     "printed": 36,
+     "en": "During the assembly of the cable fixing components, all screws are M4×8 flat head screws. During assembly, the insertion positions of the cable management plates for the arm and leg are as shown in the figure (using the right arm and right leg as examples).",
+     "th": "ในระหว่างการประกอบชิ้นส่วนยึดสาย สกรูทั้งหมดเป็นสกรูหัวเรียบ M4×8 ในระหว่างการประกอบ ตำแหน่งการสอดแผ่นจัดระเบียบสายสำหรับแขนและขาเป็นไปตามที่แสดงในรูป (ใช้แขนขวาและขาขวาเป็นตัวอย่าง)",
+     "parts": [
+      {
+       "en": "ARM",
+       "th": "แขน"
+      },
+      {
+       "en": "HIP JOINT",
+       "th": "ข้อต่อสะโพก"
+      },
+      {
+       "en": "HIP",
+       "th": "สะโพก"
+      },
+      {
+       "en": "GROIN",
+       "th": "ขาหนีบ"
+      },
+      {
+       "en": "THIGH",
+       "th": "ต้นขา"
+      },
+      {
+       "en": "KNEE",
+       "th": "เข่า"
+      }
+     ],
+     "fasteners": [
+      {
+       "en": "M4×8 Flat Head Screws",
+       "th": "สกรูหัวเรียบ M4×8",
+       "role": null
+      }
+     ],
+     "notes": [
+      {
+       "en": "Wiring Documentation Tutorial (QR code printed on the page).",
+       "th": "บทช่วยสอนเอกสารการเดินสาย (Wiring Documentation Tutorial) พร้อมคิวอาร์โค้ด"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "switches",
+   "th": "สวิตช์และพอร์ต",
+   "en": "Switches and ports",
+   "view": "overview",
+   "steps": [
+    {
+     "label": "64+66",
+     "pdf": 40,
+     "printed": 37,
+     "en": "Simply tighten the switch onto the back of the robot.",
+     "th": "ให้ขันสวิตช์เข้ากับด้านหลังของหุ่นยนต์เท่านั้น",
+     "parts": [
+      {
+       "en": "Metal button switch",
+       "th": "สวิตช์ปุ่มกดโลหะ"
+      },
+      {
+       "en": "Power charging port",
+       "th": "ช่องชาร์จไฟ"
+      }
+     ],
+     "fasteners": [],
+     "notes": []
+    },
+    {
+     "label": "65",
+     "pdf": 40,
+     "printed": 37,
+     "en": "The emergency stop button needs to be tightened, and the internal circuit board needs to be secured using clips on the back of the robot.",
+     "th": "ปุ่มหยุดฉุกเฉินต้องขันให้แน่น และบอร์ดวงจรภายในต้องยึดด้วยคลิปที่ด้านหลังของหุ่นยนต์",
+     "parts": [
+      {
+       "en": "Emergency stop button",
+       "th": "ปุ่มหยุดฉุกเฉิน"
+      }
+     ],
+     "fasteners": [],
+     "notes": []
+    },
+    {
+     "label": "67",
+     "pdf": 40,
+     "printed": 37,
+     "en": null,
+     "th": null,
+     "parts": [
+      {
+       "en": "Metal handle",
+       "th": "หูหิ้วโลหะ"
+      }
+     ],
+     "fasteners": [
+      {
+       "en": "M6×10 Socket Head Cap Screws",
+       "th": "สกรูหัวหกเหลี่ยมจม M6×10",
+       "role": null
+      }
+     ],
+     "notes": []
+    }
+   ]
+  },
+  {
+   "id": "calibration",
+   "th": "คาลิเบรตด้วยพิน",
+   "en": "Pin calibration",
+   "view": "overview",
+   "steps": [
+    {
+     "label": "intro",
+     "pdf": 42,
+     "printed": 39,
+     "en": "I. Purpose of Calibration Using Cylindrical Pins\nWe realized that the calibration methods for 3D printing in the past had many deficiencies, such as factors like the accuracy and stiffness of 3D printed parts, as well as the time required to print calibration parts. Therefore, we proposed using cylindrical pins (GB119) to constrain the rotational degrees of freedom of each joint. The standard part calibration scheme aims to provide users with an alternative mechanical calibration method with high repeatability to achieve attitude constraint and zero alignment of each joint of the robot during the calibration process.\n\nII. Potential issues in cylindrical pin calibration\nIt should be noted that this type of calibration method has relatively high requirements for the manufacturing tolerances of components, including but not limited to dimensional errors, positional errors, and shape errors. Due to the process differences between different machining suppliers and different machining batches, even when the nominal dimensions are consistent, the actual fitting effects of parts may vary. Therefore, during actual use, it may occur that the cylindrical locating pin cannot be smoothly inserted, or although it can be inserted, it cannot be fully inserted to the designed depth, thus affecting its effect on restricting the rotational degrees of freedom of the joint. If the locating pin cannot be inserted manually, you may choose to use a rubber hammer or other tools to insert it.\nIn some cases, inserting the cylindrical pin to a certain depth can effectively constrain the rotation of the joint. After inserting the positioning pin, if the rotation degree of freedom of the relevant joint is found to be restricted when rotating it, the calibration and positioning can be considered completed, and there is no need to force it to be inserted to the theoretical limit position. The BOM provides two lengths of positioning pins, 18 and 22. Due to interference at some positions, users can choose cylindrical pins of different lengths by themselves.\nIf the plug is found difficult to pull out manually, tools such as needle-nose pliers can be used.\n\nIII. Installation Location Instructions\nThe insertion positions of the locating pins for the arm and leg are as shown in the figure (taking the right hand and right leg as an example). It should be noted that the illustrated scheme imposes a certain degree of over-constraint on the rotational degrees of freedom of the leg. From a theoretical analysis perspective, only one locating pin needs to be inserted into the leg joint to achieve posture positioning. However, in actual engineering implementation, a multi-point constraint design scheme is adopted to improve the stability and reliability of the calibration process.",
+     "th": "I. วัตถุประสงค์ของการคาลิเบรตด้วยพินทรงกระบอก\n\nเราพบว่าวิธีการคาลิเบรตด้วยการพิมพ์ 3 มิติที่ใช้ในอดีตมีข้อบกพร่องหลายประการ เช่น ปัจจัยด้านความแม่นยำและความแข็งแรงของชิ้นส่วนที่พิมพ์ 3 มิติ รวมถึงเวลาที่ต้องใช้ในการพิมพ์ชิ้นส่วนสำหรับคาลิเบรต ดังนั้นเราจึงเสนอให้ใช้พินทรงกระบอก (GB119) เพื่อจำกัดองศาอิสระในการหมุนของแต่ละข้อต่อ แนวทางการคาลิเบรตด้วยชิ้นส่วนมาตรฐานนี้มีจุดมุ่งหมายเพื่อมอบวิธีการคาลิเบรตเชิงกลทางเลือกที่มีความสามารถในการทำซ้ำได้สูงแก่ผู้ใช้ เพื่อให้เกิดการจำกัดท่าทางและการจัดตำแหน่งศูนย์ (zero) ของแต่ละข้อต่อของหุ่นยนต์ในระหว่างกระบวนการคาลิเบรต\n\nII. ปัญหาที่อาจเกิดขึ้นในการคาลิเบรตด้วยพินทรงกระบอก\n\nควรทราบว่าวิธีการคาลิเบรตแบบนี้มีข้อกำหนดค่อนข้างสูงต่อค่าพิกัดความเผื่อในการผลิตของชิ้นส่วน ซึ่งรวมถึงแต่ไม่จำกัดเพียงความคลาดเคลื่อนของขนาด ความคลาดเคลื่อนของตำแหน่ง และความคลาดเคลื่อนของรูปทรง เนื่องจากความแตกต่างของกระบวนการระหว่างซัพพลายเออร์งานกลึงต่างราย และระหว่างล็อตการผลิตต่างล็อต แม้ขนาดตามที่กำหนดจะตรงกัน แต่ผลการประกอบเข้ากันจริงของชิ้นส่วนอาจแตกต่างกันได้ ดังนั้น ในการใช้งานจริงอาจเกิดกรณีที่พินกำหนดตำแหน่งทรงกระบอกไม่สามารถเสียบเข้าไปได้อย่างราบรื่น หรือเสียบเข้าไปได้แต่ไม่สามารถเสียบจนถึงความลึกตามที่ออกแบบไว้ ซึ่งส่งผลต่อประสิทธิภาพในการจำกัดองศาอิสระในการหมุนของข้อต่อ หากไม่สามารถเสียบพินกำหนดตำแหน่งด้วยมือได้ สามารถเลือกใช้ค้อนยางหรือเครื่องมืออื่นในการเสียบได้\n\nในบางกรณี การเสียบพินทรงกระบอกถึงความลึกระดับหนึ่งก็สามารถจำกัดการหมุนของข้อต่อได้อย่างมีประสิทธิภาพ หลังจากเสียบพินกำหนดตำแหน่งแล้ว หากพบว่าองศาอิสระในการหมุนของข้อต่อที่เกี่ยวข้องถูกจำกัดเมื่อลองหมุนข้อต่อนั้น ก็ถือได้ว่าการคาลิเบรตและการกำหนดตำแหน่งเสร็จสมบูรณ์ และไม่จำเป็นต้องฝืนเสียบให้ถึงตำแหน่งลิมิตตามทฤษฎี ใน BOM มีพินกำหนดตำแหน่งให้สองความยาว คือ 18 และ 22 เนื่องจากมีการรบกวนกันของชิ้นส่วนในบางตำแหน่ง ผู้ใช้สามารถเลือกพินทรงกระบอกที่มีความยาวต่างกันได้ด้วยตนเอง\nหากพบว่าดึงปลั๊กออกด้วยมือได้ยาก สามารถใช้เครื่องมือ เช่น คีมปากแหลม ได้\n\nIII. คำอธิบายตำแหน่งการติดตั้ง\n\nตำแหน่งการเสียบพินกำหนดตำแหน่งของแขนและขาเป็นไปตามที่แสดงในรูป (ใช้มือขวาและขาขวาเป็นตัวอย่าง) ควรทราบว่าแผนที่แสดงในรูปเป็นการจำกัดองศาอิสระในการหมุนของขามากกว่าที่จำเป็น (over-constraint) ในระดับหนึ่ง จากมุมมองของการวิเคราะห์เชิงทฤษฎี เพียงเสียบพินกำหนดตำแหน่งหนึ่งตัวเข้าที่ข้อต่อของขาก็สามารถกำหนดตำแหน่งท่าทางได้ อย่างไรก็ตาม ในการนำไปใช้งานจริงทางวิศวกรรม ได้ใช้แผนการออกแบบที่จำกัดหลายจุดเพื่อเพิ่มเสถียรภาพและความน่าเชื่อถือของกระบวนการคาลิเบรต",
+     "parts": [
+      {
+       "en": "Cylindrical pin (GB119)",
+       "th": "พินทรงกระบอก (GB119)"
+      }
+     ],
+     "fasteners": [
+      {
+       "en": "Cylindrical locating pin, BOM length 18",
+       "th": "พินกำหนดตำแหน่งทรงกระบอก ความยาว 18 (ตาม BOM)",
+       "role": null
+      },
+      {
+       "en": "Cylindrical locating pin, BOM length 22",
+       "th": "พินกำหนดตำแหน่งทรงกระบอก ความยาว 22 (ตาม BOM)",
+       "role": null
+      }
+     ],
+     "notes": [
+      {
+       "en": "Spans PDF pages 42-43 (printed 39-40); a sentence breaks across the page boundary.",
+       "th": "ครอบคลุมหน้า PDF 42-43 (หน้าที่พิมพ์ 39-40) ประโยคหนึ่งต่อข้ามหน้า"
+      },
+      {
+       "en": "If the pin cannot be inserted by hand, a rubber hammer or other tools may be used; if it is difficult to pull out, use tools such as needle-nose pliers.",
+       "th": "หากไม่สามารถเสียบพินด้วยมือได้ สามารถใช้ค้อนยางหรือเครื่องมืออื่นได้ หากดึงออกด้วยมือได้ยาก สามารถใช้เครื่องมือ เช่น คีมปากแหลม"
+      },
+      {
+       "en": "Theoretically one locating pin in the leg joint suffices; the illustrated scheme over-constrains the leg on purpose for stability and reliability.",
+       "th": "ตามทฤษฎีเพียงพินกำหนดตำแหน่งหนึ่งตัวที่ข้อต่อขาก็เพียงพอ แผนในรูปจำกัดขามากกว่าที่จำเป็นโดยเจตนาเพื่อเสถียรภาพและความน่าเชื่อถือ"
+      }
+     ],
+     "view": "overview"
+    },
+    {
+     "label": "1",
+     "pdf": 44,
+     "printed": 41,
+     "en": "The limit pins used for the two-step installation are both size M4×18. The insertion position of the arm's locating pin is as shown in the figure (using the right arm as an example).",
+     "th": "พินลิมิตที่ใช้ในการติดตั้งสองขั้นตอนนี้มีขนาด M4×18 ทั้งคู่ ตำแหน่งการเสียบพินกำหนดตำแหน่งของแขนเป็นไปตามที่แสดงในรูป (ใช้แขนขวาเป็นตัวอย่าง)",
+     "parts": [],
+     "fasteners": [
+      {
+       "en": "M4×18 limit pin",
+       "th": "พินลิมิต M4×18",
+       "role": null
+      }
+     ],
+     "notes": [
+      {
+       "en": "Caption is shared by STEP 1 and STEP 2 (printed as \"1&2\").",
+       "th": "คำอธิบายนี้ใช้ร่วมกันของขั้นตอนที่ 1 และ 2 (พิมพ์เป็น \"1&2\")"
+      }
+     ],
+     "view": "arms"
+    },
+    {
+     "label": "2",
+     "pdf": 44,
+     "printed": 41,
+     "en": "The limit pins used for the two-step installation are both size M4×18. The insertion position of the arm's locating pin is as shown in the figure (using the right arm as an example).",
+     "th": "พินลิมิตที่ใช้ในการติดตั้งสองขั้นตอนนี้มีขนาด M4×18 ทั้งคู่ ตำแหน่งการเสียบพินกำหนดตำแหน่งของแขนเป็นไปตามที่แสดงในรูป (ใช้แขนขวาเป็นตัวอย่าง)",
+     "parts": [],
+     "fasteners": [
+      {
+       "en": "M4×18 limit pin",
+       "th": "พินลิมิต M4×18",
+       "role": null
+      }
+     ],
+     "notes": [
+      {
+       "en": "Caption is shared by STEP 1 and STEP 2 (printed as \"1&2\").",
+       "th": "คำอธิบายนี้ใช้ร่วมกันของขั้นตอนที่ 1 และ 2 (พิมพ์เป็น \"1&2\")"
+      }
+     ],
+     "view": "arms"
+    },
+    {
+     "label": "3",
+     "pdf": 44,
+     "printed": 41,
+     "en": "The limit pins used for the two-step installation are both size M4×22. The insertion position of the leg's locating pin is as shown in the figure (using the right leg as an example).",
+     "th": "พินลิมิตที่ใช้ในการติดตั้งสองขั้นตอนนี้มีขนาด M4×22 ทั้งคู่ ตำแหน่งการเสียบพินกำหนดตำแหน่งของขาเป็นไปตามที่แสดงในรูป (ใช้ขาขวาเป็นตัวอย่าง)",
+     "parts": [],
+     "fasteners": [
+      {
+       "en": "M4×22 limit pin",
+       "th": "พินลิมิต M4×22",
+       "role": null
+      }
+     ],
+     "notes": [
+      {
+       "en": "Caption is shared by STEP 3 and STEP 4 (printed as \"3&4\").",
+       "th": "คำอธิบายนี้ใช้ร่วมกันของขั้นตอนที่ 3 และ 4 (พิมพ์เป็น \"3&4\")"
+      }
+     ],
+     "view": "legs"
+    },
+    {
+     "label": "4",
+     "pdf": 44,
+     "printed": 41,
+     "en": "The limit pins used for the two-step installation are both size M4×22. The insertion position of the leg's locating pin is as shown in the figure (using the right leg as an example).",
+     "th": "พินลิมิตที่ใช้ในการติดตั้งสองขั้นตอนนี้มีขนาด M4×22 ทั้งคู่ ตำแหน่งการเสียบพินกำหนดตำแหน่งของขาเป็นไปตามที่แสดงในรูป (ใช้ขาขวาเป็นตัวอย่าง)",
+     "parts": [],
+     "fasteners": [
+      {
+       "en": "M4×22 limit pin",
+       "th": "พินลิมิต M4×22",
+       "role": null
+      }
+     ],
+     "notes": [
+      {
+       "en": "Caption is shared by STEP 3 and STEP 4 (printed as \"3&4\").",
+       "th": "คำอธิบายนี้ใช้ร่วมกันของขั้นตอนที่ 3 และ 4 (พิมพ์เป็น \"3&4\")"
+      }
+     ],
+     "view": "legs"
+    },
+    {
+     "label": "5",
+     "pdf": 45,
+     "printed": 42,
+     "en": "The limit and positioning of the lumbar joint are achieved jointly by the limit blocks on the \"lumbar support structure\" and the \"battery bottom cover\". If the assembly position is correct, the upper body will come into contact with the limit structure when rotating approximately ±120° in the clockwise or counterclockwise direction, thereby achieving the angular positioning of the lumbar joint.",
+     "th": "การจำกัดมุมและการกำหนดตำแหน่งของข้อต่อเอวทำได้ร่วมกันโดยตัวจำกัดมุมบน \"โครงสร้างรองรับเอว\" และ \"ฝาครอบด้านล่างของแบตเตอรี่\" หากตำแหน่งการประกอบถูกต้อง ลำตัวส่วนบนจะสัมผัสกับโครงสร้างจำกัดมุมเมื่อหมุนไปประมาณ ±120° ในทิศทางตามเข็มนาฬิกาหรือทวนเข็มนาฬิกา จึงทำให้เกิดการกำหนดตำแหน่งเชิงมุมของข้อต่อเอว",
+     "parts": [
+      {
+       "en": "Roboto Origin calibration tool",
+       "th": "เครื่องมือคาลิเบรต Roboto Origin"
+      }
+     ],
+     "fasteners": [],
+     "notes": [
+      {
+       "en": "Paragraph is printed once below STEP 5 and STEP 6 and applies to both.",
+       "th": "ย่อหน้านี้พิมพ์ครั้งเดียวใต้ขั้นตอนที่ 5 และ 6 และใช้กับทั้งสองขั้นตอน"
+      }
+     ],
+     "view": "torso"
+    },
+    {
+     "label": "6",
+     "pdf": 45,
+     "printed": 42,
+     "en": "The limit and positioning of the lumbar joint are achieved jointly by the limit blocks on the \"lumbar support structure\" and the \"battery bottom cover\". If the assembly position is correct, the upper body will come into contact with the limit structure when rotating approximately ±120° in the clockwise or counterclockwise direction, thereby achieving the angular positioning of the lumbar joint.",
+     "th": "การจำกัดมุมและการกำหนดตำแหน่งของข้อต่อเอวทำได้ร่วมกันโดยตัวจำกัดมุมบน \"โครงสร้างรองรับเอว\" และ \"ฝาครอบด้านล่างของแบตเตอรี่\" หากตำแหน่งการประกอบถูกต้อง ลำตัวส่วนบนจะสัมผัสกับโครงสร้างจำกัดมุมเมื่อหมุนไปประมาณ ±120° ในทิศทางตามเข็มนาฬิกาหรือทวนเข็มนาฬิกา จึงทำให้เกิดการกำหนดตำแหน่งเชิงมุมของข้อต่อเอว",
+     "parts": [
+      {
+       "en": "Roboto Origin calibration tool",
+       "th": "เครื่องมือคาลิเบรต Roboto Origin"
+      }
+     ],
+     "fasteners": [],
+     "notes": [
+      {
+       "en": "Paragraph is printed once below STEP 5 and STEP 6 and applies to both.",
+       "th": "ย่อหน้านี้พิมพ์ครั้งเดียวใต้ขั้นตอนที่ 5 และ 6 และใช้กับทั้งสองขั้นตอน"
+      },
+      {
+       "en": "Page 46 (printed 43) shows the \"Installation Completed Effect Diagram\" of the whole robot after all steps.",
+       "th": "หน้า 46 (หน้าที่พิมพ์ 43) แสดง \"ภาพแสดงผลเมื่อติดตั้งเสร็จสมบูรณ์\" ของหุ่นยนต์ทั้งตัวหลังเสร็จทุกขั้นตอน"
+      }
+     ],
+     "view": "torso"
+    }
+   ]
+  },
+  {
+   "id": "wiring",
+   "th": "เดินสายไฟ",
+   "en": "Wiring",
+   "view": "can",
+   "overlay": "can",
+   "ghost": true,
+   "steps": [
+    {
+     "section": "1",
+     "label": "BOM",
+     "pdf": 49,
+     "en": "Cable BOM",
+     "th": "BOM ของสาย (Cable BOM)",
+     "parts": [
+      {
+       "en": "RBW_Origin_01 Arm01: XT30(+2)-F.G.B-XT30(+2)-F.G.B, 20 cm, qty 2; 90° at both ends, CAN leads up/down",
+       "th": "RBW_Origin_01 Arm01: XT30(+2)-F.G.B-XT30(+2)-F.G.B, 20 cm, จำนวน 2; งอ 90° ทั้งสองปลาย, สาย CAN ออกขึ้น/ลง"
+      },
+      {
+       "en": "RBW_Origin_02 Arm02: XT30(+2)-F.G.B-XT30(+2)-F.G.B, 20 cm, qty 2; 90°, CAN leads up/down ×2",
+       "th": "RBW_Origin_02 Arm02: XT30(+2)-F.G.B-XT30(+2)-F.G.B, 20 cm, จำนวน 2; งอ 90°, สาย CAN ออกขึ้น/ลง ×2"
+      },
+      {
+       "en": "RBW_Origin_03 Arm03: XT30(+2)-F.G.B-XT30(+2)-F.G.B, 20 cm, qty 2; 90° at both ends, CAN leads same direction ×2",
+       "th": "RBW_Origin_03 Arm03: XT30(+2)-F.G.B-XT30(+2)-F.G.B, 20 cm, จำนวน 2; งอ 90° ทั้งสองปลาย, สาย CAN ออกทิศทางเดียวกัน ×2"
+      },
+      {
+       "en": "RBW_Origin_04 Arm04: XT30(+2)-F.G.B-XT30(+2)-F.G.B, 20 cm, qty 2; 90° at both ends, CAN leads up/down ×2",
+       "th": "RBW_Origin_04 Arm04: XT30(+2)-F.G.B-XT30(+2)-F.G.B, 20 cm, จำนวน 2; งอ 90° ทั้งสองปลาย, สาย CAN ออกขึ้น/ลง ×2"
+      },
+      {
+       "en": "RBW_Origin_05 Leg01: XT30U-F-XT30U-F (gh1.25 2-pin reversed, 30 cm), 25 cm, qty 2",
+       "th": "RBW_Origin_05 Leg01: XT30U-F-XT30U-F (gh1.25 2-pin reversed, 30 cm), 25 cm, จำนวน 2"
+      },
+      {
+       "en": "RBW_Origin_06 Leg02: XT30U-F-XT30U-F (gh1.25 2-pin reversed, 30 cm), 25 cm, qty 2",
+       "th": "RBW_Origin_06 Leg02: XT30U-F-XT30U-F (gh1.25 2-pin reversed, 30 cm), 25 cm, จำนวน 2"
+      },
+      {
+       "en": "RBW_Origin_07 Leg03: XT30U-F-XT30U-F (gh1.25 2-pin reversed, 50 cm), 40 cm, qty 2",
+       "th": "RBW_Origin_07 Leg03: XT30U-F-XT30U-F (gh1.25 2-pin reversed, 50 cm), 40 cm, จำนวน 2"
+      },
+      {
+       "en": "RBW_Origin_08 Leg04: XT30U-F-XT30(+2)-F.G.B (gh1.25 2-pin reversed, 35 cm), 30 cm, qty 2; 90° on the (2+2) end",
+       "th": "RBW_Origin_08 Leg04: XT30U-F-XT30(+2)-F.G.B (gh1.25 2-pin reversed, 35 cm), 30 cm, จำนวน 2; งอ 90° ที่ปลาย (2+2)"
+      },
+      {
+       "en": "RBW_Origin_09 Leg05: XT30(+2)-F.G.B-XT30(+2)-F.G.B, 10 cm, qty 2; 1: side 90° (left); 2: side 90° (right). CAN lead orientation must be consistent at assembly (up/down when soldered)",
+       "th": "RBW_Origin_09 Leg05: XT30(+2)-F.G.B-XT30(+2)-F.G.B, 10 cm, จำนวน 2; 1: งอ 90° ด้านข้าง (ซ้าย); 2: งอ 90° ด้านข้าง (ขวา) ทิศทางของสาย CAN ต้องสอดคล้องกันเมื่อประกอบ (ขึ้น/ลงเมื่อบัดกรี)"
+      },
+      {
+       "en": "RBW_Origin_10 Body01: XT30U-F-XT30U-F (gh1.25 2-pin reversed, 30 cm), 20 cm, qty 1",
+       "th": "RBW_Origin_10 Body01: XT30U-F-XT30U-F (gh1.25 2-pin reversed, 30 cm), 20 cm, จำนวน 1"
+      },
+      {
+       "en": "RBW_Origin_11 Body02: XT30(+2)-F.G.B-XT30(+2)-F.G.B, 20 cm, qty 2; 90° on one end ×2",
+       "th": "RBW_Origin_11 Body02: XT30(+2)-F.G.B-XT30(+2)-F.G.B, 20 cm, จำนวน 2; งอ 90° ที่ปลายหนึ่ง ×2"
+      },
+      {
+       "en": "RBW_Origin_12 Body03: XT30(+2)-F.G.B - XT30U-F (gh1.25 2-pin reversed, 65 cm), 60 cm, qty 1",
+       "th": "RBW_Origin_12 Body03: XT30(+2)-F.G.B - XT30U-F (gh1.25 2-pin reversed, 65 cm), 60 cm, จำนวน 1"
+      },
+      {
+       "en": "RBW_Origin_13 Body04: XT30(+2)-F.G.B - XT30U-F (gh1.25 2-pin reversed, 55 cm), 50 cm, qty 1",
+       "th": "RBW_Origin_13 Body04: XT30(+2)-F.G.B - XT30U-F (gh1.25 2-pin reversed, 55 cm), 50 cm, จำนวน 1"
+      },
+      {
+       "en": "usb to typec: usb to typec, —, qty 1; USB 3.0 support",
+       "th": "usb to typec: usb to typec, —, จำนวน 1; รองรับ USB 3.0"
+      },
+      {
+       "en": "typec to typec: typec to typec, —, qty 1",
+       "th": "typec to typec: typec to typec, —, จำนวน 1"
+      }
+     ],
+     "fasteners": [],
+     "motors": [],
+     "channel": null,
+     "warning": false,
+     "notes": [
+      {
+       "en": "Pages 49-50. Lengths in parentheses on the Harness type column are the gh1.25 2-pin reversed lead lengths; the Length column is the harness length.",
+       "th": "หน้า 49-50"
+      }
+     ],
+     "unsure": true
+    },
+    {
+     "section": "2",
+     "label": "2-a",
+     "pdf": 50,
+     "en": "The robot uses a symmetrical structure, so the wiring rules are identical on the left and right sides. The instructions below cover only the right leg and left arm; wire the right arm and left leg by following the same method. The waist is a separate routing area and must be wired according to its own instructions.",
+     "th": "หุ่นยนต์มีโครงสร้างสมมาตร ดังนั้นกฎการเดินสายของด้านซ้ายและด้านขวาจึงเหมือนกัน คำแนะนำด้านล่างครอบคลุมเฉพาะขาขวาและแขนซ้าย ให้เดินสายแขนขวาและขาซ้ายตามวิธีเดียวกัน เอว (waist) เป็นพื้นที่เดินสายแยกต่างหาก และต้องเดินสายตามคำแนะนำของเอวโดยเฉพาะ",
+     "parts": [],
+     "fasteners": [],
+     "motors": [],
+     "channel": null,
+     "warning": false,
+     "notes": []
+    },
+    {
+     "section": "2",
+     "label": "2-b",
+     "pdf": 51,
+     "en": "The IDs given below are Slave IDs. Connection order: right arm: 0x13-0x14-0x15-0x16-0x17; left arm: 0x0E-0x0F-0x10-0x11-0x12; right leg: 0x07-0x08-0x09-0x0a-0x0b-0x0c; left leg: 0x01-0x02-0x03-0x04-0x05-0x06; waist motor: 0x0d-0x07",
+     "th": "ID ที่ระบุด้านล่างเป็น Slave ID ลำดับการเชื่อมต่อ: แขนขวา: 0x13-0x14-0x15-0x16-0x17; แขนซ้าย: 0x0E-0x0F-0x10-0x11-0x12; ขาขวา: 0x07-0x08-0x09-0x0a-0x0b-0x0c; ขาซ้าย: 0x01-0x02-0x03-0x04-0x05-0x06; มอเตอร์เอว: 0x0d-0x07",
+     "parts": [],
+     "fasteners": [],
+     "motors": [
+      "0x13",
+      "0x14",
+      "0x15",
+      "0x16",
+      "0x17",
+      "0x0E",
+      "0x0F",
+      "0x10",
+      "0x11",
+      "0x12",
+      "0x07",
+      "0x08",
+      "0x09",
+      "0x0a",
+      "0x0b",
+      "0x0c",
+      "0x01",
+      "0x02",
+      "0x03",
+      "0x04",
+      "0x05",
+      "0x06",
+      "0x0d"
+     ],
+     "channel": null,
+     "warning": false,
+     "notes": []
+    },
+    {
+     "section": "2.1",
+     "label": "2.1-a",
+     "pdf": 52,
+     "en": "Motor 0x07 – Motor 0x08: use harness RBW_Origin_05 Leg01, spec XT30U-F-XT30U-F, length 25 cm.",
+     "th": "มอเตอร์ 0x07 – มอเตอร์ 0x08: ให้ใช้สายชุด RBW_Origin_05 Leg01 สเปค XT30U-F-XT30U-F ความยาว 25 cm",
+     "parts": [
+      {
+       "en": "RBW_Origin_05 Leg01 (XT30U-F-XT30U-F, 25 cm)",
+       "th": "สายชุด RBW_Origin_05 Leg01 (XT30U-F-XT30U-F ยาว 25 ซม.)"
+      }
+     ],
+     "fasteners": [],
+     "motors": [
+      "0x07",
+      "0x08"
+     ],
+     "channel": null,
+     "warning": false,
+     "notes": []
+    },
+    {
+     "section": "2.1",
+     "label": "2.1-b",
+     "pdf": 53,
+     "en": "Motor 0x08 – Motor 0x09: use harness RBW_Origin_06 Leg02, spec XT30U-F-XT30U-F, length 25 cm.",
+     "th": "มอเตอร์ 0x08 – มอเตอร์ 0x09: ให้ใช้สายชุด RBW_Origin_06 Leg02 สเปค XT30U-F-XT30U-F ความยาว 25 cm",
+     "parts": [
+      {
+       "en": "RBW_Origin_06 Leg02 (XT30U-F-XT30U-F, 25 cm)",
+       "th": "สายชุด RBW_Origin_06 Leg02 (XT30U-F-XT30U-F ยาว 25 ซม.)"
+      }
+     ],
+     "fasteners": [],
+     "motors": [
+      "0x08",
+      "0x09"
+     ],
+     "channel": null,
+     "warning": false,
+     "notes": []
+    },
+    {
+     "section": "2.1",
+     "label": "2.1-c",
+     "pdf": 53,
+     "en": "Motor 0x09 – Motor 0x0a: use harness RBW_Origin_07 Leg03, spec XT30U-F-XT30U-F, length 40 cm.",
+     "th": "มอเตอร์ 0x09 – มอเตอร์ 0x0a: ให้ใช้สายชุด RBW_Origin_07 Leg03 สเปค XT30U-F-XT30U-F ความยาว 40 cm",
+     "parts": [
+      {
+       "en": "RBW_Origin_07 Leg03 (XT30U-F-XT30U-F, 40 cm)",
+       "th": "สายชุด RBW_Origin_07 Leg03 (XT30U-F-XT30U-F ยาว 40 ซม.)"
+      }
+     ],
+     "fasteners": [],
+     "motors": [
+      "0x09",
+      "0x0a"
+     ],
+     "channel": null,
+     "warning": false,
+     "notes": []
+    },
+    {
+     "section": "2.1",
+     "label": "2.1-d",
+     "pdf": 54,
+     "en": "Motor 0x0a – Motor 0x0b: use harness RBW_Origin_08 Leg04, spec XT30U-F-XT30(+2)-F.G.B, length 30 cm.",
+     "th": "มอเตอร์ 0x0a – มอเตอร์ 0x0b: ให้ใช้สายชุด RBW_Origin_08 Leg04 สเปค XT30U-F-XT30(+2)-F.G.B ความยาว 30 cm",
+     "parts": [
+      {
+       "en": "RBW_Origin_08 Leg04 (XT30U-F-XT30(+2)-F.G.B, 30 cm)",
+       "th": "สายชุด RBW_Origin_08 Leg04 (XT30U-F-XT30(+2)-F.G.B ยาว 30 ซม.)"
+      }
+     ],
+     "fasteners": [],
+     "motors": [
+      "0x0a",
+      "0x0b"
+     ],
+     "channel": null,
+     "warning": false,
+     "notes": []
+    },
+    {
+     "section": "2.1",
+     "label": "2.1-e",
+     "pdf": 55,
+     "en": "Motor 0x0b – Motor 0x0c: use harness RBW_Origin_09 Leg05, spec XT30(+2)-F.G.B-XT30(+2)-F.G.B, length 10 cm.",
+     "th": "มอเตอร์ 0x0b – มอเตอร์ 0x0c: ให้ใช้สายชุด RBW_Origin_09 Leg05 สเปค XT30(+2)-F.G.B-XT30(+2)-F.G.B ความยาว 10 cm",
+     "parts": [
+      {
+       "en": "RBW_Origin_09 Leg05 (XT30(+2)-F.G.B-XT30(+2)-F.G.B, 10 cm)",
+       "th": "สายชุด RBW_Origin_09 Leg05 (XT30(+2)-F.G.B-XT30(+2)-F.G.B ยาว 10 ซม.)"
+      }
+     ],
+     "fasteners": [],
+     "motors": [
+      "0x0b",
+      "0x0c"
+     ],
+     "channel": null,
+     "warning": false,
+     "notes": []
+    },
+    {
+     "section": "2.2",
+     "label": "2.2-a",
+     "pdf": 56,
+     "en": "Motor 0x0d – Motor 0x07: use harness RBW_Origin_10 Body01, spec XT30U-F-XT30U-F, length 20 cm.",
+     "th": "มอเตอร์ 0x0d – มอเตอร์ 0x07: ให้ใช้สายชุด RBW_Origin_10 Body01 สเปค XT30U-F-XT30U-F ความยาว 20 cm",
+     "parts": [
+      {
+       "en": "RBW_Origin_10 Body01 (XT30U-F-XT30U-F, 20 cm)",
+       "th": "สายชุด RBW_Origin_10 Body01 (XT30U-F-XT30U-F ยาว 20 ซม.)"
+      }
+     ],
+     "fasteners": [],
+     "motors": [
+      "0x0d",
+      "0x07"
+     ],
+     "channel": null,
+     "warning": false,
+     "notes": [
+      {
+       "en": "The waist has a single motor (ID: 0x0d), which connects to right-leg motor 0x07.",
+       "th": "เอวมีมอเตอร์เพียงตัวเดียว (ID: 0x0d) ซึ่งเชื่อมต่อกับมอเตอร์ขาขวา 0x07"
+      }
+     ]
+    },
+    {
+     "section": "2.3",
+     "label": "2.3-a",
+     "pdf": 57,
+     "en": "Motor 0x0e – Motor 0x0f: use harness RBW_Origin_01 Arm01, spec XT30(+2)-F.G.B-XT30(+2)-F.G.B, length 20 cm.",
+     "th": "มอเตอร์ 0x0e – มอเตอร์ 0x0f: ให้ใช้สายชุด RBW_Origin_01 Arm01 สเปค XT30(+2)-F.G.B-XT30(+2)-F.G.B ความยาว 20 cm",
+     "parts": [
+      {
+       "en": "RBW_Origin_01 Arm01 (XT30(+2)-F.G.B-XT30(+2)-F.G.B, 20 cm)",
+       "th": "สายชุด RBW_Origin_01 Arm01 (XT30(+2)-F.G.B-XT30(+2)-F.G.B ยาว 20 ซม.)"
+      }
+     ],
+     "fasteners": [],
+     "motors": [
+      "0x0e",
+      "0x0f"
+     ],
+     "channel": null,
+     "warning": false,
+     "notes": []
+    },
+    {
+     "section": "2.3",
+     "label": "2.3-b",
+     "pdf": 58,
+     "en": "Motor 0x0f – Motor 0x10: use harness RBW_Origin_02 Arm02, spec XT30(+2)-F.G.B-XT30(+2)-F.G.B, length 20 cm.",
+     "th": "มอเตอร์ 0x0f – มอเตอร์ 0x10: ให้ใช้สายชุด RBW_Origin_02 Arm02 สเปค XT30(+2)-F.G.B-XT30(+2)-F.G.B ความยาว 20 cm",
+     "parts": [
+      {
+       "en": "RBW_Origin_02 Arm02 (XT30(+2)-F.G.B-XT30(+2)-F.G.B, 20 cm)",
+       "th": "สายชุด RBW_Origin_02 Arm02 (XT30(+2)-F.G.B-XT30(+2)-F.G.B ยาว 20 ซม.)"
+      }
+     ],
+     "fasteners": [],
+     "motors": [
+      "0x0f",
+      "0x10"
+     ],
+     "channel": null,
+     "warning": false,
+     "notes": []
+    },
+    {
+     "section": "2.3",
+     "label": "2.3-c",
+     "pdf": 59,
+     "en": "Motor 0x10 – Motor 0x11: use harness RBW_Origin_03 Arm03, spec XT30(+2)-F.G.B-XT30(+2)-F.G.B, length 20 cm.",
+     "th": "มอเตอร์ 0x10 – มอเตอร์ 0x11: ให้ใช้สายชุด RBW_Origin_03 Arm03 สเปค XT30(+2)-F.G.B-XT30(+2)-F.G.B ความยาว 20 cm",
+     "parts": [
+      {
+       "en": "RBW_Origin_03 Arm03 (XT30(+2)-F.G.B-XT30(+2)-F.G.B, 20 cm)",
+       "th": "สายชุด RBW_Origin_03 Arm03 (XT30(+2)-F.G.B-XT30(+2)-F.G.B ยาว 20 ซม.)"
+      }
+     ],
+     "fasteners": [],
+     "motors": [
+      "0x10",
+      "0x11"
+     ],
+     "channel": null,
+     "warning": false,
+     "notes": []
+    },
+    {
+     "section": "2.3",
+     "label": "2.3-d",
+     "pdf": 60,
+     "en": "Motor 0x11 – Motor 0x12: use harness RBW_Origin_04 Arm04, spec XT30(+2)-F.G.B-XT30(+2)-F.G.B, length 20 cm.",
+     "th": "มอเตอร์ 0x11 – มอเตอร์ 0x12: ให้ใช้สายชุด RBW_Origin_04 Arm04 สเปค XT30(+2)-F.G.B-XT30(+2)-F.G.B ความยาว 20 cm",
+     "parts": [
+      {
+       "en": "RBW_Origin_04 Arm04 (XT30(+2)-F.G.B-XT30(+2)-F.G.B, 20 cm)",
+       "th": "สายชุด RBW_Origin_04 Arm04 (XT30(+2)-F.G.B-XT30(+2)-F.G.B ยาว 20 ซม.)"
+      }
+     ],
+     "fasteners": [],
+     "motors": [
+      "0x11",
+      "0x12"
+     ],
+     "channel": null,
+     "warning": false,
+     "notes": []
+    },
+    {
+     "section": "2.4",
+     "label": "2.4-a",
+     "pdf": 60,
+     "en": "Screws and standoffs required: Screws: m316 ×2, m412 ×2, m5*12 ×2; Standoffs: m317 ×4, m38+3 ×8",
+     "th": "สกรูและเสารองที่ต้องใช้: สกรู: m316 ×2, m412 ×2, m5*12 ×2; เสารอง (standoff): m317 ×4, m38+3 ×8",
+     "parts": [],
+     "fasteners": [
+      {
+       "en": "m316 screws ×2",
+       "th": "สกรู m316 ×2",
+       "role": null
+      },
+      {
+       "en": "m412 screws ×2",
+       "th": "สกรู m412 ×2",
+       "role": null
+      },
+      {
+       "en": "m5*12 screws ×2",
+       "th": "สกรู m5*12 ×2",
+       "role": null
+      },
+      {
+       "en": "m317 standoffs ×4",
+       "th": "เสารอง m317 ×4",
+       "role": null
+      },
+      {
+       "en": "m38+3 standoffs ×8",
+       "th": "เสารอง m38+3 ×8",
+       "role": null
+      }
+     ],
+     "motors": [],
+     "channel": null,
+     "warning": false,
+     "notes": [
+      {
+       "en": "Spec text is as printed in the source (may be m3*16, m4*12, m3*17, m3*8+3).",
+       "th": "ข้อความสเปคตามต้นฉบับ"
+      }
+     ],
+     "unsure": true
+    },
+    {
+     "section": "2.4.1",
+     "label": "2.4.1-a",
+     "pdf": 60,
+     "en": "Battery protection: Apply anti-vibration foam padding to the bottom and all four sides of the battery.",
+     "th": "การป้องกันแบตเตอรี่: ให้ติดแผ่นโฟมกันสั่นสะเทือนที่ด้านล่างและทั้งสี่ด้านของแบตเตอรี่",
+     "parts": [],
+     "fasteners": [],
+     "motors": [],
+     "channel": null,
+     "warning": false,
+     "notes": [
+      {
+       "en": "Purpose: to damp high-frequency vibration during motion and prevent the battery's outer sheath from being abraded, which would create a short-circuit risk.",
+       "th": "วัตถุประสงค์: เพื่อลดการสั่นสะเทือนความถี่สูงขณะเคลื่อนที่ และป้องกันไม่ให้ปลอกหุ้มด้านนอกของแบตเตอรี่สึกหรอ ซึ่งจะก่อให้เกิดความเสี่ยงต่อการลัดวงจร"
+      }
+     ],
+     "gate": "battery"
+    },
+    {
+     "section": "2.4.1",
+     "label": "2.4.1-b",
+     "pdf": 61,
+     "en": "This stage involves high-current circuits — always double-check wire gauge and polarity.",
+     "th": "ขั้นตอนนี้เกี่ยวข้องกับวงจรกระแสสูง — ต้องตรวจสอบขนาดสายไฟและขั้วให้ถูกต้องซ้ำอีกครั้งเสมอ",
+     "parts": [],
+     "fasteners": [],
+     "motors": [],
+     "channel": null,
+     "warning": true,
+     "notes": []
+    },
+    {
+     "section": "2.4.1",
+     "label": "2.4.1-c",
+     "pdf": 61,
+     "en": "Step 1 — Seat the battery: Install the battery pack in its designated position on the base, ensuring the centre of gravity is stable.",
+     "th": "ขั้นตอนที่ 1 — วางแบตเตอรี่: ติดตั้งชุดแบตเตอรี่ (battery pack) ในตำแหน่งที่กำหนดบนฐาน โดยต้องแน่ใจว่าจุดศูนย์ถ่วงมีความมั่นคง",
+     "parts": [],
+     "fasteners": [],
+     "motors": [],
+     "channel": null,
+     "warning": false,
+     "notes": []
+    },
+    {
+     "section": "2.4.1",
+     "label": "2.4.1-d",
+     "pdf": 62,
+     "en": "Step 2 — Charging port installation: Fix the charging port to the robot's rear panel.",
+     "th": "ขั้นตอนที่ 2 — การติดตั้งพอร์ตชาร์จ: ยึดพอร์ตชาร์จเข้ากับแผงด้านหลังของหุ่นยนต์",
+     "parts": [],
+     "fasteners": [],
+     "motors": [],
+     "channel": null,
+     "warning": false,
+     "notes": []
+    },
+    {
+     "section": "2.4.2",
+     "label": "2.4.2-a",
+     "pdf": 63,
+     "en": "Solder the main control switch connector and the emergency stop switch. Do not get the wire order wrong!",
+     "th": "บัดกรีขั้วต่อสวิตช์ควบคุมหลักและสวิตช์ปุ่มหยุดฉุกเฉิน ห้ามต่อลำดับสายผิด!",
+     "parts": [
+      {
+       "en": "Main control switch connector",
+       "th": "ขั้วต่อสวิตช์ควบคุมหลัก"
+      },
+      {
+       "en": "Emergency stop switch",
+       "th": "สวิตช์ปุ่มหยุดฉุกเฉิน"
+      }
+     ],
+     "fasteners": [],
+     "motors": [],
+     "channel": null,
+     "warning": true,
+     "notes": [
+      {
+       "en": "On the PCB backplane the solder pads are labelled 5V, GND, 5V_OUT and LED+ (see the figures on pp. 63-64). Switch plug wires: green = C (common), yellow = NO (normally open), white = NC (normally closed), black and red = LED pins (LED pins have no polarity). In the page 64 photo the wires are labelled 5V (yellow), 5V_OUT (green), GND (black), LED (red).",
+       "th": "บน PCB ด้านหลังมีแผ่นบัดกรีชื่อ 5V, GND, 5V_OUT และ LED+ (ดูรูปหน้า 63-64) สายของปลั๊กสวิตช์: สีเขียว = C (ขั้วร่วม), สีเหลือง = NO (ปกติเปิด), สีขาว = NC (ปกติปิด), สีดำและสีแดง = ขาไฟ LED (ขา LED ไม่แยกขั้วบวกลบ) ในรูปหน้า 64 สายถูกกำกับว่า 5V (เหลือง), 5V_OUT (เขียว), GND (ดำ), LED (แดง)"
+      }
+     ],
+     "unsure": false
+    },
+    {
+     "section": "2.4.2",
+     "label": "2.4.2-b",
+     "pdf": 64,
+     "en": "Once tested and correct, trim off any excess wire.",
+     "th": "เมื่อทดสอบและยืนยันว่าถูกต้องแล้ว ให้ตัดสายส่วนเกินออก",
+     "parts": [],
+     "fasteners": [],
+     "motors": [],
+     "channel": null,
+     "warning": false,
+     "notes": [
+      {
+       "en": "Note: colour order follows wire position, and may differ from batch to batch.",
+       "th": "หมายเหตุ: ลำดับสีสายเป็นไปตามตำแหน่งของสาย และอาจแตกต่างกันในแต่ละล็อตการผลิต"
+      }
+     ]
+    },
+    {
+     "section": "2.4.2",
+     "label": "2.4.2-c",
+     "pdf": 64,
+     "en": "Install the mounting bracket. Fix from the underside using m3*16 screws.",
+     "th": "ติดตั้งขายึด (mounting bracket) ยึดจากด้านล่างด้วยสกรู m3*16",
+     "parts": [
+      {
+       "en": "Mounting bracket",
+       "th": "ขายึด (mounting bracket)"
+      }
+     ],
+     "fasteners": [
+      {
+       "en": "m3*16 screws",
+       "th": "สกรู m3*16",
+       "role": null
+      }
+     ],
+     "motors": [],
+     "channel": null,
+     "warning": false,
+     "notes": []
+    },
+    {
+     "section": "2.4.2",
+     "label": "2.4.2-d",
+     "pdf": 65,
+     "en": "Secure the 3-in-1 power distribution board. Secure the 3-in-1 board using m 3*8 + 3 standoffs, and fit m 3*17 standoffs to raise it.",
+     "th": "ยึดบอร์ดจ่ายไฟ 3-in-1 ยึดบอร์ด 3-in-1 โดยใช้สกรู m 3*8 + เสารอง 3 ตัว และใช้เสารอง m 3*17 เพื่อยกบอร์ดให้สูงขึ้น",
+     "parts": [
+      {
+       "en": "3-in-1 power distribution board",
+       "th": "บอร์ดจ่ายไฟ 3-in-1"
+      }
+     ],
+     "fasteners": [
+      {
+       "en": "m 3*8 + 3 standoffs (as printed)",
+       "th": "เสารอง m 3*8 + 3 (ตามที่พิมพ์ในต้นฉบับ)",
+       "role": null
+      },
+      {
+       "en": "m 3*17 standoffs",
+       "th": "เสารอง m 3*17",
+       "role": "raise the board"
+      }
+     ],
+     "motors": [],
+     "channel": null,
+     "warning": false,
+     "notes": [
+      {
+       "en": "The source prints \"m 3*8 + 3 standoffs\"; the quantity is not clear from the text, so follow the figure.",
+       "th": "ต้นฉบับพิมพ์ \"m 3*8 + 3 standoffs\" จำนวนไม่ชัดเจนจากข้อความ ให้ยึดตามภาพ"
+      }
+     ],
+     "unsure": true
+    },
+    {
+     "section": "2.4.2",
+     "label": "2.4.2-e",
+     "pdf": 66,
+     "en": "Secure the RDKx5. Use m3*8 screws to fix the RDKx5 to the main control carrier board, then fix that assembly to the 3-in-1 board.",
+     "th": "ยึด RDKx5 ใช้สกรู m3*8 ยึด RDKx5 เข้ากับบอร์ดตัวนำ (carrier board) ของตัวควบคุมหลัก จากนั้นยึดชุดประกอบนี้เข้ากับบอร์ด 3-in-1",
+     "parts": [
+      {
+       "en": "RDKx5",
+       "th": "RDKx5"
+      },
+      {
+       "en": "Main control carrier board",
+       "th": "บอร์ดตัวนำ (carrier board) ของตัวควบคุมหลัก"
+      },
+      {
+       "en": "3-in-1 power distribution board",
+       "th": "บอร์ดจ่ายไฟ 3-in-1"
+      }
+     ],
+     "fasteners": [
+      {
+       "en": "m3*8 screws",
+       "th": "สกรู m3*8",
+       "role": null
+      }
+     ],
+     "motors": [],
+     "channel": null,
+     "warning": false,
+     "notes": []
+    },
+    {
+     "section": "2.5",
+     "label": "2.5-a",
+     "pdf": 66,
+     "en": "CAN0 channel — motor 0x01 (left hip) to power board: use harness RBW_Origin_12 Body03, spec XT30(+2)-F.G.B-XT30U-F, length 60 cm.",
+     "th": "ช่อง CAN0 — มอเตอร์ 0x01 (สะโพกซ้าย) ไปยังบอร์ดจ่ายไฟ: ใช้สายชุด RBW_Origin_12 Body03 สเปก XT30(+2)-F.G.B-XT30U-F ความยาว 60 cm",
+     "parts": [
+      {
+       "en": "RBW_Origin_12 Body03 (XT30(+2)-F.G.B-XT30U-F, 60 cm)",
+       "th": "สายชุด RBW_Origin_12 Body03 (XT30(+2)-F.G.B-XT30U-F ยาว 60 ซม.)"
+      },
+      {
+       "en": "3-in-1 power distribution board",
+       "th": "บอร์ดจ่ายไฟ 3-in-1"
+      }
+     ],
+     "fasteners": [],
+     "motors": [
+      "0x01"
+     ],
+     "channel": "CAN0",
+     "warning": false,
+     "notes": [
+      {
+       "en": "The remaining connector on motors 0x0e, 0x13, 0x01 and 0x0d all connect to the 3-in-1 power distribution board.",
+       "th": "ขั้วต่อที่เหลือของมอเตอร์ 0x0e, 0x13, 0x01 และ 0x0d ทั้งหมดต่อเข้ากับบอร์ดจ่ายไฟ 3-in-1"
+      }
+     ]
+    },
+    {
+     "section": "2.5",
+     "label": "2.5-b",
+     "pdf": 67,
+     "en": "CAN1 channel — motor 0x0d (trunk yaw) to power board: use harness RBW_Origin_13 Body04, spec XT30(+2)-F.G.B-XT30U-F, length 50 cm.",
+     "th": "ช่อง CAN1 — มอเตอร์ 0x0d (การหมุนแนวดิ่งของลำตัว (trunk yaw)) ไปยังบอร์ดจ่ายไฟ: ใช้สายชุด RBW_Origin_13 Body04 สเปก XT30(+2)-F.G.B-XT30U-F ความยาว 50 cm",
+     "parts": [
+      {
+       "en": "RBW_Origin_13 Body04 (XT30(+2)-F.G.B-XT30U-F, 50 cm)",
+       "th": "สายชุด RBW_Origin_13 Body04 (XT30(+2)-F.G.B-XT30U-F ยาว 50 ซม.)"
+      },
+      {
+       "en": "3-in-1 power distribution board",
+       "th": "บอร์ดจ่ายไฟ 3-in-1"
+      }
+     ],
+     "fasteners": [],
+     "motors": [
+      "0x0d"
+     ],
+     "channel": "CAN1",
+     "warning": false,
+     "notes": []
+    },
+    {
+     "section": "2.5",
+     "label": "2.5-c",
+     "pdf": 67,
+     "en": "CAN2 channel — motor 0x0e (left shoulder) to power board: use harness RBW_Origin_11 Body02, spec XT30(+2)-F.G.B-XT30(+2)-F.G.B, length 20 cm.",
+     "th": "ช่อง CAN2 — มอเตอร์ 0x0e (ไหล่ซ้าย) ไปยังบอร์ดจ่ายไฟ: ใช้สายชุด RBW_Origin_11 Body02 สเปก XT30(+2)-F.G.B-XT30(+2)-F.G.B ความยาว 20 cm",
+     "parts": [
+      {
+       "en": "RBW_Origin_11 Body02 (XT30(+2)-F.G.B-XT30(+2)-F.G.B, 20 cm)",
+       "th": "สายชุด RBW_Origin_11 Body02 (XT30(+2)-F.G.B-XT30(+2)-F.G.B ยาว 20 ซม.)"
+      },
+      {
+       "en": "3-in-1 power distribution board",
+       "th": "บอร์ดจ่ายไฟ 3-in-1"
+      }
+     ],
+     "fasteners": [],
+     "motors": [
+      "0x0e"
+     ],
+     "channel": "CAN2",
+     "warning": false,
+     "notes": []
+    },
+    {
+     "section": "2.5",
+     "label": "2.5-d",
+     "pdf": 67,
+     "en": "CAN3 channel — motor 0x13 (right shoulder) to power board: use harness RBW_Origin_11 Body02, spec XT30(+2)-F.G.B-XT30(+2)-F.G.B, length 20 cm.",
+     "th": "ช่อง CAN3 — มอเตอร์ 0x13 (ไหล่ขวา) ไปยังบอร์ดจ่ายไฟ: ใช้สายชุด RBW_Origin_11 Body02 สเปก XT30(+2)-F.G.B-XT30(+2)-F.G.B ความยาว 20 cm",
+     "parts": [
+      {
+       "en": "RBW_Origin_11 Body02 (XT30(+2)-F.G.B-XT30(+2)-F.G.B, 20 cm)",
+       "th": "สายชุด RBW_Origin_11 Body02 (XT30(+2)-F.G.B-XT30(+2)-F.G.B ยาว 20 ซม.)"
+      },
+      {
+       "en": "3-in-1 power distribution board",
+       "th": "บอร์ดจ่ายไฟ 3-in-1"
+      }
+     ],
+     "fasteners": [],
+     "motors": [
+      "0x13"
+     ],
+     "channel": "CAN3",
+     "warning": false,
+     "notes": []
+    },
+    {
+     "section": "2.5",
+     "label": "2.5-e",
+     "pdf": 67,
+     "en": "Motors connect to the power board following the principle left before right, legs before arms. Motor 0x01 goes to CAN0, motor 0x0d to CAN1, motor 0x0e to CAN2, and motor 0x13 to CAN3. The PCB is silkscreened accordingly — install according to the silkscreen.",
+     "th": "การต่อมอเตอร์เข้ากับบอร์ดจ่ายไฟให้เป็นไปตามหลักการซ้ายก่อนขวา ขาก่อนแขน คือ มอเตอร์ 0x01 ต่อเข้า CAN0 มอเตอร์ 0x0d ต่อเข้า CAN1 มอเตอร์ 0x0e ต่อเข้า CAN2 และมอเตอร์ 0x13 ต่อเข้า CAN3 PCB มีซิลค์สกรีนตามนี้ — ให้ติดตั้งตามซิลค์สกรีน",
+     "parts": [],
+     "fasteners": [],
+     "motors": [
+      "0x01",
+      "0x0d",
+      "0x0e",
+      "0x13"
+     ],
+     "channel": null,
+     "warning": false,
+     "notes": []
+    },
+    {
+     "section": "2.6",
+     "label": "2.6-a",
+     "pdf": 67,
+     "en": "The RDKx5 uses the usb to typec harness, connecting via USB to the USB-to-CAN port on the 3-in-1 power board.",
+     "th": "RDKx5 ใช้สายชุด usb to typec เชื่อมต่อผ่าน USB เข้ากับพอร์ต USB-to-CAN บนบอร์ดจ่ายไฟ 3-in-1",
+     "parts": [
+      {
+       "en": "usb to typec harness",
+       "th": "สายชุด usb to typec"
+      },
+      {
+       "en": "RDKx5",
+       "th": "RDKx5"
+      },
+      {
+       "en": "3-in-1 power distribution board",
+       "th": "บอร์ดจ่ายไฟ 3-in-1"
+      }
+     ],
+     "fasteners": [],
+     "motors": [],
+     "channel": null,
+     "warning": false,
+     "notes": []
+    },
+    {
+     "section": "2.6",
+     "label": "2.6-b",
+     "pdf": 68,
+     "en": "The RDKx5 uses the typec to typec harness, taking 5 V from the 3-in-1 power board's 5 V supply port into the RDKx5 power input.",
+     "th": "RDKx5 ใช้สายชุด typec to typec โดยรับไฟ 5 V จากพอร์ตจ่ายไฟ 5 V ของบอร์ดจ่ายไฟ 3-in-1 เข้าสู่อินพุตไฟของ RDKx5",
+     "parts": [
+      {
+       "en": "typec to typec harness",
+       "th": "สายชุด typec to typec"
+      },
+      {
+       "en": "RDKx5",
+       "th": "RDKx5"
+      },
+      {
+       "en": "3-in-1 power distribution board",
+       "th": "บอร์ดจ่ายไฟ 3-in-1"
+      }
+     ],
+     "fasteners": [],
+     "motors": [],
+     "channel": null,
+     "warning": false,
+     "notes": []
+    },
+    {
+     "section": "2.6",
+     "label": "2.6-c",
+     "pdf": 68,
+     "en": "The IMU and the gamepad receiver connect directly to the RDKx5 via USB.",
+     "th": "IMU และตัวรับสัญญาณจอยควบคุม (gamepad receiver) เชื่อมต่อโดยตรงกับ RDKx5 ผ่าน USB",
+     "parts": [
+      {
+       "en": "IMU",
+       "th": "IMU"
+      },
+      {
+       "en": "Gamepad receiver",
+       "th": "ตัวรับสัญญาณจอยควบคุม (gamepad receiver)"
+      },
+      {
+       "en": "RDKx5",
+       "th": "RDKx5"
+      }
+     ],
+     "fasteners": [],
+     "motors": [],
+     "channel": null,
+     "warning": false,
+     "notes": []
+    },
+    {
+     "section": "2.6",
+     "label": "2.6-d",
+     "pdf": 69,
+     "en": "The voltage display connector is a gh1.25 connector.",
+     "th": "ขั้วต่อแสดงแรงดันไฟเป็นขั้วต่อ gh1.25",
+     "parts": [
+      {
+       "en": "Voltage display connector (gh1.25)",
+       "th": "ขั้วต่อแสดงแรงดันไฟ (gh1.25)"
+      }
+     ],
+     "fasteners": [],
+     "motors": [],
+     "channel": null,
+     "warning": false,
+     "notes": []
+    },
+    {
+     "section": "2.6",
+     "label": "2.6-e",
+     "pdf": 69,
+     "en": "The port layout and pin definitions of the 3-in-1 power board are shown below. Follow the silkscreen markings exactly when connecting, to avoid reverse polarity.",
+     "th": "ผังพอร์ตและการกำหนดขาของบอร์ดจ่ายไฟ 3-in-1 แสดงไว้ด้านล่าง เมื่อเชื่อมต่อต้องปฏิบัติตามเครื่องหมายซิลค์สกรีนอย่างเคร่งครัด เพื่อหลีกเลี่ยงการต่อขั้วกลับ",
+     "parts": [
+      {
+       "en": "3-in-1 power distribution board",
+       "th": "บอร์ดจ่ายไฟ 3-in-1"
+      }
+     ],
+     "fasteners": [],
+     "motors": [],
+     "channel": null,
+     "warning": true,
+     "notes": []
+    },
+    {
+     "section": "3.1",
+     "label": "3.1-a",
+     "pdf": 70,
+     "en": "Harness securing method: use harness clips to secure the harness at the connectors, preventing unstable signal transmission caused by connectors working loose.",
+     "th": "วิธีการยึดตรึงสายชุด: ใช้ตัวรัดสายชุด (harness clips) ยึดสายชุดตรงบริเวณขั้วต่อ เพื่อป้องกันการส่งสัญญาณที่ไม่เสถียรอันเกิดจากขั้วต่อหลวม",
+     "parts": [
+      {
+       "en": "Harness clips",
+       "th": "ตัวรัดสายชุด (harness clips)"
+      }
+     ],
+     "fasteners": [],
+     "motors": [],
+     "channel": null,
+     "warning": false,
+     "notes": []
+    },
+    {
+     "section": "3.2",
+     "label": "3.2-a",
+     "pdf": 70,
+     "en": "To stop CAN connectors from detaching or being pulled apart during motion, UV adhesive can be used to reinforce the connectors.",
+     "th": "เพื่อป้องกันไม่ให้ขั้วต่อ CAN หลุดหรือถูกดึงแยกออกจากกันระหว่างการเคลื่อนที่ สามารถใช้กาว UV เสริมความแข็งแรงให้ขั้วต่อได้",
+     "parts": [
+      {
+       "en": "UV adhesive",
+       "th": "กาว UV"
+      }
+     ],
+     "fasteners": [],
+     "motors": [],
+     "channel": null,
+     "warning": false,
+     "notes": []
+    }
+   ]
+  }
+ ]
+}

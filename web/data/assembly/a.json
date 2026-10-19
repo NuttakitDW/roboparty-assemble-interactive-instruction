@@ -1,0 +1,640 @@
+[
+ {
+  "label": "1",
+  "pdf": 20,
+  "printed": 17,
+  "en": "Place the components and motors according to the robot's standing orientation. Ensure that the motor interface faces the vertical direction (to avoid misalignment), and that the end bearing the label \"DM-J10010L-2EC\" is oriented downward.",
+  "th": "วางชิ้นส่วนและมอเตอร์ตามทิศทางการยืนของหุ่นยนต์ ต้องให้ช่องต่อของมอเตอร์หันไปในแนวตั้ง (เพื่อหลีกเลี่ยงการวางเยื้องตำแหน่ง) และให้ด้านที่มีฉลาก \"DM-J10010L-2EC\" หันลงด้านล่าง",
+  "parts": [
+   {
+    "en": "Inner Thigh",
+    "th": "ต้นขาด้านใน"
+   },
+   {
+    "en": "DM J10010L",
+    "th": "DM J10010L"
+   }
+  ],
+  "fasteners": [],
+  "notes": []
+ },
+ {
+  "label": "2",
+  "pdf": 20,
+  "printed": 17,
+  "en": "First, use M4×12 socket head screws for hole positioning. Insert M4×8 socket head screws into the remaining holes and tighten them using the diagonal method. Then remove the two M4×12 positioning screws and replace them with M4×8 socket head screws. Apply threadlocker when installing the screws. For precautions, refer to section 3.3 of the Assembly Precautions.",
+  "th": "ก่อนอื่นให้ใช้สกรูหัวหกเหลี่ยมจม M4×12 เพื่อกำหนดตำแหน่งรู จากนั้นใส่สกรูหัวหกเหลี่ยมจม M4×8 ลงในรูที่เหลือและขันให้แน่นด้วยวิธีขันแบบทแยง แล้วจึงถอดสกรูกำหนดตำแหน่ง M4×12 ทั้งสองตัวออก และเปลี่ยนเป็นสกรูหัวหกเหลี่ยมจม M4×8 ให้ใช้กาวล็อกเกลียวเมื่อติดตั้งสกรู สำหรับข้อควรระวัง ให้ดูหัวข้อ 3.3 ข้อควรระวังในการประกอบ",
+  "parts": [],
+  "fasteners": [
+   {
+    "en": "M4×12 Socket Head Cap Screws",
+    "th": "สกรูหัวหกเหลี่ยมจม M4×12",
+    "role": "positioning"
+   },
+   {
+    "en": "M4×8 Socket Head Cap Screws",
+    "th": "สกรูหัวหกเหลี่ยมจม M4×8",
+    "role": null
+   }
+  ],
+  "notes": [
+   {
+    "en": "M4×12 Socket Head Cap Screws – used for positioning. Subsequently, the positioning screw must be unscrewed (backed out).",
+    "th": "สกรูหัวหกเหลี่ยมจม M4×12 – ใช้สำหรับกำหนดตำแหน่ง หลังจากนั้นต้องคลายสกรูกำหนดตำแหน่งออก (คลายออกจนสุด)"
+   },
+   {
+    "en": "Screws marked in red are for positioning purposes only and are not load-bearing fasteners. When tightening, only a slight contact feel is needed. Do not use power tools to over-tighten. The same applies below.",
+    "th": "สกรูที่ทำเครื่องหมายสีแดงใช้เพื่อกำหนดตำแหน่งเท่านั้น และไม่ใช่ตัวยึดรับน้ำหนัก เมื่อขันให้รู้สึกเพียงว่าสัมผัสเบาๆ ก็พอ ห้ามใช้เครื่องมือไฟฟ้าขันจนแน่นเกินไป ข้อนี้ใช้กับส่วนต่อๆ ไปเช่นเดียวกัน"
+   }
+  ]
+ },
+ {
+  "label": "3",
+  "pdf": 21,
+  "printed": 18,
+  "en": "Place the DM 4340p into the lower leg mounting holes, and install the two serial ports one on top and one on the bottom.",
+  "th": "วาง DM 4340p เข้าไปในรูยึดของขาท่อนล่าง และติดตั้งพอร์ตอนุกรมทั้งสองพอร์ต โดยพอร์ตหนึ่งอยู่ด้านบนและอีกพอร์ตหนึ่งอยู่ด้านล่าง",
+  "parts": [
+   {
+    "en": "Lower Leg",
+    "th": "ขาท่อนล่าง"
+   },
+   {
+    "en": "DM 4340p",
+    "th": "DM 4340p"
+   }
+  ],
+  "fasteners": [],
+  "notes": []
+ },
+ {
+  "label": "4",
+  "pdf": 21,
+  "printed": 18,
+  "en": "After turning over, drive in M3×8 socket head cap screws (using the same method as in the first part of assembly: first positioning, then diagonal tightening).",
+  "th": "หลังจากพลิกกลับด้านแล้ว ให้ขันสกรูหัวหกเหลี่ยมจม M3×8 (ใช้วิธีเดียวกับช่วงแรกของการประกอบ: กำหนดตำแหน่งก่อน แล้วจึงขันแบบทแยง)",
+  "parts": [],
+  "fasteners": [
+   {
+    "en": "M3×12 Socket Head Screws",
+    "th": "สกรูหัวหกเหลี่ยมจม M3×12",
+    "role": "positioning"
+   },
+   {
+    "en": "M3×8 Socket Head Cup Screws",
+    "th": "สกรูหัวหกเหลี่ยมจม (สกรูหัวกระบอก) M3×8",
+    "role": null
+   }
+  ],
+  "notes": [
+   {
+    "en": "Screws marked in red are for positioning purposes only and are not load-bearing fasteners. When tightening, only a slight contact feel is needed. Do not use power tools to over-tighten. The same applies below.",
+    "th": "สกรูที่ทำเครื่องหมายสีแดงใช้เพื่อกำหนดตำแหน่งเท่านั้น และไม่ใช่ตัวยึดรับน้ำหนัก เมื่อขันให้รู้สึกเพียงว่าสัมผัสเบาๆ ก็พอ ห้ามใช้เครื่องมือไฟฟ้าขันจนแน่นเกินไป ข้อนี้ใช้กับส่วนต่อๆ ไปเช่นเดียวกัน"
+   }
+  ]
+ },
+ {
+  "label": "5",
+  "pdf": 21,
+  "printed": 18,
+  "en": null,
+  "th": null,
+  "parts": [
+   {
+    "en": "Radial Spherical Plain Bearing",
+    "th": "แบริ่งทรงกลมแบบเรเดียล (ซีรีส์ G)"
+   },
+   {
+    "en": "Hand Press Schematic Diagram",
+    "th": "ภาพแสดงเครื่องกดมือ (Hand Press)"
+   }
+  ],
+  "fasteners": [
+   {
+    "en": "M4×8 Flat Head Screws",
+    "th": "สกรูหัวเรียบ M4×8",
+    "role": null
+   }
+  ],
+  "notes": []
+ },
+ {
+  "label": "6",
+  "pdf": 22,
+  "printed": 19,
+  "en": null,
+  "th": null,
+  "parts": [],
+  "fasteners": [
+   {
+    "en": "M3×12 Socket Head Cap Screws",
+    "th": "สกรูหัวหกเหลี่ยมจม M3×12",
+    "role": null
+   }
+  ],
+  "notes": []
+ },
+ {
+  "label": "7",
+  "pdf": 22,
+  "printed": 19,
+  "en": "The ankle roll connector must be tightly fitted with the universal joint cross bearing. If the ankle roll connector is not tightly fitted with the universal joint cross bearing, use a hand press to press it into place.",
+  "th": "ตัวเชื่อมข้อเท้า (โรล) ต้องสวมแน่นกับแบริ่งกากบาทข้อต่ออเนกประสงค์ หากตัวเชื่อมข้อเท้า (โรล) สวมไม่แน่นกับแบริ่งกากบาทข้อต่ออเนกประสงค์ ให้ใช้เครื่องกดมือกดให้เข้าที่",
+  "parts": [
+   {
+    "en": "Ankle Roll Connector",
+    "th": "ตัวเชื่อมข้อเท้า (โรล)"
+   },
+   {
+    "en": "universal joint cross bearing",
+    "th": "แบริ่งกากบาทข้อต่ออเนกประสงค์"
+   }
+  ],
+  "fasteners": [],
+  "notes": []
+ },
+ {
+  "label": "8",
+  "pdf": 22,
+  "printed": 19,
+  "en": null,
+  "th": null,
+  "parts": [
+   {
+    "en": "Calf Bearing Lock",
+    "th": "ตัวล็อกแบริ่งหน้าแข้ง"
+   }
+  ],
+  "fasteners": [
+   {
+    "en": "M5×10 Socket Head Cap Screws",
+    "th": "สกรูหัวหกเหลี่ยมจม M5×10",
+    "role": null
+   },
+   {
+    "en": "M4×8 Socket Head Cap Screws",
+    "th": "สกรูหัวหกเหลี่ยมจม M4×8",
+    "role": null
+   }
+  ],
+  "notes": []
+ },
+ {
+  "label": "9",
+  "pdf": 23,
+  "printed": 20,
+  "en": null,
+  "th": null,
+  "parts": [
+   {
+    "en": "20cm Foot",
+    "th": "เท้า 20 ซม."
+   }
+  ],
+  "fasteners": [],
+  "notes": []
+ },
+ {
+  "label": "10",
+  "pdf": 23,
+  "printed": 20,
+  "en": null,
+  "th": null,
+  "parts": [],
+  "fasteners": [
+   {
+    "en": "M5×12 Socket Head Cap Screws",
+    "th": "สกรูหัวหกเหลี่ยมจม M5×12",
+    "role": null
+   }
+  ],
+  "notes": []
+ },
+ {
+  "label": "11",
+  "pdf": 23,
+  "printed": 20,
+  "en": null,
+  "th": null,
+  "parts": [
+   {
+    "en": "Rubber Foot Pad",
+    "th": "แผ่นยางรองเท้า"
+   }
+  ],
+  "fasteners": [
+   {
+    "en": "M4×8 Socket Head Cap Screws",
+    "th": "สกรูหัวหกเหลี่ยมจม M4×8",
+    "role": null
+   }
+  ],
+  "notes": []
+ },
+ {
+  "label": "12",
+  "pdf": 23,
+  "printed": 20,
+  "en": null,
+  "th": null,
+  "parts": [
+   {
+    "en": "Thrust Needle Roller and Cage Assembly",
+    "th": "แบริ่งเข็มกันรุนพร้อมกรง"
+   }
+  ],
+  "fasteners": [],
+  "notes": [
+   {
+    "en": "Do not install the two outer washers, only install the middle bearing.",
+    "th": "ห้ามติดตั้งแหวนรองด้านนอกทั้งสองชิ้น ให้ติดตั้งเฉพาะแบริ่งตรงกลางเท่านั้น"
+   }
+  ]
+ },
+ {
+  "label": "13",
+  "pdf": 23,
+  "printed": 20,
+  "en": null,
+  "th": null,
+  "parts": [],
+  "fasteners": [],
+  "notes": []
+ },
+ {
+  "label": "14",
+  "pdf": 24,
+  "printed": 21,
+  "en": null,
+  "th": null,
+  "parts": [],
+  "fasteners": [
+   {
+    "en": "M5×12 Socket Head Cap Screws",
+    "th": "สกรูหัวหกเหลี่ยมจม M5×12",
+    "role": null
+   }
+  ],
+  "notes": []
+ },
+ {
+  "label": "15",
+  "pdf": 24,
+  "printed": 21,
+  "en": null,
+  "th": null,
+  "parts": [],
+  "fasteners": [
+   {
+    "en": "M5×14 Socket Head Cap Screws",
+    "th": "สกรูหัวหกเหลี่ยมจม M5×14",
+    "role": null
+   }
+  ],
+  "notes": []
+ },
+ {
+  "label": "16",
+  "pdf": 24,
+  "printed": 21,
+  "en": "Depending on the left or right leg, remove the corresponding M4×8 socket head screws, insert the limit pin, and drive in M4×14 socket head cap screws.",
+  "th": "ตามขาซ้ายหรือขาขวา ให้ถอดสกรูหัวหกเหลี่ยมจม M4×8 ที่ตรงกันออก ใส่พินลิมิต แล้วขันสกรูหัวหกเหลี่ยมจม M4×14",
+  "parts": [
+   {
+    "en": "limit pin",
+    "th": "พินลิมิต"
+   }
+  ],
+  "fasteners": [
+   {
+    "en": "M4×14 Socket Head Cap Screws",
+    "th": "สกรูหัวหกเหลี่ยมจม M4×14",
+    "role": null
+   }
+  ],
+  "notes": [
+   {
+    "en": "Install the other leg using the same method. Once the installation of the other leg is completed, place it properly and set aside for later use. (The left and right leg assemblies should be mirror-symmetric).",
+    "th": "ให้ติดตั้งขาอีกข้างด้วยวิธีเดียวกัน เมื่อติดตั้งขาอีกข้างเสร็จแล้ว ให้วางเก็บไว้อย่างเหมาะสมเพื่อใช้งานภายหลัง (ชุดขาซ้ายและขวาต้องสมมาตรเป็นภาพสะท้อนกัน)"
+   }
+  ]
+ },
+ {
+  "label": "17",
+  "pdf": 25,
+  "printed": 22,
+  "en": "Place the DM-J10010L and hip clamp plate, align holes, ensure motor interfaces face the same direction, and install m4*8 socket head screws using the positioning method.",
+  "th": "วาง DM-J10010L และแผ่นประกบสะโพก (hip clamp plate) จัดรูให้ตรงกัน ตรวจสอบให้แน่ใจว่าช่องต่อของมอเตอร์หันไปในทิศทางเดียวกัน และติดตั้งสกรูหัวหกเหลี่ยมจม m4*8 โดยใช้วิธีกำหนดตำแหน่ง",
+  "parts": [
+   {
+    "en": "Hip Clamp Plate",
+    "th": "แผ่นประกบสะโพก"
+   }
+  ],
+  "fasteners": [
+   {
+    "en": "M4×8 Socket Head Cap Screws",
+    "th": "สกรูหัวหกเหลี่ยมจม M4×8",
+    "role": null
+   },
+   {
+    "en": "M4×12 Socket Head Cap Screws used for positioning",
+    "th": "สกรูหัวหกเหลี่ยมจม M4×12 ใช้สำหรับกำหนดตำแหน่ง",
+    "role": "positioning"
+   }
+  ],
+  "notes": [
+   {
+    "en": "Screws marked in red are for positioning purposes only and are not load-bearing fasteners. When tightening, only a slight contact feel is needed. Do not use power tools to over-tighten. The same applies below.",
+    "th": "สกรูที่ทำเครื่องหมายสีแดงใช้เพื่อกำหนดตำแหน่งเท่านั้น และไม่ใช่ตัวยึดรับน้ำหนัก เมื่อขันให้รู้สึกเพียงว่าสัมผัสเบาๆ ก็พอ ห้ามใช้เครื่องมือไฟฟ้าขันจนแน่นเกินไป ข้อนี้ใช้กับส่วนต่อๆ ไปเช่นเดียวกัน"
+   }
+  ]
+ },
+ {
+  "label": "18",
+  "pdf": 25,
+  "printed": 22,
+  "en": "After tightening screws diagonally, adjust the electric screwdriver to the highest torque setting and tighten the screws clockwise in turn again (at least two cycles).",
+  "th": "หลังจากขันสกรูแบบทแยงแล้ว ให้ปรับไขควงไฟฟ้าไปที่แรงบิดสูงสุด และขันสกรูตามเข็มนาฬิกาไล่ไปตามลำดับอีกครั้ง (อย่างน้อยสองรอบ)",
+  "parts": [],
+  "fasteners": [],
+  "notes": []
+ },
+ {
+  "label": "19",
+  "pdf": 25,
+  "printed": 22,
+  "en": "Install the other hip clamp plate. Tap the hip clamp plate with a hammer on the reverse side until the sound becomes solid / deep everywhere.",
+  "th": "ติดตั้งแผ่นประกบสะโพกอีกแผ่น เคาะแผ่นประกบสะโพกด้วยค้อนที่ด้านหลังจนเสียงทึบ / ก้องลึกทั่วทั้งแผ่น",
+  "parts": [
+   {
+    "en": "Hip Plate",
+    "th": "แผ่นสะโพก"
+   }
+  ],
+  "fasteners": [],
+  "notes": []
+ },
+ {
+  "label": "20",
+  "pdf": 25,
+  "printed": 22,
+  "en": "Use the positioning method and diagonal method to install socket head cup screws.",
+  "th": "ใช้วิธีกำหนดตำแหน่งและวิธีขันแบบทแยงในการติดตั้งสกรูหัวหกเหลี่ยมจม (สกรูหัวกระบอก)",
+  "parts": [],
+  "fasteners": [
+   {
+    "en": "M4×8 Socket Head Cap Screws",
+    "th": "สกรูหัวหกเหลี่ยมจม M4×8",
+    "role": null
+   },
+   {
+    "en": "M4×12 Socket Head Cap Screws used for positioning",
+    "th": "สกรูหัวหกเหลี่ยมจม M4×12 ใช้สำหรับกำหนดตำแหน่ง",
+    "role": "positioning"
+   }
+  ],
+  "notes": [
+   {
+    "en": "Screws marked in red are for positioning purposes only and are not load-bearing fasteners. When tightening, only a slight contact feel is needed. Do not use power tools to over-tighten. The same applies below.",
+    "th": "สกรูที่ทำเครื่องหมายสีแดงใช้เพื่อกำหนดตำแหน่งเท่านั้น และไม่ใช่ตัวยึดรับน้ำหนัก เมื่อขันให้รู้สึกเพียงว่าสัมผัสเบาๆ ก็พอ ห้ามใช้เครื่องมือไฟฟ้าขันจนแน่นเกินไป ข้อนี้ใช้กับส่วนต่อๆ ไปเช่นเดียวกัน"
+   }
+  ]
+ },
+ {
+  "label": "21",
+  "pdf": 26,
+  "printed": 23,
+  "en": null,
+  "th": null,
+  "parts": [
+   {
+    "en": "Thrust Needle Roller and Cage Assembly",
+    "th": "แบริ่งเข็มกันรุนพร้อมกรง"
+   }
+  ],
+  "fasteners": [],
+  "notes": [
+   {
+    "en": "Do not install the two outer washers, only install the middle bearing.",
+    "th": "ห้ามติดตั้งแหวนรองด้านนอกทั้งสองชิ้น ให้ติดตั้งเฉพาะแบริ่งตรงกลางเท่านั้น"
+   }
+  ]
+ },
+ {
+  "label": "22",
+  "pdf": 26,
+  "printed": 23,
+  "en": null,
+  "th": null,
+  "parts": [
+   {
+    "en": "Universal Connector",
+    "th": "ตัวเชื่อมข้อต่ออเนกประสงค์"
+   }
+  ],
+  "fasteners": [],
+  "notes": []
+ },
+ {
+  "label": "23",
+  "pdf": 26,
+  "printed": 23,
+  "en": null,
+  "th": null,
+  "parts": [],
+  "fasteners": [
+   {
+    "en": "M5×10 Socket Head Cap Screws",
+    "th": "สกรูหัวหกเหลี่ยมจม M5×10",
+    "role": null
+   }
+  ],
+  "notes": []
+ },
+ {
+  "label": "24",
+  "pdf": 26,
+  "printed": 23,
+  "en": null,
+  "th": null,
+  "parts": [
+   {
+    "en": "DM J10010L",
+    "th": "DM J10010L"
+   },
+   {
+    "en": "Universal Connector",
+    "th": "ตัวเชื่อมข้อต่ออเนกประสงค์"
+   }
+  ],
+  "fasteners": [],
+  "notes": [
+   {
+    "en": "Motor placed in the direction as shown. Align the power hole with the threaded hole.",
+    "th": "วางมอเตอร์ในทิศทางตามที่แสดง จัดรูสายไฟให้ตรงกับรูเกลียว"
+   }
+  ],
+  "unsure": true
+ },
+ {
+  "label": "25",
+  "pdf": 27,
+  "printed": 24,
+  "en": null,
+  "th": null,
+  "parts": [
+   {
+    "en": "Universal Counter Reamed Flange",
+    "th": "หน้าแปลนคว้านของตัวเชื่อมข้อต่อ"
+   }
+  ],
+  "fasteners": [
+   {
+    "en": "M4×8 Socket Head Cap Screws",
+    "th": "สกรูหัวหกเหลี่ยมจม M4×8",
+    "role": null
+   }
+  ],
+  "notes": []
+ },
+ {
+  "label": "26",
+  "pdf": 27,
+  "printed": 24,
+  "en": null,
+  "th": null,
+  "parts": [
+   {
+    "en": "Universal Connector",
+    "th": "ตัวเชื่อมข้อต่ออเนกประสงค์"
+   },
+   {
+    "en": "Thrust Needle Roller and Cage Assembly",
+    "th": "แบริ่งเข็มกันรุนพร้อมกรง"
+   }
+  ],
+  "fasteners": [
+   {
+    "en": "M5×10 Socket Head Cap Screws",
+    "th": "สกรูหัวหกเหลี่ยมจม M5×10",
+    "role": null
+   }
+  ],
+  "notes": [
+   {
+    "en": "Do not install the two outer washers, only install the middle bearing.",
+    "th": "ห้ามติดตั้งแหวนรองด้านนอกทั้งสองชิ้น ให้ติดตั้งเฉพาะแบริ่งตรงกลางเท่านั้น"
+   }
+  ]
+ },
+ {
+  "label": "27",
+  "pdf": 27,
+  "printed": 24,
+  "en": null,
+  "th": null,
+  "parts": [
+   {
+    "en": "DM J10010L",
+    "th": "DM J10010L"
+   }
+  ],
+  "fasteners": [
+   {
+    "en": "M4×8 Socket Head Cap Screws",
+    "th": "สกรูหัวหกเหลี่ยมจม M4×8",
+    "role": null
+   }
+  ],
+  "notes": [
+   {
+    "en": "Motor placed in the direction as shown. Align the power hole with the threaded hole.",
+    "th": "วางมอเตอร์ในทิศทางตามที่แสดง จัดรูสายไฟให้ตรงกับรูเกลียว"
+   }
+  ]
+ },
+ {
+  "label": "28",
+  "pdf": 28,
+  "printed": 25,
+  "en": null,
+  "th": null,
+  "parts": [
+   {
+    "en": "Universal Counter Reamed Flange",
+    "th": "หน้าแปลนคว้านของตัวเชื่อมข้อต่อ"
+   }
+  ],
+  "fasteners": [
+   {
+    "en": "M4×8 Socket Head Cap Screws",
+    "th": "สกรูหัวหกเหลี่ยมจม M4×8",
+    "role": null
+   }
+  ],
+  "notes": []
+ },
+ {
+  "label": "29",
+  "pdf": 28,
+  "printed": 25,
+  "en": null,
+  "th": null,
+  "parts": [],
+  "fasteners": [
+   {
+    "en": "M3×8 Socket Head Cap Screws",
+    "th": "สกรูหัวหกเหลี่ยมจม M3×8",
+    "role": null
+   }
+  ],
+  "notes": []
+ },
+ {
+  "label": "30",
+  "pdf": 29,
+  "printed": 26,
+  "en": null,
+  "th": null,
+  "parts": [
+   {
+    "en": "Thrust Needle Roller and Cage Assembly",
+    "th": "แบริ่งเข็มกันรุนพร้อมกรง"
+   }
+  ],
+  "fasteners": [],
+  "notes": [
+   {
+    "en": "Do not install the two outer washers, only install the middle bearing.",
+    "th": "ห้ามติดตั้งแหวนรองด้านนอกทั้งสองชิ้น ให้ติดตั้งเฉพาะแบริ่งตรงกลางเท่านั้น"
+   }
+  ]
+ },
+ {
+  "label": "31",
+  "pdf": 29,
+  "printed": 26,
+  "en": null,
+  "th": null,
+  "parts": [],
+  "fasteners": [],
+  "notes": []
+ },
+ {
+  "label": "32",
+  "pdf": 29,
+  "printed": 26,
+  "en": null,
+  "th": null,
+  "parts": [],
+  "fasteners": [
+   {
+    "en": "M5×10 Socket Head Cap Screws",
+    "th": "สกรูหัวหกเหลี่ยมจม M5×10",
+    "role": null
+   }
+  ],
+  "notes": []
+ }
+]

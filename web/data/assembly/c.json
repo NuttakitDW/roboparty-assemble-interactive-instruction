@@ -1,0 +1,169 @@
+[
+ {
+  "label": "intro",
+  "pdf": 42,
+  "printed": 39,
+  "en": "I. Purpose of Calibration Using Cylindrical Pins\nWe realized that the calibration methods for 3D printing in the past had many deficiencies, such as factors like the accuracy and stiffness of 3D printed parts, as well as the time required to print calibration parts. Therefore, we proposed using cylindrical pins (GB119) to constrain the rotational degrees of freedom of each joint. The standard part calibration scheme aims to provide users with an alternative mechanical calibration method with high repeatability to achieve attitude constraint and zero alignment of each joint of the robot during the calibration process.\n\nII. Potential issues in cylindrical pin calibration\nIt should be noted that this type of calibration method has relatively high requirements for the manufacturing tolerances of components, including but not limited to dimensional errors, positional errors, and shape errors. Due to the process differences between different machining suppliers and different machining batches, even when the nominal dimensions are consistent, the actual fitting effects of parts may vary. Therefore, during actual use, it may occur that the cylindrical locating pin cannot be smoothly inserted, or although it can be inserted, it cannot be fully inserted to the designed depth, thus affecting its effect on restricting the rotational degrees of freedom of the joint. If the locating pin cannot be inserted manually, you may choose to use a rubber hammer or other tools to insert it.\nIn some cases, inserting the cylindrical pin to a certain depth can effectively constrain the rotation of the joint. After inserting the positioning pin, if the rotation degree of freedom of the relevant joint is found to be restricted when rotating it, the calibration and positioning can be considered completed, and there is no need to force it to be inserted to the theoretical limit position. The BOM provides two lengths of positioning pins, 18 and 22. Due to interference at some positions, users can choose cylindrical pins of different lengths by themselves.\nIf the plug is found difficult to pull out manually, tools such as needle-nose pliers can be used.\n\nIII. Installation Location Instructions\nThe insertion positions of the locating pins for the arm and leg are as shown in the figure (taking the right hand and right leg as an example). It should be noted that the illustrated scheme imposes a certain degree of over-constraint on the rotational degrees of freedom of the leg. From a theoretical analysis perspective, only one locating pin needs to be inserted into the leg joint to achieve posture positioning. However, in actual engineering implementation, a multi-point constraint design scheme is adopted to improve the stability and reliability of the calibration process.",
+  "th": "I. วัตถุประสงค์ของการคาลิเบรตด้วยพินทรงกระบอก\n\nเราพบว่าวิธีการคาลิเบรตด้วยการพิมพ์ 3 มิติที่ใช้ในอดีตมีข้อบกพร่องหลายประการ เช่น ปัจจัยด้านความแม่นยำและความแข็งแรงของชิ้นส่วนที่พิมพ์ 3 มิติ รวมถึงเวลาที่ต้องใช้ในการพิมพ์ชิ้นส่วนสำหรับคาลิเบรต ดังนั้นเราจึงเสนอให้ใช้พินทรงกระบอก (GB119) เพื่อจำกัดองศาอิสระในการหมุนของแต่ละข้อต่อ แนวทางการคาลิเบรตด้วยชิ้นส่วนมาตรฐานนี้มีจุดมุ่งหมายเพื่อมอบวิธีการคาลิเบรตเชิงกลทางเลือกที่มีความสามารถในการทำซ้ำได้สูงแก่ผู้ใช้ เพื่อให้เกิดการจำกัดท่าทางและการจัดตำแหน่งศูนย์ (zero) ของแต่ละข้อต่อของหุ่นยนต์ในระหว่างกระบวนการคาลิเบรต\n\nII. ปัญหาที่อาจเกิดขึ้นในการคาลิเบรตด้วยพินทรงกระบอก\n\nควรทราบว่าวิธีการคาลิเบรตแบบนี้มีข้อกำหนดค่อนข้างสูงต่อค่าพิกัดความเผื่อในการผลิตของชิ้นส่วน ซึ่งรวมถึงแต่ไม่จำกัดเพียงความคลาดเคลื่อนของขนาด ความคลาดเคลื่อนของตำแหน่ง และความคลาดเคลื่อนของรูปทรง เนื่องจากความแตกต่างของกระบวนการระหว่างซัพพลายเออร์งานกลึงต่างราย และระหว่างล็อตการผลิตต่างล็อต แม้ขนาดตามที่กำหนดจะตรงกัน แต่ผลการประกอบเข้ากันจริงของชิ้นส่วนอาจแตกต่างกันได้ ดังนั้น ในการใช้งานจริงอาจเกิดกรณีที่พินกำหนดตำแหน่งทรงกระบอกไม่สามารถเสียบเข้าไปได้อย่างราบรื่น หรือเสียบเข้าไปได้แต่ไม่สามารถเสียบจนถึงความลึกตามที่ออกแบบไว้ ซึ่งส่งผลต่อประสิทธิภาพในการจำกัดองศาอิสระในการหมุนของข้อต่อ หากไม่สามารถเสียบพินกำหนดตำแหน่งด้วยมือได้ สามารถเลือกใช้ค้อนยางหรือเครื่องมืออื่นในการเสียบได้\n\nในบางกรณี การเสียบพินทรงกระบอกถึงความลึกระดับหนึ่งก็สามารถจำกัดการหมุนของข้อต่อได้อย่างมีประสิทธิภาพ หลังจากเสียบพินกำหนดตำแหน่งแล้ว หากพบว่าองศาอิสระในการหมุนของข้อต่อที่เกี่ยวข้องถูกจำกัดเมื่อลองหมุนข้อต่อนั้น ก็ถือได้ว่าการคาลิเบรตและการกำหนดตำแหน่งเสร็จสมบูรณ์ และไม่จำเป็นต้องฝืนเสียบให้ถึงตำแหน่งลิมิตตามทฤษฎี ใน BOM มีพินกำหนดตำแหน่งให้สองความยาว คือ 18 และ 22 เนื่องจากมีการรบกวนกันของชิ้นส่วนในบางตำแหน่ง ผู้ใช้สามารถเลือกพินทรงกระบอกที่มีความยาวต่างกันได้ด้วยตนเอง\nหากพบว่าดึงปลั๊กออกด้วยมือได้ยาก สามารถใช้เครื่องมือ เช่น คีมปากแหลม ได้\n\nIII. คำอธิบายตำแหน่งการติดตั้ง\n\nตำแหน่งการเสียบพินกำหนดตำแหน่งของแขนและขาเป็นไปตามที่แสดงในรูป (ใช้มือขวาและขาขวาเป็นตัวอย่าง) ควรทราบว่าแผนที่แสดงในรูปเป็นการจำกัดองศาอิสระในการหมุนของขามากกว่าที่จำเป็น (over-constraint) ในระดับหนึ่ง จากมุมมองของการวิเคราะห์เชิงทฤษฎี เพียงเสียบพินกำหนดตำแหน่งหนึ่งตัวเข้าที่ข้อต่อของขาก็สามารถกำหนดตำแหน่งท่าทางได้ อย่างไรก็ตาม ในการนำไปใช้งานจริงทางวิศวกรรม ได้ใช้แผนการออกแบบที่จำกัดหลายจุดเพื่อเพิ่มเสถียรภาพและความน่าเชื่อถือของกระบวนการคาลิเบรต",
+  "parts": [
+   {
+    "en": "Cylindrical pin (GB119)",
+    "th": "พินทรงกระบอก (GB119)"
+   }
+  ],
+  "fasteners": [
+   {
+    "en": "Cylindrical locating pin, BOM length 18",
+    "th": "พินกำหนดตำแหน่งทรงกระบอก ความยาว 18 (ตาม BOM)",
+    "role": null
+   },
+   {
+    "en": "Cylindrical locating pin, BOM length 22",
+    "th": "พินกำหนดตำแหน่งทรงกระบอก ความยาว 22 (ตาม BOM)",
+    "role": null
+   }
+  ],
+  "notes": [
+   {
+    "en": "Spans PDF pages 42-43 (printed 39-40); a sentence breaks across the page boundary.",
+    "th": "ครอบคลุมหน้า PDF 42-43 (หน้าที่พิมพ์ 39-40) ประโยคหนึ่งต่อข้ามหน้า"
+   },
+   {
+    "en": "If the pin cannot be inserted by hand, a rubber hammer or other tools may be used; if it is difficult to pull out, use tools such as needle-nose pliers.",
+    "th": "หากไม่สามารถเสียบพินด้วยมือได้ สามารถใช้ค้อนยางหรือเครื่องมืออื่นได้ หากดึงออกด้วยมือได้ยาก สามารถใช้เครื่องมือ เช่น คีมปากแหลม"
+   },
+   {
+    "en": "Theoretically one locating pin in the leg joint suffices; the illustrated scheme over-constrains the leg on purpose for stability and reliability.",
+    "th": "ตามทฤษฎีเพียงพินกำหนดตำแหน่งหนึ่งตัวที่ข้อต่อขาก็เพียงพอ แผนในรูปจำกัดขามากกว่าที่จำเป็นโดยเจตนาเพื่อเสถียรภาพและความน่าเชื่อถือ"
+   }
+  ]
+ },
+ {
+  "label": "1",
+  "pdf": 44,
+  "printed": 41,
+  "en": "The limit pins used for the two-step installation are both size M4×18. The insertion position of the arm's locating pin is as shown in the figure (using the right arm as an example).",
+  "th": "พินลิมิตที่ใช้ในการติดตั้งสองขั้นตอนนี้มีขนาด M4×18 ทั้งคู่ ตำแหน่งการเสียบพินกำหนดตำแหน่งของแขนเป็นไปตามที่แสดงในรูป (ใช้แขนขวาเป็นตัวอย่าง)",
+  "parts": [],
+  "fasteners": [
+   {
+    "en": "M4×18 limit pin",
+    "th": "พินลิมิต M4×18",
+    "role": null
+   }
+  ],
+  "notes": [
+   {
+    "en": "Caption is shared by STEP 1 and STEP 2 (printed as \"1&2\").",
+    "th": "คำอธิบายนี้ใช้ร่วมกันของขั้นตอนที่ 1 และ 2 (พิมพ์เป็น \"1&2\")"
+   }
+  ]
+ },
+ {
+  "label": "2",
+  "pdf": 44,
+  "printed": 41,
+  "en": "The limit pins used for the two-step installation are both size M4×18. The insertion position of the arm's locating pin is as shown in the figure (using the right arm as an example).",
+  "th": "พินลิมิตที่ใช้ในการติดตั้งสองขั้นตอนนี้มีขนาด M4×18 ทั้งคู่ ตำแหน่งการเสียบพินกำหนดตำแหน่งของแขนเป็นไปตามที่แสดงในรูป (ใช้แขนขวาเป็นตัวอย่าง)",
+  "parts": [],
+  "fasteners": [
+   {
+    "en": "M4×18 limit pin",
+    "th": "พินลิมิต M4×18",
+    "role": null
+   }
+  ],
+  "notes": [
+   {
+    "en": "Caption is shared by STEP 1 and STEP 2 (printed as \"1&2\").",
+    "th": "คำอธิบายนี้ใช้ร่วมกันของขั้นตอนที่ 1 และ 2 (พิมพ์เป็น \"1&2\")"
+   }
+  ]
+ },
+ {
+  "label": "3",
+  "pdf": 44,
+  "printed": 41,
+  "en": "The limit pins used for the two-step installation are both size M4×22. The insertion position of the leg's locating pin is as shown in the figure (using the right leg as an example).",
+  "th": "พินลิมิตที่ใช้ในการติดตั้งสองขั้นตอนนี้มีขนาด M4×22 ทั้งคู่ ตำแหน่งการเสียบพินกำหนดตำแหน่งของขาเป็นไปตามที่แสดงในรูป (ใช้ขาขวาเป็นตัวอย่าง)",
+  "parts": [],
+  "fasteners": [
+   {
+    "en": "M4×22 limit pin",
+    "th": "พินลิมิต M4×22",
+    "role": null
+   }
+  ],
+  "notes": [
+   {
+    "en": "Caption is shared by STEP 3 and STEP 4 (printed as \"3&4\").",
+    "th": "คำอธิบายนี้ใช้ร่วมกันของขั้นตอนที่ 3 และ 4 (พิมพ์เป็น \"3&4\")"
+   }
+  ]
+ },
+ {
+  "label": "4",
+  "pdf": 44,
+  "printed": 41,
+  "en": "The limit pins used for the two-step installation are both size M4×22. The insertion position of the leg's locating pin is as shown in the figure (using the right leg as an example).",
+  "th": "พินลิมิตที่ใช้ในการติดตั้งสองขั้นตอนนี้มีขนาด M4×22 ทั้งคู่ ตำแหน่งการเสียบพินกำหนดตำแหน่งของขาเป็นไปตามที่แสดงในรูป (ใช้ขาขวาเป็นตัวอย่าง)",
+  "parts": [],
+  "fasteners": [
+   {
+    "en": "M4×22 limit pin",
+    "th": "พินลิมิต M4×22",
+    "role": null
+   }
+  ],
+  "notes": [
+   {
+    "en": "Caption is shared by STEP 3 and STEP 4 (printed as \"3&4\").",
+    "th": "คำอธิบายนี้ใช้ร่วมกันของขั้นตอนที่ 3 และ 4 (พิมพ์เป็น \"3&4\")"
+   }
+  ]
+ },
+ {
+  "label": "5",
+  "pdf": 45,
+  "printed": 42,
+  "en": "The limit and positioning of the lumbar joint are achieved jointly by the limit blocks on the \"lumbar support structure\" and the \"battery bottom cover\". If the assembly position is correct, the upper body will come into contact with the limit structure when rotating approximately ±120° in the clockwise or counterclockwise direction, thereby achieving the angular positioning of the lumbar joint.",
+  "th": "การจำกัดมุมและการกำหนดตำแหน่งของข้อต่อเอวทำได้ร่วมกันโดยตัวจำกัดมุมบน \"โครงสร้างรองรับเอว\" และ \"ฝาครอบด้านล่างของแบตเตอรี่\" หากตำแหน่งการประกอบถูกต้อง ลำตัวส่วนบนจะสัมผัสกับโครงสร้างจำกัดมุมเมื่อหมุนไปประมาณ ±120° ในทิศทางตามเข็มนาฬิกาหรือทวนเข็มนาฬิกา จึงทำให้เกิดการกำหนดตำแหน่งเชิงมุมของข้อต่อเอว",
+  "parts": [
+   {
+    "en": "Roboto Origin calibration tool",
+    "th": "เครื่องมือคาลิเบรต Roboto Origin"
+   }
+  ],
+  "fasteners": [],
+  "notes": [
+   {
+    "en": "Paragraph is printed once below STEP 5 and STEP 6 and applies to both.",
+    "th": "ย่อหน้านี้พิมพ์ครั้งเดียวใต้ขั้นตอนที่ 5 และ 6 และใช้กับทั้งสองขั้นตอน"
+   }
+  ]
+ },
+ {
+  "label": "6",
+  "pdf": 45,
+  "printed": 42,
+  "en": "The limit and positioning of the lumbar joint are achieved jointly by the limit blocks on the \"lumbar support structure\" and the \"battery bottom cover\". If the assembly position is correct, the upper body will come into contact with the limit structure when rotating approximately ±120° in the clockwise or counterclockwise direction, thereby achieving the angular positioning of the lumbar joint.",
+  "th": "การจำกัดมุมและการกำหนดตำแหน่งของข้อต่อเอวทำได้ร่วมกันโดยตัวจำกัดมุมบน \"โครงสร้างรองรับเอว\" และ \"ฝาครอบด้านล่างของแบตเตอรี่\" หากตำแหน่งการประกอบถูกต้อง ลำตัวส่วนบนจะสัมผัสกับโครงสร้างจำกัดมุมเมื่อหมุนไปประมาณ ±120° ในทิศทางตามเข็มนาฬิกาหรือทวนเข็มนาฬิกา จึงทำให้เกิดการกำหนดตำแหน่งเชิงมุมของข้อต่อเอว",
+  "parts": [
+   {
+    "en": "Roboto Origin calibration tool",
+    "th": "เครื่องมือคาลิเบรต Roboto Origin"
+   }
+  ],
+  "fasteners": [],
+  "notes": [
+   {
+    "en": "Paragraph is printed once below STEP 5 and STEP 6 and applies to both.",
+    "th": "ย่อหน้านี้พิมพ์ครั้งเดียวใต้ขั้นตอนที่ 5 และ 6 และใช้กับทั้งสองขั้นตอน"
+   },
+   {
+    "en": "Page 46 (printed 43) shows the \"Installation Completed Effect Diagram\" of the whole robot after all steps.",
+    "th": "หน้า 46 (หน้าที่พิมพ์ 43) แสดง \"ภาพแสดงผลเมื่อติดตั้งเสร็จสมบูรณ์\" ของหุ่นยนต์ทั้งตัวหลังเสร็จทุกขั้นตอน"
+   }
+  ]
+ }
+]

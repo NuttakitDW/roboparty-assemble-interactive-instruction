@@ -1,0 +1,588 @@
+[
+ {
+  "label": "33",
+  "pdf": 30,
+  "printed": 27,
+  "en": "Motor placed in the direction as shown",
+  "th": "ให้วางมอเตอร์ในทิศทางตามที่แสดง",
+  "parts": [],
+  "fasteners": [],
+  "notes": []
+ },
+ {
+  "label": "34",
+  "pdf": 30,
+  "printed": 27,
+  "en": null,
+  "th": null,
+  "parts": [
+   {
+    "en": "Hip Joint Mount",
+    "th": "ฐานยึดข้อต่อสะโพก"
+   },
+   {
+    "en": "DM J10010L",
+    "th": "DM J10010L"
+   }
+  ],
+  "fasteners": [],
+  "notes": []
+ },
+ {
+  "label": "35",
+  "pdf": 30,
+  "printed": 27,
+  "en": null,
+  "th": null,
+  "parts": [
+   {
+    "en": "IMU",
+    "th": "IMU"
+   },
+   {
+    "en": "IMU Carrier Board",
+    "th": "แผ่นยึด IMU"
+   }
+  ],
+  "fasteners": [
+   {
+    "en": "M3×8 Socket Head Cap Screws",
+    "th": "สกรูหัวหกเหลี่ยมจม M3×8",
+    "role": null
+   },
+   {
+    "en": "M4×12 Flat Head Screws",
+    "th": "สกรูหัวเรียบ M4×12",
+    "role": null
+   },
+   {
+    "en": "M4×12 Socket Head Cap Screws",
+    "th": "สกรูหัวหกเหลี่ยมจม M4×12",
+    "role": null
+   }
+  ],
+  "notes": [
+   {
+    "en": "Use a manual wrench for socket head screws in deep recesses.",
+    "th": "ให้ใช้ประแจมือสำหรับขันสกรูหัวหกเหลี่ยมจมในตำแหน่งที่อยู่ในร่องลึก"
+   }
+  ]
+ },
+ {
+  "label": "36",
+  "pdf": 31,
+  "printed": 28,
+  "en": "Place the assembled hip joint into the hip section.",
+  "th": "ให้วางข้อต่อสะโพกที่ประกอบแล้วลงในส่วนสะโพก",
+  "parts": [],
+  "fasteners": [],
+  "notes": []
+ },
+ {
+  "label": "37",
+  "pdf": 31,
+  "printed": 28,
+  "en": "Secure the outermost side using m4×12 socket head cap screws. Then drive in the remaining m4*12 socket head cap screws.",
+  "th": "ให้ยึดด้านนอกสุดด้วยสกรูหัวหกเหลี่ยมจม M4×12 จากนั้นให้ขันสกรูหัวหกเหลี่ยมจม M4×12 ที่เหลือเข้าไป",
+  "parts": [],
+  "fasteners": [
+   {
+    "en": "M4×12 Socket Head Cap Screws",
+    "th": "สกรูหัวหกเหลี่ยมจม M4×12",
+    "role": null
+   }
+  ],
+  "notes": []
+ },
+ {
+  "label": "38",
+  "pdf": 32,
+  "printed": 29,
+  "en": "Install the front m4×12 socket head cap screws following Step 37.",
+  "th": "ให้ติดตั้งสกรูหัวหกเหลี่ยมจม M4×12 ด้านหน้า ตามขั้นตอนที่ 37",
+  "parts": [],
+  "fasteners": [
+   {
+    "en": "M4×12 Socket Head Cap Screws",
+    "th": "สกรูหัวหกเหลี่ยมจม M4×12",
+    "role": null
+   }
+  ],
+  "notes": []
+ },
+ {
+  "label": "39",
+  "pdf": 32,
+  "printed": 29,
+  "en": null,
+  "th": null,
+  "parts": [
+   {
+    "en": "Deep Groove Ball Bearing",
+    "th": "แบริ่งลูกปืนร่องลึก"
+   },
+   {
+    "en": "Waist Support",
+    "th": "ฐานรองเอว"
+   }
+  ],
+  "fasteners": [],
+  "notes": []
+ },
+ {
+  "label": "40-41",
+  "pdf": 32,
+  "printed": 29,
+  "en": "When installing the waist support and the battery bottom cover, pay attention to the orientation of the limit slots. The orientation of the limit slot for the bearing fixing should align with the front direction of the robot, and the orientation of the limit slot for the battery bottom cover should align with the back direction of the robot.",
+  "th": "ในการติดตั้งฐานรองเอวและฝาครอบแบตเตอรี่ด้านล่าง ให้ใส่ใจกับทิศทางของช่องลิมิต ทิศทางของช่องลิมิตสำหรับยึดแบริ่งต้องจัดให้ตรงกับทิศทางด้านหน้าของหุ่นยนต์ และทิศทางของช่องลิมิตของฝาครอบแบตเตอรี่ด้านล่างต้องจัดให้ตรงกับทิศทางด้านหลังของหุ่นยนต์",
+  "parts": [
+   {
+    "en": "Waist Support",
+    "th": "ฐานรองเอว"
+   },
+   {
+    "en": "Battery Bottom Cover",
+    "th": "ฝาครอบแบตเตอรี่ด้านล่าง"
+   },
+   {
+    "en": "Limit Block Schematic Diagram",
+    "th": "แผนภาพแสดงตัวลิมิต"
+   }
+  ],
+  "fasteners": [
+   {
+    "en": "M4×8 Flat Head Screws",
+    "th": "สกรูหัวเรียบ M4×8",
+    "role": null
+   },
+   {
+    "en": "M5×10 Socket Head Cap Screws",
+    "th": "สกรูหัวหกเหลี่ยมจม M5×10",
+    "role": null
+   }
+  ],
+  "notes": [
+   {
+    "en": "When installing the waist support and the battery bottom cover, pay attention to the orientation of the limit slots. The orientation of the limit slot for the bearing fixing should align with the front direction of the robot, and the orientation of the limit slot for the battery bottom cover should align with the back direction of the robot.",
+    "th": "ในการติดตั้งฐานรองเอวและฝาครอบแบตเตอรี่ด้านล่าง ให้ใส่ใจกับทิศทางของช่องลิมิต ทิศทางของช่องลิมิตสำหรับยึดแบริ่งต้องจัดให้ตรงกับทิศทางด้านหน้าของหุ่นยนต์ และทิศทางของช่องลิมิตของฝาครอบแบตเตอรี่ด้านล่างต้องจัดให้ตรงกับทิศทางด้านหลังของหุ่นยนต์"
+   }
+  ]
+ },
+ {
+  "label": "42",
+  "pdf": 33,
+  "printed": 30,
+  "en": null,
+  "th": null,
+  "parts": [
+   {
+    "en": "Clamp Plate",
+    "th": "แผ่นหนีบ"
+   }
+  ],
+  "fasteners": [
+   {
+    "en": "M4×10 Socket Head Cap Screws",
+    "th": "สกรูหัวหกเหลี่ยมจม M4×10",
+    "role": null
+   }
+  ],
+  "notes": []
+ },
+ {
+  "label": "43",
+  "pdf": 33,
+  "printed": 30,
+  "en": "Do not install the side cross plate on one side yet, to facilitate battery installation later.",
+  "th": "ห้ามติดตั้งแผ่นขวางด้านข้างด้านใดด้านหนึ่งในขณะนี้ เพื่ออำนวยความสะดวกในการติดตั้งแบตเตอรี่ในภายหลัง",
+  "parts": [
+   {
+    "en": "Shoulder",
+    "th": "ไหล่"
+   },
+   {
+    "en": "Side Cross Plate",
+    "th": "แผ่นขวางด้านข้าง"
+   }
+  ],
+  "fasteners": [
+   {
+    "en": "M4×10 Socket Head Cap Screws",
+    "th": "สกรูหัวหกเหลี่ยมจม M4×10",
+    "role": null
+   }
+  ],
+  "notes": [
+   {
+    "en": "Do not install the side cross plate on one side yet, to facilitate battery installation later.",
+    "th": "ห้ามติดตั้งแผ่นขวางด้านข้างด้านใดด้านหนึ่งในขณะนี้ เพื่ออำนวยความสะดวกในการติดตั้งแบตเตอรี่ในภายหลัง"
+   }
+  ]
+ },
+ {
+  "label": "44",
+  "pdf": 34,
+  "printed": 31,
+  "en": null,
+  "th": null,
+  "parts": [],
+  "fasteners": [
+   {
+    "en": "M4×10 Socket Head Cap Screws",
+    "th": "สกรูหัวหกเหลี่ยมจม M4×10",
+    "role": null
+   }
+  ],
+  "notes": []
+ },
+ {
+  "label": "45",
+  "pdf": 34,
+  "printed": 31,
+  "en": "Place the DM 4340p motor as shown, ensuring the motor interface faces vertically upward (for easy wiring).",
+  "th": "ให้วางมอเตอร์ DM 4340p ตามที่แสดง โดยต้องให้ช่องต่อของมอเตอร์หันขึ้นในแนวตั้ง (เพื่อความสะดวกในการเดินสาย)",
+  "parts": [
+   {
+    "en": "DM 4340p",
+    "th": "DM 4340p"
+   }
+  ],
+  "fasteners": [
+   {
+    "en": "M3×6 Socket Head Cap Screws",
+    "th": "สกรูหัวหกเหลี่ยมจม M3×6",
+    "role": null
+   }
+  ],
+  "notes": []
+ },
+ {
+  "label": "46",
+  "pdf": 34,
+  "printed": 31,
+  "en": null,
+  "th": null,
+  "parts": [
+   {
+    "en": "Arm 5",
+    "th": "แขน 5"
+   }
+  ],
+  "fasteners": [
+   {
+    "en": "M3×16 Socket Head Cap Screws",
+    "th": "สกรูหัวหกเหลี่ยมจม M3×16",
+    "role": null
+   }
+  ],
+  "notes": []
+ },
+ {
+  "label": "47",
+  "pdf": 34,
+  "printed": 31,
+  "en": "Follow the steps above to install the opposite arm joint.",
+  "th": "ให้ทำตามขั้นตอนข้างต้นเพื่อติดตั้งข้อต่อแขนอีกด้านหนึ่ง",
+  "parts": [],
+  "fasteners": [],
+  "notes": []
+ },
+ {
+  "label": "48",
+  "pdf": 35,
+  "printed": 32,
+  "en": "Follow the steps above to install the opposite part.",
+  "th": "ให้ทำตามขั้นตอนข้างต้นเพื่อติดตั้งชิ้นส่วนอีกด้านหนึ่ง",
+  "parts": [
+   {
+    "en": "DM 4340p",
+    "th": "DM 4340p"
+   }
+  ],
+  "fasteners": [
+   {
+    "en": "M3×8 Socket Head Cap Screws",
+    "th": "สกรูหัวหกเหลี่ยมจม M3×8",
+    "role": null
+   }
+  ],
+  "notes": []
+ },
+ {
+  "label": "49",
+  "pdf": 36,
+  "printed": 33,
+  "en": "Place the D4340p motor according to the robot's standing orientation, ensuring that the motor interface faces the same direction as the robot's facing direction (to avoid misalignment).",
+  "th": "ให้วางมอเตอร์ D4340p ตามทิศทางการยืนของหุ่นยนต์ โดยต้องให้ช่องต่อของมอเตอร์หันไปในทิศทางเดียวกับทิศทางที่หุ่นยนต์หันหน้า (เพื่อหลีกเลี่ยงการจัดแนวคลาดเคลื่อน)",
+  "parts": [
+   {
+    "en": "Arm 3",
+    "th": "แขน 3"
+   },
+   {
+    "en": "DM 4340p",
+    "th": "DM 4340p"
+   },
+   {
+    "en": "Arm 4",
+    "th": "แขน 4"
+   }
+  ],
+  "fasteners": [
+   {
+    "en": "M3×8 Socket Head Cap Screws",
+    "th": "สกรูหัวหกเหลี่ยมจม M3×8",
+    "role": null
+   },
+   {
+    "en": "M3×10 Socket Head Cap Screws",
+    "th": "สกรูหัวหกเหลี่ยมจม M3×10",
+    "role": null
+   }
+  ],
+  "notes": []
+ },
+ {
+  "label": "50",
+  "pdf": 36,
+  "printed": 33,
+  "en": null,
+  "th": null,
+  "parts": [
+   {
+    "en": "Arm 1",
+    "th": "แขน 1"
+   }
+  ],
+  "fasteners": [
+   {
+    "en": "M3×16 Socket Head Cap Screws",
+    "th": "สกรูหัวหกเหลี่ยมจม M3×16",
+    "role": null
+   }
+  ],
+  "notes": []
+ },
+ {
+  "label": "51",
+  "pdf": 37,
+  "printed": 34,
+  "en": null,
+  "th": null,
+  "parts": [
+   {
+    "en": "Arm 2",
+    "th": "แขน 2"
+   }
+  ],
+  "fasteners": [
+   {
+    "en": "M3×16 Socket Head Cap Screws",
+    "th": "สกรูหัวหกเหลี่ยมจม M3×16",
+    "role": null
+   }
+  ],
+  "notes": []
+ },
+ {
+  "label": "52",
+  "pdf": 37,
+  "printed": 34,
+  "en": "Place the DM4340p motor as shown. Ensure the elbow joint motor interface faces vertically downward, and the shoulder joint motor interface faces vertically upward (for easy wiring).",
+  "th": "ให้วางมอเตอร์ DM4340p ตามที่แสดง ต้องให้ช่องต่อของมอเตอร์ข้อต่อศอกหันลงในแนวตั้ง และช่องต่อของมอเตอร์ข้อต่อไหล่หันขึ้นในแนวตั้ง (เพื่อความสะดวกในการเดินสาย)",
+  "parts": [
+   {
+    "en": "DM 4340p",
+    "th": "DM 4340p"
+   }
+  ],
+  "fasteners": [
+   {
+    "en": "M3×8 Socket Head Cap Screws",
+    "th": "สกรูหัวหกเหลี่ยมจม M3×8",
+    "role": null
+   }
+  ],
+  "notes": []
+ },
+ {
+  "label": "53",
+  "pdf": 37,
+  "printed": 34,
+  "en": "Using the diagonal positioning method, drive M3×16 socket head screws into the shoulder in sequence to secure the DM 4340p.",
+  "th": "ให้ใช้วิธีกำหนดตำแหน่งแบบทแยง (diagonal positioning method) ขันสกรูหัวหกเหลี่ยมจม M3×16 เข้ากับไหล่ตามลำดับ เพื่อยึดมอเตอร์ DM 4340p",
+  "parts": [],
+  "fasteners": [
+   {
+    "en": "M3×16 Socket Head Cap Screws",
+    "th": "สกรูหัวหกเหลี่ยมจม M3×16",
+    "role": "positioning"
+   }
+  ],
+  "notes": []
+ },
+ {
+  "label": "54",
+  "pdf": 38,
+  "printed": 35,
+  "en": "Use M3×10 socket head screws to secure the upper and lower parts of the forearm.",
+  "th": "ให้ใช้สกรูหัวหกเหลี่ยมจม M3×10 ยึดส่วนบนและส่วนล่างของแขนท่อนล่างเข้าด้วยกัน",
+  "parts": [],
+  "fasteners": [
+   {
+    "en": "M3×10 Socket Head Cap Screws",
+    "th": "สกรูหัวหกเหลี่ยมจม M3×10",
+    "role": null
+   }
+  ],
+  "notes": []
+ },
+ {
+  "label": "55",
+  "pdf": 38,
+  "printed": 35,
+  "en": "Use M3×16 socket head screws to secure the upper and lower parts of the forearm. Install the opposite side arm as a mirror image.",
+  "th": "ให้ใช้สกรูหัวหกเหลี่ยมจม M3×16 ยึดส่วนบนและส่วนล่างของแขนท่อนล่างเข้าด้วยกัน ให้ติดตั้งแขนด้านตรงข้ามในลักษณะภาพสะท้อนกระจก (mirror image)",
+  "parts": [],
+  "fasteners": [
+   {
+    "en": "M3×16 Socket Head Cap Screws",
+    "th": "สกรูหัวหกเหลี่ยมจม M3×16",
+    "role": null
+   }
+  ],
+  "notes": []
+ },
+ {
+  "label": "56",
+  "pdf": 38,
+  "printed": 35,
+  "en": "Install the battery, and then install the side cross plate from step 43.",
+  "th": "ให้ติดตั้งแบตเตอรี่ จากนั้นจึงติดตั้งแผ่นขวางด้านข้างจากขั้นตอนที่ 43",
+  "parts": [
+   {
+    "en": "Battery",
+    "th": "แบตเตอรี่"
+   }
+  ],
+  "fasteners": [],
+  "notes": []
+ },
+ {
+  "label": "57",
+  "pdf": 38,
+  "printed": 35,
+  "en": null,
+  "th": null,
+  "parts": [],
+  "fasteners": [
+   {
+    "en": "M4×10 Socket Head Cap Screws",
+    "th": "สกรูหัวหกเหลี่ยมจม M4×10",
+    "role": null
+   }
+  ],
+  "notes": []
+ },
+ {
+  "label": "58-63",
+  "pdf": 39,
+  "printed": 36,
+  "en": "During the assembly of the cable fixing components, all screws are M4×8 flat head screws. During assembly, the insertion positions of the cable management plates for the arm and leg are as shown in the figure (using the right arm and right leg as examples).",
+  "th": "ในระหว่างการประกอบชิ้นส่วนยึดสาย สกรูทั้งหมดเป็นสกรูหัวเรียบ M4×8 ในระหว่างการประกอบ ตำแหน่งการสอดแผ่นจัดระเบียบสายสำหรับแขนและขาเป็นไปตามที่แสดงในรูป (ใช้แขนขวาและขาขวาเป็นตัวอย่าง)",
+  "parts": [
+   {
+    "en": "ARM",
+    "th": "แขน"
+   },
+   {
+    "en": "HIP JOINT",
+    "th": "ข้อต่อสะโพก"
+   },
+   {
+    "en": "HIP",
+    "th": "สะโพก"
+   },
+   {
+    "en": "GROIN",
+    "th": "ขาหนีบ"
+   },
+   {
+    "en": "THIGH",
+    "th": "ต้นขา"
+   },
+   {
+    "en": "KNEE",
+    "th": "เข่า"
+   }
+  ],
+  "fasteners": [
+   {
+    "en": "M4×8 Flat Head Screws",
+    "th": "สกรูหัวเรียบ M4×8",
+    "role": null
+   }
+  ],
+  "notes": [
+   {
+    "en": "Wiring Documentation Tutorial (QR code printed on the page).",
+    "th": "บทช่วยสอนเอกสารการเดินสาย (Wiring Documentation Tutorial) พร้อมคิวอาร์โค้ด"
+   }
+  ]
+ },
+ {
+  "label": "64+66",
+  "pdf": 40,
+  "printed": 37,
+  "en": "Simply tighten the switch onto the back of the robot.",
+  "th": "ให้ขันสวิตช์เข้ากับด้านหลังของหุ่นยนต์เท่านั้น",
+  "parts": [
+   {
+    "en": "Metal button switch",
+    "th": "สวิตช์ปุ่มกดโลหะ"
+   },
+   {
+    "en": "Power charging port",
+    "th": "ช่องชาร์จไฟ"
+   }
+  ],
+  "fasteners": [],
+  "notes": []
+ },
+ {
+  "label": "65",
+  "pdf": 40,
+  "printed": 37,
+  "en": "The emergency stop button needs to be tightened, and the internal circuit board needs to be secured using clips on the back of the robot.",
+  "th": "ปุ่มหยุดฉุกเฉินต้องขันให้แน่น และบอร์ดวงจรภายในต้องยึดด้วยคลิปที่ด้านหลังของหุ่นยนต์",
+  "parts": [
+   {
+    "en": "Emergency stop button",
+    "th": "ปุ่มหยุดฉุกเฉิน"
+   }
+  ],
+  "fasteners": [],
+  "notes": []
+ },
+ {
+  "label": "67",
+  "pdf": 40,
+  "printed": 37,
+  "en": null,
+  "th": null,
+  "parts": [
+   {
+    "en": "Metal handle",
+    "th": "หูหิ้วโลหะ"
+   }
+  ],
+  "fasteners": [
+   {
+    "en": "M6×10 Socket Head Cap Screws",
+    "th": "สกรูหัวหกเหลี่ยมจม M6×10",
+    "role": null
+   }
+  ],
+  "notes": []
+ }
+]

@@ -33,6 +33,7 @@
   <aside class="side" id="side">
     <div id="side-root">
       <button type="button" class="tour" id="tour"><span data-i18n="tour">เล่นทัวร์ภาพรวม</span><span class="mono" id="tour-n"></span></button>
+      <button type="button" class="tour build" id="build-open"></button>
       <h3 class="label mono" data-i18n="groups">โครงสร้างหุ่นยนต์</h3>
       <div id="groups"></div>
       <h3 class="label mono"><span data-i18n="systems_h">ระบบและชิ้นส่วน</span> <span id="parts-count"></span></h3>
@@ -40,6 +41,7 @@
       <h3 class="label mono"><span data-i18n="extras_h">ไม่อยู่ใน BOM ของคู่มือ</span></h3>
       <div id="extras"></div>
     </div>
+    <div id="side-build" class="side-build" hidden></div>
     <div id="side-cat" hidden>
       <button type="button" class="back mono" id="back" data-i18n="back">กลับ</button>
       <div class="cat-head" id="cat-head"></div>
@@ -90,6 +92,7 @@
       <div class="legal mono">© 2026 Nuttakit Kundum. All rights reserved.</div>
     </section>
   </main>
+  <aside class="bpanel" id="bpanel" hidden></aside>
   <div class="scrim" id="scrim" hidden></div>
 </div>
 

@@ -20,13 +20,14 @@ jobs:
     timeout-minutes: 10
     steps:
       - uses: actions/checkout@v4
-      - name: Assemble site (web app + the URDF meshes it loads + licence files)
+      - name: Assemble site (web app, URDF meshes, manual page images used as figures, licence files)
         run: |
           set -euo pipefail
           HW=cad/rpo_hardware
           URDF=$HW/V2.0/roboto_origin_mechanic/03_URDF
           mkdir -p _site/web "_site/$URDF" "_site/$HW"
           cp -R web/. _site/web/
+          mkdir -p _site/manual && cp -R manual/img _site/manual/img
           cp -R "$URDF/urdf" "$URDF/meshes" "_site/$URDF/"
           cp "$HW"/LICENSE "$HW"/LICENSES.md "$HW"/TRADEMARKS.md "$HW"/THIRD_PARTY_NOTICES.md "_site/$HW/"
           cp cad/SOURCE.txt _site/cad/

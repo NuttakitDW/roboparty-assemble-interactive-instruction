@@ -2,6 +2,7 @@ import * as THREE from 'three';
 import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 import { STLLoader } from 'three/addons/loaders/STLLoader.js';
 import { createOverlays } from './overlays.js';
+import { createBuild } from './build.js';
 
 const URDF_DIR = '../cad/rpo_hardware/V2.0/roboto_origin_mechanic/03_URDF/urdf/';
 const URDF = URDF_DIR + 'roboto_origin.urdf';
@@ -33,7 +34,7 @@ const store = {
 
 const state = { lang: store.get('lang') === 'en' ? 'en' : 'th', mode: 'tour', stage: 0, view: null, selGroup: null, selSys: null, selPart: null,
   playing: !REDUCED, elapsed: 0, userMoved: false, ready: false };
-let stages = [], views = {}, channels = [], overlays = null, linksMeta = {}, groupsMeta = {}, motorsMeta = {}, partsData = { parts: [] }, systems = [], extras = [];
+let stages = [], views = {}, channels = [], overlays = null, build = null, assembly = null, linksMeta = {}, groupsMeta = {}, motorsMeta = {}, partsData = { parts: [] }, systems = [], extras = [];
 const tagOf = (sys) => (sys.extra ? UI[state.lang].extra : sys.id);
 const sysOf = (item) => systems.find((x) => x.items.includes(item));
 const partOf = (id) => partsData.parts.find((p) => p.item === id) || extras.find((x) => x.id === id);
@@ -41,7 +42,7 @@ const partOf = (id) => partsData.parts.find((p) => p.item === id) || extras.find
 // ---------- i18n + caption ----------
 const t = (k) => UI[state.lang][k] ?? k;
 const tr = (o) => o[state.lang];
-const cur = () => (state.mode === 'tour' ? stages[state.stage] : state.view);
+const cur = () => (state.mode === 'tour' ? stages[state.stage] : state.mode === 'build' ? build?.view() : state.view);
 const GROUP_STAGE = { pelvis: 'torso', torso: 'torso', legL: 'legs', legR: 'legs', armL: 'arms', armR: 'arms' };
 
 function applyLang() {
@@ -54,11 +55,13 @@ function applyLang() {
   renderSide();
   renderCaption(false);
   if (!state.ready) renderLoading();
+  build?.render();
   if (!$('#palette').hidden) renderResults();
   store.set('lang', state.lang);
 }
 
 function renderCaption(animate = true) {
+  if (state.mode === 'build') return;
   const s = cur(); if (!s) return;
   const c = tr(s);
   const tour = state.mode === 'tour';
@@ -85,6 +88,7 @@ function renderLegend(s) {
 function setPlaying(on) { state.playing = on; $('#play').textContent = on ? t('pause') : t('play'); }
 
 function goStage(i) {
+  build?.exit(true);
   state.mode = 'tour'; state.view = null; state.selGroup = state.selSys = state.selPart = null;
   state.stage = (i + stages.length) % stages.length;
   state.elapsed = 0; state.userMoved = false;
@@ -120,6 +124,7 @@ function buildView() {
 }
 
 function enterView() {
+  build?.exit(true);
   state.mode = 'view'; state.view = buildView(); state.userMoved = false;
   setPlaying(false); $('#bar').style.width = '0';
   renderCaption(); renderSide();
@@ -192,7 +197,7 @@ async function loadRobot() {
     const mat = new THREE.MeshStandardMaterial({ color: BASE_COLOR, metalness: 0.15, roughness: 0.65, transparent: true });
     const mesh = new THREE.Mesh(geom, mat);
     mesh.userData.link = name; group.add(mesh); pickables.push(mesh);
-    nodes.set(name, { group, mesh, base: new THREE.Vector3(), mat, marker: null, hl: 0, op: 1, mk: 0, arrive: 1, flash: 0, delay: 0, dir: new THREE.Vector3(), spin: 0 });
+    nodes.set(name, { group, mesh, base: new THREE.Vector3(), mat, marker: null, hl: 0, op: 1, mk: 0, arrive: 1, flash: 0, fly: 0, detach: new THREE.Vector3(), delay: 0, dir: new THREE.Vector3(), spin: 0 });
     done += 1; setProgress();
   }));
   for (const j of doc.querySelectorAll('robot > joint')) {
@@ -228,6 +233,7 @@ function frame(now) {
   const dt = Math.min((now - last) / 1000, 0.1); last = now;
   const s = intro.active ? stages[0] : cur();
   if (s && state.ready) {
+    if (state.mode === 'build') build.update(dt);
     const focusAll = s.focus.includes('all');
     explode = damp(explode, s.explode, 2.2, dt);
     for (const [name, n] of nodes) {
@@ -238,7 +244,7 @@ function frame(now) {
       n.mk = damp(n.mk, s.markers ? 1 : 0, 4, dt);
       n.mat.opacity = n.op * n.arrive; n.mat.depthWrite = n.op * n.arrive > 0.5;
       n.mat.color.copy(BASE_COLOR).lerp(HILITE_COLOR, n.hl * 0.55).lerp(SIGNAL_COLOR, n.flash);
-      n.group.position.copy(n.base).multiplyScalar(1 + explode * EXP_K());
+      n.group.position.copy(n.base).multiplyScalar(1 + explode * EXP_K()).add(n.detach);
       if (n.marker) n.marker.material.opacity = n.mk * (n.op > 0.5 ? 1 : 0.15);
     }
     overlays?.update(dt, intro.active ? null : s.overlay, camera, viewer.clientWidth, viewer.clientHeight, state.lang);
@@ -248,7 +254,7 @@ function frame(now) {
     pivot.rotation.y = intro.active ? yaw : yaw + sway;
     if (!state.userMoved && !intro.active) {
       camTarget.set(...s.cam); lookTarget.set(...s.target);
-      if (camera.aspect < 1) { camTarget.multiplyScalar(1.3); lookTarget.y -= 0.32; } // portrait: back off, keep the robot above the caption
+      if (camera.aspect < 1 && innerWidth <= 820) { camTarget.multiplyScalar(1.3); lookTarget.y -= 0.32; } // phone: back off, keep the robot above the caption / sheet
       const k = 1 - Math.exp(-2.2 * dt);
       camera.position.lerp(camTarget, k); controls.target.lerp(lookTarget, k);
     }
@@ -276,6 +282,7 @@ function planIntro() {
 }
 
 function startIntro() {
+  build?.exit(true);
   state.view = null; state.mode = 'tour'; state.selGroup = state.selSys = state.selPart = null; showRoot();
   if (REDUCED || new URLSearchParams(location.search).get('intro') === '0') { app.classList.remove('intro'); goStage(0); return; }
   planIntro();
@@ -340,8 +347,8 @@ canvas.addEventListener('pointerleave', () => { tip.hidden = true; });
 // ---------- sidebar ----------
 const esc = (v) => String(v).replace(/[&<>"]/g, (ch) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[ch]));
 
-const showRoot = () => { $('#side-root').hidden = false; $('#side-cat').hidden = true; };
-const showCat = () => { $('#side-root').hidden = true; $('#side-cat').hidden = false; };
+const showRoot = () => { $('#side-root').hidden = false; $('#side-cat').hidden = true; $('#side-build').hidden = true; };
+const showCat = () => { $('#side-root').hidden = true; $('#side-cat').hidden = false; $('#side-build').hidden = true; };
 
 function sysRow(x, lang) {
   return `<button type="button" class="row" data-sys="${esc(x.id)}" aria-current="${state.selSys?.id === x.id}"><span class="t">${esc(x[lang])}</span><span class="n">${x.items.length}</span></button>`;
@@ -418,7 +425,7 @@ res.addEventListener('click', (e) => { const li = e.target.closest('li[data-i]')
 pal.addEventListener('click', (e) => { if (e.target === pal) closePalette(); });
 $('#open-palette').addEventListener('click', openPalette);
 addEventListener('keydown', (e) => {
-  const typing = /input|textarea/i.test(document.activeElement?.tagName);
+  const ae = document.activeElement, typing = /^(input|textarea)$/i.test(ae?.tagName || '') && ae.type !== 'checkbox';
   const busy = !state.ready || intro.active;
   if ((e.metaKey || e.ctrlKey) && e.key.toLowerCase() === 'k') {
     if (busy) return; e.preventDefault(); pal.hidden ? openPalette() : closePalette(); return; }
@@ -434,6 +441,7 @@ addEventListener('keydown', (e) => {
   if (e.key === 'Escape') closeDrawer();
   if (typing) return;
   if (busy) return;
+  if (state.mode === 'build') { if (e.key === 'ArrowRight') { document.querySelector('#bp-next:not([disabled])')?.click(); } else if (e.key === 'ArrowLeft') build.prev(); return; }
   if (e.key === 'ArrowRight') goStage(state.mode === 'tour' ? state.stage + 1 : 0);
   else if (e.key === 'ArrowLeft') goStage(state.mode === 'tour' ? state.stage - 1 : 0);
   else if (e.key === ' ' && document.activeElement === document.body && state.mode === 'tour') { e.preventDefault(); setPlaying(!state.playing); }
@@ -451,14 +459,16 @@ document.querySelectorAll('.lang').forEach((b) => b.addEventListener('click', ()
 
 async function boot() {
   try {
-    const [st, lk, pt, sy] = await Promise.all(['stages', 'links', 'parts', 'systems'].map((n) =>
+    const [st, lk, pt, sy, asm] = await Promise.all(['stages', 'links', 'parts', 'systems', 'assembly'].map((n) =>
       fetch(`data/${n}.json`).then((r) => { if (!r.ok) throw new Error(`${n}.json ${r.status}`); return r.json(); })));
-    stages = st.stages; views = st.views; channels = st.channels; linksMeta = lk.links; groupsMeta = lk.groups; motorsMeta = lk.motors; partsData = pt; systems = sy.systems; extras = sy.extras;
+    stages = st.stages; views = st.views; channels = st.channels; linksMeta = lk.links; groupsMeta = lk.groups; motorsMeta = lk.motors; partsData = pt; systems = sy.systems; extras = sy.extras; assembly = asm;
     $('#dots').innerHTML = stages.map((s, i) => `<button type="button" role="tab" aria-label="${UI.th.stage} ${i + 1}" data-i="${i}"></button>`).join('');
     $('#dots').addEventListener('click', (e) => { const b = e.target.closest('button'); if (b) goStage(+b.dataset.i); });
     applyLang();
     requestAnimationFrame(frame);
     await loadRobot();
+    build = createBuild({ $, esc, state, nodes, views: { ...Object.fromEntries(stages.map((x) => [x.id, x])), ...views }, data: assembly, getOverlays: () => overlays, getLang: () => state.lang, renderLegend, onExit: () => goStage(0), closeDrawer });
+    if (new URLSearchParams(location.search).has('debug')) window.__app = { camera, controls, nodes, pivot, state };
     state.ready = true; loading.failed = false; $('#loading').classList.add('done');
     startIntro();
   } catch (err) {

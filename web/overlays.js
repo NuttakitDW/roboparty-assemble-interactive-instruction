@@ -35,10 +35,10 @@ export function createOverlays({ nodes, urdfRoot, host, channels, text }) {
   const boardMat = new THREE.MeshBasicMaterial({ color: '#e4e4e7', transparent: true });
   const board = new THREE.Mesh(new THREE.BoxGeometry(0.07, 0.05, 0.012), boardMat); can.add(board);
   for (const ch of channels) {
-    const mat = new THREE.MeshBasicMaterial({ color: ch.color, transparent: true });
     const names = ['board', ...ch.chain];
     for (let i = 0; i < names.length - 1; i += 1) {
-      const m = new THREE.Mesh(cyl, mat); can.add(m); segs.push({ m, from: names[i], to: names[i + 1], r: i === 0 ? 0.008 : 0.005 });
+      const m = new THREE.Mesh(cyl, new THREE.MeshBasicMaterial({ color: ch.color, transparent: true })); can.add(m);
+      segs.push({ m, ch: ch.id, key: `${names[i]}>${names[i + 1]}`, from: names[i], to: names[i + 1], r: i === 0 ? 0.008 : 0.005, a: 0 });
     }
   }
 
@@ -49,10 +49,12 @@ export function createOverlays({ nodes, urdfRoot, host, channels, text }) {
   addPin('board', () => { board.getWorldPosition(tmp); return tmp; });
   channels.forEach((ch) => addPin(ch.id, () => { nodes.get(ch.chain[0]).group.getWorldPosition(tmp); return tmp; }));
 
-  let aImu = 0, aCan = 0;
+  let aImu = 0, aCan = 0, progress = null, boardOn = true, boardA = 0; // progress: Set of 'from>to' keys, or null for all
   const proj = new THREE.Vector3();
 
   return {
+    // Show only the given hops (build mode). null shows everything. Either direction of a key matches.
+    setProgress(keys, board = true) { progress = keys; boardOn = board; },
     update(dt, overlay, camera, w, h, lang) {
       aImu = damp(aImu, overlay === 'imu' ? 1 : 0, 4, dt); aCan = damp(aCan, overlay === 'can' ? 1 : 0, 4, dt);
       imu.visible = aImu > 0.01; can.visible = aCan > 0.01;
@@ -60,17 +62,20 @@ export function createOverlays({ nodes, urdfRoot, host, channels, text }) {
       if (can.visible) {
         urdfRoot.updateMatrixWorld(true);
         const t = local('torso_link', a); board.position.set(t.x - 0.03, t.y, t.z + 0.1);
-        boardMat.opacity = aCan * 0.9;
+        boardA = damp(boardA, boardOn ? 1 : 0, 5, dt); boardMat.opacity = aCan * boardA * 0.9; board.visible = boardA > 0.02;
         for (const s of segs) {
           const p0 = s.from === 'board' ? a.copy(board.position) : local(s.from, a);
           const p1 = local(s.to, b);
           const d = tmp.subVectors(p1, p0), len = d.length() || 1e-4;
           s.m.position.copy(p0).addScaledVector(d, 0.5); s.m.scale.set(s.r, len, s.r);
-          s.m.quaternion.setFromUnitVectors(Y, d.divideScalar(len)); s.m.material.opacity = aCan * 0.95;
+          const on = !progress || progress.has(s.key) || progress.has(`${s.to}>${s.from}`);
+          s.a = damp(s.a, on ? 1 : 0, 6, dt); s.m.visible = s.a > 0.02;
+          s.m.quaternion.setFromUnitVectors(Y, d.divideScalar(len)); s.m.material.opacity = aCan * s.a * 0.95;
         }
       }
       for (const p of pins) {
-        const on = (p.id === 'imu' ? aImu : aCan) > 0.3;
+        const chOn = !progress || segs.some((s) => s.ch === p.id && s.a > 0.5);
+        const on = (p.id === 'imu' ? aImu : aCan) > 0.3 && (p.id === 'board' ? boardA > 0.5 : (p.id === 'imu' || chOn));
         if (!on) { p.el.style.opacity = '0'; continue; }
         proj.copy(p.pos()).project(camera);
         const behind = proj.z > 1;

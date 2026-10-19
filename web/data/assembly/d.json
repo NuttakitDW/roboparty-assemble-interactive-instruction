@@ -1,0 +1,855 @@
+[
+ {
+  "section": "1",
+  "label": "BOM",
+  "pdf": 49,
+  "en": "Cable BOM",
+  "th": "BOM ของสาย (Cable BOM)",
+  "parts": [
+   {
+    "en": "RBW_Origin_01 Arm01: XT30(+2)-F.G.B-XT30(+2)-F.G.B, 20 cm, qty 2; 90° at both ends, CAN leads up/down",
+    "th": "RBW_Origin_01 Arm01: XT30(+2)-F.G.B-XT30(+2)-F.G.B, 20 cm, จำนวน 2; งอ 90° ทั้งสองปลาย, สาย CAN ออกขึ้น/ลง"
+   },
+   {
+    "en": "RBW_Origin_02 Arm02: XT30(+2)-F.G.B-XT30(+2)-F.G.B, 20 cm, qty 2; 90°, CAN leads up/down ×2",
+    "th": "RBW_Origin_02 Arm02: XT30(+2)-F.G.B-XT30(+2)-F.G.B, 20 cm, จำนวน 2; งอ 90°, สาย CAN ออกขึ้น/ลง ×2"
+   },
+   {
+    "en": "RBW_Origin_03 Arm03: XT30(+2)-F.G.B-XT30(+2)-F.G.B, 20 cm, qty 2; 90° at both ends, CAN leads same direction ×2",
+    "th": "RBW_Origin_03 Arm03: XT30(+2)-F.G.B-XT30(+2)-F.G.B, 20 cm, จำนวน 2; งอ 90° ทั้งสองปลาย, สาย CAN ออกทิศทางเดียวกัน ×2"
+   },
+   {
+    "en": "RBW_Origin_04 Arm04: XT30(+2)-F.G.B-XT30(+2)-F.G.B, 20 cm, qty 2; 90° at both ends, CAN leads up/down ×2",
+    "th": "RBW_Origin_04 Arm04: XT30(+2)-F.G.B-XT30(+2)-F.G.B, 20 cm, จำนวน 2; งอ 90° ทั้งสองปลาย, สาย CAN ออกขึ้น/ลง ×2"
+   },
+   {
+    "en": "RBW_Origin_05 Leg01: XT30U-F-XT30U-F (gh1.25 2-pin reversed, 30 cm), 25 cm, qty 2",
+    "th": "RBW_Origin_05 Leg01: XT30U-F-XT30U-F (gh1.25 2-pin reversed, 30 cm), 25 cm, จำนวน 2"
+   },
+   {
+    "en": "RBW_Origin_06 Leg02: XT30U-F-XT30U-F (gh1.25 2-pin reversed, 30 cm), 25 cm, qty 2",
+    "th": "RBW_Origin_06 Leg02: XT30U-F-XT30U-F (gh1.25 2-pin reversed, 30 cm), 25 cm, จำนวน 2"
+   },
+   {
+    "en": "RBW_Origin_07 Leg03: XT30U-F-XT30U-F (gh1.25 2-pin reversed, 50 cm), 40 cm, qty 2",
+    "th": "RBW_Origin_07 Leg03: XT30U-F-XT30U-F (gh1.25 2-pin reversed, 50 cm), 40 cm, จำนวน 2"
+   },
+   {
+    "en": "RBW_Origin_08 Leg04: XT30U-F-XT30(+2)-F.G.B (gh1.25 2-pin reversed, 35 cm), 30 cm, qty 2; 90° on the (2+2) end",
+    "th": "RBW_Origin_08 Leg04: XT30U-F-XT30(+2)-F.G.B (gh1.25 2-pin reversed, 35 cm), 30 cm, จำนวน 2; งอ 90° ที่ปลาย (2+2)"
+   },
+   {
+    "en": "RBW_Origin_09 Leg05: XT30(+2)-F.G.B-XT30(+2)-F.G.B, 10 cm, qty 2; 1: side 90° (left); 2: side 90° (right). CAN lead orientation must be consistent at assembly (up/down when soldered)",
+    "th": "RBW_Origin_09 Leg05: XT30(+2)-F.G.B-XT30(+2)-F.G.B, 10 cm, จำนวน 2; 1: งอ 90° ด้านข้าง (ซ้าย); 2: งอ 90° ด้านข้าง (ขวา) ทิศทางของสาย CAN ต้องสอดคล้องกันเมื่อประกอบ (ขึ้น/ลงเมื่อบัดกรี)"
+   },
+   {
+    "en": "RBW_Origin_10 Body01: XT30U-F-XT30U-F (gh1.25 2-pin reversed, 30 cm), 20 cm, qty 1",
+    "th": "RBW_Origin_10 Body01: XT30U-F-XT30U-F (gh1.25 2-pin reversed, 30 cm), 20 cm, จำนวน 1"
+   },
+   {
+    "en": "RBW_Origin_11 Body02: XT30(+2)-F.G.B-XT30(+2)-F.G.B, 20 cm, qty 2; 90° on one end ×2",
+    "th": "RBW_Origin_11 Body02: XT30(+2)-F.G.B-XT30(+2)-F.G.B, 20 cm, จำนวน 2; งอ 90° ที่ปลายหนึ่ง ×2"
+   },
+   {
+    "en": "RBW_Origin_12 Body03: XT30(+2)-F.G.B - XT30U-F (gh1.25 2-pin reversed, 65 cm), 60 cm, qty 1",
+    "th": "RBW_Origin_12 Body03: XT30(+2)-F.G.B - XT30U-F (gh1.25 2-pin reversed, 65 cm), 60 cm, จำนวน 1"
+   },
+   {
+    "en": "RBW_Origin_13 Body04: XT30(+2)-F.G.B - XT30U-F (gh1.25 2-pin reversed, 55 cm), 50 cm, qty 1",
+    "th": "RBW_Origin_13 Body04: XT30(+2)-F.G.B - XT30U-F (gh1.25 2-pin reversed, 55 cm), 50 cm, จำนวน 1"
+   },
+   {
+    "en": "usb to typec: usb to typec, —, qty 1; USB 3.0 support",
+    "th": "usb to typec: usb to typec, —, จำนวน 1; รองรับ USB 3.0"
+   },
+   {
+    "en": "typec to typec: typec to typec, —, qty 1",
+    "th": "typec to typec: typec to typec, —, จำนวน 1"
+   }
+  ],
+  "fasteners": [],
+  "motors": [],
+  "channel": null,
+  "warning": false,
+  "notes": [
+   {
+    "en": "Pages 49-50. Lengths in parentheses on the Harness type column are the gh1.25 2-pin reversed lead lengths; the Length column is the harness length.",
+    "th": "หน้า 49-50"
+   }
+  ],
+  "unsure": true
+ },
+ {
+  "section": "2",
+  "label": "2-a",
+  "pdf": 50,
+  "en": "The robot uses a symmetrical structure, so the wiring rules are identical on the left and right sides. The instructions below cover only the right leg and left arm; wire the right arm and left leg by following the same method. The waist is a separate routing area and must be wired according to its own instructions.",
+  "th": "หุ่นยนต์มีโครงสร้างสมมาตร ดังนั้นกฎการเดินสายของด้านซ้ายและด้านขวาจึงเหมือนกัน คำแนะนำด้านล่างครอบคลุมเฉพาะขาขวาและแขนซ้าย ให้เดินสายแขนขวาและขาซ้ายตามวิธีเดียวกัน เอว (waist) เป็นพื้นที่เดินสายแยกต่างหาก และต้องเดินสายตามคำแนะนำของเอวโดยเฉพาะ",
+  "parts": [],
+  "fasteners": [],
+  "motors": [],
+  "channel": null,
+  "warning": false,
+  "notes": []
+ },
+ {
+  "section": "2",
+  "label": "2-b",
+  "pdf": 51,
+  "en": "The IDs given below are Slave IDs. Connection order: right arm: 0x13-0x14-0x15-0x16-0x17; left arm: 0x0E-0x0F-0x10-0x11-0x12; right leg: 0x07-0x08-0x09-0x0a-0x0b-0x0c; left leg: 0x01-0x02-0x03-0x04-0x05-0x06; waist motor: 0x0d-0x07",
+  "th": "ID ที่ระบุด้านล่างเป็น Slave ID ลำดับการเชื่อมต่อ: แขนขวา: 0x13-0x14-0x15-0x16-0x17; แขนซ้าย: 0x0E-0x0F-0x10-0x11-0x12; ขาขวา: 0x07-0x08-0x09-0x0a-0x0b-0x0c; ขาซ้าย: 0x01-0x02-0x03-0x04-0x05-0x06; มอเตอร์เอว: 0x0d-0x07",
+  "parts": [],
+  "fasteners": [],
+  "motors": [
+   "0x13",
+   "0x14",
+   "0x15",
+   "0x16",
+   "0x17",
+   "0x0E",
+   "0x0F",
+   "0x10",
+   "0x11",
+   "0x12",
+   "0x07",
+   "0x08",
+   "0x09",
+   "0x0a",
+   "0x0b",
+   "0x0c",
+   "0x01",
+   "0x02",
+   "0x03",
+   "0x04",
+   "0x05",
+   "0x06",
+   "0x0d"
+  ],
+  "channel": null,
+  "warning": false,
+  "notes": []
+ },
+ {
+  "section": "2.1",
+  "label": "2.1-a",
+  "pdf": 52,
+  "en": "Motor 0x07 – Motor 0x08: use harness RBW_Origin_05 Leg01, spec XT30U-F-XT30U-F, length 25 cm.",
+  "th": "มอเตอร์ 0x07 – มอเตอร์ 0x08: ให้ใช้สายชุด RBW_Origin_05 Leg01 สเปค XT30U-F-XT30U-F ความยาว 25 cm",
+  "parts": [
+   {
+    "en": "RBW_Origin_05 Leg01 (XT30U-F-XT30U-F, 25 cm)",
+    "th": "สายชุด RBW_Origin_05 Leg01 (XT30U-F-XT30U-F ยาว 25 ซม.)"
+   }
+  ],
+  "fasteners": [],
+  "motors": [
+   "0x07",
+   "0x08"
+  ],
+  "channel": null,
+  "warning": false,
+  "notes": []
+ },
+ {
+  "section": "2.1",
+  "label": "2.1-b",
+  "pdf": 53,
+  "en": "Motor 0x08 – Motor 0x09: use harness RBW_Origin_06 Leg02, spec XT30U-F-XT30U-F, length 25 cm.",
+  "th": "มอเตอร์ 0x08 – มอเตอร์ 0x09: ให้ใช้สายชุด RBW_Origin_06 Leg02 สเปค XT30U-F-XT30U-F ความยาว 25 cm",
+  "parts": [
+   {
+    "en": "RBW_Origin_06 Leg02 (XT30U-F-XT30U-F, 25 cm)",
+    "th": "สายชุด RBW_Origin_06 Leg02 (XT30U-F-XT30U-F ยาว 25 ซม.)"
+   }
+  ],
+  "fasteners": [],
+  "motors": [
+   "0x08",
+   "0x09"
+  ],
+  "channel": null,
+  "warning": false,
+  "notes": []
+ },
+ {
+  "section": "2.1",
+  "label": "2.1-c",
+  "pdf": 53,
+  "en": "Motor 0x09 – Motor 0x0a: use harness RBW_Origin_07 Leg03, spec XT30U-F-XT30U-F, length 40 cm.",
+  "th": "มอเตอร์ 0x09 – มอเตอร์ 0x0a: ให้ใช้สายชุด RBW_Origin_07 Leg03 สเปค XT30U-F-XT30U-F ความยาว 40 cm",
+  "parts": [
+   {
+    "en": "RBW_Origin_07 Leg03 (XT30U-F-XT30U-F, 40 cm)",
+    "th": "สายชุด RBW_Origin_07 Leg03 (XT30U-F-XT30U-F ยาว 40 ซม.)"
+   }
+  ],
+  "fasteners": [],
+  "motors": [
+   "0x09",
+   "0x0a"
+  ],
+  "channel": null,
+  "warning": false,
+  "notes": []
+ },
+ {
+  "section": "2.1",
+  "label": "2.1-d",
+  "pdf": 54,
+  "en": "Motor 0x0a – Motor 0x0b: use harness RBW_Origin_08 Leg04, spec XT30U-F-XT30(+2)-F.G.B, length 30 cm.",
+  "th": "มอเตอร์ 0x0a – มอเตอร์ 0x0b: ให้ใช้สายชุด RBW_Origin_08 Leg04 สเปค XT30U-F-XT30(+2)-F.G.B ความยาว 30 cm",
+  "parts": [
+   {
+    "en": "RBW_Origin_08 Leg04 (XT30U-F-XT30(+2)-F.G.B, 30 cm)",
+    "th": "สายชุด RBW_Origin_08 Leg04 (XT30U-F-XT30(+2)-F.G.B ยาว 30 ซม.)"
+   }
+  ],
+  "fasteners": [],
+  "motors": [
+   "0x0a",
+   "0x0b"
+  ],
+  "channel": null,
+  "warning": false,
+  "notes": []
+ },
+ {
+  "section": "2.1",
+  "label": "2.1-e",
+  "pdf": 55,
+  "en": "Motor 0x0b – Motor 0x0c: use harness RBW_Origin_09 Leg05, spec XT30(+2)-F.G.B-XT30(+2)-F.G.B, length 10 cm.",
+  "th": "มอเตอร์ 0x0b – มอเตอร์ 0x0c: ให้ใช้สายชุด RBW_Origin_09 Leg05 สเปค XT30(+2)-F.G.B-XT30(+2)-F.G.B ความยาว 10 cm",
+  "parts": [
+   {
+    "en": "RBW_Origin_09 Leg05 (XT30(+2)-F.G.B-XT30(+2)-F.G.B, 10 cm)",
+    "th": "สายชุด RBW_Origin_09 Leg05 (XT30(+2)-F.G.B-XT30(+2)-F.G.B ยาว 10 ซม.)"
+   }
+  ],
+  "fasteners": [],
+  "motors": [
+   "0x0b",
+   "0x0c"
+  ],
+  "channel": null,
+  "warning": false,
+  "notes": []
+ },
+ {
+  "section": "2.2",
+  "label": "2.2-a",
+  "pdf": 56,
+  "en": "Motor 0x0d – Motor 0x07: use harness RBW_Origin_10 Body01, spec XT30U-F-XT30U-F, length 20 cm.",
+  "th": "มอเตอร์ 0x0d – มอเตอร์ 0x07: ให้ใช้สายชุด RBW_Origin_10 Body01 สเปค XT30U-F-XT30U-F ความยาว 20 cm",
+  "parts": [
+   {
+    "en": "RBW_Origin_10 Body01 (XT30U-F-XT30U-F, 20 cm)",
+    "th": "สายชุด RBW_Origin_10 Body01 (XT30U-F-XT30U-F ยาว 20 ซม.)"
+   }
+  ],
+  "fasteners": [],
+  "motors": [
+   "0x0d",
+   "0x07"
+  ],
+  "channel": null,
+  "warning": false,
+  "notes": [
+   {
+    "en": "The waist has a single motor (ID: 0x0d), which connects to right-leg motor 0x07.",
+    "th": "เอวมีมอเตอร์เพียงตัวเดียว (ID: 0x0d) ซึ่งเชื่อมต่อกับมอเตอร์ขาขวา 0x07"
+   }
+  ]
+ },
+ {
+  "section": "2.3",
+  "label": "2.3-a",
+  "pdf": 57,
+  "en": "Motor 0x0e – Motor 0x0f: use harness RBW_Origin_01 Arm01, spec XT30(+2)-F.G.B-XT30(+2)-F.G.B, length 20 cm.",
+  "th": "มอเตอร์ 0x0e – มอเตอร์ 0x0f: ให้ใช้สายชุด RBW_Origin_01 Arm01 สเปค XT30(+2)-F.G.B-XT30(+2)-F.G.B ความยาว 20 cm",
+  "parts": [
+   {
+    "en": "RBW_Origin_01 Arm01 (XT30(+2)-F.G.B-XT30(+2)-F.G.B, 20 cm)",
+    "th": "สายชุด RBW_Origin_01 Arm01 (XT30(+2)-F.G.B-XT30(+2)-F.G.B ยาว 20 ซม.)"
+   }
+  ],
+  "fasteners": [],
+  "motors": [
+   "0x0e",
+   "0x0f"
+  ],
+  "channel": null,
+  "warning": false,
+  "notes": []
+ },
+ {
+  "section": "2.3",
+  "label": "2.3-b",
+  "pdf": 58,
+  "en": "Motor 0x0f – Motor 0x10: use harness RBW_Origin_02 Arm02, spec XT30(+2)-F.G.B-XT30(+2)-F.G.B, length 20 cm.",
+  "th": "มอเตอร์ 0x0f – มอเตอร์ 0x10: ให้ใช้สายชุด RBW_Origin_02 Arm02 สเปค XT30(+2)-F.G.B-XT30(+2)-F.G.B ความยาว 20 cm",
+  "parts": [
+   {
+    "en": "RBW_Origin_02 Arm02 (XT30(+2)-F.G.B-XT30(+2)-F.G.B, 20 cm)",
+    "th": "สายชุด RBW_Origin_02 Arm02 (XT30(+2)-F.G.B-XT30(+2)-F.G.B ยาว 20 ซม.)"
+   }
+  ],
+  "fasteners": [],
+  "motors": [
+   "0x0f",
+   "0x10"
+  ],
+  "channel": null,
+  "warning": false,
+  "notes": []
+ },
+ {
+  "section": "2.3",
+  "label": "2.3-c",
+  "pdf": 59,
+  "en": "Motor 0x10 – Motor 0x11: use harness RBW_Origin_03 Arm03, spec XT30(+2)-F.G.B-XT30(+2)-F.G.B, length 20 cm.",
+  "th": "มอเตอร์ 0x10 – มอเตอร์ 0x11: ให้ใช้สายชุด RBW_Origin_03 Arm03 สเปค XT30(+2)-F.G.B-XT30(+2)-F.G.B ความยาว 20 cm",
+  "parts": [
+   {
+    "en": "RBW_Origin_03 Arm03 (XT30(+2)-F.G.B-XT30(+2)-F.G.B, 20 cm)",
+    "th": "สายชุด RBW_Origin_03 Arm03 (XT30(+2)-F.G.B-XT30(+2)-F.G.B ยาว 20 ซม.)"
+   }
+  ],
+  "fasteners": [],
+  "motors": [
+   "0x10",
+   "0x11"
+  ],
+  "channel": null,
+  "warning": false,
+  "notes": []
+ },
+ {
+  "section": "2.3",
+  "label": "2.3-d",
+  "pdf": 60,
+  "en": "Motor 0x11 – Motor 0x12: use harness RBW_Origin_04 Arm04, spec XT30(+2)-F.G.B-XT30(+2)-F.G.B, length 20 cm.",
+  "th": "มอเตอร์ 0x11 – มอเตอร์ 0x12: ให้ใช้สายชุด RBW_Origin_04 Arm04 สเปค XT30(+2)-F.G.B-XT30(+2)-F.G.B ความยาว 20 cm",
+  "parts": [
+   {
+    "en": "RBW_Origin_04 Arm04 (XT30(+2)-F.G.B-XT30(+2)-F.G.B, 20 cm)",
+    "th": "สายชุด RBW_Origin_04 Arm04 (XT30(+2)-F.G.B-XT30(+2)-F.G.B ยาว 20 ซม.)"
+   }
+  ],
+  "fasteners": [],
+  "motors": [
+   "0x11",
+   "0x12"
+  ],
+  "channel": null,
+  "warning": false,
+  "notes": []
+ },
+ {
+  "section": "2.4",
+  "label": "2.4-a",
+  "pdf": 60,
+  "en": "Screws and standoffs required: Screws: m316 ×2, m412 ×2, m5*12 ×2; Standoffs: m317 ×4, m38+3 ×8",
+  "th": "สกรูและเสารองที่ต้องใช้: สกรู: m316 ×2, m412 ×2, m5*12 ×2; เสารอง (standoff): m317 ×4, m38+3 ×8",
+  "parts": [],
+  "fasteners": [
+   {
+    "en": "m316 screws ×2",
+    "th": "สกรู m316 ×2",
+    "role": null
+   },
+   {
+    "en": "m412 screws ×2",
+    "th": "สกรู m412 ×2",
+    "role": null
+   },
+   {
+    "en": "m5*12 screws ×2",
+    "th": "สกรู m5*12 ×2",
+    "role": null
+   },
+   {
+    "en": "m317 standoffs ×4",
+    "th": "เสารอง m317 ×4",
+    "role": null
+   },
+   {
+    "en": "m38+3 standoffs ×8",
+    "th": "เสารอง m38+3 ×8",
+    "role": null
+   }
+  ],
+  "motors": [],
+  "channel": null,
+  "warning": false,
+  "notes": [
+   {
+    "en": "Spec text is as printed in the source (may be m3*16, m4*12, m3*17, m3*8+3).",
+    "th": "ข้อความสเปคตามต้นฉบับ"
+   }
+  ],
+  "unsure": true
+ },
+ {
+  "section": "2.4.1",
+  "label": "2.4.1-a",
+  "pdf": 60,
+  "en": "Battery protection: Apply anti-vibration foam padding to the bottom and all four sides of the battery.",
+  "th": "การป้องกันแบตเตอรี่: ให้ติดแผ่นโฟมกันสั่นสะเทือนที่ด้านล่างและทั้งสี่ด้านของแบตเตอรี่",
+  "parts": [],
+  "fasteners": [],
+  "motors": [],
+  "channel": null,
+  "warning": false,
+  "notes": [
+   {
+    "en": "Purpose: to damp high-frequency vibration during motion and prevent the battery's outer sheath from being abraded, which would create a short-circuit risk.",
+    "th": "วัตถุประสงค์: เพื่อลดการสั่นสะเทือนความถี่สูงขณะเคลื่อนที่ และป้องกันไม่ให้ปลอกหุ้มด้านนอกของแบตเตอรี่สึกหรอ ซึ่งจะก่อให้เกิดความเสี่ยงต่อการลัดวงจร"
+   }
+  ]
+ },
+ {
+  "section": "2.4.1",
+  "label": "2.4.1-b",
+  "pdf": 61,
+  "en": "This stage involves high-current circuits — always double-check wire gauge and polarity.",
+  "th": "ขั้นตอนนี้เกี่ยวข้องกับวงจรกระแสสูง — ต้องตรวจสอบขนาดสายไฟและขั้วให้ถูกต้องซ้ำอีกครั้งเสมอ",
+  "parts": [],
+  "fasteners": [],
+  "motors": [],
+  "channel": null,
+  "warning": true,
+  "notes": []
+ },
+ {
+  "section": "2.4.1",
+  "label": "2.4.1-c",
+  "pdf": 61,
+  "en": "Step 1 — Seat the battery: Install the battery pack in its designated position on the base, ensuring the centre of gravity is stable.",
+  "th": "ขั้นตอนที่ 1 — วางแบตเตอรี่: ติดตั้งชุดแบตเตอรี่ (battery pack) ในตำแหน่งที่กำหนดบนฐาน โดยต้องแน่ใจว่าจุดศูนย์ถ่วงมีความมั่นคง",
+  "parts": [],
+  "fasteners": [],
+  "motors": [],
+  "channel": null,
+  "warning": false,
+  "notes": []
+ },
+ {
+  "section": "2.4.1",
+  "label": "2.4.1-d",
+  "pdf": 62,
+  "en": "Step 2 — Charging port installation: Fix the charging port to the robot's rear panel.",
+  "th": "ขั้นตอนที่ 2 — การติดตั้งพอร์ตชาร์จ: ยึดพอร์ตชาร์จเข้ากับแผงด้านหลังของหุ่นยนต์",
+  "parts": [],
+  "fasteners": [],
+  "motors": [],
+  "channel": null,
+  "warning": false,
+  "notes": []
+ },
+ {
+  "section": "2.4.2",
+  "label": "2.4.2-a",
+  "pdf": 63,
+  "en": "Solder the main control switch connector and the emergency stop switch. Do not get the wire order wrong!",
+  "th": "บัดกรีขั้วต่อสวิตช์ควบคุมหลักและสวิตช์ปุ่มหยุดฉุกเฉิน ห้ามต่อลำดับสายผิด!",
+  "parts": [
+   {
+    "en": "Main control switch connector",
+    "th": "ขั้วต่อสวิตช์ควบคุมหลัก"
+   },
+   {
+    "en": "Emergency stop switch",
+    "th": "สวิตช์ปุ่มหยุดฉุกเฉิน"
+   }
+  ],
+  "fasteners": [],
+  "motors": [],
+  "channel": null,
+  "warning": true,
+  "notes": [
+   {
+    "en": "On the PCB backplane the solder pads are labelled 5V, GND, 5V_OUT and LED+ (see the figures on pp. 63-64). Switch plug wires: green = C (common), yellow = NO (normally open), white = NC (normally closed), black and red = LED pins (LED pins have no polarity). In the page 64 photo the wires are labelled 5V (yellow), 5V_OUT (green), GND (black), LED (red).",
+    "th": "บน PCB ด้านหลังมีแผ่นบัดกรีชื่อ 5V, GND, 5V_OUT และ LED+ (ดูรูปหน้า 63-64) สายของปลั๊กสวิตช์: สีเขียว = C (ขั้วร่วม), สีเหลือง = NO (ปกติเปิด), สีขาว = NC (ปกติปิด), สีดำและสีแดง = ขาไฟ LED (ขา LED ไม่แยกขั้วบวกลบ) ในรูปหน้า 64 สายถูกกำกับว่า 5V (เหลือง), 5V_OUT (เขียว), GND (ดำ), LED (แดง)"
+   }
+  ],
+  "unsure": false
+ },
+ {
+  "section": "2.4.2",
+  "label": "2.4.2-b",
+  "pdf": 64,
+  "en": "Once tested and correct, trim off any excess wire.",
+  "th": "เมื่อทดสอบและยืนยันว่าถูกต้องแล้ว ให้ตัดสายส่วนเกินออก",
+  "parts": [],
+  "fasteners": [],
+  "motors": [],
+  "channel": null,
+  "warning": false,
+  "notes": [
+   {
+    "en": "Note: colour order follows wire position, and may differ from batch to batch.",
+    "th": "หมายเหตุ: ลำดับสีสายเป็นไปตามตำแหน่งของสาย และอาจแตกต่างกันในแต่ละล็อตการผลิต"
+   }
+  ]
+ },
+ {
+  "section": "2.4.2",
+  "label": "2.4.2-c",
+  "pdf": 64,
+  "en": "Install the mounting bracket. Fix from the underside using m3*16 screws.",
+  "th": "ติดตั้งขายึด (mounting bracket) ยึดจากด้านล่างด้วยสกรู m3*16",
+  "parts": [
+   {
+    "en": "Mounting bracket",
+    "th": "ขายึด (mounting bracket)"
+   }
+  ],
+  "fasteners": [
+   {
+    "en": "m3*16 screws",
+    "th": "สกรู m3*16",
+    "role": null
+   }
+  ],
+  "motors": [],
+  "channel": null,
+  "warning": false,
+  "notes": []
+ },
+ {
+  "section": "2.4.2",
+  "label": "2.4.2-d",
+  "pdf": 65,
+  "en": "Secure the 3-in-1 power distribution board. Secure the 3-in-1 board using m 3*8 + 3 standoffs, and fit m 3*17 standoffs to raise it.",
+  "th": "ยึดบอร์ดจ่ายไฟ 3-in-1 ยึดบอร์ด 3-in-1 โดยใช้สกรู m 3*8 + เสารอง 3 ตัว และใช้เสารอง m 3*17 เพื่อยกบอร์ดให้สูงขึ้น",
+  "parts": [
+   {
+    "en": "3-in-1 power distribution board",
+    "th": "บอร์ดจ่ายไฟ 3-in-1"
+   }
+  ],
+  "fasteners": [
+   {
+    "en": "m 3*8 + 3 standoffs (as printed)",
+    "th": "เสารอง m 3*8 + 3 (ตามที่พิมพ์ในต้นฉบับ)",
+    "role": null
+   },
+   {
+    "en": "m 3*17 standoffs",
+    "th": "เสารอง m 3*17",
+    "role": "raise the board"
+   }
+  ],
+  "motors": [],
+  "channel": null,
+  "warning": false,
+  "notes": [
+   {
+    "en": "The source prints \"m 3*8 + 3 standoffs\"; the quantity is not clear from the text, so follow the figure.",
+    "th": "ต้นฉบับพิมพ์ \"m 3*8 + 3 standoffs\" จำนวนไม่ชัดเจนจากข้อความ ให้ยึดตามภาพ"
+   }
+  ],
+  "unsure": true
+ },
+ {
+  "section": "2.4.2",
+  "label": "2.4.2-e",
+  "pdf": 66,
+  "en": "Secure the RDKx5. Use m3*8 screws to fix the RDKx5 to the main control carrier board, then fix that assembly to the 3-in-1 board.",
+  "th": "ยึด RDKx5 ใช้สกรู m3*8 ยึด RDKx5 เข้ากับบอร์ดตัวนำ (carrier board) ของตัวควบคุมหลัก จากนั้นยึดชุดประกอบนี้เข้ากับบอร์ด 3-in-1",
+  "parts": [
+   {
+    "en": "RDKx5",
+    "th": "RDKx5"
+   },
+   {
+    "en": "Main control carrier board",
+    "th": "บอร์ดตัวนำ (carrier board) ของตัวควบคุมหลัก"
+   },
+   {
+    "en": "3-in-1 power distribution board",
+    "th": "บอร์ดจ่ายไฟ 3-in-1"
+   }
+  ],
+  "fasteners": [
+   {
+    "en": "m3*8 screws",
+    "th": "สกรู m3*8",
+    "role": null
+   }
+  ],
+  "motors": [],
+  "channel": null,
+  "warning": false,
+  "notes": []
+ },
+ {
+  "section": "2.5",
+  "label": "2.5-a",
+  "pdf": 66,
+  "en": "CAN0 channel — motor 0x01 (left hip) to power board: use harness RBW_Origin_12 Body03, spec XT30(+2)-F.G.B-XT30U-F, length 60 cm.",
+  "th": "ช่อง CAN0 — มอเตอร์ 0x01 (สะโพกซ้าย) ไปยังบอร์ดจ่ายไฟ: ใช้สายชุด RBW_Origin_12 Body03 สเปก XT30(+2)-F.G.B-XT30U-F ความยาว 60 cm",
+  "parts": [
+   {
+    "en": "RBW_Origin_12 Body03 (XT30(+2)-F.G.B-XT30U-F, 60 cm)",
+    "th": "สายชุด RBW_Origin_12 Body03 (XT30(+2)-F.G.B-XT30U-F ยาว 60 ซม.)"
+   },
+   {
+    "en": "3-in-1 power distribution board",
+    "th": "บอร์ดจ่ายไฟ 3-in-1"
+   }
+  ],
+  "fasteners": [],
+  "motors": [
+   "0x01"
+  ],
+  "channel": "CAN0",
+  "warning": false,
+  "notes": [
+   {
+    "en": "The remaining connector on motors 0x0e, 0x13, 0x01 and 0x0d all connect to the 3-in-1 power distribution board.",
+    "th": "ขั้วต่อที่เหลือของมอเตอร์ 0x0e, 0x13, 0x01 และ 0x0d ทั้งหมดต่อเข้ากับบอร์ดจ่ายไฟ 3-in-1"
+   }
+  ]
+ },
+ {
+  "section": "2.5",
+  "label": "2.5-b",
+  "pdf": 67,
+  "en": "CAN1 channel — motor 0x0d (trunk yaw) to power board: use harness RBW_Origin_13 Body04, spec XT30(+2)-F.G.B-XT30U-F, length 50 cm.",
+  "th": "ช่อง CAN1 — มอเตอร์ 0x0d (การหมุนแนวดิ่งของลำตัว (trunk yaw)) ไปยังบอร์ดจ่ายไฟ: ใช้สายชุด RBW_Origin_13 Body04 สเปก XT30(+2)-F.G.B-XT30U-F ความยาว 50 cm",
+  "parts": [
+   {
+    "en": "RBW_Origin_13 Body04 (XT30(+2)-F.G.B-XT30U-F, 50 cm)",
+    "th": "สายชุด RBW_Origin_13 Body04 (XT30(+2)-F.G.B-XT30U-F ยาว 50 ซม.)"
+   },
+   {
+    "en": "3-in-1 power distribution board",
+    "th": "บอร์ดจ่ายไฟ 3-in-1"
+   }
+  ],
+  "fasteners": [],
+  "motors": [
+   "0x0d"
+  ],
+  "channel": "CAN1",
+  "warning": false,
+  "notes": []
+ },
+ {
+  "section": "2.5",
+  "label": "2.5-c",
+  "pdf": 67,
+  "en": "CAN2 channel — motor 0x0e (left shoulder) to power board: use harness RBW_Origin_11 Body02, spec XT30(+2)-F.G.B-XT30(+2)-F.G.B, length 20 cm.",
+  "th": "ช่อง CAN2 — มอเตอร์ 0x0e (ไหล่ซ้าย) ไปยังบอร์ดจ่ายไฟ: ใช้สายชุด RBW_Origin_11 Body02 สเปก XT30(+2)-F.G.B-XT30(+2)-F.G.B ความยาว 20 cm",
+  "parts": [
+   {
+    "en": "RBW_Origin_11 Body02 (XT30(+2)-F.G.B-XT30(+2)-F.G.B, 20 cm)",
+    "th": "สายชุด RBW_Origin_11 Body02 (XT30(+2)-F.G.B-XT30(+2)-F.G.B ยาว 20 ซม.)"
+   },
+   {
+    "en": "3-in-1 power distribution board",
+    "th": "บอร์ดจ่ายไฟ 3-in-1"
+   }
+  ],
+  "fasteners": [],
+  "motors": [
+   "0x0e"
+  ],
+  "channel": "CAN2",
+  "warning": false,
+  "notes": []
+ },
+ {
+  "section": "2.5",
+  "label": "2.5-d",
+  "pdf": 67,
+  "en": "CAN3 channel — motor 0x13 (right shoulder) to power board: use harness RBW_Origin_11 Body02, spec XT30(+2)-F.G.B-XT30(+2)-F.G.B, length 20 cm.",
+  "th": "ช่อง CAN3 — มอเตอร์ 0x13 (ไหล่ขวา) ไปยังบอร์ดจ่ายไฟ: ใช้สายชุด RBW_Origin_11 Body02 สเปก XT30(+2)-F.G.B-XT30(+2)-F.G.B ความยาว 20 cm",
+  "parts": [
+   {
+    "en": "RBW_Origin_11 Body02 (XT30(+2)-F.G.B-XT30(+2)-F.G.B, 20 cm)",
+    "th": "สายชุด RBW_Origin_11 Body02 (XT30(+2)-F.G.B-XT30(+2)-F.G.B ยาว 20 ซม.)"
+   },
+   {
+    "en": "3-in-1 power distribution board",
+    "th": "บอร์ดจ่ายไฟ 3-in-1"
+   }
+  ],
+  "fasteners": [],
+  "motors": [
+   "0x13"
+  ],
+  "channel": "CAN3",
+  "warning": false,
+  "notes": []
+ },
+ {
+  "section": "2.5",
+  "label": "2.5-e",
+  "pdf": 67,
+  "en": "Motors connect to the power board following the principle left before right, legs before arms. Motor 0x01 goes to CAN0, motor 0x0d to CAN1, motor 0x0e to CAN2, and motor 0x13 to CAN3. The PCB is silkscreened accordingly — install according to the silkscreen.",
+  "th": "การต่อมอเตอร์เข้ากับบอร์ดจ่ายไฟให้เป็นไปตามหลักการซ้ายก่อนขวา ขาก่อนแขน คือ มอเตอร์ 0x01 ต่อเข้า CAN0 มอเตอร์ 0x0d ต่อเข้า CAN1 มอเตอร์ 0x0e ต่อเข้า CAN2 และมอเตอร์ 0x13 ต่อเข้า CAN3 PCB มีซิลค์สกรีนตามนี้ — ให้ติดตั้งตามซิลค์สกรีน",
+  "parts": [],
+  "fasteners": [],
+  "motors": [
+   "0x01",
+   "0x0d",
+   "0x0e",
+   "0x13"
+  ],
+  "channel": null,
+  "warning": false,
+  "notes": []
+ },
+ {
+  "section": "2.6",
+  "label": "2.6-a",
+  "pdf": 67,
+  "en": "The RDKx5 uses the usb to typec harness, connecting via USB to the USB-to-CAN port on the 3-in-1 power board.",
+  "th": "RDKx5 ใช้สายชุด usb to typec เชื่อมต่อผ่าน USB เข้ากับพอร์ต USB-to-CAN บนบอร์ดจ่ายไฟ 3-in-1",
+  "parts": [
+   {
+    "en": "usb to typec harness",
+    "th": "สายชุด usb to typec"
+   },
+   {
+    "en": "RDKx5",
+    "th": "RDKx5"
+   },
+   {
+    "en": "3-in-1 power distribution board",
+    "th": "บอร์ดจ่ายไฟ 3-in-1"
+   }
+  ],
+  "fasteners": [],
+  "motors": [],
+  "channel": null,
+  "warning": false,
+  "notes": []
+ },
+ {
+  "section": "2.6",
+  "label": "2.6-b",
+  "pdf": 68,
+  "en": "The RDKx5 uses the typec to typec harness, taking 5 V from the 3-in-1 power board's 5 V supply port into the RDKx5 power input.",
+  "th": "RDKx5 ใช้สายชุด typec to typec โดยรับไฟ 5 V จากพอร์ตจ่ายไฟ 5 V ของบอร์ดจ่ายไฟ 3-in-1 เข้าสู่อินพุตไฟของ RDKx5",
+  "parts": [
+   {
+    "en": "typec to typec harness",
+    "th": "สายชุด typec to typec"
+   },
+   {
+    "en": "RDKx5",
+    "th": "RDKx5"
+   },
+   {
+    "en": "3-in-1 power distribution board",
+    "th": "บอร์ดจ่ายไฟ 3-in-1"
+   }
+  ],
+  "fasteners": [],
+  "motors": [],
+  "channel": null,
+  "warning": false,
+  "notes": []
+ },
+ {
+  "section": "2.6",
+  "label": "2.6-c",
+  "pdf": 68,
+  "en": "The IMU and the gamepad receiver connect directly to the RDKx5 via USB.",
+  "th": "IMU และตัวรับสัญญาณจอยควบคุม (gamepad receiver) เชื่อมต่อโดยตรงกับ RDKx5 ผ่าน USB",
+  "parts": [
+   {
+    "en": "IMU",
+    "th": "IMU"
+   },
+   {
+    "en": "Gamepad receiver",
+    "th": "ตัวรับสัญญาณจอยควบคุม (gamepad receiver)"
+   },
+   {
+    "en": "RDKx5",
+    "th": "RDKx5"
+   }
+  ],
+  "fasteners": [],
+  "motors": [],
+  "channel": null,
+  "warning": false,
+  "notes": []
+ },
+ {
+  "section": "2.6",
+  "label": "2.6-d",
+  "pdf": 69,
+  "en": "The voltage display connector is a gh1.25 connector.",
+  "th": "ขั้วต่อแสดงแรงดันไฟเป็นขั้วต่อ gh1.25",
+  "parts": [
+   {
+    "en": "Voltage display connector (gh1.25)",
+    "th": "ขั้วต่อแสดงแรงดันไฟ (gh1.25)"
+   }
+  ],
+  "fasteners": [],
+  "motors": [],
+  "channel": null,
+  "warning": false,
+  "notes": []
+ },
+ {
+  "section": "2.6",
+  "label": "2.6-e",
+  "pdf": 69,
+  "en": "The port layout and pin definitions of the 3-in-1 power board are shown below. Follow the silkscreen markings exactly when connecting, to avoid reverse polarity.",
+  "th": "ผังพอร์ตและการกำหนดขาของบอร์ดจ่ายไฟ 3-in-1 แสดงไว้ด้านล่าง เมื่อเชื่อมต่อต้องปฏิบัติตามเครื่องหมายซิลค์สกรีนอย่างเคร่งครัด เพื่อหลีกเลี่ยงการต่อขั้วกลับ",
+  "parts": [
+   {
+    "en": "3-in-1 power distribution board",
+    "th": "บอร์ดจ่ายไฟ 3-in-1"
+   }
+  ],
+  "fasteners": [],
+  "motors": [],
+  "channel": null,
+  "warning": true,
+  "notes": []
+ },
+ {
+  "section": "3.1",
+  "label": "3.1-a",
+  "pdf": 70,
+  "en": "Harness securing method: use harness clips to secure the harness at the connectors, preventing unstable signal transmission caused by connectors working loose.",
+  "th": "วิธีการยึดตรึงสายชุด: ใช้ตัวรัดสายชุด (harness clips) ยึดสายชุดตรงบริเวณขั้วต่อ เพื่อป้องกันการส่งสัญญาณที่ไม่เสถียรอันเกิดจากขั้วต่อหลวม",
+  "parts": [
+   {
+    "en": "Harness clips",
+    "th": "ตัวรัดสายชุด (harness clips)"
+   }
+  ],
+  "fasteners": [],
+  "motors": [],
+  "channel": null,
+  "warning": false,
+  "notes": []
+ },
+ {
+  "section": "3.2",
+  "label": "3.2-a",
+  "pdf": 70,
+  "en": "To stop CAN connectors from detaching or being pulled apart during motion, UV adhesive can be used to reinforce the connectors.",
+  "th": "เพื่อป้องกันไม่ให้ขั้วต่อ CAN หลุดหรือถูกดึงแยกออกจากกันระหว่างการเคลื่อนที่ สามารถใช้กาว UV เสริมความแข็งแรงให้ขั้วต่อได้",
+  "parts": [
+   {
+    "en": "UV adhesive",
+    "th": "กาว UV"
+   }
+  ],
+  "fasteners": [],
+  "motors": [],
+  "channel": null,
+  "warning": false,
+  "notes": []
+ }
+]
