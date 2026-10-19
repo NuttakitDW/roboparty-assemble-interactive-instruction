@@ -1,0 +1,380 @@
+{
+ "stages": [
+  {
+   "id": "overview",
+   "tag": "overview",
+   "focus": [
+    "all"
+   ],
+   "explode": 0,
+   "markers": false,
+   "yaw": 0.35,
+   "cam": [
+    1.9,
+    0.55,
+    1.5
+   ],
+   "target": [
+    0,
+    0,
+    0
+   ],
+   "dur": 9000,
+   "cat": null,
+   "th": {
+    "title": "ภาพรวม Roboto Origin",
+    "body": "หุ่นยนต์ฮิวแมนนอยด์โอเพนซอร์สสูง 1.25 เมตร หนัก 34 กก. มี 23 องศาอิสระ ประกอบจากชิ้นส่วนทั้งหมด 87 รายการ เราจะไล่ดูทีละกลุ่มก่อนลงมือต่อจริง"
+   },
+   "en": {
+    "title": "Roboto Origin overview",
+    "body": "An open-source humanoid, 1.25 m tall, 34 kg, with 23 degrees of freedom, built from 87 line items. We will walk through each group before you start assembling."
+   }
+  },
+  {
+   "id": "explode",
+   "tag": "structure",
+   "focus": [
+    "all"
+   ],
+   "explode": 1,
+   "markers": false,
+   "yaw": 0.5,
+   "cam": [
+    2.9,
+    0.5,
+    2.2
+   ],
+   "target": [
+    0,
+    -0.15,
+    0
+   ],
+   "dur": 9000,
+   "cat": "Structural",
+   "th": {
+    "title": "แยกชิ้นส่วน",
+    "body": "แยกหุ่นยนต์ตามข้อต่อจริงเป็น 24 ลิงก์ (ฐานสะโพก 1 + ลิงก์ที่ขยับได้ 23) เลื่อนเมาส์ไปที่ชิ้นเพื่อดูชื่อ โมเดลนี้เป็นระดับข้อต่อ ยังไม่ใช่ชิ้นส่วนย่อยทีละชิ้น"
+   },
+   "en": {
+    "title": "Exploded view",
+    "body": "The robot split along its real joints into 24 links (1 pelvis + 23 moving). Hover a piece to see its name. This is a joint-level model, not yet every individual part."
+   }
+  },
+  {
+   "id": "torso",
+   "tag": "structure",
+   "focus": [
+    "pelvis",
+    "torso"
+   ],
+   "explode": 0.35,
+   "markers": false,
+   "yaw": 0.35,
+   "cam": [
+    1.2,
+    0.6,
+    0.9
+   ],
+   "target": [
+    0,
+    0.25,
+    0
+   ],
+   "dur": 9000,
+   "cat": "Structural",
+   "th": {
+    "title": "ลำตัวและเอว",
+    "body": "ฐานสะโพกและลำตัวเป็นแกนกลางของหุ่นยนต์ มีมอเตอร์เอว 1 ตัวหมุนลำตัวได้ราว ±120° ตามตัวจำกัดมุม ฐานรองเอวและฝาครอบแบตเตอรี่ต้องวางช่องลิมิตให้ถูกทิศ"
+   },
+   "en": {
+    "title": "Torso & waist",
+    "body": "The pelvis and torso are the core. One waist motor turns the torso about ±120°, stopped by limit blocks. Waist support and battery cover limit slots must face the right way."
+   }
+  },
+  {
+   "id": "legs",
+   "tag": "legs",
+   "focus": [
+    "legL",
+    "legR"
+   ],
+   "explode": 0.8,
+   "markers": false,
+   "yaw": 0.3,
+   "cam": [
+    2.7,
+    -0.35,
+    2.1
+   ],
+   "target": [
+    0,
+    -0.5,
+    0
+   ],
+   "dur": 9000,
+   "cat": "Structural",
+   "th": {
+    "title": "ขา 2 ข้าง",
+    "body": "ขาข้างละ 6 องศาอิสระ: สะโพก 3 เข่า 1 ข้อเท้า 2 ประกอบเป็นภาพสะท้อนกระจกของกันและกัน คู่มือให้ประกอบขาก่อน แล้วจึงทำสะโพก"
+   },
+   "en": {
+    "title": "Two legs",
+    "body": "Each leg has 6 DoF: 3 at the hip, 1 knee, 2 at the ankle, built as mirror images. The manual has you build the legs first, then the hip."
+   }
+  },
+  {
+   "id": "arms",
+   "tag": "arms",
+   "focus": [
+    "armL",
+    "armR"
+   ],
+   "explode": 0.8,
+   "markers": false,
+   "yaw": 0.3,
+   "cam": [
+    1.6,
+    0.7,
+    1.2
+   ],
+   "target": [
+    0,
+    0.3,
+    0
+   ],
+   "dur": 9000,
+   "cat": "Structural",
+   "th": {
+    "title": "แขน 2 ข้าง",
+    "body": "แขนข้างละ 5 องศาอิสระ: ไหล่ 3 ข้อศอก 1 และข้อมือ 1 ใช้มอเตอร์ DM 4340P ทั้งหมด ประกอบสลับซ้าย-ขวาแบบกระจก"
+   },
+   "en": {
+    "title": "Two arms",
+    "body": "Each arm has 5 DoF: 3 shoulder, 1 elbow, 1 wrist, all driven by DM 4340P motors. Left and right are mirrored."
+   }
+  },
+  {
+   "id": "actuators",
+   "tag": "actuators",
+   "focus": [
+    "all"
+   ],
+   "explode": 0.5,
+   "markers": true,
+   "yaw": 0.4,
+   "cam": [
+    2.3,
+    0.4,
+    1.7
+   ],
+   "target": [
+    0,
+    0,
+    0
+   ],
+   "dur": 11000,
+   "cat": "Actuators",
+   "th": {
+    "title": "มอเตอร์ 23 ตัว",
+    "body": "DM-J10010L 9 ตัว (สะโพก เข่า เอว) สีน้ำเงิน และ DM 4340P 14 ตัว (ข้อเท้า แขน) สีบรอนซ์ ก่อนประกอบต้องตั้งรหัสมอเตอร์และคาลิเบรตเอนโคเดอร์ทุกตัวตามผังรหัส"
+   },
+   "en": {
+    "title": "23 actuators",
+    "body": "9 DM-J10010L (hips, knees, waist) in blue and 14 DM 4340P (ankles, arms) in bronze. Before assembly, assign every motor ID and calibrate encoders per the ID layout."
+   },
+   "legend": "motors"
+  },
+  {
+   "id": "electronics",
+   "tag": "electronics",
+   "focus": [
+    "pelvis",
+    "torso"
+   ],
+   "explode": 0.2,
+   "markers": false,
+   "yaw": 0.4,
+   "cam": [
+    1.2,
+    0.5,
+    0.9
+   ],
+   "target": [
+    0,
+    0.2,
+    0
+   ],
+   "dur": 11000,
+   "cat": "Electronics",
+   "th": {
+    "title": "อิเล็กทรอนิกส์และแบตเตอรี่",
+    "body": "บอร์ดควบคุม RDK X5 บอร์ดรวม 3-in-1 โมดูล IMU ปุ่มหยุดฉุกเฉิน สวิตช์ และแบตเตอรี่ 48V 15Ah สื่อสารผ่าน CAN 4 ช่อง โมเดล 3 มิติของชิ้นส่วนเหล่านี้ยังไม่ได้ใส่ในหน้านี้"
+   },
+   "en": {
+    "title": "Electronics & battery",
+    "body": "RDK X5 controller, 3-in-1 board, IMU, emergency stop, switch and a 48V 15Ah battery, linked over 4 CAN channels. 3D models of these are not in this view yet."
+   }
+  },
+  {
+   "id": "safety",
+   "tag": "safety",
+   "focus": [
+    "all"
+   ],
+   "explode": 0,
+   "markers": false,
+   "yaw": 0.1,
+   "cam": [
+    1.9,
+    0.55,
+    1.5
+   ],
+   "target": [
+    0,
+    0,
+    0
+   ],
+   "dur": 11000,
+   "cat": "Fasteners",
+   "th": {
+    "title": "น็อต สายไฟ และความปลอดภัย",
+    "body": "ใช้สกรูหกเหลี่ยม M2.5–M6 และพิน 4×18 / 4×22 สำหรับคาลิเบรต งานข้อต่อทุกครั้งต้องกดปุ่มหยุดฉุกเฉินและตัดไฟก่อน แบตเตอรี่ที่ตกสูงเกิน 30 ซม. ห้ามนำมาใช้อีก"
+   },
+   "en": {
+    "title": "Fasteners, cables & safety",
+    "body": "M2.5–M6 socket screws and 4×18 / 4×22 pins for calibration. Press the emergency stop and cut power before any joint work. A battery dropped over 30 cm must not be used again."
+   }
+  },
+  {
+   "id": "ready",
+   "tag": "overview",
+   "focus": [
+    "all"
+   ],
+   "explode": 0,
+   "markers": false,
+   "yaw": -0.35,
+   "cam": [
+    1.9,
+    0.55,
+    1.5
+   ],
+   "target": [
+    0,
+    0,
+    0
+   ],
+   "dur": 9000,
+   "cat": null,
+   "th": {
+    "title": "พร้อมเริ่มประกอบ",
+    "body": "ลำดับตามคู่มือ: ขา → สะโพก → ต่อขากับสะโพก → เอว → แขน → ตัวยึดสายและสวิตช์ จากนั้นเดินสายตามเอกสารเดินสาย และคาลิเบรตด้วยพินตามหัวข้อ 2.3 ทำตามทีละขั้นตอนในหน้าถัดไป"
+   },
+   "en": {
+    "title": "Ready to assemble",
+    "body": "Manual order: legs → hip → leg-to-hip → waist → arms → cable clips and switches. Then wiring per the wiring document and pin calibration per section 2.3. Follow each step on the next pages."
+   }
+  }
+ ],
+ "views": {
+  "imu": {
+   "id": "imu",
+   "focus": [],
+   "dim": 0.1,
+   "explode": 0,
+   "markers": false,
+   "yaw": 0.35,
+   "cam": [
+    0.17,
+    0.13,
+    0.25
+   ],
+   "target": [
+    0,
+    0,
+    0
+   ],
+   "overlay": "imu",
+   "legend": null,
+   "dur": 0
+  },
+  "can": {
+   "id": "can",
+   "focus": [],
+   "dim": 0.14,
+   "explode": 0,
+   "markers": false,
+   "yaw": 0.3,
+   "cam": [
+    2.3,
+    0.5,
+    1.7
+   ],
+   "target": [
+    0,
+    0,
+    0
+   ],
+   "overlay": "can",
+   "legend": "can",
+   "dur": 0
+  }
+ },
+ "channels": [
+  {
+   "id": "CAN0",
+   "color": "#5D9BFF",
+   "th": "ขาซ้าย",
+   "en": "left leg",
+   "chain": [
+    "left_thigh_yaw_link",
+    "left_thigh_roll_link",
+    "left_thigh_pitch_link",
+    "left_knee_link",
+    "left_ankle_pitch_link",
+    "left_ankle_roll_link"
+   ]
+  },
+  {
+   "id": "CAN1",
+   "color": "#B08D4F",
+   "th": "เอว + ขาขวา",
+   "en": "waist + right leg",
+   "chain": [
+    "torso_link",
+    "right_thigh_yaw_link",
+    "right_thigh_roll_link",
+    "right_thigh_pitch_link",
+    "right_knee_link",
+    "right_ankle_pitch_link",
+    "right_ankle_roll_link"
+   ]
+  },
+  {
+   "id": "CAN2",
+   "color": "#e4e4e7",
+   "th": "แขนซ้าย",
+   "en": "left arm",
+   "chain": [
+    "left_arm_pitch_link",
+    "left_arm_roll_link",
+    "left_arm_yaw_link",
+    "left_elbow_pitch_link",
+    "left_elbow_yaw_link"
+   ]
+  },
+  {
+   "id": "CAN3",
+   "color": "#a1a1aa",
+   "th": "แขนขวา",
+   "en": "right arm",
+   "chain": [
+    "right_arm_pitch_link",
+    "right_arm_roll_link",
+    "right_arm_yaw_link",
+    "right_elbow_pitch_link",
+    "right_elbow_yaw_link"
+   ]
+  }
+ ]
+}

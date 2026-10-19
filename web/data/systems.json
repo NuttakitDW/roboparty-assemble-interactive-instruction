@@ -1,0 +1,548 @@
+{
+ "systems": [
+  {
+   "id": "actuators",
+   "stage": "actuators",
+   "model": true,
+   "color": "#B08D4F",
+   "th": "มอเตอร์ (Actuators)",
+   "en": "Actuators",
+   "sum": {
+    "th": "DM 10010L ×9 · DM 4340P ×14 รวม 23 ตัว",
+    "en": "9 DM 10010L + 14 DM 4340P, 23 in total"
+   },
+   "desc": {
+    "th": "มอเตอร์ 23 ตัวคือข้อต่อทั้งหมดของหุ่น DM 10010L (สะโพก เข่า เอว) ลิมิตแรงบิดใน URDF 80 N·m ส่วน DM 4340P (ข้อเท้า แขน) 18 N·m ทุกตัวมีรหัส Slave ID ต่อสายอนุกรม: ขาซ้าย 0x01-0x06, ขาขวา 0x07-0x0C, เอว 0x0D, แขนซ้าย 0x0E-0x12, แขนขวา 0x13-0x17 ก่อนประกอบต้องตั้งรหัสและคาลิเบรตเอนโคเดอร์ให้ครบ ไฟสถานะ: แดง = ปิด, เขียว = เปิดใช้งาน",
+    "en": "The 23 motors are every joint. DM 10010L (hips, knees, waist) has an 80 N·m torque limit in the URDF; DM 4340P (ankles, arms) 18 N·m. Each has a Slave ID and is daisy-chained: left leg 0x01-0x06, right leg 0x07-0x0C, waist 0x0D, left arm 0x0E-0x12, right arm 0x13-0x17. Set IDs and calibrate encoders before assembly. Status LED: red = disabled, green = enabled."
+   },
+   "items": [
+    85,
+    86,
+    87
+   ]
+  },
+  {
+   "id": "controller",
+   "stage": "electronics",
+   "model": false,
+   "color": "#5D9BFF",
+   "th": "บอร์ดควบคุม (Controller)",
+   "en": "Controller board",
+   "sum": {
+    "th": "บอร์ดรวม 3-in-1 และจอยควบคุม",
+    "en": "3-in-1 board and the gamepad"
+   },
+   "desc": {
+    "th": "บอร์ดรวม 3-in-1 (RBE_Board_v2.0) รวมการจ่ายไฟ ตัวแปลง USB เป็น CAN และไฟ 5V ไว้บนแผ่นเดียว มอเตอร์ต่อเข้า 4 ช่อง CAN: CAN0 = 0x01, CAN1 = 0x0D, CAN2 = 0x0E, CAN3 = 0x13 (ซ้ายก่อนขวา ขาก่อนแขน) ต่อตามสกรีนบนบอร์ดเสมอ ผู้ควบคุมใช้จอยโหมด Xinput: X = เปิด/ปิดมอเตอร์, A = รีเซ็ต, B = เริ่มรันโมเดล",
+    "en": "The 3-in-1 board (RBE_Board_v2.0) combines power distribution, USB-to-CAN and a 5V rail. Motors join four CAN channels: CAN0 = 0x01, CAN1 = 0x0D, CAN2 = 0x0E, CAN3 = 0x13 (left before right, legs before arms). Always follow the board silkscreen. The operator uses an Xinput gamepad: X = enable/disable, A = reset, B = start inference."
+   },
+   "items": [
+    54,
+    58
+   ]
+  },
+  {
+   "id": "imu",
+   "stage": "imu",
+   "model": false,
+   "color": "#93b4f5",
+   "th": "เซนเซอร์ IMU",
+   "en": "IMU",
+   "sum": {
+    "th": "HiPNUC HI14M0-USB (M12) พร้อมแผ่นยึด",
+    "en": "HiPNUC HI14M0-USB (M12) with its carrier plate"
+   },
+   "desc": {
+    "th": "IMU รุ่น HiPNUC HI14M0-USB ขั้วต่อ M12 ตัวเรือน 45×40×20 มม. หนักไม่เกิน 75 กรัม วัดท่าทางของลำตัว ยึดด้วยรู Ø3.2 สามรู ระยะ 34×39 มม. ซึ่งตรงกับแผ่นยึด IMU (RB000156) ติดตอนประกอบเอว ขั้นที่ 35 แล้วต่อ USB เข้า RDK X5",
+    "en": "HiPNUC HI14M0-USB with M12 connector: 45x40x20 mm housing, under 75 g, measures torso attitude. Three Ø3.2 mounting holes on a 34x39 mm pattern match the IMU carrier plate (RB000156). Fitted during waist assembly, step 35, then USB to the RDK X5."
+   },
+   "items": [
+    48,
+    9
+   ],
+   "note": {
+    "th": "รูปทรงและขนาดมาจากไฟล์ 3D ทางการของ HiPNUC แต่ตำแหน่งในหุ่นเป็นค่าประมาณ (จุด IMU ในโมเดลจำลอง) ของจริงยึดบนแผ่นยึดข้างฐานยึดข้อต่อสะโพก และยังไม่แน่ใจว่าใช้ขั้วต่อแบบตรงหรือแบบงอ",
+    "en": "Shape and size come from HiPNUC's official 3D model, but the position is approximate (the IMU site in the simulation model). The real unit sits on the carrier plate beside the hip joint mount, and the straight vs angled connector is unconfirmed."
+   }
+  },
+  {
+   "id": "compute",
+   "stage": "electronics",
+   "model": false,
+   "color": "#7aa2d6",
+   "th": "คอมพิวเตอร์หลัก (Compute)",
+   "en": "Compute (brain)",
+   "sum": {
+    "th": "RDK X5 8G ไม่ใช่ Nvidia Jetson",
+    "en": "RDK X5 8G, not an Nvidia Jetson"
+   },
+   "desc": {
+    "th": "สมองของหุ่นคือบอร์ด RDK X5 8G (ไม่ใช่ Nvidia Jetson) พร้อม RTC, SD card 32GB, เสาอากาศ และฮีตซิงก์ รัน ROS2 และ inference node ต่อ USB-to-CAN ผ่านสาย USB เป็น Type-C, ได้ไฟ 5V จากบอร์ด 3-in-1 ผ่านสาย Type-C เป็น Type-C, ต่อ IMU และตัวรับสัญญาณจอยทาง USB",
+    "en": "The brain is an RDK X5 8G board (not an Nvidia Jetson) with RTC, 32GB SD card, antenna and heatsink. It runs ROS2 and the inference node. It reaches USB-to-CAN over a USB-to-Type-C cable, gets 5V from the 3-in-1 board over Type-C, and takes the IMU and gamepad receiver over USB."
+   },
+   "items": [
+    49,
+    50,
+    51,
+    52,
+    53
+   ]
+  },
+  {
+   "id": "power",
+   "stage": "electronics",
+   "model": false,
+   "color": "#d4b27a",
+   "th": "ระบบไฟและความปลอดภัย",
+   "en": "Power & safety",
+   "sum": {
+    "th": "แบตเตอรี่ 48V ปุ่มฉุกเฉิน สวิตช์",
+    "en": "48V battery, e-stop, switch"
+   },
+   "desc": {
+    "th": "แบตเตอรี่ 48V 15Ah พร้อมโฟมกันสั่นรอบตัว ปุ่มหยุดฉุกเฉิน สวิตช์เปิดบอร์ดควบคุม และโวลต์มิเตอร์ ถ้าแรงดันต่ำกว่า 50V ต้องชาร์จก่อนใช้งาน งานข้อต่อทุกครั้งต้องกดปุ่มฉุกเฉินและตัดไฟ",
+    "en": "A 48V 15Ah battery with anti-vibration foam, the emergency stop, the main-board switch and a voltmeter. Charge before use if voltage is below 50V. Press the e-stop and cut power for any joint work."
+   },
+   "items": [
+    83,
+    84,
+    55,
+    56,
+    57
+   ]
+  },
+  {
+   "id": "cables",
+   "stage": "can",
+   "model": false,
+   "color": "#d4b27a",
+   "th": "สาย CAN และสายไฟ",
+   "en": "CAN & cables",
+   "sum": {
+    "th": "สาย XT30 ส่งทั้งไฟและ CAN 13 แบบ",
+    "en": "13 XT30 harnesses carrying power and CAN"
+   },
+   "desc": {
+    "th": "สาย XT30(+2) ส่งไฟและสัญญาณ CAN ไปพร้อมกัน (ตามหมายเหตุ \"CAN leads\" ในตารางสายของคู่มือเดินสาย) ใช้ต่อมอเตอร์เป็นสายโซ่ แต่ละช่วงมีรหัสสายและความยาวเฉพาะ (Arm01-04, Leg01-05, Body01-04) ทิศของสายที่งอ 90° ต้องตรงตามภาพ ใช้คลิปรัดสายยึดที่ขั้วต่อ และใช้กาว UV เสริมขั้วต่อ CAN ได้ เพื่อกันหลุดตอนเคลื่อนที่",
+    "en": "XT30(+2) harnesses carry power and CAN together and chain the motors. Each hop has its own part and length (Arm01-04, Leg01-05, Body01-04). Respect the 90-degree connector orientation in the figures. Use harness clips at the connectors, and UV adhesive can reinforce the CAN connectors, so they do not pull out in motion."
+   },
+   "items": [
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    59
+   ],
+   "note": {
+    "th": "แผนผังลำดับการต่อสาย CAN0-CAN3 ตามคู่มือเดินสาย ไม่ใช่เส้นทางสายจริงในตัวหุ่น และตำแหน่งบอร์ด 3-in-1 เป็นค่าประมาณ",
+    "en": "A schematic of the CAN0-CAN3 daisy chains from the wiring manual, not the real cable routes. The 3-in-1 board position is approximate."
+   }
+  },
+  {
+   "id": "structure",
+   "stage": "explode",
+   "model": true,
+   "color": "#5D9BFF",
+   "th": "โครงสร้าง",
+   "en": "Structure",
+   "sum": {
+    "th": "ชิ้นส่วน CNC อลูมิเนียมและเหล็ก",
+    "en": "CNC aluminium and steel parts"
+   },
+   "desc": {
+    "th": "ชิ้นส่วนหลักกลึง CNC 3 แกนจากอลูมิเนียม 6061/7075 และเหล็ก 45 ส่วนเปลือกนอกพิมพ์ 3 มิติ หุ้มด้วยยาง",
+    "en": "Main parts are 3-axis CNC machined from 6061/7075 aluminium and 45 steel; outer shells are 3D printed and rubber-covered."
+   },
+   "items": [
+    5,
+    6,
+    7,
+    8,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    60
+   ]
+  },
+  {
+   "id": "bearings",
+   "stage": "explode",
+   "model": false,
+   "color": "#7aa2d6",
+   "th": "แบริ่ง",
+   "en": "Bearings",
+   "sum": {
+    "th": "ข้อต่อ แบริ่งกันรุน และกากบาท",
+    "en": "Joint, thrust and cross bearings"
+   },
+   "desc": {
+    "th": "แบริ่งลูกปืนร่องลึกที่ฐานรองเอว แบริ่งทรงกลมในชุดขา แบริ่งเข็มกันรุนในข้อต่อ (ติดตั้งเฉพาะตัวกลาง ไม่ใส่แหวนรอง 2 ข้างนอก) และแบริ่งกากบาทที่ตัวเชื่อมข้อเท้า",
+    "en": "A deep groove bearing in the waist support, spherical bearings in the leg assembly, thrust needle bearings in the joints (middle bearing only, without the two outer washers) and the cross bearings at the ankle roll connector."
+   },
+   "items": [
+    1,
+    2,
+    3,
+    4
+   ]
+  },
+  {
+   "id": "fasteners",
+   "stage": "safety",
+   "model": false,
+   "color": "#a1a1aa",
+   "th": "น็อตและตัวยึด",
+   "en": "Fasteners",
+   "sum": {
+    "th": "สกรู M2.5-M6 พิน เสารอง",
+    "en": "M2.5-M6 screws, pins, standoffs"
+   },
+   "desc": {
+    "th": "สกรูหกเหลี่ยม M2.5-M6 (เกรด 12.9) สกรูหัวเรียบสแตนเลส พิน 4×18 และ 4×22 สำหรับคาลิเบรต เสารองทองเหลือง และห่วง M4 ทาเกลียวล็อกเฉพาะ 3-4 เกลียวสุดท้าย",
+    "en": "M2.5-M6 socket screws (grade 12.9), stainless flat-head screws, 4x18 and 4x22 calibration pins, brass standoffs and M4 eyebolts. Threadlocker only on the last 3-4 threads."
+   },
+   "items": [
+    61,
+    62,
+    63,
+    64,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    72,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80,
+    81,
+    82
+   ]
+  },
+  {
+   "id": "x_consumables",
+   "stage": "overview",
+   "model": false,
+   "color": "#f87171",
+   "extra": true,
+   "th": "สารสิ้นเปลือง (นอก BOM)",
+   "en": "Consumables (outside the BOM)",
+   "sum": {
+    "th": "คู่มือใช้ แต่ไม่อยู่ใน BOM",
+    "en": "Used by the manual, not in the BOM"
+   },
+   "desc": {
+    "th": "ของใช้สิ้นเปลืองที่คู่มือระบุไว้แต่ไม่มีใน BOM 87 รายการ เช็กว่ามีมาในชุดหรือต้องหาเอง",
+    "en": "Consumables the manual names but the 87-line BOM does not include. Check whether your kit includes them or you must source them."
+   },
+   "items": [
+    "x1",
+    "x2",
+    "x3",
+    "x4",
+    "x5",
+    "x6",
+    "x7"
+   ]
+  },
+  {
+   "id": "x_tools",
+   "stage": "overview",
+   "model": false,
+   "color": "#f87171",
+   "extra": true,
+   "th": "เครื่องมือ (นอก BOM)",
+   "en": "Tools (outside the BOM)",
+   "sum": {
+    "th": "เครื่องกด ค้อน คีม ไขควง",
+    "en": "Press, hammers, pliers, drivers"
+   },
+   "desc": {
+    "th": "เครื่องมือที่คู่มืออ้างถึงในแต่ละขั้นตอน ไม่มีใน BOM",
+    "en": "Tools the manual calls for at specific steps. None are in the BOM."
+   },
+   "items": [
+    "x8",
+    "x9",
+    "x10",
+    "x11",
+    "x12",
+    "x13"
+   ]
+  },
+  {
+   "id": "x_safety",
+   "stage": "safety",
+   "model": false,
+   "color": "#f87171",
+   "extra": true,
+   "th": "ความปลอดภัย (นอก BOM)",
+   "en": "Safety gear (outside the BOM)",
+   "sum": {
+    "th": "ชุดแขวนกันล้ม ถุงมือ แผ่นรอง",
+    "en": "Safety hanger, gloves, mat"
+   },
+   "desc": {
+    "th": "อุปกรณ์ความปลอดภัยที่บังคับในคู่มือ โดยเฉพาะชุดแขวนกันล้มก่อนเปิดเครื่องทุกครั้ง",
+    "en": "Safety gear the manual requires, above all a load-bearing safety hanger for every power-on test."
+   },
+   "items": [
+    "x14",
+    "x15",
+    "x16",
+    "x17"
+   ]
+  },
+  {
+   "id": "x_kit",
+   "stage": "overview",
+   "model": false,
+   "color": "#f87171",
+   "extra": true,
+   "th": "อยู่ใน xlsx แต่ไม่อยู่ใน BOM คู่มือ",
+   "en": "In the xlsx, not in the manual BOM",
+   "sum": {
+    "th": "2 รายการจากไฟล์ V1.1.3",
+    "en": "2 lines from the V1.1.3 file"
+   },
+   "desc": {
+    "th": "ไฟล์รายการอะไหล่ V1.1.3 (xlsx) มี 89 รายการ ส่วน BOM ในคู่มือมี 87 รายการ ที่ต่างกันคือชิ้นส่วนพิมพ์ 3 มิติ 2 รายการนี้",
+    "en": "The V1.1.3 spare-parts file (xlsx) has 89 lines; the manual BOM has 87. The difference is these two 3D-printed items."
+   },
+   "items": [
+    "x18",
+    "x19"
+   ]
+  }
+ ],
+ "extras": [
+  {
+   "id": "x1",
+   "th": "กาวล็อกเกลียว (Threadlocker)",
+   "en": "Threadlocker",
+   "note": {
+    "th": "ทาเฉพาะ 3-4 เกลียวสุดท้ายของสกรู ห้ามเลอะชิ้นพลาสติก",
+    "en": "Apply to the last 3-4 threads only; keep it off plastic parts."
+   },
+   "page": 7
+  },
+  {
+   "id": "x2",
+   "th": "จาระบีหล่อลื่น",
+   "en": "Lubricating grease",
+   "note": {
+    "th": "สารเคมีที่ต้องสวมถุงมือไนไตรล์",
+    "en": "A chemical that needs nitrile gloves."
+   },
+   "page": 6
+  },
+  {
+   "id": "x3",
+   "th": "ซิลิโคนระบายความร้อน (Thermal grease)",
+   "en": "Thermal grease",
+   "note": {
+    "th": "สารเคมีที่ต้องสวมถุงมือไนไตรล์",
+    "en": "A chemical that needs nitrile gloves."
+   },
+   "page": 6
+  },
+  {
+   "id": "x4",
+   "th": "โฟมกันสั่นสำหรับแบตเตอรี่",
+   "en": "Anti-vibration foam",
+   "note": {
+    "th": "ห่อก้นและทั้งสี่ด้านของแบตเตอรี่ กันสั่นและกันเปลือกถลอกจนลัดวงจร",
+    "en": "Pads the battery bottom and four sides; stops vibration and sheath abrasion that could short-circuit."
+   },
+   "page": 60
+  },
+  {
+   "id": "x5",
+   "th": "กาว UV",
+   "en": "UV adhesive",
+   "note": {
+    "th": "ใช้เสริมคอนเนกเตอร์ CAN ไม่ให้หลุดตอนเคลื่อนที่ (คู่มือระบุว่า \"ใช้ได้\" ไม่ได้บังคับ)",
+    "en": "Can be used to reinforce CAN connectors so they do not pull apart in motion (the manual says \"can be used\", not required)."
+   },
+   "page": 70
+  },
+  {
+   "id": "x6",
+   "th": "คลิปรัดสาย (Harness clips)",
+   "en": "Harness clips",
+   "note": {
+    "th": "ยึดสายที่ขั้วต่อ กันสัญญาณไม่นิ่งจากขั้วหลวม",
+    "en": "Secure the harness at the connectors to avoid loose-contact signal faults."
+   },
+   "page": 70
+  },
+  {
+   "id": "x7",
+   "th": "อุปกรณ์บัดกรี",
+   "en": "Soldering equipment",
+   "note": {
+    "th": "คู่มือให้บัดกรีขั้วสวิตช์หลักและปุ่มฉุกเฉิน ห้ามต่อสลับลำดับสาย",
+    "en": "The manual has you solder the main-switch and e-stop connectors. Do not mix up the wire order."
+   },
+   "page": 63
+  },
+  {
+   "id": "x8",
+   "th": "เครื่องกดมือ (Hand press)",
+   "en": "Hand press",
+   "note": {
+    "th": "กดตัวเชื่อมข้อเท้าให้แน่นกับแบริ่งกากบาท",
+    "en": "Presses the ankle roll connector tight onto the cross bearing."
+   },
+   "page": 22
+  },
+  {
+   "id": "x9",
+   "th": "ค้อน",
+   "en": "Hammer",
+   "note": {
+    "th": "เคาะแผ่นยึดสะโพกจนเสียงทึบทุกจุด",
+    "en": "Taps the hip clamp plate until it sounds solid everywhere."
+   },
+   "page": 25
+  },
+  {
+   "id": "x10",
+   "th": "ค้อนยาง",
+   "en": "Rubber hammer",
+   "note": {
+    "th": "ตอกพินคาลิเบรตที่ใส่ไม่เข้า",
+    "en": "Drives in calibration pins that will not seat by hand."
+   },
+   "page": 43
+  },
+  {
+   "id": "x11",
+   "th": "คีมปากแหลม",
+   "en": "Needle-nose pliers",
+   "note": {
+    "th": "ดึงพินคาลิเบรตที่ถอดด้วยมือไม่ออก",
+    "en": "Pulls out calibration pins that are stuck."
+   },
+   "page": 43
+  },
+  {
+   "id": "x12",
+   "th": "ไขควงไฟฟ้าแบบตั้งแรงบิดได้",
+   "en": "Electric screwdriver (adjustable torque)",
+   "note": {
+    "th": "ขันสกรูสะโพกเต็มแรงบิดอย่างน้อย 2 รอบ ห้ามขันตำแหน่งจุดสีแดงแรงเกิน",
+    "en": "Tightens hip screws at max torque for at least two cycles. Do not over-tighten the red positioning screws."
+   },
+   "page": 25
+  },
+  {
+   "id": "x13",
+   "th": "ประแจมือ",
+   "en": "Hand wrench",
+   "note": {
+    "th": "ใช้ขันสกรูหัวหกเหลี่ยมในร่องลึกของเอว",
+    "en": "For socket head screws in the deep recesses of the waist."
+   },
+   "page": 30
+  },
+  {
+   "id": "x14",
+   "th": "ชุดแขวนกันล้ม (Safety hanger)",
+   "en": "Load-bearing safety hanger",
+   "note": {
+    "th": "บังคับก่อนทดสอบแขวน รีเซ็ต และรันโมเดลทุกครั้ง",
+    "en": "Required for every suspension, reset and inference test."
+   },
+   "page": 11
+  },
+  {
+   "id": "x15",
+   "th": "ถุงมือกันไฟฟ้าสถิตและถุงมือไนไตรล์",
+   "en": "Anti-static and nitrile gloves",
+   "note": {
+    "th": "กันไฟฟ้าสถิตเมื่อจับบอร์ด และกันสารเคมี",
+    "en": "Anti-static for boards, nitrile for chemicals."
+   },
+   "page": 6
+  },
+  {
+   "id": "x16",
+   "th": "แผ่นรองกันไฟฟ้าสถิต",
+   "en": "Anti-static mat",
+   "note": {
+    "th": "ปูบนพื้นที่ทำงานตรงกลางโต๊ะ",
+    "en": "Laid on the middle work area of the bench."
+   },
+   "page": 6
+  },
+  {
+   "id": "x17",
+   "th": "สายแลนเชื่อมต่อ RDK",
+   "en": "Network cable for the RDK",
+   "note": {
+    "th": "ใช้ต่อเข้าตัวควบคุมหลักเพื่อตรวจค่าเบี่ยงศูนย์",
+    "en": "Connects to the main controller for the zero-deviation check."
+   },
+   "page": 12
+  },
+  {
+   "id": "x18",
+   "th": "ชิ้นส่วนพิมพ์ 3 มิติสำหรับคาลิเบรต ×8",
+   "en": "3D-printed calibration pieces x8",
+   "note": {
+    "th": "อยู่ในไฟล์ xlsx V1.1.3 (\"ROBOTO Origin标定件\") แต่ไม่อยู่ใน BOM ของคู่มือ คู่มือ V2.0 ใช้พินคาลิเบรตเป็นหลัก",
+    "en": "Listed in the V1.1.3 xlsx (\"ROBOTO Origin 标定件\") but not in the manual BOM. The V2.0 manual calibrates mainly with pins."
+   },
+   "src": "xlsx V1.1.3 #33"
+  },
+  {
+   "id": "x19",
+   "th": "ชิ้นส่วนยึดแผ่นยึด v2.0 (พิมพ์ 3 มิติ) ×1",
+   "en": "Carrier fixture v2.0 (3D-printed) x1",
+   "note": {
+    "th": "อยู่ในไฟล์ xlsx V1.1.3 (\"载板固定件v2.0\") แต่ไม่อยู่ใน BOM ของคู่มือ และยังไม่ทราบว่าติดตั้งตรงไหน",
+    "en": "Listed in the V1.1.3 xlsx (\"载板固定件v2.0\") but not in the manual BOM; where it fits is unconfirmed."
+   },
+   "src": "xlsx V1.1.3 #34"
+  }
+ ]
+}

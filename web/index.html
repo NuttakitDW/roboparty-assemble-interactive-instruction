@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Roboto Origin | สอนประกอบ</title>
+<meta name="description" content="Interactive assembly guide for RoboParty Roboto Origin: component overview in 3D.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300..700&family=JetBrains+Mono:wght@400..700&family=Noto+Sans+Thai:wght@300..700&display=swap">
+<link rel="stylesheet" href="style.css">
+<script type="importmap">
+{"imports":{
+ "three":"https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js",
+ "three/addons/":"https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"}}
+</script>
+</head>
+<body>
+<div class="app intro" id="app">
+  <header class="top">
+    <div class="left">
+      <button class="menu" id="menu" type="button" data-i18n="menu">ชิ้นส่วน</button>
+      <a class="brand" href="./"><span class="prompt">~$</span> roboparty<span class="sep">/</span>assemble</a>
+      <span class="page mono" data-i18n="page">0 · ภาพรวม</span>
+    </div>
+    <nav>
+      <button class="lang" data-lang="th" type="button">ไทย</button>
+      <button class="lang" data-lang="en" type="button">EN</button>
+      <button class="search" id="open-palette" type="button" aria-label="Search"><span data-i18n="search">ค้นหา</span> <kbd>⌘K</kbd></button>
+    </nav>
+  </header>
+
+  <aside class="side" id="side">
+    <div id="side-root">
+      <button type="button" class="tour" id="tour"><span data-i18n="tour">เล่นทัวร์ภาพรวม</span><span class="mono" id="tour-n"></span></button>
+      <h3 class="label mono" data-i18n="groups">โครงสร้างหุ่นยนต์</h3>
+      <div id="groups"></div>
+      <h3 class="label mono"><span data-i18n="systems_h">ระบบและชิ้นส่วน</span> <span id="parts-count"></span></h3>
+      <div id="systems"></div>
+      <h3 class="label mono"><span data-i18n="extras_h">ไม่อยู่ใน BOM ของคู่มือ</span></h3>
+      <div id="extras"></div>
+    </div>
+    <div id="side-cat" hidden>
+      <button type="button" class="back mono" id="back" data-i18n="back">กลับ</button>
+      <div class="cat-head" id="cat-head"></div>
+      <div class="plist" id="plist"></div>
+    </div>
+    <footer>
+      <button type="button" class="replay mono" id="replay" data-i18n="replay">เล่นอินโทรอีกครั้ง</button>
+      <span>© 2026 Nuttakit Kundum. All rights reserved.</span>
+      <span>Source: <a href="https://github.com/Roboparty/roboto_origin" target="_blank" rel="noopener">RoboParty</a> · CAD under CC-BY-SA-4.0</span>
+    </footer>
+  </aside>
+
+  <main class="viewer" id="viewer">
+    <canvas id="gl" aria-label="3D model"></canvas>
+    <div class="loading mono" id="loading"></div>
+    <div class="tip" id="tip" hidden></div>
+    <div class="pins" id="pins"></div>
+    <div class="hint mono" data-i18n="hint">ลากเพื่อหมุน · เลื่อนล้อเพื่อซูม</div>
+    <div class="legend mono" id="legend" hidden>
+      <span><i style="background:var(--signal)"></i>DM-J10010L ×9</span>
+      <span><i style="background:var(--bronze)"></i>DM 4340P ×14</span>
+    </div>
+    <div class="welcome" id="welcome" aria-hidden="true">
+      <div class="w-eyebrow mono">ROBOPARTY</div>
+      <div class="w-title">Roboto Origin</div>
+      <div class="w-sub" data-i18n="w_sub">คู่มือประกอบแบบอินเทอร์แอกทีฟ</div>
+      <div class="w-stats mono">23 DoF · 1.25 m · 34 kg · 87 parts</div>
+    </div>
+    <button type="button" class="skip mono" id="skip" data-i18n="skip">ข้าม</button>
+    <div class="intro-bar"><i id="intro-bar"></i></div>
+    <section class="caption" id="caption" aria-live="polite">
+      <div class="bar"><i id="bar"></i></div>
+      <div class="cap-head">
+        <span class="mono count" id="count"></span>
+        <span class="tag" id="tag"></span>
+      </div>
+      <h2 id="cap-title"></h2>
+      <p id="cap-body"></p>
+      <p class="note mono" id="cap-note" hidden></p>
+      <div class="ctrl" id="ctrl">
+        <button type="button" id="prev" data-i18n="prev">ก่อนหน้า</button>
+        <button type="button" id="play" class="primary" data-i18n="pause">หยุดชั่วคราว</button>
+        <button type="button" id="next" data-i18n="next">ถัดไป</button>
+        <div class="dots" id="dots" role="tablist"></div>
+      </div>
+      <div class="legal mono">© 2026 Nuttakit Kundum. All rights reserved.</div>
+    </section>
+  </main>
+  <div class="scrim" id="scrim" hidden></div>
+</div>
+
+<div class="palette" id="palette" hidden>
+  <div class="panel" role="dialog" aria-modal="true" aria-label="Search">
+    <input id="q" type="text" autocomplete="off" spellcheck="false" role="combobox" aria-label="Search" aria-controls="results" aria-expanded="true" aria-autocomplete="list">
+    <ul id="results" role="listbox"></ul>
+    <div class="foot mono"><span>↑↓ <span data-i18n="k_nav">เลือก</span></span><span>↵ <span data-i18n="k_open">เปิด</span></span><span>esc <span data-i18n="k_close">ปิด</span></span></div>
+  </div>
+</div>
+<script type="module" src="app.js"></script>
+</body>
+</html>

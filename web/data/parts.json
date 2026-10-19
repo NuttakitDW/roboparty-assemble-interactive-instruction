@@ -1,0 +1,796 @@
+{
+ "categories": {
+  "Bearings": "แบริ่ง",
+  "Structural": "ชิ้นส่วนโครงสร้าง",
+  "Cables": "สายไฟและสายเชื่อมต่อ",
+  "Electronics": "อิเล็กทรอนิกส์",
+  "Fasteners": "น็อตและตัวยึด",
+  "Battery": "แบตเตอรี่",
+  "Actuators": "มอเตอร์"
+ },
+ "parts": [
+  {
+   "item": 1,
+   "partNo": "",
+   "cat": "Bearings",
+   "en": "Deep Groove Ball Bearing 130x165x18",
+   "th": "แบริ่งลูกปืนร่องลึก 130×165×18",
+   "qty": 1,
+   "spec": "GB/T 276-2013"
+  },
+  {
+   "item": 2,
+   "partNo": "",
+   "cat": "Bearings",
+   "en": "Radial Spherical Plain Bearing (G Series) 8",
+   "th": "แบริ่งทรงกลมแบบเรเดียล (ซีรีส์ G) 8",
+   "qty": 8,
+   "spec": "GB/T 9161-2001"
+  },
+  {
+   "item": 3,
+   "partNo": "",
+   "cat": "Bearings",
+   "en": "Thrust Needle Roller and Cage Assembly AXK6085",
+   "th": "แบริ่งเข็มกันรุน AXK6085",
+   "qty": 9,
+   "spec": "GB/T 4605-2003"
+  },
+  {
+   "item": 4,
+   "partNo": "",
+   "cat": "Bearings",
+   "en": "Universal Joint Cross Bearing 16x40",
+   "th": "แบริ่งกากบาทข้อต่ออเนกประสงค์ 16×40",
+   "qty": 2,
+   "spec": "JIS G 4805"
+  },
+  {
+   "item": 5,
+   "partNo": "RB000152_02",
+   "cat": "Structural",
+   "en": "Arm 1",
+   "th": "แขน 1",
+   "qty": 2,
+   "spec": "6061 AL"
+  },
+  {
+   "item": 6,
+   "partNo": "RB000153_02",
+   "cat": "Structural",
+   "en": "Arm 2",
+   "th": "แขน 2",
+   "qty": 4,
+   "spec": "6061 AL"
+  },
+  {
+   "item": 7,
+   "partNo": "RB000154_02",
+   "cat": "Structural",
+   "en": "Arm 3",
+   "th": "แขน 3",
+   "qty": 4,
+   "spec": "6061 AL"
+  },
+  {
+   "item": 8,
+   "partNo": "RB000155_01",
+   "cat": "Structural",
+   "en": "Arm 4",
+   "th": "แขน 4",
+   "qty": 4,
+   "spec": "6061 AL"
+  },
+  {
+   "item": 9,
+   "partNo": "RB000156_01",
+   "cat": "Structural",
+   "en": "IMU Carrier Board",
+   "th": "แผ่นยึด IMU",
+   "qty": 1,
+   "spec": "6061 AL"
+  },
+  {
+   "item": 10,
+   "partNo": "RB000157_01",
+   "cat": "Structural",
+   "en": "Side Cross Plate",
+   "th": "แผ่นขวางด้านข้าง",
+   "qty": 2,
+   "spec": "6061 AL"
+  },
+  {
+   "item": 11,
+   "partNo": "RB000158_02",
+   "cat": "Structural",
+   "en": "Inner Thigh",
+   "th": "ต้นขาด้านใน",
+   "qty": 2,
+   "spec": "6061 AL"
+  },
+  {
+   "item": 12,
+   "partNo": "RB000159_02",
+   "cat": "Structural",
+   "en": "Battery Bottom Cover",
+   "th": "ฝาครอบแบตเตอรี่ด้านล่าง",
+   "qty": 1,
+   "spec": "7075 AL"
+  },
+  {
+   "item": 13,
+   "partNo": "RB000160_02",
+   "cat": "Structural",
+   "en": "Shoulder",
+   "th": "ไหล่",
+   "qty": 2,
+   "spec": "6061 AL"
+  },
+  {
+   "item": 14,
+   "partNo": "RB000161_01",
+   "cat": "Structural",
+   "en": "20cm Foot",
+   "th": "เท้า 20 ซม.",
+   "qty": 2,
+   "spec": "6061 AL"
+  },
+  {
+   "item": 15,
+   "partNo": "RB000162_01",
+   "cat": "Structural",
+   "en": "Foot Bottom Linkage",
+   "th": "ลิงก์ใต้เท้า",
+   "qty": 2,
+   "spec": "45 Steel"
+  },
+  {
+   "item": 16,
+   "partNo": "RB000163_01",
+   "cat": "Structural",
+   "en": "Ankle Roll Connector",
+   "th": "ตัวเชื่อมข้อเท้า (โรล)",
+   "qty": 4,
+   "spec": "6061 AL"
+  },
+  {
+   "item": 17,
+   "partNo": "RB000164_01",
+   "cat": "Structural",
+   "en": "Hip Joint Mount",
+   "th": "ฐานยึดข้อต่อสะโพก",
+   "qty": 1,
+   "spec": "6061 AL"
+  },
+  {
+   "item": 18,
+   "partNo": "RB000166_02",
+   "cat": "Structural",
+   "en": "Output Flange Linkage",
+   "th": "ลิงก์หน้าแปลนเอาต์พุต",
+   "qty": 4,
+   "spec": "45 Steel"
+  },
+  {
+   "item": 19,
+   "partNo": "RB000167_03",
+   "cat": "Structural",
+   "en": "Universal Connector",
+   "th": "ตัวเชื่อมข้อต่ออเนกประสงค์",
+   "qty": 4,
+   "spec": "6061 AL"
+  },
+  {
+   "item": 20,
+   "partNo": "RB000168_02",
+   "cat": "Structural",
+   "en": "Universal Connector Reamed Flange",
+   "th": "หน้าแปลนคว้านของตัวเชื่อมข้อต่อ",
+   "qty": 4,
+   "spec": "6061 AL"
+  },
+  {
+   "item": 21,
+   "partNo": "RB000169_02",
+   "cat": "Structural",
+   "en": "Calf / Lower Leg",
+   "th": "หน้าแข้ง / ขาท่อนล่าง",
+   "qty": 2,
+   "spec": "6061 AL"
+  },
+  {
+   "item": 22,
+   "partNo": "RB000170_02",
+   "cat": "Structural",
+   "en": "Rear Chest Plate",
+   "th": "แผ่นอกด้านหลัง",
+   "qty": 1,
+   "spec": "6061 AL"
+  },
+  {
+   "item": 23,
+   "partNo": "RB000171_01",
+   "cat": "Structural",
+   "en": "Front & Rear Chest Plates",
+   "th": "แผ่นอกด้านหน้าและหลัง",
+   "qty": 1,
+   "spec": "6061 AL"
+  },
+  {
+   "item": 24,
+   "partNo": "RB000172_01",
+   "cat": "Structural",
+   "en": "Limit Pin",
+   "th": "พินลิมิต",
+   "qty": 4,
+   "spec": "6061 AL"
+  },
+  {
+   "item": 25,
+   "partNo": "RB000173_01",
+   "cat": "Structural",
+   "en": "Calf Bearing Lock",
+   "th": "ตัวล็อกแบริ่งหน้าแข้ง",
+   "qty": 4,
+   "spec": "6061 AL"
+  },
+  {
+   "item": 26,
+   "partNo": "RB000174_03",
+   "cat": "Structural",
+   "en": "Waist Support",
+   "th": "ฐานรองเอว",
+   "qty": 1,
+   "spec": "7075 AL"
+  },
+  {
+   "item": 27,
+   "partNo": "RB000175_02",
+   "cat": "Structural",
+   "en": "Long Linkage",
+   "th": "ลิงก์ยาว",
+   "qty": 2,
+   "spec": "45 Steel"
+  },
+  {
+   "item": 28,
+   "partNo": "RB000176_02",
+   "cat": "Structural",
+   "en": "Short Linkage",
+   "th": "ลิงก์สั้น",
+   "qty": 2,
+   "spec": "45 Steel"
+  },
+  {
+   "item": 29,
+   "partNo": "RB000177_02",
+   "cat": "Structural",
+   "en": "Hip Plate",
+   "th": "แผ่นสะโพก",
+   "qty": 2,
+   "spec": "6061 Aluminum Alloy"
+  },
+  {
+   "item": 30,
+   "partNo": "RB000179_01",
+   "cat": "Structural",
+   "en": "Arm 5",
+   "th": "แขน 5",
+   "qty": 2,
+   "spec": "6061 Aluminum Alloy"
+  },
+  {
+   "item": 31,
+   "partNo": "",
+   "cat": "Structural",
+   "en": "Rubber Foot Pad",
+   "th": "แผ่นยางรองเท้า",
+   "qty": 2,
+   "spec": "Rubber"
+  },
+  {
+   "item": 32,
+   "partNo": "RBW_Origin_01",
+   "cat": "Cables",
+   "en": "RBW_Origin_01 Arm01",
+   "th": "สายชุด RBW_Origin_01 Arm01",
+   "qty": 2,
+   "spec": "XT30(+2)-F.G.B-XT30(+2)-F.G.B"
+  },
+  {
+   "item": 33,
+   "partNo": "RBW_Origin_02",
+   "cat": "Cables",
+   "en": "RBW_Origin_02 Arm02",
+   "th": "สายชุด RBW_Origin_02 Arm02",
+   "qty": 2,
+   "spec": "XT30(+2)-F.G.B-XT30(+2)-F.G.B"
+  },
+  {
+   "item": 34,
+   "partNo": "RBW_Origin_03",
+   "cat": "Cables",
+   "en": "RBW_Origin_03 Arm03",
+   "th": "สายชุด RBW_Origin_03 Arm03",
+   "qty": 2,
+   "spec": "XT30(+2)-F.G.B-XT30(+2)-F.G.B"
+  },
+  {
+   "item": 35,
+   "partNo": "RBW_Origin_04",
+   "cat": "Cables",
+   "en": "RBW_Origin_04 Arm04",
+   "th": "สายชุด RBW_Origin_04 Arm04",
+   "qty": 2,
+   "spec": "XT30(+2)-F.G.B-XT30(+2)-F.G.B"
+  },
+  {
+   "item": 36,
+   "partNo": "RBW_Origin_05",
+   "cat": "Cables",
+   "en": "RBW_Origin_05 Leg01",
+   "th": "สายชุด RBW_Origin_05 Leg01",
+   "qty": 2,
+   "spec": "XT30U-F to XT30U-F (GH1.25 2pin Reversed Pinout 35cm)"
+  },
+  {
+   "item": 37,
+   "partNo": "RBW_Origin_06",
+   "cat": "Cables",
+   "en": "RBW_Origin_06 Leg02",
+   "th": "สายชุด RBW_Origin_06 Leg02",
+   "qty": 2,
+   "spec": "XT30U-F to XT30U-F (GH1.25 2pin Reversed Pinout 35cm)"
+  },
+  {
+   "item": 38,
+   "partNo": "RBW_Origin_07",
+   "cat": "Cables",
+   "en": "RBW_Origin_07 Leg03",
+   "th": "สายชุด RBW_Origin_07 Leg03",
+   "qty": 2,
+   "spec": "XT30U-F to XT30U-F (GH1.25 2pin Reversed Pinout 30cm)"
+  },
+  {
+   "item": 39,
+   "partNo": "RBW_Origin_08",
+   "cat": "Cables",
+   "en": "RBW_Origin_08 Leg04",
+   "th": "สายชุด RBW_Origin_08 Leg04",
+   "qty": 2,
+   "spec": "XT30U-F to XT30(+2)-F.G.B (GH1.25 2pin Reversed Pinout 35cm)"
+  },
+  {
+   "item": 40,
+   "partNo": "RBW_Origin_09",
+   "cat": "Cables",
+   "en": "RBW_Origin_09 Leg05",
+   "th": "สายชุด RBW_Origin_09 Leg05",
+   "qty": 2,
+   "spec": "XT30(+2)-F.G.B-XT30(+2)-F.G.B 10cm"
+  },
+  {
+   "item": 41,
+   "partNo": "RBW_Origin_10",
+   "cat": "Cables",
+   "en": "RBW_Origin_10 Body01",
+   "th": "สายชุด RBW_Origin_10 Body01",
+   "qty": 1,
+   "spec": "XT30U-F to XT30U-F (GH1.25 2pin Reversed Pinout 30cm)"
+  },
+  {
+   "item": 42,
+   "partNo": "RBW_Origin_11",
+   "cat": "Cables",
+   "en": "RBW_Origin_11 Body02",
+   "th": "สายชุด RBW_Origin_11 Body02",
+   "qty": 2,
+   "spec": "XT30(+2)-F.G.B-XT30(+2)-F.G.B"
+  },
+  {
+   "item": 43,
+   "partNo": "RBW_Origin_12",
+   "cat": "Cables",
+   "en": "RBW_Origin_12 Body03",
+   "th": "สายชุด RBW_Origin_12 Body03",
+   "qty": 1,
+   "spec": "XT30(+2)-F.G.B to XT30U-F (GH1.25 2pin Reversed Pinout 65cm)"
+  },
+  {
+   "item": 44,
+   "partNo": "RBW_Origin_13",
+   "cat": "Cables",
+   "en": "RBW_Origin_13 Body04",
+   "th": "สายชุด RBW_Origin_13 Body04",
+   "qty": 1,
+   "spec": "XT30(+2)-F.G.B to XT30U-F (GH1.25 2pin Reversed Pinout 55cm)"
+  },
+  {
+   "item": 45,
+   "partNo": "RBW_Origin_14",
+   "cat": "Cables",
+   "en": "usb to typec 3.0 30cm",
+   "th": "สาย USB เป็น Type-C 3.0 ยาว 30 ซม.",
+   "qty": 1,
+   "spec": "30cm"
+  },
+  {
+   "item": 46,
+   "partNo": "RBW_Origin_15",
+   "cat": "Cables",
+   "en": "Type-C to Type-C, Flexible, Fast Charge, Right-Angle",
+   "th": "สาย Type-C เป็น Type-C แบบงอฉาก ชาร์จเร็ว",
+   "qty": 1,
+   "spec": "30cm"
+  },
+  {
+   "item": 47,
+   "partNo": "",
+   "cat": "Cables",
+   "en": "RDK Debugging Cable",
+   "th": "สายดีบัก RDK",
+   "qty": 1,
+   "spec": "1m"
+  },
+  {
+   "item": 48,
+   "partNo": "RBE_Origin_09",
+   "cat": "Electronics",
+   "en": "CHAOHE HI14M0-USB IMU/VRU USB-232 w/ Cable",
+   "th": "โมดูล IMU HiPNUC HI14M0 พร้อมสาย",
+   "qty": 1,
+   "spec": "HIPNUC"
+  },
+  {
+   "item": 49,
+   "partNo": "ROBOTO-34",
+   "cat": "Electronics",
+   "en": "RDK X5 8G",
+   "th": "บอร์ด RDK X5 8G",
+   "qty": 1,
+   "spec": "8G / Single Board"
+  },
+  {
+   "item": 50,
+   "partNo": "ROBOTO-35",
+   "cat": "Electronics",
+   "en": "RTC",
+   "th": "โมดูลนาฬิกา RTC",
+   "qty": 1,
+   "spec": ""
+  },
+  {
+   "item": 51,
+   "partNo": "ROBOTO-36",
+   "cat": "Electronics",
+   "en": "SD Card",
+   "th": "เอสดีการ์ด 32GB",
+   "qty": 1,
+   "spec": "SanDisk 32GB High-Speed"
+  },
+  {
+   "item": 52,
+   "partNo": "",
+   "cat": "Electronics",
+   "en": "Antenna",
+   "th": "เสาอากาศ",
+   "qty": 1,
+   "spec": "15cm Cable, IPEX Gen 1"
+  },
+  {
+   "item": 53,
+   "partNo": "",
+   "cat": "Electronics",
+   "en": "Heatsink Kit",
+   "th": "ชุดฮีตซิงก์",
+   "qty": 1,
+   "spec": ""
+  },
+  {
+   "item": 54,
+   "partNo": "RBE_Origin_04",
+   "cat": "Electronics",
+   "en": "RBE_Board_v2.0",
+   "th": "บอร์ดรวม 3-in-1 (RBE_Board_v2.0)",
+   "qty": 1,
+   "spec": "Custom 3-in-1 PCB"
+  },
+  {
+   "item": 55,
+   "partNo": "RBE_Origin_06",
+   "cat": "Electronics",
+   "en": "Emergency Stop Button (E-Stop)",
+   "th": "ปุ่มหยุดฉุกเฉิน (E-Stop)",
+   "qty": 1,
+   "spec": "LANBO M3 Oxidized Head - Unilluminated 22mm"
+  },
+  {
+   "item": 56,
+   "partNo": "RBE_Origin_07",
+   "cat": "Electronics",
+   "en": "Metal Push Button Switch",
+   "th": "สวิตช์ปุ่มกดโลหะ",
+   "qty": 1,
+   "spec": "5V Green Ring LED, Wired Plug-in, Latching 16mm"
+  },
+  {
+   "item": 57,
+   "partNo": "RBE_Origin_08",
+   "cat": "Electronics",
+   "en": "Digital Voltmeter",
+   "th": "โวลต์มิเตอร์ดิจิทัล",
+   "qty": 1,
+   "spec": ""
+  },
+  {
+   "item": 58,
+   "partNo": "RBE_Origin_12",
+   "cat": "Electronics",
+   "en": "Gamepad / Controller",
+   "th": "จอยควบคุม",
+   "qty": 1,
+   "spec": "Gamepad"
+  },
+  {
+   "item": 59,
+   "partNo": "RBE_Origin_13",
+   "cat": "Electronics",
+   "en": "Cable Tie Mount",
+   "th": "ฐานรัดสาย",
+   "qty": 1,
+   "spec": ""
+  },
+  {
+   "item": 60,
+   "partNo": "RBE_Origin_14",
+   "cat": "Electronics",
+   "en": "Metal Handle",
+   "th": "หูหิ้วโลหะ",
+   "qty": 1,
+   "spec": ""
+  },
+  {
+   "item": 61,
+   "partNo": "",
+   "cat": "Fasteners",
+   "en": "Hexagon Socket Head Cap Screw M2.5x8",
+   "th": "สกรูหัวหกเหลี่ยมจม M2.5×8",
+   "qty": 20,
+   "spec": "Grade 12.9 Alloy Steel"
+  },
+  {
+   "item": 62,
+   "partNo": "",
+   "cat": "Fasteners",
+   "en": "Hexagon Socket Head Cap Screw M3x6",
+   "th": "สกรูหัวหกเหลี่ยมจม M3×6",
+   "qty": 20,
+   "spec": "Grade 12.9 Alloy Steel"
+  },
+  {
+   "item": 63,
+   "partNo": "",
+   "cat": "Fasteners",
+   "en": "Hexagon Socket Head Cap Screw M3x8",
+   "th": "สกรูหัวหกเหลี่ยมจม M3×8",
+   "qty": 80,
+   "spec": "Grade 12.9 Alloy Steel"
+  },
+  {
+   "item": 64,
+   "partNo": "",
+   "cat": "Fasteners",
+   "en": "Hexagon Socket Head Cap Screw M3x10",
+   "th": "สกรูหัวหกเหลี่ยมจม M3×10",
+   "qty": 80,
+   "spec": "Grade 12.9 Alloy Steel"
+  },
+  {
+   "item": 65,
+   "partNo": "",
+   "cat": "Fasteners",
+   "en": "Hexagon Socket Head Cap Screw M3x12",
+   "th": "สกรูหัวหกเหลี่ยมจม M3×12",
+   "qty": 50,
+   "spec": "Grade 12.9 Alloy Steel"
+  },
+  {
+   "item": 66,
+   "partNo": "",
+   "cat": "Fasteners",
+   "en": "Hexagon Socket Head Cap Screw M3x16",
+   "th": "สกรูหัวหกเหลี่ยมจม M3×16",
+   "qty": 80,
+   "spec": "Grade 12.9 Alloy Steel"
+  },
+  {
+   "item": 67,
+   "partNo": "",
+   "cat": "Fasteners",
+   "en": "Hexagon Socket Head Cap Screw M4x8",
+   "th": "สกรูหัวหกเหลี่ยมจม M4×8",
+   "qty": 200,
+   "spec": "Grade 12.9 Alloy Steel"
+  },
+  {
+   "item": 68,
+   "partNo": "",
+   "cat": "Fasteners",
+   "en": "Hexagon Socket Head Cap Screw M4x10",
+   "th": "สกรูหัวหกเหลี่ยมจม M4×10",
+   "qty": 100,
+   "spec": "Grade 12.9 Alloy Steel"
+  },
+  {
+   "item": 69,
+   "partNo": "",
+   "cat": "Fasteners",
+   "en": "Hexagon Socket Head Cap Screw M4x12",
+   "th": "สกรูหัวหกเหลี่ยมจม M4×12",
+   "qty": 100,
+   "spec": "Grade 12.9 Alloy Steel"
+  },
+  {
+   "item": 70,
+   "partNo": "",
+   "cat": "Fasteners",
+   "en": "Hexagon Socket Head Cap Screw M4x14",
+   "th": "สกรูหัวหกเหลี่ยมจม M4×14",
+   "qty": 20,
+   "spec": "Grade 12.9 Alloy Steel"
+  },
+  {
+   "item": 71,
+   "partNo": "",
+   "cat": "Fasteners",
+   "en": "Hexagon Socket Head Cap Screw M5x10",
+   "th": "สกรูหัวหกเหลี่ยมจม M5×10",
+   "qty": 80,
+   "spec": "Grade 12.9 Alloy Steel"
+  },
+  {
+   "item": 72,
+   "partNo": "",
+   "cat": "Fasteners",
+   "en": "Hexagon Socket Head Cap Screw M5x12",
+   "th": "สกรูหัวหกเหลี่ยมจม M5×12",
+   "qty": 100,
+   "spec": "Grade 12.9 Alloy Steel"
+  },
+  {
+   "item": 73,
+   "partNo": "",
+   "cat": "Fasteners",
+   "en": "Hexagon Socket Head Cap Screw M5x14",
+   "th": "สกรูหัวหกเหลี่ยมจม M5×14",
+   "qty": 100,
+   "spec": "Grade 12.9 Alloy Steel"
+  },
+  {
+   "item": 74,
+   "partNo": "",
+   "cat": "Fasteners",
+   "en": "Hexagon Socket Head Cap Screw M6x16",
+   "th": "สกรูหัวหกเหลี่ยมจม M6×16",
+   "qty": 2,
+   "spec": "Grade 12.9 Alloy Steel"
+  },
+  {
+   "item": 75,
+   "partNo": "",
+   "cat": "Fasteners",
+   "en": "Cylindrical Pin 4x18",
+   "th": "พินทรงกระบอก 4×18",
+   "qty": 30,
+   "spec": "304 Stainless Steel"
+  },
+  {
+   "item": 76,
+   "partNo": "",
+   "cat": "Fasteners",
+   "en": "Cylindrical Pin 4x22",
+   "th": "พินทรงกระบอก 4×22",
+   "qty": 30,
+   "spec": "304 Stainless Steel"
+  },
+  {
+   "item": 77,
+   "partNo": "",
+   "cat": "Fasteners",
+   "en": "Hexagon Socket Head Cap Screw M6x12",
+   "th": "สกรูหัวหกเหลี่ยมจม M6×12",
+   "qty": 2,
+   "spec": "Grade 12.9 Alloy Steel"
+  },
+  {
+   "item": 78,
+   "partNo": "",
+   "cat": "Fasteners",
+   "en": "Flat Head Screw M4x12",
+   "th": "สกรูหัวเรียบ M4×12",
+   "qty": 20,
+   "spec": "304 Stainless Steel"
+  },
+  {
+   "item": 79,
+   "partNo": "",
+   "cat": "Fasteners",
+   "en": "Flat Head Screw M5x16",
+   "th": "สกรูหัวเรียบ M5×16",
+   "qty": 20,
+   "spec": "304 Stainless Steel"
+  },
+  {
+   "item": 80,
+   "partNo": "",
+   "cat": "Fasteners",
+   "en": "Flat Head Screw M4x8",
+   "th": "สกรูหัวเรียบ M4×8",
+   "qty": 20,
+   "spec": "304 Stainless Steel"
+  },
+  {
+   "item": 81,
+   "partNo": "",
+   "cat": "Fasteners",
+   "en": "Brass Standoff M3x15+3",
+   "th": "เสารองทองเหลือง M3×15+3",
+   "qty": 10,
+   "spec": "Brass"
+  },
+  {
+   "item": 82,
+   "partNo": "",
+   "cat": "Fasteners",
+   "en": "Eyebolt M4",
+   "th": "สกรูห่วง M4",
+   "qty": 4,
+   "spec": "304 Stainless Steel"
+  },
+  {
+   "item": 83,
+   "partNo": "RBE_Origin_10",
+   "cat": "Battery",
+   "en": "48V 15Ah Li-ion Battery",
+   "th": "แบตเตอรี่ลิเธียมไอออน 48V 15Ah",
+   "qty": 1,
+   "spec": "140x140x115mm"
+  },
+  {
+   "item": 84,
+   "partNo": "RBE_Origin_11",
+   "cat": "Battery",
+   "en": "Li-ion Battery Charger",
+   "th": "เครื่องชาร์จแบตเตอรี่",
+   "qty": 1,
+   "spec": "3-pin Aviation Connector"
+  },
+  {
+   "item": 85,
+   "partNo": "RBM_Origin_01",
+   "cat": "Actuators",
+   "en": "DM 4340P (48V)",
+   "th": "มอเตอร์ DM 4340P (48V)",
+   "qty": 14,
+   "spec": ""
+  },
+  {
+   "item": 86,
+   "partNo": "RBM_Origin_02",
+   "cat": "Actuators",
+   "en": "DM 10010L (48V)",
+   "th": "มอเตอร์ DM 10010L (48V)",
+   "qty": 9,
+   "spec": ""
+  },
+  {
+   "item": 87,
+   "partNo": "RBM_Origin_03",
+   "cat": "Actuators",
+   "en": "DMFDCAN Analyzer",
+   "th": "ตัววิเคราะห์ CAN DMFDCAN",
+   "qty": 1,
+   "spec": ""
+  }
+ ]
+}

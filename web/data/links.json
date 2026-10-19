@@ -1,0 +1,186 @@
+{
+ "links": {
+  "base_link": {
+   "th": "ฐานสะโพก (เพลวิส)",
+   "en": "Pelvis (base)",
+   "group": "pelvis",
+   "motor": null
+  },
+  "torso_link": {
+   "th": "ลำตัว",
+   "en": "Torso",
+   "group": "torso",
+   "motor": "10010L"
+  },
+  "left_thigh_yaw_link": {
+   "th": "สะโพกซ้าย (หมุนบิด)",
+   "en": "Left hip yaw",
+   "group": "legL",
+   "motor": "10010L"
+  },
+  "left_thigh_roll_link": {
+   "th": "สะโพกซ้าย (โรล)",
+   "en": "Left hip roll",
+   "group": "legL",
+   "motor": "10010L"
+  },
+  "left_thigh_pitch_link": {
+   "th": "ต้นขาซ้าย (พิทช์)",
+   "en": "Left thigh pitch",
+   "group": "legL",
+   "motor": "10010L"
+  },
+  "left_knee_link": {
+   "th": "เข่าซ้าย",
+   "en": "Left knee",
+   "group": "legL",
+   "motor": "10010L"
+  },
+  "left_ankle_pitch_link": {
+   "th": "ข้อเท้าซ้าย (พิทช์)",
+   "en": "Left ankle pitch",
+   "group": "legL",
+   "motor": "4340P"
+  },
+  "left_ankle_roll_link": {
+   "th": "เท้าซ้าย (โรล)",
+   "en": "Left ankle roll / foot",
+   "group": "legL",
+   "motor": "4340P"
+  },
+  "left_arm_pitch_link": {
+   "th": "ไหล่ซ้าย (พิทช์)",
+   "en": "Left shoulder pitch",
+   "group": "armL",
+   "motor": "4340P"
+  },
+  "left_arm_roll_link": {
+   "th": "ไหล่ซ้าย (โรล)",
+   "en": "Left shoulder roll",
+   "group": "armL",
+   "motor": "4340P"
+  },
+  "left_arm_yaw_link": {
+   "th": "แขนท่อนบนซ้าย (หมุน)",
+   "en": "Left upper arm yaw",
+   "group": "armL",
+   "motor": "4340P"
+  },
+  "left_elbow_pitch_link": {
+   "th": "ศอกซ้าย (พิทช์)",
+   "en": "Left elbow pitch",
+   "group": "armL",
+   "motor": "4340P"
+  },
+  "left_elbow_yaw_link": {
+   "th": "แขนท่อนล่างซ้าย (หมุน)",
+   "en": "Left forearm yaw",
+   "group": "armL",
+   "motor": "4340P"
+  },
+  "right_thigh_yaw_link": {
+   "th": "สะโพกขวา (หมุนบิด)",
+   "en": "Right hip yaw",
+   "group": "legR",
+   "motor": "10010L"
+  },
+  "right_thigh_roll_link": {
+   "th": "สะโพกขวา (โรล)",
+   "en": "Right hip roll",
+   "group": "legR",
+   "motor": "10010L"
+  },
+  "right_thigh_pitch_link": {
+   "th": "ต้นขาขวา (พิทช์)",
+   "en": "Right thigh pitch",
+   "group": "legR",
+   "motor": "10010L"
+  },
+  "right_knee_link": {
+   "th": "เข่าขวา",
+   "en": "Right knee",
+   "group": "legR",
+   "motor": "10010L"
+  },
+  "right_ankle_pitch_link": {
+   "th": "ข้อเท้าขวา (พิทช์)",
+   "en": "Right ankle pitch",
+   "group": "legR",
+   "motor": "4340P"
+  },
+  "right_ankle_roll_link": {
+   "th": "เท้าขวา (โรล)",
+   "en": "Right ankle roll / foot",
+   "group": "legR",
+   "motor": "4340P"
+  },
+  "right_arm_pitch_link": {
+   "th": "ไหล่ขวา (พิทช์)",
+   "en": "Right shoulder pitch",
+   "group": "armR",
+   "motor": "4340P"
+  },
+  "right_arm_roll_link": {
+   "th": "ไหล่ขวา (โรล)",
+   "en": "Right shoulder roll",
+   "group": "armR",
+   "motor": "4340P"
+  },
+  "right_arm_yaw_link": {
+   "th": "แขนท่อนบนขวา (หมุน)",
+   "en": "Right upper arm yaw",
+   "group": "armR",
+   "motor": "4340P"
+  },
+  "right_elbow_pitch_link": {
+   "th": "ศอกขวา (พิทช์)",
+   "en": "Right elbow pitch",
+   "group": "armR",
+   "motor": "4340P"
+  },
+  "right_elbow_yaw_link": {
+   "th": "แขนท่อนล่างขวา (หมุน)",
+   "en": "Right forearm yaw",
+   "group": "armR",
+   "motor": "4340P"
+  }
+ },
+ "groups": {
+  "pelvis": {
+   "th": "ฐานสะโพก",
+   "en": "Pelvis"
+  },
+  "torso": {
+   "th": "ลำตัวและเอว",
+   "en": "Torso & waist"
+  },
+  "legL": {
+   "th": "ขาซ้าย",
+   "en": "Left leg"
+  },
+  "legR": {
+   "th": "ขาขวา",
+   "en": "Right leg"
+  },
+  "armL": {
+   "th": "แขนซ้าย",
+   "en": "Left arm"
+  },
+  "armR": {
+   "th": "แขนขวา",
+   "en": "Right arm"
+  }
+ },
+ "motors": {
+  "10010L": {
+   "th": "DM-J10010L",
+   "en": "DM-J10010L",
+   "color": "#5D9BFF"
+  },
+  "4340P": {
+   "th": "DM 4340P",
+   "en": "DM 4340P",
+   "color": "#B08D4F"
+  }
+ }
+}
