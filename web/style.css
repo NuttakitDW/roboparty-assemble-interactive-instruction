@@ -214,6 +214,18 @@ kbd{font:400 11px var(--font-mono);color:var(--ash-2);border:1px solid var(--edg
   .bp-fig img{max-height:150px}
 }
 .bp-done{margin:0 0 .75rem;padding:.5rem .75rem;border:1px solid var(--signal);border-radius:8px;color:var(--ink-hi);font-size:.875rem}
+/* recommendation for people who want to build the real robot (sidebar footer, and after the last practice step) */
+.rec{display:grid;grid-template-columns:auto minmax(0,1fr);gap:.65rem;align-items:center;margin:0 0 .6rem;padding:.45rem .6rem;background:var(--paper-2);border:1px solid var(--edge);border-radius:8px;transition:background .15s}
+.rec:hover{background:var(--paper-4)}
+.rec img{display:block;width:36px;height:36px;border-radius:9px}
+.rec .k,.rec .n,.rec .d{display:block}
+.rec .k{font-size:.6875rem;line-height:1.35;color:var(--ash)}
+.rec .n{font-size:.875rem;line-height:1.35;font-weight:500;color:var(--ink-hi)}
+.rec .n small{font-size:.75rem;font-weight:400;color:var(--ash)}
+.rec .d{margin-top:.1rem;font-size:.75rem;line-height:1.4;color:var(--ash)}
+:root[lang=en] .rec .n small{display:none}
+.bp-scroll .rec{margin-bottom:1rem}
+@media (max-height:640px){.side footer .rec{display:none}} /* short screens: keep the nav list; the pointer still shows after the last practice step */
 .bp-headbtns{display:flex;gap:.4rem}
 .bp-voice{margin:0 0 .6rem;font-size:.75rem}
 .bp-voice .link{background:none;border:0;padding:0;color:var(--ash-2);text-decoration:underline;font-size:.75rem;margin-right:.75rem}

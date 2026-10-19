@@ -7,6 +7,7 @@ const STORE_KEY = 'build.v1';
 const IMG_BASE = 'manual/img/';
 const AUDIO_BASE = 'assets/tts/';
 const VOICE_KEY = 'build.voice';
+const HUMANOICE = 'https://humanoice.com/'; // recommended for people who want to build the real robot
 
 // Motor Slave ID (hex) -> the URDF link whose joint it drives (leg: yaw, roll, pitch, knee, ankle pitch, ankle roll).
 const ID_LINK = (() => {
@@ -36,13 +37,15 @@ const T = {
     prev: 'ย้อนกลับ', next: 'ติดตั้งแล้ว ถัดไป', done: 'เสร็จสิ้นทั้งหมด', skip: 'ข้ามเช็กลิสต์ขั้นนี้', reset: 'เริ่มใหม่', positioning: 'สำหรับกำหนดตำแหน่ง',
     figure: 'ดูภาพประกอบในคู่มือ', expand: 'แตะเพื่อขยาย/ย่อ', noText: 'ขั้นตอนนี้มีแต่ภาพประกอบ ดูรูปด้านบน', unsure: 'ข้อมูลขั้นตอนนี้ยังไม่ชัดเจน ให้ยึดภาพในคู่มือ',
     model: 'โมเดล 3 มิติเป็นระดับข้อต่อ ลำดับที่ชิ้นปรากฏเป็นการประมาณ ให้ยึดภาพและข้อความของคู่มือเป็นหลัก', tick: 'ติ๊กเมื่อเตรียมครบ', allDone: 'ครบทุกขั้นตอนแล้ว ซ้อมต่อครบตามคู่มือ', resetConfirm: 'เริ่มใหม่ จะล้างความคืบหน้าและเช็กลิสต์ทั้งหมด ยืนยันหรือไม่?',
-    wiringMotors: 'มอเตอร์', channel: 'ช่อง', voiceOn: 'เสียงบรรยาย: เปิด', voiceOff: 'เสียงบรรยาย: ปิด', replay: 'ฟังอีกครั้ง', stopVoice: 'หยุดเสียง' },
+    wiringMotors: 'มอเตอร์', channel: 'ช่อง', voiceOn: 'เสียงบรรยาย: เปิด', voiceOff: 'เสียงบรรยาย: ปิด', replay: 'ฟังอีกครั้ง', stopVoice: 'หยุดเสียง',
+    recK: 'แนะนำสำหรับคนอยากต่อจริง', recD: 'โรงเรียนสอนประกอบฮิวแมนนอยด์ แบบลงมือทำ · กรุงเทพฯ' },
   en: { open: 'Practice build mode', openSub: 'Rehearse each step before the real build', resume: 'Resume at step', exit: 'Exit practice mode', progress: 'Progress',
     step: 'Step', page: 'Manual page', pdf: 'PDF', parts: 'Parts', fasteners: 'Screws and fasteners', notes: 'Notes', warn: 'Warning', gate: 'Safety checklist',
     prev: 'Back', next: 'Installed, next', done: 'All steps done', skip: 'Skip this checklist', reset: 'Start over', positioning: 'positioning',
     figure: 'View the manual figure', expand: 'tap to expand / collapse', noText: 'This step is a figure only; see the image above', unsure: 'This step is unclear; follow the manual figure',
     model: 'The 3D model is joint-level and the order pieces appear is approximate. Follow the manual figure and text.', tick: 'Tick when you have it ready', allDone: 'All steps complete: you have rehearsed the whole manual', resetConfirm: 'Start over? This clears all progress and checklists.',
-    wiringMotors: 'Motors', channel: 'Channel', voiceOn: 'Narration: on', voiceOff: 'Narration: off', replay: 'Play again', stopVoice: 'Stop audio' },
+    wiringMotors: 'Motors', channel: 'Channel', voiceOn: 'Narration: on', voiceOff: 'Narration: off', replay: 'Play again', stopVoice: 'Stop audio',
+    recK: 'Recommended if you want to build it for real', recD: 'Hands-on humanoid assembly school · Bangkok' },
 };
 
 export function createBuild({ $, esc, state, nodes, views, data, channels = [], narration = {}, getOverlays, getFrame, getLang, renderLegend, onExit, closeDrawer }) {
@@ -191,6 +194,9 @@ export function createBuild({ $, esc, state, nodes, views, data, channels = [], 
     return `${t('step')} ${s.label}`;
   }
 
+  // After the last step: a pointer for people who now want to build the real robot.
+  const recommend = () => `<a class="rec" href="${HUMANOICE}" target="_blank" rel="noopener"><img src="assets/humanoice.png" alt="" width="36" height="36" decoding="async"><span><span class="k mono">${esc(t('recK'))}</span><span class="n">Humanoice${getLang() === 'th' ? ' <small>ฮิวแมนน้อย</small>' : ''}</span><span class="d">${esc(t('recD'))}</span></span></a>`;
+
   function renderPanel() {
     const focusId = $('#bpanel').contains(document.activeElement) ? document.activeElement.id : '';
     const s = steps[idx], p = s.phase, items = itemsOf(s), set = ticks[s.id] || new Set();
@@ -208,7 +214,7 @@ export function createBuild({ $, esc, state, nodes, views, data, channels = [], 
       <div class="bp-head"><span class="mono">${esc(L(p))} · ${idx + 1} / ${steps.length}</span><span class="bp-headbtns"><button type="button" id="bp-voice" class="bp-exitbtn" aria-pressed="${voiceOn}">${esc(t(voiceOn ? 'voiceOn' : 'voiceOff'))}</button><button type="button" id="bp-exit" class="bp-exitbtn">${esc(t('exit'))}</button></span></div>
       <div class="bp-bar"><i style="width:${((idx + 1) / steps.length) * 100}%"></i></div>
       <div class="bp-scroll">
-        ${finished ? `<p class="bp-done">${esc(t('allDone'))}</p>` : ''}
+        ${finished ? `<p class="bp-done">${esc(t('allDone'))}</p>${recommend()}` : ''}
         <h2>${esc(stepTitle(s))}</h2>
         ${s.phase.id === 'wiring' || s.gate ? '' : `<p class="bp-model mono">${esc(t('model'))}</p>`}
         ${fig}
