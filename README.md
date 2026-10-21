@@ -83,14 +83,14 @@ Seven Thai lines from Paxa TTS (`paxa-tts-flash-v2`, language `th`). Pronunciati
 
 ### 4. Music bed
 
-The licensed 100 BPM track (not in this repo) has a spoken preview watermark at five places, and the longest clean stretch is under 30 s. The bed is therefore spliced from clean bars only. The beat grid was measured from the audio (downbeat hits at `0.331 + 2.4 * bar` s). Source bars are chosen so the 4-bar chord cycle stays in order, seams sit 50 ms before a downbeat with a 24 ms equal-power crossfade, and the track's own hard stop ends the video. The finished bed was transcribed with speech-to-text to confirm no watermark voice is left.
+The 100 BPM track (credited below, not in this repo) is longer than the video, so the bed is assembled from whole bars. The beat grid was measured from the audio (downbeat hits at `0.331 + 2.4 * bar` s). Source bars are chosen so the 4-bar chord cycle stays in order, seams sit 50 ms before a downbeat with a 24 ms equal-power crossfade, and the track's own hard stop ends the video.
 
 ### 5. Mix and checks
 
 Music at 0.75, voice-over +10 dB with a compressor, and the music ducked by side-chain compression under the voice. Before delivery, the final file was checked with:
 
 - scene detection, to confirm every cut is a multiple of 0.6 s;
-- speech-to-text on the finished mix, so that only the narration appears and no stray voice sits over it;
+- speech-to-text on the finished mix, to confirm that only the narration is spoken;
 - audio/video lag by cross-correlation of the muxed track against the mix;
 - a frame-to-frame difference, to find duplicated frames and judder.
 
@@ -98,6 +98,7 @@ Music at 0.75, voice-over +10 dB with a compressor, and the music ducked by side
 
 - RoboParty's hardware design (CAD, URDF, meshes, BOM) is CERN-OHL-W-2.0; their documentation is CC-BY-SA-4.0. Third-party files keep their own terms (`cad/rpo_hardware/LICENSES.md`, `THIRD_PARTY_NOTICES.md`). RoboParty's trademarks stay theirs (`TRADEMARKS.md`).
 - The Thai translation in `manual/th/` is CC-BY-SA-4.0.
+- Promo video music: "Vibe Check" by Curtis Cole (Artlist). The track is not included in this repo.
 - Humanoice is shown as a recommendation only. Neither Humanoice nor RoboParty endorses this guide.
 
 (c) 2026 Nuttakit Kundum. All rights reserved. RoboParty material keeps the licences listed above.
