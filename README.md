@@ -2,7 +2,7 @@
 
 An unofficial, interactive guide for assembling the [RoboParty Roboto Origin](https://roboparty.com/roboto_origin/doc) humanoid. It turns the 71-page PDF manual into a 3D component tour and a step-by-step practice build, in Thai and English.
 
-Live site: https://nuttakitdw.github.io/roboparty-assemble-interactive-instruction/
+Live site: https://www.nuttakitkundum.com/roboparty
 
 > Not affiliated with RoboParty. The manual is the authority. The practice mode rehearses the steps; it does not replace the manual, and the 3D model is joint-level, so the order in which pieces appear is approximate. Follow the manual's figures, torque values and safety gates for the real build.
 
